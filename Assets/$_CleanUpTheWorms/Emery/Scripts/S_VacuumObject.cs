@@ -4,7 +4,7 @@ public class S_VacuumObject : MonoBehaviour
 {
 	private void OnTriggerEnter(Collider other)
 	{
-		if (other.CompareTag("Collectables"))
+		if (other.CompareTag("GrabbableElm"))
 		{
 			switch (StateMachineGame.Instance.state)
 			{
