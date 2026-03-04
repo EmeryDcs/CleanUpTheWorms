@@ -6,8 +6,22 @@ public class StateTutorial : MonoBehaviour
 	[SerializeField]
 	List<GameObject> listCollectables;
 
-    // Update is called once per frame
-    void Update()
+	public static StateTutorial Instance { get; private set; }
+
+	private void Awake()
+	{
+		if (Instance != null && Instance != this)
+		{
+			Destroy(this);
+		}
+		else
+		{
+			Instance = this;
+		}
+	}
+
+	// Update is called once per frame
+	void Update()
     {
         if (listCollectables.Count == 0)
 		{
@@ -22,6 +36,7 @@ public class StateTutorial : MonoBehaviour
 		if (listCollectables.Contains(go))
 		{
 			listCollectables.Remove(go);
+			Destroy(go);
 		}
 	}
 }
