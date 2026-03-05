@@ -24,13 +24,14 @@ public class S_AgrandirTige : MonoBehaviour
 	[Header("Unity Event Size Changed")]
 	public UnityEvent onSizeChanged;
 
-	//[Header("Debug")]
+	[Header("Debug")]
 	//public TextMeshProUGUI textTailleTige;
+	public bool isInTestingScene = false;
 
 	// Update is called once per frame
 	void Update()
 	{
-		if (StateMachineGame.Instance.state != GameState.LEVEL2)
+		if (StateMachineGame.Instance.state != GameState.LEVEL2 && !isInTestingScene)
 			return;
 		ResizedStick();
 	}
