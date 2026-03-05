@@ -11,8 +11,10 @@ public class HapticAudioRouter : MonoBehaviour
     [Range(0f, 5f)]
     public float volumeMultiplier = 1.0f;
 
-    private BufferedWaveProvider waveProvider;
     private WaveOutEvent waveOut;
+    private AudioClipWaveProvider waveProvider;
+    private AudioSource audioSource;
+    private bool wasPlaying = false;
 
     [StructLayout(LayoutKind.Sequential, Pack = 4, CharSet = CharSet.Auto)]
     private struct WAVEOUTCAPS
@@ -36,6 +38,26 @@ public class HapticAudioRouter : MonoBehaviour
 
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
+        audioSource.mute = true;
+
+        if (audioSource.clip != null)
+        {
+            waveProvider = new AudioClipWaveProvider(audioSource.clip);
+        }
+
+        InitializeAudio();
+    }
+
+    void InitializeAudio()
+    {
+        if (waveOut != null)
+        {
+            waveOut.Stop();
+            waveOut.Dispose();
+            waveOut = null;
+        }
+
         int targetDeviceNumber = -1;
         int deviceCount = waveOutGetNumDevs();
 
@@ -60,35 +82,41 @@ public class HapticAudioRouter : MonoBehaviour
 
         WAVEOUTCAPS selectedCaps;
         waveOutGetDevCaps(targetDeviceNumber, out selectedCaps, Marshal.SizeOf(typeof(WAVEOUTCAPS)));
-        Debug.Log($"[Haptic Router] Successfully routed haptics to: {selectedCaps.szPname} (Device {targetDeviceNumber})");
-
-        int sampleRate = AudioSettings.outputSampleRate;
-        waveProvider = new BufferedWaveProvider(WaveFormat.CreateIeeeFloatWaveFormat(sampleRate, 2));
-        waveProvider.DiscardOnBufferOverflow = true;
 
         waveOut = new WaveOutEvent();
         waveOut.DeviceNumber = targetDeviceNumber;
-        waveOut.Init(waveProvider);
-        waveOut.Play();
+
+        if (waveProvider != null)
+        {
+            waveOut.Init(waveProvider);
+        }
     }
 
-    void OnAudioFilterRead(float[] data, int channels)
+    void Update()
     {
-        if (waveProvider == null) return;
-
-        if (Mathf.Abs(volumeMultiplier - 1.0f) > 0.001f)
+        if (waveProvider != null)
         {
-            for (int i = 0; i < data.Length; i++)
-            {
-                data[i] *= volumeMultiplier;
-            }
+            waveProvider.Volume = volumeMultiplier;
+            waveProvider.Loop = audioSource.loop;
         }
 
-        byte[] byteBuffer = new byte[data.Length * 4];
-        Buffer.BlockCopy(data, 0, byteBuffer, 0, byteBuffer.Length);
-        waveProvider.AddSamples(byteBuffer, 0, byteBuffer.Length);
-
-        Array.Clear(data, 0, data.Length);
+        if (audioSource.isPlaying && !wasPlaying)
+        {
+            if (waveOut != null && waveProvider != null)
+            {
+                waveProvider.SetPosition(audioSource.timeSamples * audioSource.clip.channels);
+                waveOut.Play();
+            }
+            wasPlaying = true;
+        }
+        else if (!audioSource.isPlaying && wasPlaying)
+        {
+            if (waveOut != null)
+            {
+                waveOut.Stop();
+            }
+            wasPlaying = false;
+        }
     }
 
     void OnDestroy()
@@ -98,5 +126,66 @@ public class HapticAudioRouter : MonoBehaviour
             waveOut.Stop();
             waveOut.Dispose();
         }
+    }
+}
+
+public class AudioClipWaveProvider : IWaveProvider
+{
+    private float[] audioData;
+    private int position;
+
+    public float Volume { get; set; } = 1.0f;
+    public bool Loop { get; set; } = false;
+    public WaveFormat WaveFormat { get; private set; }
+
+    public AudioClipWaveProvider(AudioClip clip)
+    {
+        audioData = new float[clip.samples * clip.channels];
+        clip.GetData(audioData, 0);
+        WaveFormat = WaveFormat.CreateIeeeFloatWaveFormat(clip.frequency, clip.channels);
+    }
+
+    public void SetPosition(int samplePosition)
+    {
+        position = Mathf.Clamp(samplePosition, 0, audioData.Length);
+    }
+
+    public int Read(byte[] buffer, int offset, int count)
+    {
+        int bytesPerSample = 4;
+        int samplesToRead = count / bytesPerSample;
+        int samplesAvailable = audioData.Length - position;
+        int samplesToCopy = Math.Min(samplesToRead, samplesAvailable);
+
+        if (samplesToCopy <= 0)
+        {
+            if (Loop)
+            {
+                position = 0;
+                samplesAvailable = audioData.Length;
+                samplesToCopy = Math.Min(samplesToRead, samplesAvailable);
+                if (samplesToCopy <= 0) return 0;
+            }
+            else
+            {
+                return 0;
+            }
+        }
+
+        float[] tempFloats = new float[samplesToCopy];
+        Array.Copy(audioData, position, tempFloats, 0, samplesToCopy);
+
+        if (Mathf.Abs(Volume - 1.0f) > 0.001f)
+        {
+            for (int i = 0; i < tempFloats.Length; i++)
+            {
+                tempFloats[i] *= Volume;
+            }
+        }
+
+        Buffer.BlockCopy(tempFloats, 0, buffer, offset, tempFloats.Length * bytesPerSample);
+
+        position += samplesToCopy;
+        return samplesToCopy * bytesPerSample;
     }
 }
