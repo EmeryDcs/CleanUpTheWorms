@@ -30,6 +30,8 @@ public class S_AgrandirTige : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
+		if (StateMachineGame.Instance.state != GameState.LEVEL2)
+			return;
 		ResizedStick();
 	}
 
