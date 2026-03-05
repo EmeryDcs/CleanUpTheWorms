@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class S_AgrandirTige : MonoBehaviour
 {
@@ -20,8 +21,11 @@ public class S_AgrandirTige : MonoBehaviour
 	public GameObject controllerLeft;
 	public GameObject controllerRight;
 
-	[Header("Debug")]
-	public TextMeshProUGUI textTailleTige;
+	[Header("Unity Event Size Changed")]
+	public UnityEvent onSizeChanged;
+
+	//[Header("Debug")]
+	//public TextMeshProUGUI textTailleTige;
 
 	// Update is called once per frame
 	void Update()
@@ -43,10 +47,12 @@ public class S_AgrandirTige : MonoBehaviour
 	private void ResizedStick()
 	{
 		float opening = NormalizedDistanceBetweenControllers();
-		float newTaille = Mathf.Lerp(minTaille, maxTaille, opening);
+		float newTaille = Mathf.Lerp(minTaille, maxTaille, 1-opening);
 
-		textTailleTige.text = $"Distance: {DistanceBetweenControllers():F2} m\nNormalized: {opening:F2}\nSize : {newTaille:F2}";
+		//textTailleTige.text = $"Distance: {DistanceBetweenControllers():F2} m\nNormalized: {opening:F2}\nSize : {newTaille:F2}";
 
-		tige.transform.localScale = new Vector3(tige.transform.localScale.x, newTaille, tige.transform.localScale.z);
+		tige.transform.localScale = new Vector3(tige.transform.localScale.x, tige.transform.localScale.y, newTaille);
+
+		onSizeChanged.Invoke();
 	}
 }
