@@ -8,6 +8,10 @@ public class StateLevel1 : MonoBehaviour
 
 	public static StateLevel1 Instance { get; private set; }
 
+	//Variables pour les indices du robot
+	float timerBeforeClue = 20f;
+	bool clueDisplayed = false;
+
 	private void Awake()
 	{
 		if (Instance != null && Instance != this)
@@ -27,6 +31,13 @@ public class StateLevel1 : MonoBehaviour
 		{
 			StateMachineGame.Instance.state = GameState.LEVEL2;
 		}
+
+		timerBeforeClue -= Time.deltaTime;
+		if (timerBeforeClue <= 0 && !clueDisplayed)
+		{
+			clueDisplayed = true;
+			RobotAIAgent.Instance.RushToNearestCollectable(listCollectables);
+		}
 	}
 
 	//Fonction appelée par l'aspirateur lorsqu'il aspire quelque chose
@@ -39,6 +50,8 @@ public class StateLevel1 : MonoBehaviour
 		{
 			listCollectables.Remove(go);
 			Destroy(go);
+			clueDisplayed = false;
+			timerBeforeClue = 20f;
 		}
 	}
 }

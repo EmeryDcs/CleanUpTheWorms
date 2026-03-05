@@ -8,6 +8,10 @@ public class StateLevel2 : MonoBehaviour
 
 	public static StateLevel2 Instance { get; private set; }
 
+	//Variables pour les indices du robot
+	float timerBeforeClue = 20f;
+	bool clueDisplayed = false;
+
 	private void Awake()
 	{
 		if (Instance != null && Instance != this)
@@ -28,6 +32,13 @@ public class StateLevel2 : MonoBehaviour
 			StateMachineGame.Instance.state = GameState.END;
 			StateMachineGame.Instance.AfficherFinDuJeu();
 		}
+
+		timerBeforeClue -= Time.deltaTime;
+		if (timerBeforeClue <= 0 && !clueDisplayed)
+		{
+			clueDisplayed = true;
+			RobotAIAgent.Instance.RushToNearestCollectable(listCollectables);
+		}
 	}
 
 	public void DeleteCollectableFromList(GameObject go)
@@ -39,6 +50,8 @@ public class StateLevel2 : MonoBehaviour
 		{
 			listCollectables.Remove(go);
 			Destroy(go);
+			clueDisplayed = false;
+			timerBeforeClue = 20f;
 		}
 	}
 }

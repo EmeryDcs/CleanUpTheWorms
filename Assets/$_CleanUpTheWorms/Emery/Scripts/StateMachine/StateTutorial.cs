@@ -8,6 +8,10 @@ public class StateTutorial : MonoBehaviour
 
 	public static StateTutorial Instance { get; private set; }
 
+	//Variables pour les indices du robot
+	float timerBeforeClue = 20f;
+	bool clueDisplayed = false;
+
 	private void Awake()
 	{
 		if (Instance != null && Instance != this)
@@ -27,6 +31,13 @@ public class StateTutorial : MonoBehaviour
 		{
 			StateMachineGame.Instance.state = GameState.LEVEL1;
 		}
+
+		timerBeforeClue -= Time.deltaTime;
+		if (timerBeforeClue <= 0 && !clueDisplayed)
+		{
+			clueDisplayed = true;
+			RobotAIAgent.Instance.RushToNearestCollectable(listCollectables);
+		}
 	}
 
 	public void DeleteCollectableFromList(GameObject go)
@@ -37,6 +48,8 @@ public class StateTutorial : MonoBehaviour
 		{
 			listCollectables.Remove(go);
 			Destroy(go);
+			clueDisplayed = false;
+			timerBeforeClue = 20f;
 		}
 	}
 }

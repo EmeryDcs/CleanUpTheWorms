@@ -5,7 +5,9 @@ using UnityEngine.InputSystem;
 
 public class grab : MonoBehaviour
 {
-    public Transform snapPoint;
+	public static grab Instance { get; private set; }
+
+	public Transform snapPoint;
     //Transform localPos;
     private GameObject grabbedElm;
     public bool canGrab;
@@ -20,7 +22,16 @@ public class grab : MonoBehaviour
     {
         inputActions = new PlayerInputSystem();
         sphereCollider = GetComponent<SphereCollider>();
-    }
+
+		if (Instance != null && Instance != this)
+		{
+			Destroy(this);
+		}
+		else
+		{
+			Instance = this;
+		}
+	}
 
     private void OnEnable()
     {
@@ -84,6 +95,11 @@ public class grab : MonoBehaviour
         elm.transform.SetParent(null); 
         grabbedElm = null;
     }
+
+	public GameObject GetGrabbedElm()
+	{
+		return grabbedElm;
+	}
 
     //private void OnGrabStarted(InputAction.CallbackContext context)
     //{
