@@ -787,7 +787,7 @@ MonoBehaviour:
   generatorVolume: 0.06
   generatorToLightWaitTime: 4
   lightOnClip: {fileID: 8300000, guid: 334bb9e53acf9c44bbeaeb38213ac80a, type: 3}
-  lightOnVolume: 0.7
+  lightOnVolume: 0.452
   random3DClip: {fileID: 8300000, guid: 044c028488e415344b0df08b015c98e4, type: 3}
   random3DVolume: 0.462
   random3DMixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
