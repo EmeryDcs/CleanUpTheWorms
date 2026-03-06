@@ -4,12 +4,16 @@ using System.Collections.Generic;
 
 public class RobotAudio : MonoBehaviour
 {
+    public static RobotAudio Instance;
+
     [Header("Upgrade Settings")]
     [SerializeField] private Sound upgradeAudio;
     [SerializeField] private string upgradeVestName;
 
     [Header("Speech Settings")]
     [SerializeField] private Sound[] speechAudios;
+    [SerializeField] private float minSpeechInterval = 5f;
+    [SerializeField] private float maxSpeechInterval = 15f;
 
     [Header("Surprised Settings")]
     [SerializeField] private Sound surprisedAudio;
@@ -27,6 +31,16 @@ public class RobotAudio : MonoBehaviour
 
     private void Awake()
     {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+            return;
+        }
+
         InitializeSound(upgradeAudio, "UpgradeAudioSource");
 
         if (speechAudios != null)
@@ -40,6 +54,12 @@ public class RobotAudio : MonoBehaviour
         InitializeSound(surprisedAudio, "SurprisedAudioSource");
         InitializeSound(validationAudio, "ValidationAudioSource");
         InitializeSound(wheelAudio, "WheelAudioSource");
+    }
+
+    private void Start()
+    {
+        StartCoroutine(MonitorRobotState());
+        StartCoroutine(RandomSpeechRoutine());
     }
 
     private void InitializeSound(Sound s, string childName)
@@ -71,6 +91,54 @@ public class RobotAudio : MonoBehaviour
             {
                 s.source.Play();
             }
+        }
+    }
+
+    private IEnumerator MonitorRobotState()
+    {
+        yield return new WaitUntil(() => S_StateRobot.Instance != null);
+
+        RobotState lastState = S_StateRobot.Instance.currentState;
+
+        if (lastState == RobotState.WALK)
+        {
+            StartWheel();
+        }
+
+        while (true)
+        {
+            RobotState currentState = S_StateRobot.Instance.currentState;
+
+            if (currentState != lastState)
+            {
+                if (currentState == RobotState.WALK)
+                {
+                    StartWheel();
+                }
+                else if (lastState == RobotState.WALK)
+                {
+                    StopWheel();
+                }
+
+                if (currentState == RobotState.CLUE)
+                {
+                    PlaySurprised();
+                }
+
+                lastState = currentState;
+            }
+
+            yield return null;
+        }
+    }
+
+    private IEnumerator RandomSpeechRoutine()
+    {
+        while (true)
+        {
+            float waitTime = Random.Range(minSpeechInterval, maxSpeechInterval);
+            yield return new WaitForSeconds(waitTime);
+            PlayRandomSpeech();
         }
     }
 
