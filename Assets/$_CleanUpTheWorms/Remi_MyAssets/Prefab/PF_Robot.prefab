@@ -128,7 +128,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: -1372625422
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 0.5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 90
@@ -154,6 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RobotAIAgent
   updateInterval: 0.1
   minDistanceToPlayer: 1.25
+  metaCameraRig: {fileID: 0}
   agent: {fileID: 0}
 --- !u!114 &1568813733566301877
 MonoBehaviour:

@@ -10,12 +10,13 @@ public class RobotAIAgent : MonoBehaviour
 	[SerializeField] float updateInterval = 0.5f;
     [SerializeField] float minDistanceToPlayer = 2f;
 
-    public NavMeshAgent agent;
-    private Transform metaCameraRig;
-    private Coroutine followCoroutine;
+    public Transform metaCameraRig;
+	public NavMeshAgent agent;
+	private Coroutine followCoroutine;
 	private GameObject objectClued;
+	private bool isWaitingForCollectablePickup = false;
 
-    private void Awake()
+	private void Awake()
     {
 		if (Instance != null && Instance != this)
 		{
@@ -27,16 +28,6 @@ public class RobotAIAgent : MonoBehaviour
 		}
 
 		agent = GetComponent<NavMeshAgent>();
-
-        OVRCameraRig rig = FindAnyObjectByType<OVRCameraRig>();
-        if (rig != null)
-        {
-            metaCameraRig = rig.transform;
-        }
-        else
-        {
-            Debug.LogError("OVRCameraRig not found in the scene.");
-        }
     }
     private void Start()
     {
@@ -46,11 +37,24 @@ public class RobotAIAgent : MonoBehaviour
 
 	private void Update()
 	{
-		if (objectClued != null && agent.remainingDistance <= agent.stoppingDistance)
+		if (objectClued != null)
 		{
-			Debug.Log("Arrived at the collectable. Waiting for it to be picked up...");
+			agent.SetDestination(objectClued.transform.position);
+		}
+
+		if (objectClued != null && agent.remainingDistance <= agent.stoppingDistance && !isWaitingForCollectablePickup)
+		{
+			Debug.Log("Arrived at collectable, waiting for pickup...");
+			isWaitingForCollectablePickup = true;
 			S_StateRobot.Instance.currentState = RobotState.CLUE;
 			StartCoroutine(WaitForObjectPickedUp(objectClued));
+		} 
+		else if (objectClued != null && agent.remainingDistance > agent.stoppingDistance && isWaitingForCollectablePickup)
+		{
+			Debug.Log("Collectible moved, going to join it...");
+			StopCoroutine(WaitForObjectPickedUp(objectClued));
+			S_StateRobot.Instance.currentState = RobotState.WALK;
+			isWaitingForCollectablePickup = false;
 		}
 		else if (objectClued == null && followCoroutine == null)
 		{
@@ -95,7 +99,6 @@ public class RobotAIAgent : MonoBehaviour
 	{
 		yield return new WaitUntil(() => collectable == null); 
 		ResumeFollowing();
-		Debug.Log("Collectable picked up. Resuming follow.");
 		S_StateRobot.Instance.currentState = RobotState.IDLE;
 	}
 

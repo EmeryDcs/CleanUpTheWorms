@@ -32,6 +32,11 @@ public class S_StateRobot : MonoBehaviour
 
 	private void Update()
 	{
+		if (StateMachineGame.Instance.state == GameState.ASCENCEUR)
+		{
+			return;
+		}
+
 		if (currentState != RobotState.CLUE)
 		{
 			if (RobotAIAgent.Instance.agent.velocity.magnitude == 0)
