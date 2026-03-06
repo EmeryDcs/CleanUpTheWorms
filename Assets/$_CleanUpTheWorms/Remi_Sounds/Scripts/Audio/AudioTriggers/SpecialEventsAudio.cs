@@ -17,6 +17,10 @@ public class SpecialEventsAudio : MonoBehaviour
     [SerializeField] private Sound breakGlassAudio;
     [SerializeField] private string breakGlassVestName;
 
+    [Header("Siren Settings")]
+    [SerializeField] private Sound sirenAudio;
+    [SerializeField] private string sirenVestName;
+
     private Coroutine crowdLarvaSequenceRoutine;
     private Coroutine crowdLarvaFade;
 
@@ -25,6 +29,7 @@ public class SpecialEventsAudio : MonoBehaviour
         InitializeSound(crowdLarvaIntroAudio, "CrowdLarvaIntroAudioSource");
         InitializeSound(crowdLarvaAudio, "CrowdLarvaAudioSource");
         InitializeSound(breakGlassAudio, "BreakGlassAudioSource");
+        InitializeSound(sirenAudio, "SirenAudioSource");
     }
 
     private void InitializeSound(Sound s, string childName)
@@ -133,7 +138,26 @@ public class SpecialEventsAudio : MonoBehaviour
         }
     }
 
+    [ContextMenu("Play Siren Event")]
+    public void PlaySiren()
+    {
+        if (sirenAudio != null && sirenAudio.source != null)
+        {
+            if (sirenAudio.preventOverlay || sirenAudio.loop)
+            {
+                sirenAudio.source.Play();
+            }
+            else
+            {
+                sirenAudio.source.PlayOneShot(sirenAudio.clip);
+            }
+        }
 
+        if (AudioManagerVest.Instance != null && !string.IsNullOrEmpty(sirenVestName))
+        {
+            AudioManagerVest.Instance.PlayGlobalVestSound(sirenVestName);
+        }
+    }
 
     private IEnumerator FadeIn(AudioSource source, float targetVolume, float duration)
     {
