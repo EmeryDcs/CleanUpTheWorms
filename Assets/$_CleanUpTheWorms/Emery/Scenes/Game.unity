@@ -163,6 +163,10 @@ PrefabInstance:
       propertyPath: OnButtonPushed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1666708037}
+    - target: {fileID: 7679213553276799914, guid: 2f5907475b0810049a2f0b26e223da44, type: 3}
+      propertyPath: _enableDynamicResolution
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8537493101489839634, guid: 2f5907475b0810049a2f0b26e223da44, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
