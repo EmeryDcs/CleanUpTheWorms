@@ -80,6 +80,8 @@ public class HapticAudioRouter : MonoBehaviour
     {
         if (waveProvider == null) return;
 
+
+
         if (Mathf.Abs(volumeMultiplier - 1.0f) > 0.001f)
         {
             for (int i = 0; i < data.Length; i++)

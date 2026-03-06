@@ -19,14 +19,22 @@ public class GrapplingAudio : MonoBehaviour
     [SerializeField] private Sound clawGrabAudio;
     [SerializeField] private string clawGrabVestName;
 
+    [Header("Holding Settings")]
+    [SerializeField] private Sound holdingAudio;
+    [SerializeField] private string holdingVestName;
+    [SerializeField] private float holdingFadeInDuration = 0.5f;
+    [SerializeField] private float holdingFadeOutDuration = 0.5f;
+
     private Coroutine telescopieFade;
     private Coroutine graplinFade;
+    private Coroutine holdingFade;
 
     private void Awake()
     {
         InitializeSound(telescopieAudio, "TelescopieAudioSource");
         InitializeSound(graplinOpenCloseAudio, "GraplinOpenCloseAudioSource");
         InitializeSound(clawGrabAudio, "ClawGrabAudioSource");
+        InitializeSound(holdingAudio, "HoldingAudioSource");
     }
 
     private void InitializeSound(Sound s, string childName)
@@ -170,6 +178,55 @@ public class GrapplingAudio : MonoBehaviour
         if (AudioManagerVest.Instance != null && !string.IsNullOrEmpty(clawGrabVestName))
         {
             AudioManagerVest.Instance.PlayGlobalVestSound(clawGrabVestName);
+        }
+    }
+
+    [ContextMenu("Start Holding Loop")]
+    public void StartHolding()
+    {
+        if (holdingAudio != null && holdingAudio.source != null)
+        {
+            if (holdingFade != null)
+            {
+                StopCoroutine(holdingFade);
+                holdingFade = null;
+            }
+
+            if (!holdingAudio.source.isPlaying)
+            {
+                holdingAudio.source.volume = 0f;
+
+                if (holdingAudio.preventOverlay || holdingAudio.loop)
+                {
+                    holdingAudio.source.Play();
+                }
+                else
+                {
+                    holdingAudio.source.PlayOneShot(holdingAudio.clip);
+                }
+            }
+
+            holdingFade = StartCoroutine(FadeIn(holdingAudio.source, holdingAudio.volume, holdingFadeInDuration));
+        }
+
+        if (AudioManagerVest.Instance != null && !string.IsNullOrEmpty(holdingVestName))
+        {
+            AudioManagerVest.Instance.PlayGlobalVestSound(holdingVestName);
+        }
+    }
+
+    [ContextMenu("Stop Holding Loop")]
+    public void StopHolding()
+    {
+        if (holdingAudio != null && holdingAudio.source != null && holdingAudio.source.isPlaying)
+        {
+            if (holdingFade != null) StopCoroutine(holdingFade);
+            holdingFade = StartCoroutine(FadeOut(holdingAudio.source, holdingAudio.volume, holdingFadeOutDuration));
+        }
+
+        if (AudioManagerVest.Instance != null && !string.IsNullOrEmpty(holdingVestName))
+        {
+            AudioManagerVest.Instance.StopGlobalVestSound(holdingVestName);
         }
     }
 
