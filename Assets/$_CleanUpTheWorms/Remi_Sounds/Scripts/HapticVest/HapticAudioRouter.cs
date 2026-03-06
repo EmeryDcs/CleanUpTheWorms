@@ -14,6 +14,7 @@ public class HapticAudioRouter : MonoBehaviour
 
     private BufferedWaveProvider waveProvider;
     private WaveOutEvent waveOut;
+    private bool isHapticActive = true;
 
     [StructLayout(LayoutKind.Sequential, Pack = 4, CharSet = CharSet.Auto)]
     private struct WAVEOUTCAPS
@@ -39,13 +40,14 @@ public class HapticAudioRouter : MonoBehaviour
     {
         if (System.Environment.GetCommandLineArgs().Contains("-nohaptics"))
         {
+            isHapticActive = false;
             enabled = false;
         }
     }
 
     void Start()
     {
-        if (!enabled) return;
+        if (!isHapticActive) return;
 
         int targetDeviceNumber = -1;
         int deviceCount = waveOutGetNumDevs();
@@ -65,7 +67,7 @@ public class HapticAudioRouter : MonoBehaviour
 
         if (targetDeviceNumber == -1)
         {
-            Debug.LogError($"[Haptic Router] Could not find an active audio device containing the name: {targetDeviceName}");
+            Debug.LogWarning($"[Haptic Router] Could not find an active audio device containing the name: {targetDeviceName}");
             return;
         }
 
@@ -89,7 +91,7 @@ public class HapticAudioRouter : MonoBehaviour
 
     void OnAudioFilterRead(float[] data, int channels)
     {
-        if (!enabled || waveProvider == null) return;
+        if (!isHapticActive || waveProvider == null) return;
 
         if (Mathf.Abs(volumeMultiplier - 1.0f) > 0.001f)
         {
