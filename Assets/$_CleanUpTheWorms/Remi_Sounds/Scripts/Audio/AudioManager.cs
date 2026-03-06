@@ -61,14 +61,17 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private List<AmbientSoundSettings> ambientSounds;
 
     [SerializeField] private AudioClip lightOffClip;
+    [SerializeField] private string vestLightOffSoundName;
     [SerializeField, Range(0f, 1f)] private float lightOffVolume = 1f;
     [SerializeField] private float lightOffWaitTime = 3f;
 
     [SerializeField] private AudioClip generatorClip;
+    [SerializeField] private string vestGeneratorSoundName;
     [SerializeField, Range(0f, 1f)] private float generatorVolume = 1f;
     [SerializeField] private float generatorToLightWaitTime = 2f;
 
     [SerializeField] private AudioClip lightOnClip;
+    [SerializeField] private string vestLightOnSoundName;
     [SerializeField, Range(0f, 1f)] private float lightOnVolume = 1f;
 
     [Header("Random 3D Ambient Sound")]
@@ -133,11 +136,7 @@ public class AudioManager : MonoBehaviour
     public void Play(string name)
     {
         Sound s = sounds.Find(sound => sound.name == name);
-        if (s == null)
-        {
-            Debug.LogWarning("Sound " + name + " not found!");
-            return;
-        }
+        if (s == null) return;
 
         if (s.preventOverlay || s.loop)
         {
@@ -205,14 +204,12 @@ public class AudioManager : MonoBehaviour
     public void PlayPreparedSound(AudioSource source, Vector3 pos, bool canDestroy = false)
     {
         if (source == null) return;
-
         if (!source.gameObject.activeInHierarchy) return;
 
         source.transform.position = pos;
-
         source.Play();
-        if (!canDestroy) return;
 
+        if (!canDestroy) return;
         Destroy(source.gameObject, source.clip.length);
     }
 
@@ -312,6 +309,11 @@ public class AudioManager : MonoBehaviour
             PlayClipAtPoint(lightOffClip, transform.position, ambientSounds.Count > 0 ? ambientSounds[0].mixerGroup : null, lightOffVolume);
         }
 
+        if (!string.IsNullOrEmpty(vestLightOffSoundName) && AudioManagerVest.Instance != null)
+        {
+            AudioManagerVest.Instance.PlayGlobalVestSound(vestLightOffSoundName);
+        }
+
         foreach (AmbientSoundSettings amb in ambientSounds)
         {
             if (activeFades.ContainsKey(amb.source) && activeFades[amb.source] != null)
@@ -344,11 +346,21 @@ public class AudioManager : MonoBehaviour
             PlayClipAtPoint(generatorClip, transform.position, ambientSounds.Count > 0 ? ambientSounds[0].mixerGroup : null, generatorVolume);
         }
 
+        if (!string.IsNullOrEmpty(vestGeneratorSoundName) && AudioManagerVest.Instance != null)
+        {
+            AudioManagerVest.Instance.PlayGlobalVestSound(vestGeneratorSoundName);
+        }
+
         yield return new WaitForSeconds(generatorToLightWaitTime);
 
         if (lightOnClip != null)
         {
             PlayClipAtPoint(lightOnClip, transform.position, ambientSounds.Count > 0 ? ambientSounds[0].mixerGroup : null, lightOnVolume);
+        }
+
+        if (!string.IsNullOrEmpty(vestLightOnSoundName) && AudioManagerVest.Instance != null)
+        {
+            AudioManagerVest.Instance.PlayGlobalVestSound(vestLightOnSoundName);
         }
 
         StartAmbientSequence();

@@ -64,10 +64,14 @@ public class HapticAudioRouter : MonoBehaviour
 
         int sampleRate = AudioSettings.outputSampleRate;
         waveProvider = new BufferedWaveProvider(WaveFormat.CreateIeeeFloatWaveFormat(sampleRate, 2));
+
+        waveProvider.BufferDuration = TimeSpan.FromMilliseconds(50);
         waveProvider.DiscardOnBufferOverflow = true;
 
         waveOut = new WaveOutEvent();
         waveOut.DeviceNumber = targetDeviceNumber;
+        waveOut.DesiredLatency = 50;
+        waveOut.NumberOfBuffers = 2;
         waveOut.Init(waveProvider);
         waveOut.Play();
     }
@@ -86,6 +90,7 @@ public class HapticAudioRouter : MonoBehaviour
 
         byte[] byteBuffer = new byte[data.Length * 4];
         Buffer.BlockCopy(data, 0, byteBuffer, 0, byteBuffer.Length);
+
         waveProvider.AddSamples(byteBuffer, 0, byteBuffer.Length);
 
         Array.Clear(data, 0, data.Length);
