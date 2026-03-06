@@ -271,6 +271,38 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &25660207
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 25660208}
+  m_Layer: 0
+  m_Name: AudioTriggers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &25660208
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 25660207}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.83009, y: 0, z: -1.49656}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1221915763}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &60917729
 GameObject:
   m_ObjectHideFlags: 0
@@ -991,6 +1023,90 @@ Transform:
   - {fileID: 243842141}
   m_Father: {fileID: 1968096932}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1221915762
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1221915763}
+  - component: {fileID: 1221915764}
+  m_Layer: 0
+  m_Name: AudioGrapplin
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1221915763
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1221915762}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 25660208}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1221915764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1221915762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdde3771408f0724ea23df8e8c10e4b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GrapplingAudio
+  telescopieAudio:
+    name: Telescopie
+    clip: {fileID: 8300000, guid: 3c0a53a26fc12094384f8c6458da83f3, type: 3}
+    volume: 0.5
+    pitch: 1
+    spatialBlend: 1
+    loop: 0
+    playOnAwake: 0
+    preventOverlay: 0
+    mixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    source: {fileID: 0}
+  telescopieVestName: Telescopie
+  telescopieFadeInDuration: 0.7
+  telescopieFadeOutDuration: 0.7
+  graplinOpenCloseAudio:
+    name: OpenClose
+    clip: {fileID: 8300000, guid: bb6096f77a14bbf4fa45d0db898799dc, type: 3}
+    volume: 0.25
+    pitch: 1
+    spatialBlend: 0
+    loop: 0
+    playOnAwake: 0
+    preventOverlay: 0
+    mixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    source: {fileID: 0}
+  graplinOpenCloseVestName: OpenClose
+  graplinFadeInDuration: 0.7
+  graplinFadeOutDuration: 0.7
+  clawGrabAudio:
+    name: GrabClaw
+    clip: {fileID: 8300000, guid: 62148fe3683c828438eec433b6e6e5ec, type: 3}
+    volume: 0.25
+    pitch: 1
+    spatialBlend: 0
+    loop: 0
+    playOnAwake: 0
+    preventOverlay: 0
+    mixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    source: {fileID: 0}
+  clawGrabVestName: GrabClaw
 --- !u!1 &1250600273
 GameObject:
   m_ObjectHideFlags: 0
@@ -1697,6 +1813,36 @@ MonoBehaviour:
     preventOverlay: 0
     mixerGroup: {fileID: -563594623175838844, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
     source: {fileID: 0}
+  - name: Telescopie
+    clip: {fileID: 8300000, guid: 42bed581ef96ed144a8b81e45bbd3a4d, type: 3}
+    volume: 1
+    pitch: 1
+    spatialBlend: 0
+    loop: 0
+    playOnAwake: 0
+    preventOverlay: 0
+    mixerGroup: {fileID: -563594623175838844, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    source: {fileID: 0}
+  - name: OpenClose
+    clip: {fileID: 8300000, guid: 381b091d0181aae43802fd90b952af9e, type: 3}
+    volume: 1
+    pitch: 1
+    spatialBlend: 0
+    loop: 0
+    playOnAwake: 0
+    preventOverlay: 0
+    mixerGroup: {fileID: -563594623175838844, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    source: {fileID: 0}
+  - name: GrabClaw
+    clip: {fileID: 8300000, guid: 208b4360c3b447a4296553f80676340a, type: 3}
+    volume: 1
+    pitch: 1
+    spatialBlend: 0
+    loop: 0
+    playOnAwake: 0
+    preventOverlay: 0
+    mixerGroup: {fileID: -563594623175838844, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    source: {fileID: 0}
   vestMixerGroup: {fileID: -563594623175838844, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
 --- !u!1 &1676273015
 GameObject:
@@ -2238,7 +2384,8 @@ SceneRoots:
   - {fileID: 11922376}
   - {fileID: 1339561604}
   - {fileID: 1250600278}
-  - {fileID: 1487884530}
   - {fileID: 2087641968}
   - {fileID: 919863665}
   - {fileID: 645258914}
+  - {fileID: 1487884530}
+  - {fileID: 25660208}
