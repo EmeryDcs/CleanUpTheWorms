@@ -2,6 +2,7 @@ using UnityEngine;
 using NAudio.Wave;
 using System;
 using System.Runtime.InteropServices;
+using System.Linq;
 
 [RequireComponent(typeof(AudioSource))]
 public class HapticAudioRouter : MonoBehaviour
@@ -34,8 +35,18 @@ public class HapticAudioRouter : MonoBehaviour
     [DllImport("winmm.dll", SetLastError = true, CharSet = CharSet.Auto)]
     private static extern int waveOutGetDevCaps(int uDeviceID, out WAVEOUTCAPS pwoc, int cbwoc);
 
+    void Awake()
+    {
+        if (System.Environment.GetCommandLineArgs().Contains("-nohaptics"))
+        {
+            enabled = false;
+        }
+    }
+
     void Start()
     {
+        if (!enabled) return;
+
         int targetDeviceNumber = -1;
         int deviceCount = waveOutGetNumDevs();
 
@@ -78,9 +89,7 @@ public class HapticAudioRouter : MonoBehaviour
 
     void OnAudioFilterRead(float[] data, int channels)
     {
-        if (waveProvider == null) return;
-
-
+        if (!enabled || waveProvider == null) return;
 
         if (Mathf.Abs(volumeMultiplier - 1.0f) > 0.001f)
         {
