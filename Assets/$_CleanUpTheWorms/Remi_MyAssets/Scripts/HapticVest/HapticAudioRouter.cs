@@ -2,6 +2,7 @@ using UnityEngine;
 using NAudio.Wave;
 using System;
 using System.Runtime.InteropServices;
+using System.Linq;
 
 [RequireComponent(typeof(AudioSource))]
 public class HapticAudioRouter : MonoBehaviour
@@ -13,6 +14,7 @@ public class HapticAudioRouter : MonoBehaviour
 
     private BufferedWaveProvider waveProvider;
     private WaveOutEvent waveOut;
+    private bool isHapticActive = true;
 
     [StructLayout(LayoutKind.Sequential, Pack = 4, CharSet = CharSet.Auto)]
     private struct WAVEOUTCAPS
@@ -34,8 +36,19 @@ public class HapticAudioRouter : MonoBehaviour
     [DllImport("winmm.dll", SetLastError = true, CharSet = CharSet.Auto)]
     private static extern int waveOutGetDevCaps(int uDeviceID, out WAVEOUTCAPS pwoc, int cbwoc);
 
+    void Awake()
+    {
+        if (System.Environment.GetCommandLineArgs().Contains("-nohaptics"))
+        {
+            isHapticActive = false;
+            enabled = false;
+        }
+    }
+
     void Start()
     {
+        if (!isHapticActive) return;
+
         int targetDeviceNumber = -1;
         int deviceCount = waveOutGetNumDevs();
 
@@ -54,7 +67,7 @@ public class HapticAudioRouter : MonoBehaviour
 
         if (targetDeviceNumber == -1)
         {
-            Debug.LogError($"[Haptic Router] Could not find an active audio device containing the name: {targetDeviceName}");
+            Debug.LogWarning($"[Haptic Router] Could not find an active audio device containing the name: {targetDeviceName}");
             return;
         }
 
@@ -64,17 +77,21 @@ public class HapticAudioRouter : MonoBehaviour
 
         int sampleRate = AudioSettings.outputSampleRate;
         waveProvider = new BufferedWaveProvider(WaveFormat.CreateIeeeFloatWaveFormat(sampleRate, 2));
+
+        waveProvider.BufferDuration = TimeSpan.FromMilliseconds(50);
         waveProvider.DiscardOnBufferOverflow = true;
 
         waveOut = new WaveOutEvent();
         waveOut.DeviceNumber = targetDeviceNumber;
+        waveOut.DesiredLatency = 50;
+        waveOut.NumberOfBuffers = 2;
         waveOut.Init(waveProvider);
         waveOut.Play();
     }
 
     void OnAudioFilterRead(float[] data, int channels)
     {
-        if (waveProvider == null) return;
+        if (!isHapticActive || waveProvider == null) return;
 
         if (Mathf.Abs(volumeMultiplier - 1.0f) > 0.001f)
         {
@@ -86,6 +103,7 @@ public class HapticAudioRouter : MonoBehaviour
 
         byte[] byteBuffer = new byte[data.Length * 4];
         Buffer.BlockCopy(data, 0, byteBuffer, 0, byteBuffer.Length);
+
         waveProvider.AddSamples(byteBuffer, 0, byteBuffer.Length);
 
         Array.Clear(data, 0, data.Length);
