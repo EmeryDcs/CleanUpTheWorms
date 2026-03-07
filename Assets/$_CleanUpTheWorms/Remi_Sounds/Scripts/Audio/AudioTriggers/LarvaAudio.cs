@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.AI;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -6,6 +7,8 @@ public class LarvaAudio : MonoBehaviour
 {
     [Header("Speech Settings")]
     [SerializeField] private Sound[] speechAudios;
+    [SerializeField] private float minSpeechInterval = 5f;
+    [SerializeField] private float maxSpeechInterval = 15f;
 
     [Header("Movement Loop Settings")]
     [SerializeField] private Sound movementAudio;
@@ -26,6 +29,12 @@ public class LarvaAudio : MonoBehaviour
         }
 
         InitializeSound(movementAudio, "MovementAudioSource");
+    }
+
+    private void Start()
+    {
+        StartCoroutine(MonitorLarvaState());
+        StartCoroutine(RandomSpeechRoutine());
     }
 
     private void InitializeSound(Sound s, string childName)
@@ -57,6 +66,42 @@ public class LarvaAudio : MonoBehaviour
             {
                 s.source.Play();
             }
+        }
+    }
+
+    private IEnumerator MonitorLarvaState()
+    {
+        NavMeshAgent agent = GetComponentInParent<NavMeshAgent>();
+        yield return new WaitUntil(() => agent != null);
+
+        bool wasMoving = false;
+
+        while (true)
+        {
+            bool isMoving = agent.enabled && agent.velocity.sqrMagnitude > 0.01f;
+
+            if (isMoving && !wasMoving)
+            {
+                StartMovement();
+                wasMoving = true;
+            }
+            else if (!isMoving && wasMoving)
+            {
+                StopMovement();
+                wasMoving = false;
+            }
+
+            yield return null;
+        }
+    }
+
+    private IEnumerator RandomSpeechRoutine()
+    {
+        while (true)
+        {
+            float waitTime = Random.Range(minSpeechInterval, maxSpeechInterval);
+            yield return new WaitForSeconds(waitTime);
+            PlayRandomSpeech();
         }
     }
 
