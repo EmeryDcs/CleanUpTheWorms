@@ -63,12 +63,14 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioClip lightOffClip;
     [SerializeField] private string vestLightOffSoundName;
     [SerializeField, Range(0f, 1f)] private float lightOffVolume = 1f;
-    [SerializeField] private float lightOffWaitTime = 3f;
+
+    [SerializeField] public float lightOffWaitTime = 3f;
 
     [SerializeField] private AudioClip generatorClip;
     [SerializeField] private string vestGeneratorSoundName;
     [SerializeField, Range(0f, 1f)] private float generatorVolume = 1f;
-    [SerializeField] private float generatorToLightWaitTime = 2f;
+
+    [SerializeField] public float generatorToLightWaitTime = 2f;
 
     [SerializeField] private AudioClip lightOnClip;
     [SerializeField] private string vestLightOnSoundName;

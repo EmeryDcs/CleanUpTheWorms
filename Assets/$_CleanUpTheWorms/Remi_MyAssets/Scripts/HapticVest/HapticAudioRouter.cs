@@ -14,7 +14,7 @@ public class HapticAudioRouter : MonoBehaviour
 
     private BufferedWaveProvider waveProvider;
     private WaveOutEvent waveOut;
-    private bool isHapticActive = true;
+    [SerializeField] bool isHapticActive = true;
 
     [StructLayout(LayoutKind.Sequential, Pack = 4, CharSet = CharSet.Auto)]
     private struct WAVEOUTCAPS
@@ -41,8 +41,12 @@ public class HapticAudioRouter : MonoBehaviour
         if (System.Environment.GetCommandLineArgs().Contains("-nohaptics"))
         {
             isHapticActive = false;
-            enabled = false;
         }
+
+        AudioManagerVest.Instance.isAllowedSound = isHapticActive;
+
+
+
     }
 
     void Start()

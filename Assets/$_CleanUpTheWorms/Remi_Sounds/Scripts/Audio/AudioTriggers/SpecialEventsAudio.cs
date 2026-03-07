@@ -32,6 +32,11 @@ public class SpecialEventsAudio : MonoBehaviour
         InitializeSound(sirenAudio, "SirenAudioSource");
     }
 
+    private void Start()
+    {
+        StartCoroutine(MonitorGameStateRoutine());
+    }
+
     private void InitializeSound(Sound s, string childName)
     {
         if (s == null || s.clip == null) return;
@@ -52,6 +57,63 @@ public class SpecialEventsAudio : MonoBehaviour
         if (s.playOnAwake)
         {
             s.source.Play();
+        }
+    }
+
+    private IEnumerator MonitorGameStateRoutine()
+    {
+        yield return new WaitUntil(() => StateMachineGame.Instance != null);
+        GameState lastState = StateMachineGame.Instance.state;
+
+        while (true)
+        {
+            GameState currentState = StateMachineGame.Instance.state;
+
+            if (currentState != lastState)
+            {
+                if (currentState == GameState.LEVEL1)
+                {
+                    if (AudioManager.Instance != null)
+                    {
+                        AudioManager.Instance.TriggerLightOffEvent();
+                        Debug.Log("Triggered Light Off Event for LEVEL1");
+                    }
+                }
+                else if (currentState == GameState.LEVEL2)
+                {
+                    StartCoroutine(Level2Sequence());
+                }
+                else if (currentState == GameState.END)
+                {
+                    StartCoroutine(EndSequence());
+                }
+
+                lastState = currentState;
+            }
+
+            yield return null;
+        }
+    }
+
+    private IEnumerator Level2Sequence()
+    {
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.TriggerLightOffEvent();
+            yield return new WaitForSeconds(AudioManager.Instance.lightOffWaitTime / 2f);
+            PlayBreakGlass();
+        }
+    }
+
+    private IEnumerator EndSequence()
+    {
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.TriggerLightOffEvent();
+            yield return new WaitForSeconds(AudioManager.Instance.lightOffWaitTime / 2f);
+            PlayCrowdLarva();
+            yield return new WaitForSeconds((AudioManager.Instance.lightOffWaitTime / 2f) + AudioManager.Instance.generatorToLightWaitTime);
+            PlaySiren();
         }
     }
 
@@ -132,7 +194,7 @@ public class SpecialEventsAudio : MonoBehaviour
             }
         }
 
-        if (AudioManagerVest.Instance != null && !string.IsNullOrEmpty(breakGlassVestName))
+        if (AudioManagerVest.Instance != null && !string.IsNullOrEmpty(breakGlassVestName) && AudioManagerVest.Instance.isAllowedSound)
         {
             AudioManagerVest.Instance.PlayGlobalVestSound(breakGlassVestName);
         }

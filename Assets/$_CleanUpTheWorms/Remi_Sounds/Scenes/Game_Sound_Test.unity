@@ -3789,6 +3789,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::HapticAudioRouter
   targetDeviceName: Casque (Realtek(R) Audio)
   volumeMultiplier: 1
+  isHapticActive: 0
 --- !u!4 &687127875057475345
 Transform:
   m_ObjectHideFlags: 0
@@ -4536,7 +4537,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3171943583842882059}
-  - {fileID: 5511948646042413825}
   - {fileID: 5541780382969375673}
   - {fileID: 1921940180824150420}
   m_Father: {fileID: 5555576885081691056}
@@ -8645,7 +8645,7 @@ MonoBehaviour:
   crowdLarvaIntroAudio:
     name: CrackLarva
     clip: {fileID: 8300000, guid: ad1660795cacef44bb5cf889a66a2264, type: 3}
-    volume: 0.7
+    volume: 0.839
     pitch: 1
     spatialBlend: 1
     loop: 0
@@ -8658,7 +8658,7 @@ MonoBehaviour:
   crowdLarvaAudio:
     name: CrowdLarva
     clip: {fileID: 8300000, guid: 667f1f8e209b64a44b950b40c9c99880, type: 3}
-    volume: 0.306
+    volume: 1
     pitch: 1
     spatialBlend: 1
     loop: 1
@@ -8671,7 +8671,7 @@ MonoBehaviour:
   breakGlassAudio:
     name: BreakGlass
     clip: {fileID: 8300000, guid: 05c76c7432e4eab4fad2b571593b4666, type: 3}
-    volume: 0.268
+    volume: 0.802
     pitch: 1
     spatialBlend: 1
     loop: 0
@@ -8683,10 +8683,10 @@ MonoBehaviour:
   sirenAudio:
     name: Siren
     clip: {fileID: 8300000, guid: 7d4cf13a3e483954cb5e8171db8df11e, type: 3}
-    volume: 0.447
+    volume: 0.75
     pitch: 1
     spatialBlend: 1
-    loop: 0
+    loop: 1
     playOnAwake: 0
     preventOverlay: 0
     mixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
@@ -9314,7 +9314,7 @@ Transform:
   m_GameObject: {fileID: 2608087419021646248}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.492, z: 2.759}
+  m_LocalPosition: {x: -1.02, y: 1.492, z: 2.2050002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10478,12 +10478,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7398703652895487317}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.02, y: 1.587, z: 2.808}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1323923525705353668}
+  m_Father: {fileID: 5555576885081691056}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &5516574918623221584
 Transform:
@@ -10672,6 +10672,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4632786029900962039}
+  - {fileID: 5511948646042413825}
   - {fileID: 5931886757054701816}
   - {fileID: 2890434295443838130}
   - {fileID: 1323923525705353668}
@@ -11692,17 +11693,17 @@ MonoBehaviour:
     source: {fileID: 0}
   lightOffClip: {fileID: 8300000, guid: 1d47e99c27e293844be22c28ad3cc53f, type: 3}
   vestLightOffSoundName: LightOff
-  lightOffVolume: 0.05
+  lightOffVolume: 0.344
   lightOffWaitTime: 3
   generatorClip: {fileID: 8300000, guid: d793ecf55e38f7e498582dd0b26d1a4f, type: 3}
   vestGeneratorSoundName: Generator
-  generatorVolume: 0.06
+  generatorVolume: 0.349
   generatorToLightWaitTime: 4
   lightOnClip: {fileID: 8300000, guid: 334bb9e53acf9c44bbeaeb38213ac80a, type: 3}
   vestLightOnSoundName: LightOn
-  lightOnVolume: 0.273
+  lightOnVolume: 0.661
   random3DClip: {fileID: 8300000, guid: 044c028488e415344b0df08b015c98e4, type: 3}
-  random3DVolume: 0.462
+  random3DVolume: 0.719
   random3DMixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
   minRandomInterval: 10
   maxRandomInterval: 20
@@ -12543,6 +12544,7 @@ MonoBehaviour:
     preventOverlay: 0
     mixerGroup: {fileID: -563594623175838844, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
     source: {fileID: 0}
+  isAllowedSound: 1
   vestMixerGroup: {fileID: -563594623175838844, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
 --- !u!23 &6710578926768715162
 MeshRenderer:
@@ -13646,7 +13648,7 @@ GameObject:
   m_Layer: 0
   m_Name: AudioSpecialEvents
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1

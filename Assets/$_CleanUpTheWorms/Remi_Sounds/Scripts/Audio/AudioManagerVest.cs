@@ -9,6 +9,8 @@ public class AudioManagerVest : MonoBehaviour
     [Header("Global Vest Sounds")]
     public List<Sound> vestSounds;
 
+    public bool isAllowedSound = true;
+
     [Header("Vest Settings")]
     [SerializeField] private AudioMixerGroup vestMixerGroup;
 
@@ -46,7 +48,7 @@ public class AudioManagerVest : MonoBehaviour
 
     public void PlayVestSound(AudioClip clip, float volume = 1f)
     {
-        if (clip == null) return;
+        if (clip == null || !isAllowedSound) return;
 
         vestSource.clip = clip;
         vestSource.volume = volume;
@@ -56,6 +58,8 @@ public class AudioManagerVest : MonoBehaviour
 
     public void PlayGlobalVestSound(string name)
     {
+        if (!isAllowedSound) return;
+
         Sound s = vestSounds.Find(sound => sound.name == name);
         if (s == null) return;
 
