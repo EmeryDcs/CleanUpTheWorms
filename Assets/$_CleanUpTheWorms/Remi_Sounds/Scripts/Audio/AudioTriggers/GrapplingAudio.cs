@@ -8,6 +8,7 @@ public class GrapplingAudio : MonoBehaviour
     [SerializeField] private string telescopieVestName;
     [SerializeField] private float telescopieFadeInDuration = 0.5f;
     [SerializeField] private float telescopieFadeOutDuration = 0.5f;
+    [SerializeField] private GameObject tigeReference;
 
     [Header("Open/Close Graplin Settings")]
     [SerializeField] private Sound graplinOpenCloseAudio;
@@ -29,12 +30,34 @@ public class GrapplingAudio : MonoBehaviour
     private Coroutine graplinFade;
     private Coroutine holdingFade;
 
+    private PlayerInputSystem inputActions;
+
     private void Awake()
     {
+        inputActions = new PlayerInputSystem();
+        inputActions.Player.Enable();
+
         InitializeSound(telescopieAudio, "TelescopieAudioSource");
         InitializeSound(graplinOpenCloseAudio, "GraplinOpenCloseAudioSource");
         InitializeSound(clawGrabAudio, "ClawGrabAudioSource");
         InitializeSound(holdingAudio, "HoldingAudioSource");
+    }
+
+    private void Start()
+    {
+        if (tigeReference != null)
+        {
+            StartCoroutine(MonitorTelescopieState());
+        }
+        StartCoroutine(MonitorGrappleState());
+    }
+
+    private void OnDestroy()
+    {
+        if (inputActions != null)
+        {
+            inputActions.Player.Disable();
+        }
     }
 
     private void InitializeSound(Sound s, string childName)
@@ -59,6 +82,70 @@ public class GrapplingAudio : MonoBehaviour
             s.source.volume = 0f;
             s.source.Play();
             StartCoroutine(FadeIn(s.source, s.volume, 0.5f));
+        }
+    }
+
+    private IEnumerator MonitorTelescopieState()
+    {
+        Vector3 lastScale = tigeReference.transform.localScale;
+        bool isMoving = false;
+
+        while (true)
+        {
+            Vector3 currentScale = tigeReference.transform.localScale;
+            bool currentlyMoving = Vector3.Distance(currentScale, lastScale) > 0.001f;
+
+            if (currentlyMoving && !isMoving)
+            {
+                StartTelescopie();
+                isMoving = true;
+            }
+            else if (!currentlyMoving && isMoving)
+            {
+                StopTelescopie();
+                isMoving = false;
+            }
+
+            lastScale = currentScale;
+            yield return null;
+        }
+    }
+
+    private IEnumerator MonitorGrappleState()
+    {
+        yield return new WaitUntil(() => grab.Instance != null);
+
+        bool wasTriggerPressed = false;
+        GameObject lastGrabbedElm = null;
+
+        while (true)
+        {
+            float triggerValue = inputActions.Player.Grab.ReadValue<float>();
+            bool isTriggerPressed = triggerValue > 0f;
+
+            if (isTriggerPressed && !wasTriggerPressed)
+            {
+                StartOpenCloseGraplin();
+            }
+            else if (!isTriggerPressed && wasTriggerPressed)
+            {
+                StopOpenCloseGraplin();
+            }
+            wasTriggerPressed = isTriggerPressed;
+
+            GameObject currentGrabbedElm = grab.Instance.GetGrabbedElm();
+            if (currentGrabbedElm != null && lastGrabbedElm == null)
+            {
+                PlayClawGrab();
+                StartHolding();
+            }
+            else if (currentGrabbedElm == null && lastGrabbedElm != null)
+            {
+                StopHolding();
+            }
+            lastGrabbedElm = currentGrabbedElm;
+
+            yield return null;
         }
     }
 

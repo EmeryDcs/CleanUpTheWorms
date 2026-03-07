@@ -213,6 +213,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8537493101489839634, guid: 2f5907475b0810049a2f0b26e223da44, type: 3}
       insertIndex: -1
       addedObject: {fileID: 917422100}
+    - targetCorrespondingSourceObject: {fileID: 6973581206143155091, guid: 2f5907475b0810049a2f0b26e223da44, type: 3}
+      insertIndex: 0
+      addedObject: {fileID: 3171943583842882059}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 9110542115408674770, guid: 2f5907475b0810049a2f0b26e223da44, type: 3}
       insertIndex: -1
@@ -410,6 +413,8 @@ MonoBehaviour:
     preventOverlay: 0
     mixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
     source: {fileID: 0}
+  minSpeechInterval: 5
+  maxSpeechInterval: 15
   movementAudio:
     name: Movement
     clip: {fileID: 8300000, guid: b190b5c87f38d6948a3faba9b41522b5, type: 3}
@@ -702,6 +707,8 @@ MonoBehaviour:
     preventOverlay: 0
     mixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
     source: {fileID: 0}
+  minSpeechInterval: 5
+  maxSpeechInterval: 15
   movementAudio:
     name: Movement
     clip: {fileID: 8300000, guid: b190b5c87f38d6948a3faba9b41522b5, type: 3}
@@ -715,6 +722,11 @@ MonoBehaviour:
     source: {fileID: 0}
   movementFadeInDuration: 1
   movementFadeOutDuration: 1
+--- !u!1 &230051659 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8501674396973016560, guid: 2f5907475b0810049a2f0b26e223da44, type: 3}
+  m_PrefabInstance: {fileID: 1321038}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &273373067
 GameObject:
   m_ObjectHideFlags: 0
@@ -1076,6 +1088,8 @@ MonoBehaviour:
     preventOverlay: 0
     mixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
     source: {fileID: 0}
+  minSpeechInterval: 5
+  maxSpeechInterval: 15
   movementAudio:
     name: Movement
     clip: {fileID: 8300000, guid: b190b5c87f38d6948a3faba9b41522b5, type: 3}
@@ -1365,6 +1379,8 @@ MonoBehaviour:
     preventOverlay: 0
     mixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
     source: {fileID: 0}
+  minSpeechInterval: 5
+  maxSpeechInterval: 15
   movementAudio:
     name: Movement
     clip: {fileID: 8300000, guid: b190b5c87f38d6948a3faba9b41522b5, type: 3}
@@ -1601,6 +1617,8 @@ MonoBehaviour:
     preventOverlay: 0
     mixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
     source: {fileID: 0}
+  minSpeechInterval: 5
+  maxSpeechInterval: 15
   movementAudio:
     name: Movement
     clip: {fileID: 8300000, guid: b190b5c87f38d6948a3faba9b41522b5, type: 3}
@@ -2650,6 +2668,8 @@ MonoBehaviour:
     preventOverlay: 0
     mixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
     source: {fileID: 0}
+  minSpeechInterval: 5
+  maxSpeechInterval: 15
   movementAudio:
     name: Movement
     clip: {fileID: 8300000, guid: b190b5c87f38d6948a3faba9b41522b5, type: 3}
@@ -2746,6 +2766,8 @@ MonoBehaviour:
     preventOverlay: 0
     mixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
     source: {fileID: 0}
+  minSpeechInterval: 5
+  maxSpeechInterval: 15
   movementAudio:
     name: Movement
     clip: {fileID: 8300000, guid: b190b5c87f38d6948a3faba9b41522b5, type: 3}
@@ -2837,6 +2859,8 @@ MonoBehaviour:
     preventOverlay: 0
     mixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
     source: {fileID: 0}
+  minSpeechInterval: 5
+  maxSpeechInterval: 15
   movementAudio:
     name: Movement
     clip: {fileID: 8300000, guid: b190b5c87f38d6948a3faba9b41522b5, type: 3}
@@ -2928,6 +2952,8 @@ MonoBehaviour:
     preventOverlay: 0
     mixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
     source: {fileID: 0}
+  minSpeechInterval: 5
+  maxSpeechInterval: 15
   movementAudio:
     name: Movement
     clip: {fileID: 8300000, guid: b190b5c87f38d6948a3faba9b41522b5, type: 3}
@@ -2995,6 +3021,11 @@ MonoBehaviour:
   stateLevel1: {fileID: 1048932098}
   stateLevel2: {fileID: 536521960}
   ui: {fileID: 949063853}
+--- !u!4 &1509312302 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6973581206143155091, guid: 2f5907475b0810049a2f0b26e223da44, type: 3}
+  m_PrefabInstance: {fileID: 1321038}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1574552674
 GameObject:
   m_ObjectHideFlags: 0
@@ -3137,6 +3168,8 @@ MonoBehaviour:
     preventOverlay: 0
     mixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
     source: {fileID: 0}
+  minSpeechInterval: 5
+  maxSpeechInterval: 15
   movementAudio:
     name: Movement
     clip: {fileID: 8300000, guid: b190b5c87f38d6948a3faba9b41522b5, type: 3}
@@ -3716,6 +3749,8 @@ MonoBehaviour:
     preventOverlay: 0
     mixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
     source: {fileID: 0}
+  minSpeechInterval: 5
+  maxSpeechInterval: 15
   movementAudio:
     name: Movement
     clip: {fileID: 8300000, guid: b190b5c87f38d6948a3faba9b41522b5, type: 3}
@@ -5482,8 +5517,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 3171943583842882059}
-  - {fileID: 5541780382969375673}
   - {fileID: 1921940180824150420}
   m_Father: {fileID: 5555576885081691056}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8219,11 +8252,11 @@ Transform:
   m_GameObject: {fileID: 6083954076041962543}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.419, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1323923525705353668}
+  m_Father: {fileID: 1509312302}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3181457434518775483
 GameObject:
@@ -11549,12 +11582,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4444438238897475012}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.698, y: 0.597, z: -3.218}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1323923525705353668}
+  m_Father: {fileID: 5555576885081691056}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &5547168517782273163
 PrefabInstance:
@@ -11652,6 +11685,7 @@ Transform:
   m_Children:
   - {fileID: 4632786029900962039}
   - {fileID: 5511948646042413825}
+  - {fileID: 5541780382969375673}
   - {fileID: 5931886757054701816}
   - {fileID: 2890434295443838130}
   - {fileID: 1323923525705353668}
@@ -13281,13 +13315,14 @@ MonoBehaviour:
   telescopieVestName: Telescopie
   telescopieFadeInDuration: 0.7
   telescopieFadeOutDuration: 0.7
+  tigeReference: {fileID: 230051659}
   graplinOpenCloseAudio:
     name: OpenClose
     clip: {fileID: 8300000, guid: bb6096f77a14bbf4fa45d0db898799dc, type: 3}
     volume: 0.25
     pitch: 1
     spatialBlend: 0
-    loop: 0
+    loop: 1
     playOnAwake: 0
     preventOverlay: 0
     mixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
@@ -13742,6 +13777,8 @@ MonoBehaviour:
     preventOverlay: 0
     mixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
     source: {fileID: 0}
+  minSpeechInterval: 5
+  maxSpeechInterval: 15
   movementAudio:
     name: Movement
     clip: {fileID: 8300000, guid: b190b5c87f38d6948a3faba9b41522b5, type: 3}
