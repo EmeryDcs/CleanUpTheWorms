@@ -14,6 +14,10 @@ public class SplineCharacterManager : MonoBehaviour
     [Header("Offset Settings")]
     [SerializeField] private float startingOffset = 0f;
 
+    [Header("Randomization Settings")]
+    [SerializeField] private float minRandomDelay = 0f;
+    [SerializeField] private float maxRandomDelay = 1f;
+
     private SplineContainer splineContainer;
     private GameObject[] spawnedCharacters;
     private Coroutine spawnCoroutine;
@@ -50,8 +54,7 @@ public class SplineCharacterManager : MonoBehaviour
 
     private IEnumerator SpawnRoutine()
     {
-        float spawnDelay = completionTime / numberOfCharacters;
-        WaitForSeconds wait = new WaitForSeconds(spawnDelay);
+        float baseSpawnDelay = completionTime / numberOfCharacters;
 
         for (int i = 0; i < numberOfCharacters; i++)
         {
@@ -71,7 +74,8 @@ public class SplineCharacterManager : MonoBehaviour
                 Debug.LogWarning($"Character {i} doesn't have a SplineFollower component!");
             }
 
-            yield return wait;
+            float finalDelay = baseSpawnDelay + Random.Range(minRandomDelay, maxRandomDelay);
+            yield return new WaitForSeconds(finalDelay);
         }
     }
 
