@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4047841118729422024}
   - component: {fileID: 4183074328485138189}
   - component: {fileID: 8754640519423656497}
+  - component: {fileID: 2568011254261703083}
   m_Layer: 0
   m_Name: PF_Pickup Worm
   m_TagString: GrabbableElm
@@ -179,3 +180,15 @@ MonoBehaviour:
   wanderRadius: 10
   wanderInterval: 3
   movementSpeed: 0.125
+--- !u!114 &2568011254261703083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7750849145400553186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dee7cb4cf444a494390bb4b63479b7de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::S_TeleportIfFalling

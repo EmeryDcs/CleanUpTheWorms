@@ -5,7 +5,13 @@ public class S_VacuumObject : MonoBehaviour
 	private void OnTriggerEnter(Collider other)
 	{
 		if (grab.Instance.GetGrabbedElm() == null)
+		{
+			if (StateMachineGame.Instance.state == GameState.LEVEL1 && StateLevel1.Instance.currentTextToDisplay == StateLevel1TextRobot.AMELIORATION_PINCE)
+			{
+				StateLevel1.Instance.AmeliorationPince();
+			}
 			return;
+		}
 		if (other.CompareTag("GrabbableElm"))
 		{
 			switch (StateMachineGame.Instance.state)
