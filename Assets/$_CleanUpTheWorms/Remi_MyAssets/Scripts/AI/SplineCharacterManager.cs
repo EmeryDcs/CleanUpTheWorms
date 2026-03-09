@@ -17,6 +17,8 @@ public class SplineCharacterManager : MonoBehaviour
     [Header("Randomization Settings")]
     [SerializeField] private float minRandomDelay = 0f;
     [SerializeField] private float maxRandomDelay = 1f;
+    [SerializeField][Range(0f, 1f)] private float sizeRandomness = 0.2f;
+    [SerializeField][Range(0f, 1f)] private float speedRandomness = 0.2f;
 
     private SplineContainer splineContainer;
     private GameObject[] spawnedCharacters;
@@ -61,12 +63,18 @@ public class SplineCharacterManager : MonoBehaviour
             GameObject character = Instantiate(characterPrefab, transform);
             spawnedCharacters[i] = character;
 
+            float randomSizeFactor = Random.Range(1f - sizeRandomness, 1f + sizeRandomness);
+            character.transform.localScale = characterPrefab.transform.localScale * randomSizeFactor;
+
             SplineFollower follower = character.GetComponent<SplineFollower>();
 
             if (follower != null)
             {
                 follower.SetSplineContainer(splineContainer);
-                follower.SetCompletionTime(completionTime);
+
+                float randomTimeFactor = Random.Range(1f - speedRandomness, 1f + speedRandomness);
+                follower.SetCompletionTime(completionTime * randomTimeFactor);
+
                 follower.SetProgress(startingOffset);
             }
             else

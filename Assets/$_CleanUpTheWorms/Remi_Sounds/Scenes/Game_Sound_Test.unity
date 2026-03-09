@@ -376,11 +376,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SplineCharacterManager
   characterPrefab: {fileID: 639621153070463812, guid: 4000eb3d97526ab469fda181ce1970ac, type: 3}
-  numberOfCharacters: 50
+  numberOfCharacters: 30
   completionTime: 10
   startingOffset: 0
   minRandomDelay: 0
   maxRandomDelay: 1
+  sizeRandomness: 0.58
+  speedRandomness: 0.2
 --- !u!114 &16965610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -452,21 +454,21 @@ MonoBehaviour:
       TangentIn:
         x: -0
         y: -0
-        z: -1.1886011
+        z: -1.1882817
       TangentOut:
         x: 0
         y: 0
-        z: 2.4066463
+        z: 2.411181
       Rotation:
         value:
-          x: -0.19906662
-          y: 0.7523335
-          z: -0.6070109
-          w: -0.1609491
+          x: -0.18445039
+          y: 0.75601536
+          z: -0.60202366
+          w: -0.17884696
     - Position:
-        x: -2.582088
+        x: -3.63
         y: -15.13
-        z: -8.631344
+        z: -8.63134
       TangentIn:
         x: 0
         y: 0
@@ -474,17 +476,17 @@ MonoBehaviour:
       TangentOut:
         x: 0
         y: 0
-        z: 5.1297946
+        z: 5.2086163
       Rotation:
         value:
-          x: 0.037706867
-          y: 0.9946803
-          z: -0.08324971
-          w: 0.04752745
+          x: 0.049488407
+          y: 0.9904212
+          z: -0.08879384
+          w: -0.09344737
     - Position:
-        x: -1.8220882
-        y: -15.32
-        z: -28.511345
+        x: -6.4
+        y: -15.35
+        z: -28.52134
       TangentIn:
         x: 0
         y: 0
@@ -949,11 +951,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SplineCharacterManager
   characterPrefab: {fileID: 639621153070463812, guid: 4000eb3d97526ab469fda181ce1970ac, type: 3}
-  numberOfCharacters: 50
+  numberOfCharacters: 30
   completionTime: 10
   startingOffset: 0
   minRandomDelay: 0
   maxRandomDelay: 1
+  sizeRandomness: 0.58
+  speedRandomness: 0.2
 --- !u!114 &235313670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1025,21 +1029,21 @@ MonoBehaviour:
       TangentIn:
         x: -0
         y: -0
-        z: -1.1886011
+        z: -1.1869094
       TangentOut:
         x: 0
         y: 0
-        z: 2.4066463
+        z: 2.4229379
       Rotation:
         value:
-          x: -0.19906662
-          y: 0.7523335
-          z: -0.6070109
-          w: -0.1609491
+          x: -0.16995381
+          y: 0.7597859
+          z: -0.59603715
+          w: -0.19642037
     - Position:
-        x: -2.582088
-        y: -15.13
-        z: -8.631344
+        x: -4.6899996
+        y: -15.11
+        z: -8.661341
       TangentIn:
         x: 0
         y: 0
@@ -1050,14 +1054,14 @@ MonoBehaviour:
         z: 5.1297946
       Rotation:
         value:
-          x: 0.037706867
+          x: 0.03770694
           y: 0.9946803
           z: -0.08324971
-          w: 0.04752745
+          w: 0.047527373
     - Position:
-        x: -1.8220882
+        x: -3.6699996
         y: -15.32
-        z: -28.511345
+        z: -28.511341
       TangentIn:
         x: 0
         y: 0
@@ -1325,11 +1329,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SplineCharacterManager
   characterPrefab: {fileID: 639621153070463812, guid: 4000eb3d97526ab469fda181ce1970ac, type: 3}
-  numberOfCharacters: 50
+  numberOfCharacters: 30
   completionTime: 10
   startingOffset: 0
   minRandomDelay: 0
   maxRandomDelay: 1
+  sizeRandomness: 0.58
+  speedRandomness: 0.2
 --- !u!114 &351818258
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1458,6 +1464,219 @@ MonoBehaviour:
     - Mode: 3
       Tension: 0.5
     - Mode: 1
+      Tension: 0.5
+    m_Closed: 0
+    m_IntData:
+      m_Data: []
+    m_FloatData:
+      m_Data: []
+    m_Float4Data:
+      m_Data: []
+    m_ObjectData:
+      m_Data: []
+  m_Knots:
+    m_KnotsLink: []
+--- !u!1 &356129548
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 356129549}
+  - component: {fileID: 356129551}
+  - component: {fileID: 356129550}
+  m_Layer: 0
+  m_Name: Spline (19)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &356129549
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 356129548}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.25176775, z: -0, w: 0.9677877}
+  m_LocalPosition: {x: -5.5, y: 1.21, z: 1.88}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1508444902}
+  m_LocalEulerAnglesHint: {x: 0, y: 29.164, z: 0}
+--- !u!114 &356129550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 356129548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db57aecee5a504342b3b12c408775ecb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SplineCharacterManager
+  characterPrefab: {fileID: 639621153070463812, guid: 4000eb3d97526ab469fda181ce1970ac, type: 3}
+  numberOfCharacters: 15
+  completionTime: 10
+  startingOffset: 0
+  minRandomDelay: 0
+  maxRandomDelay: 1
+  sizeRandomness: 0.58
+  speedRandomness: 0.2
+--- !u!114 &356129551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 356129548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dab5c7d4c32e743048dfca98e2d5914f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Splines::UnityEngine.Splines.SplineContainer
+  m_Spline:
+    m_EditModeType: 1
+    m_Knots: []
+    m_MetaData: []
+    m_Closed: 0
+    m_IntData:
+      m_Data: []
+    m_FloatData:
+      m_Data: []
+    m_Float4Data:
+      m_Data: []
+    m_ObjectData:
+      m_Data: []
+  m_Splines:
+  - m_EditModeType: 1
+    m_Knots:
+    - Position:
+        x: -2.162088
+        y: -7.9
+        z: -0.0013427734
+      TangentIn:
+        x: 0
+        y: 0
+        z: -0.78078675
+      TangentOut:
+        x: 0
+        y: 0
+        z: 0.78078675
+      Rotation:
+        value:
+          x: -1.3550771e-12
+          y: 0.9999516
+          z: -1.3330907e-14
+          w: 0.009837236
+    - Position:
+        x: -2.5963287
+        y: -2.81
+        z: -5.033327
+      TangentIn:
+        x: -0
+        y: -0
+        z: -1.354056
+      TangentOut:
+        x: 0
+        y: 0
+        z: 0.7897781
+      Rotation:
+        value:
+          x: -0.21609357
+          y: 0.97493577
+          z: 0.051835332
+          w: -0.0108081475
+    - Position:
+        x: -2.6116943
+        y: -4.1800003
+        z: -7.051693
+      TangentIn:
+        x: 0
+        y: 0
+        z: -0.73544693
+      TangentOut:
+        x: 0
+        y: 0
+        z: 0.34244594
+      Rotation:
+        value:
+          x: -0.12279212
+          y: 0.991521
+          z: -0.042404007
+          w: -0.0031617263
+    - Position:
+        x: -2.657177
+        y: -4.0699997
+        z: -10.793179
+      TangentIn:
+        x: -0.0000000055879354
+        y: -0.0000000037252903
+        z: -1.8009009
+      TangentOut:
+        x: -0.0000000018626451
+        y: -9.313226e-10
+        z: 1.8009019
+      Rotation:
+        value:
+          x: 0.053881112
+          y: 0.9985388
+          z: 0.0021780862
+          w: -0.0035130912
+    - Position:
+        x: -2.5845642
+        y: -2.98
+        z: -15.745636
+      TangentIn:
+        x: 0
+        y: 0
+        z: -1.3504256
+      TangentOut:
+        x: 0
+        y: 0
+        z: 4.203602
+      Rotation:
+        value:
+          x: 0.2207507
+          y: 0.9363919
+          z: 0.27066764
+          w: -0.034327477
+    - Position:
+        x: -0.33742332
+        y: 5.281
+        z: -25.622728
+      TangentIn:
+        x: 0
+        y: 0
+        z: -6.9724865
+      TangentOut:
+        x: 0
+        y: 0
+        z: 6.9724865
+      Rotation:
+        value:
+          x: -0.056073483
+          y: 0.9248429
+          z: 0.36770767
+          w: 0.07945181
+    m_MetaData:
+    - Mode: 2
+      Tension: 0.5
+    - Mode: 0
+      Tension: 0.5
+    - Mode: 3
+      Tension: 0.5
+    - Mode: 4
+      Tension: 0.5
+    - Mode: 3
+      Tension: 0.5
+    - Mode: 2
       Tension: 0.5
     m_Closed: 0
     m_IntData:
@@ -1763,11 +1982,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SplineCharacterManager
   characterPrefab: {fileID: 639621153070463812, guid: 4000eb3d97526ab469fda181ce1970ac, type: 3}
-  numberOfCharacters: 50
+  numberOfCharacters: 19
   completionTime: 10
   startingOffset: 0
   minRandomDelay: 0
   maxRandomDelay: 1
+  sizeRandomness: 0.58
+  speedRandomness: 0.2
 --- !u!114 &585682210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1861,17 +2082,17 @@ MonoBehaviour:
       TangentOut:
         x: 0
         y: 0
-        z: 5.1297946
+        z: 5.722529
       Rotation:
         value:
-          x: 0.037706867
-          y: 0.9946803
-          z: -0.08324971
-          w: 0.04752745
+          x: 0.021736145
+          y: 0.96938485
+          z: -0.071642056
+          w: 0.23385464
     - Position:
-        x: -1.8220882
+        x: 7.597601
         y: -15.32
-        z: -28.511345
+        z: -28.512169
       TangentIn:
         x: 0
         y: 0
@@ -1969,11 +2190,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SplineCharacterManager
   characterPrefab: {fileID: 639621153070463812, guid: 4000eb3d97526ab469fda181ce1970ac, type: 3}
-  numberOfCharacters: 50
+  numberOfCharacters: 21
   completionTime: 10
   startingOffset: 0
   minRandomDelay: 0
   maxRandomDelay: 1
+  sizeRandomness: 0.58
+  speedRandomness: 0.2
 --- !u!114 &638148277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2045,21 +2268,21 @@ MonoBehaviour:
       TangentIn:
         x: -0
         y: -0
-        z: -1.1886011
+        z: -1.1871328
       TangentOut:
         x: 0
         y: 0
-        z: 2.4066463
+        z: 2.4194443
       Rotation:
         value:
-          x: -0.19906662
-          y: 0.7523335
-          z: -0.6070109
-          w: -0.1609491
+          x: -0.22304547
+          y: 0.7455006
+          z: -0.6142943
+          w: -0.13085102
     - Position:
-        x: -2.582088
+        x: -0.83000004
         y: -15.13
-        z: -8.631344
+        z: -8.63134
       TangentIn:
         x: 0
         y: 0
@@ -2070,14 +2293,14 @@ MonoBehaviour:
         z: 5.1297946
       Rotation:
         value:
-          x: 0.037706867
+          x: 0.03770694
           y: 0.9946803
           z: -0.08324971
-          w: 0.04752745
+          w: 0.047527373
     - Position:
-        x: -1.8220882
+        x: -0.07000017
         y: -15.32
-        z: -28.511345
+        z: -28.511341
       TangentIn:
         x: 0
         y: 0
@@ -2150,11 +2373,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SplineCharacterManager
   characterPrefab: {fileID: 639621153070463812, guid: 4000eb3d97526ab469fda181ce1970ac, type: 3}
-  numberOfCharacters: 50
+  numberOfCharacters: 15
   completionTime: 10
   startingOffset: 0
   minRandomDelay: 0
   maxRandomDelay: 1
+  sizeRandomness: 0.58
+  speedRandomness: 0.2
 --- !u!114 &658362729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2248,17 +2473,17 @@ MonoBehaviour:
       TangentOut:
         x: 0
         y: 0
-        z: 5.1297946
+        z: 7.02508
       Rotation:
         value:
-          x: 0.037706867
-          y: 0.9946803
-          z: -0.08324971
-          w: 0.04752745
+          x: 0.06717083
+          y: 0.9240723
+          z: -0.09310844
+          w: -0.36456734
     - Position:
-        x: -1.8220882
+        x: -14.41931
         y: -15.32
-        z: -28.511345
+        z: -28.513596
       TangentIn:
         x: 0
         y: 0
@@ -2341,11 +2566,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SplineCharacterManager
   characterPrefab: {fileID: 639621153070463812, guid: 4000eb3d97526ab469fda181ce1970ac, type: 3}
-  numberOfCharacters: 50
+  numberOfCharacters: 30
   completionTime: 10
   startingOffset: 0
   minRandomDelay: 0
   maxRandomDelay: 1
+  sizeRandomness: 0.58
+  speedRandomness: 0.2
 --- !u!114 &716531045
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2399,35 +2626,35 @@ MonoBehaviour:
       TangentIn:
         x: -0
         y: -0
-        z: -1.0728754
+        z: -1.1163079
       TangentOut:
         x: 0
         y: 0
-        z: 0.5898311
+        z: 0.6253409
       Rotation:
         value:
-          x: -0.21780312
-          y: 0.9670645
-          z: -0.12012664
-          w: -0.05401362
+          x: -0.19824056
+          y: 0.96171093
+          z: -0.076269984
+          w: -0.17319243
     - Position:
-        x: -2.6120882
+        x: -3.3505325
         y: -4.3
-        z: -7.051344
+        z: -7.0485096
       TangentIn:
         x: -0
         y: -0
-        z: -1.1886011
+        z: -1.208947
       TangentOut:
         x: 0
         y: 0
-        z: 2.4066463
+        z: 2.405305
       Rotation:
         value:
-          x: -0.19906662
-          y: 0.7523335
-          z: -0.6070109
-          w: -0.1609491
+          x: -0.1678821
+          y: 0.75903535
+          z: -0.59672904
+          w: -0.19898571
     - Position:
         x: -2.582088
         y: -15.13
@@ -2777,11 +3004,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SplineCharacterManager
   characterPrefab: {fileID: 639621153070463812, guid: 4000eb3d97526ab469fda181ce1970ac, type: 3}
-  numberOfCharacters: 50
+  numberOfCharacters: 30
   completionTime: 10
   startingOffset: 0
   minRandomDelay: 0
   maxRandomDelay: 1
+  sizeRandomness: 0.58
+  speedRandomness: 0.2
 --- !u!114 &798223214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2835,35 +3064,35 @@ MonoBehaviour:
       TangentIn:
         x: -0
         y: -0
-        z: -1.0728754
+        z: -1.0776122
       TangentOut:
         x: 0
         y: 0
-        z: 0.5898311
+        z: 0.59760386
       Rotation:
         value:
-          x: -0.21780312
-          y: 0.9670645
-          z: -0.12012664
-          w: -0.05401362
+          x: -0.22792947
+          y: 0.9638196
+          z: -0.13322233
+          w: 0.036764164
     - Position:
-        x: -2.6120882
+        x: -2.1
         y: -4.3
-        z: -7.051344
+        z: -7.05134
       TangentIn:
         x: -0
         y: -0
-        z: -1.1886011
+        z: -1.1982056
       TangentOut:
         x: 0
         y: 0
-        z: 2.4066463
+        z: 2.4062712
       Rotation:
         value:
-          x: -0.19906662
-          y: 0.7523335
-          z: -0.6070109
-          w: -0.1609491
+          x: -0.2204646
+          y: 0.74598193
+          z: -0.61399776
+          w: -0.1338394
     - Position:
         x: -2.582088
         y: -15.13
@@ -2875,17 +3104,17 @@ MonoBehaviour:
       TangentOut:
         x: 0
         y: 0
-        z: 5.1297946
+        z: 5.1505537
       Rotation:
         value:
-          x: 0.037706867
-          y: 0.9946803
-          z: -0.08324971
-          w: 0.04752745
+          x: 0.04665877
+          y: 0.9933053
+          z: -0.08760212
+          w: -0.059103314
     - Position:
-        x: -1.8220882
+        x: -4.8199997
         y: -15.32
-        z: -28.511345
+        z: -28.511341
       TangentIn:
         x: 0
         y: 0
@@ -3113,11 +3342,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SplineCharacterManager
   characterPrefab: {fileID: 639621153070463812, guid: 4000eb3d97526ab469fda181ce1970ac, type: 3}
-  numberOfCharacters: 50
+  numberOfCharacters: 30
   completionTime: 10
   startingOffset: 0
   minRandomDelay: 0
   maxRandomDelay: 1
+  sizeRandomness: 0.58
+  speedRandomness: 0.2
 --- !u!114 &836977297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3189,21 +3420,21 @@ MonoBehaviour:
       TangentIn:
         x: -0
         y: -0
-        z: -1.1886011
+        z: -1.1881772
       TangentOut:
         x: 0
         y: 0
-        z: 2.4066463
+        z: 2.4098587
       Rotation:
         value:
-          x: -0.19906662
-          y: 0.7523335
-          z: -0.6070109
-          w: -0.1609491
+          x: -0.21108417
+          y: 0.74903345
+          z: -0.6108272
+          w: -0.14588518
     - Position:
-        x: -2.582088
+        x: -1.71
         y: -15.13
-        z: -8.631344
+        z: -8.63134
       TangentIn:
         x: 0
         y: 0
@@ -3214,14 +3445,14 @@ MonoBehaviour:
         z: 5.1297946
       Rotation:
         value:
-          x: 0.037706867
+          x: 0.03770694
           y: 0.9946803
           z: -0.08324971
-          w: 0.04752745
+          w: 0.047527373
     - Position:
-        x: -1.8220882
+        x: 2.98
         y: -15.32
-        z: -28.511345
+        z: -28.511341
       TangentIn:
         x: 0
         y: 0
@@ -3751,6 +3982,219 @@ MonoBehaviour:
   m_Bidirectional: 1
   m_AutoUpdatePosition: 0
   m_Area: 2
+--- !u!1 &1014771158
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1014771159}
+  - component: {fileID: 1014771161}
+  - component: {fileID: 1014771160}
+  m_Layer: 0
+  m_Name: Spline (20)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1014771159
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1014771158}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.1943049, z: -0, w: 0.98094124}
+  m_LocalPosition: {x: 21.79, y: 1.39, z: 1.75}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1508444902}
+  m_LocalEulerAnglesHint: {x: 0, y: -22.408, z: 0}
+--- !u!114 &1014771160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1014771158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db57aecee5a504342b3b12c408775ecb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SplineCharacterManager
+  characterPrefab: {fileID: 639621153070463812, guid: 4000eb3d97526ab469fda181ce1970ac, type: 3}
+  numberOfCharacters: 15
+  completionTime: 10
+  startingOffset: 0
+  minRandomDelay: 0
+  maxRandomDelay: 1
+  sizeRandomness: 0.58
+  speedRandomness: 0.2
+--- !u!114 &1014771161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1014771158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dab5c7d4c32e743048dfca98e2d5914f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Splines::UnityEngine.Splines.SplineContainer
+  m_Spline:
+    m_EditModeType: 1
+    m_Knots: []
+    m_MetaData: []
+    m_Closed: 0
+    m_IntData:
+      m_Data: []
+    m_FloatData:
+      m_Data: []
+    m_Float4Data:
+      m_Data: []
+    m_ObjectData:
+      m_Data: []
+  m_Splines:
+  - m_EditModeType: 1
+    m_Knots:
+    - Position:
+        x: -2.162088
+        y: -7.9
+        z: -0.0013427734
+      TangentIn:
+        x: 0
+        y: 0
+        z: -0.78078675
+      TangentOut:
+        x: 0
+        y: 0
+        z: 0.78078675
+      Rotation:
+        value:
+          x: -1.3550771e-12
+          y: 0.9999516
+          z: -1.3330907e-14
+          w: 0.009837236
+    - Position:
+        x: -2.5963287
+        y: -2.81
+        z: -5.033327
+      TangentIn:
+        x: -0
+        y: -0
+        z: -1.354056
+      TangentOut:
+        x: 0
+        y: 0
+        z: 0.7897781
+      Rotation:
+        value:
+          x: -0.21609357
+          y: 0.97493577
+          z: 0.051835332
+          w: -0.0108081475
+    - Position:
+        x: -2.6116943
+        y: -4.1800003
+        z: -7.051693
+      TangentIn:
+        x: 0
+        y: 0
+        z: -0.73544693
+      TangentOut:
+        x: 0
+        y: 0
+        z: 0.34244594
+      Rotation:
+        value:
+          x: -0.12279212
+          y: 0.991521
+          z: -0.042404007
+          w: -0.0031617263
+    - Position:
+        x: -2.657177
+        y: -4.0699997
+        z: -10.793179
+      TangentIn:
+        x: -0.0000000055879354
+        y: -0.0000000037252903
+        z: -1.8009009
+      TangentOut:
+        x: -0.0000000018626451
+        y: -9.313226e-10
+        z: 1.8009019
+      Rotation:
+        value:
+          x: 0.053881112
+          y: 0.9985388
+          z: 0.0021780862
+          w: -0.0035130912
+    - Position:
+        x: -2.5845642
+        y: -2.98
+        z: -15.745636
+      TangentIn:
+        x: 0
+        y: 0
+        z: -1.3504256
+      TangentOut:
+        x: 0
+        y: 0
+        z: 4.203602
+      Rotation:
+        value:
+          x: 0.2207507
+          y: 0.9363919
+          z: 0.27066764
+          w: -0.034327477
+    - Position:
+        x: -0.33742332
+        y: 5.281
+        z: -25.622728
+      TangentIn:
+        x: 0
+        y: 0
+        z: -6.9724865
+      TangentOut:
+        x: 0
+        y: 0
+        z: 6.9724865
+      Rotation:
+        value:
+          x: -0.056073483
+          y: 0.9248429
+          z: 0.36770767
+          w: 0.07945181
+    m_MetaData:
+    - Mode: 2
+      Tension: 0.5
+    - Mode: 0
+      Tension: 0.5
+    - Mode: 3
+      Tension: 0.5
+    - Mode: 4
+      Tension: 0.5
+    - Mode: 3
+      Tension: 0.5
+    - Mode: 2
+      Tension: 0.5
+    m_Closed: 0
+    m_IntData:
+      m_Data: []
+    m_FloatData:
+      m_Data: []
+    m_Float4Data:
+      m_Data: []
+    m_ObjectData:
+      m_Data: []
+  m_Knots:
+    m_KnotsLink: []
 --- !u!4 &1024115387 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8537493101489839634, guid: 2f5907475b0810049a2f0b26e223da44, type: 3}
@@ -4433,11 +4877,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SplineCharacterManager
   characterPrefab: {fileID: 639621153070463812, guid: 4000eb3d97526ab469fda181ce1970ac, type: 3}
-  numberOfCharacters: 50
+  numberOfCharacters: 30
   completionTime: 10
   startingOffset: 0
   minRandomDelay: 0
   maxRandomDelay: 1
+  sizeRandomness: 0.58
+  speedRandomness: 0.2
 --- !u!114 &1310814608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4491,35 +4937,35 @@ MonoBehaviour:
       TangentIn:
         x: -0
         y: -0
-        z: -1.0728754
+        z: -1.0741826
       TangentOut:
         x: 0
         y: 0
-        z: 0.5898311
+        z: 0.59455985
       Rotation:
         value:
-          x: -0.21780312
-          y: 0.9670645
-          z: -0.12012664
-          w: -0.05401362
+          x: -0.2274733
+          y: 0.96425754
+          z: -0.13305537
+          w: 0.027560616
     - Position:
-        x: -2.6120882
+        x: -2.152276
         y: -4.3
-        z: -7.051344
+        z: -7.0468235
       TangentIn:
         x: -0
         y: -0
-        z: -1.1886011
+        z: -1.195977
       TangentOut:
         x: 0
         y: 0
-        z: 2.4066463
+        z: 2.406242
       Rotation:
         value:
-          x: -0.19906662
-          y: 0.7523335
-          z: -0.6070109
-          w: -0.1609491
+          x: -0.21834844
+          y: 0.74647635
+          z: -0.61354226
+          w: -0.13661242
     - Position:
         x: -2.582088
         y: -15.13
@@ -4639,11 +5085,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SplineCharacterManager
   characterPrefab: {fileID: 639621153070463812, guid: 4000eb3d97526ab469fda181ce1970ac, type: 3}
-  numberOfCharacters: 50
+  numberOfCharacters: 30
   completionTime: 10
   startingOffset: 0
   minRandomDelay: 0
   maxRandomDelay: 1
+  sizeRandomness: 0.58
+  speedRandomness: 0.2
 --- !u!114 &1319936262
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4737,17 +5185,17 @@ MonoBehaviour:
       TangentOut:
         x: 0
         y: 0
-        z: 5.1297946
+        z: 5.1255345
       Rotation:
         value:
-          x: 0.037706867
-          y: 0.9946803
-          z: -0.08324971
-          w: 0.04752745
+          x: 0.05111057
+          y: 0.9875318
+          z: -0.08914444
+          w: -0.119256385
     - Position:
-        x: -1.8220882
-        y: -15.32
-        z: -28.511345
+        x: -8.285973
+        y: -15.34
+        z: -28.512794
       TangentIn:
         x: 0
         y: 0
@@ -5165,6 +5613,8 @@ Transform:
   - {fileID: 1787328658}
   - {fileID: 1796708086}
   - {fileID: 585682211}
+  - {fileID: 356129549}
+  - {fileID: 1014771159}
   - {fileID: 1736473954}
   - {fileID: 716531046}
   - {fileID: 658362730}
@@ -5447,11 +5897,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SplineCharacterManager
   characterPrefab: {fileID: 639621153070463812, guid: 4000eb3d97526ab469fda181ce1970ac, type: 3}
-  numberOfCharacters: 50
+  numberOfCharacters: 20
   completionTime: 10
   startingOffset: 0
   minRandomDelay: 0
   maxRandomDelay: 1
+  sizeRandomness: 0.58
+  speedRandomness: 0.2
 --- !u!114 &1736473953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5523,21 +5975,21 @@ MonoBehaviour:
       TangentIn:
         x: -0
         y: -0
-        z: -1.1886011
+        z: -1.1853662
       TangentOut:
         x: 0
         y: 0
-        z: 2.4066463
+        z: 2.4443173
       Rotation:
         value:
-          x: -0.19906662
-          y: 0.7523335
-          z: -0.6070109
-          w: -0.1609491
+          x: -0.157397
+          y: 0.76194096
+          z: -0.5915791
+          w: -0.21143861
     - Position:
-        x: -2.582088
+        x: -5.6229134
         y: -15.13
-        z: -8.631344
+        z: -8.634819
       TangentIn:
         x: 0
         y: 0
@@ -5548,14 +6000,14 @@ MonoBehaviour:
         z: 5.1297946
       Rotation:
         value:
-          x: 0.037706867
+          x: 0.03770694
           y: 0.9946803
           z: -0.08324971
-          w: 0.04752745
+          w: 0.047527373
     - Position:
-        x: -1.8220882
+        x: -6.366809
         y: -15.32
-        z: -28.511345
+        z: -28.515089
       TangentIn:
         x: 0
         y: 0
@@ -5638,11 +6090,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SplineCharacterManager
   characterPrefab: {fileID: 639621153070463812, guid: 4000eb3d97526ab469fda181ce1970ac, type: 3}
-  numberOfCharacters: 50
+  numberOfCharacters: 30
   completionTime: 10
   startingOffset: 0
   minRandomDelay: 0
   maxRandomDelay: 1
+  sizeRandomness: 0.58
+  speedRandomness: 0.2
 --- !u!114 &1787328657
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5696,35 +6150,35 @@ MonoBehaviour:
       TangentIn:
         x: -0
         y: -0
-        z: -1.0728754
+        z: -1.1143678
       TangentOut:
         x: 0
         y: 0
-        z: 0.5898311
+        z: 0.62342787
       Rotation:
         value:
-          x: -0.21780312
-          y: 0.9670645
-          z: -0.12012664
-          w: -0.05401362
+          x: -0.19879335
+          y: 0.96223783
+          z: -0.07837965
+          w: -0.16863056
     - Position:
-        x: -2.6120882
+        x: -3.3200002
         y: -4.3
-        z: -7.051344
+        z: -7.05134
       TangentIn:
         x: -0
         y: -0
-        z: -1.1886011
+        z: -1.2075669
       TangentOut:
         x: 0
         y: 0
-        z: 2.4066463
+        z: 2.4054682
       Rotation:
         value:
-          x: -0.19906662
-          y: 0.7523335
-          z: -0.6070109
-          w: -0.1609491
+          x: -0.1691058
+          y: 0.75893986
+          z: -0.5970207
+          w: -0.19743338
     - Position:
         x: -2.582088
         y: -15.13
@@ -5736,17 +6190,17 @@ MonoBehaviour:
       TangentOut:
         x: 0
         y: 0
-        z: 5.1297946
+        z: 5.606829
       Rotation:
         value:
-          x: 0.037706867
-          y: 0.9946803
-          z: -0.08324971
-          w: 0.04752745
+          x: 0.057902545
+          y: 0.9724708
+          z: -0.09186829
+          w: -0.20617455
     - Position:
-        x: -1.8220882
+        x: -6.98
         y: -15.32
-        z: -28.511345
+        z: -28.511341
       TangentIn:
         x: 0
         y: 0
@@ -5829,11 +6283,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SplineCharacterManager
   characterPrefab: {fileID: 639621153070463812, guid: 4000eb3d97526ab469fda181ce1970ac, type: 3}
-  numberOfCharacters: 50
+  numberOfCharacters: 30
   completionTime: 10
   startingOffset: 0
   minRandomDelay: 0
   maxRandomDelay: 1
+  sizeRandomness: 0.58
+  speedRandomness: 0.2
 --- !u!114 &1793312555
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6020,11 +6476,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SplineCharacterManager
   characterPrefab: {fileID: 639621153070463812, guid: 4000eb3d97526ab469fda181ce1970ac, type: 3}
-  numberOfCharacters: 50
+  numberOfCharacters: 30
   completionTime: 10
   startingOffset: 0
   minRandomDelay: 0
   maxRandomDelay: 1
+  sizeRandomness: 0.58
+  speedRandomness: 0.2
 --- !u!114 &1796708085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6078,39 +6536,39 @@ MonoBehaviour:
       TangentIn:
         x: -0
         y: -0
-        z: -1.0728754
+        z: -1.091772
       TangentOut:
         x: 0
         y: 0
-        z: 0.5898311
+        z: 0.6044936
       Rotation:
         value:
-          x: -0.21780312
-          y: 0.9670645
-          z: -0.12012664
-          w: -0.05401362
+          x: -0.20525351
+          y: 0.96523774
+          z: -0.09647855
+          w: -0.12991968
     - Position:
-        x: -2.6120882
+        x: -3.062276
         y: -4.3
-        z: -7.051344
+        z: -7.046934
       TangentIn:
         x: -0
         y: -0
-        z: -1.1886011
+        z: -1.1908875
       TangentOut:
         x: 0
         y: 0
-        z: 2.4066463
+        z: 2.404623
       Rotation:
         value:
-          x: -0.19906662
-          y: 0.7523335
-          z: -0.6070109
-          w: -0.1609491
+          x: -0.19294778
+          y: 0.7536569
+          z: -0.6053758
+          w: -0.16820344
     - Position:
-        x: -2.582088
+        x: -1.6199741
         y: -15.13
-        z: -8.631344
+        z: -8.631571
       TangentIn:
         x: 0
         y: 0
@@ -6121,14 +6579,14 @@ MonoBehaviour:
         z: 5.1297946
       Rotation:
         value:
-          x: 0.037706867
+          x: 0.03770694
           y: 0.9946803
           z: -0.08324971
-          w: 0.04752745
+          w: 0.047527373
     - Position:
-        x: -1.8220882
+        x: -0.8603878
         y: -15.32
-        z: -28.511345
+        z: -28.507286
       TangentIn:
         x: 0
         y: 0
@@ -6226,11 +6684,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SplineCharacterManager
   characterPrefab: {fileID: 639621153070463812, guid: 4000eb3d97526ab469fda181ce1970ac, type: 3}
-  numberOfCharacters: 50
+  numberOfCharacters: 20
   completionTime: 10
   startingOffset: 0
   minRandomDelay: 0
   maxRandomDelay: 1
+  sizeRandomness: 0.58
+  speedRandomness: 0.2
 --- !u!114 &1804073352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6284,35 +6744,35 @@ MonoBehaviour:
       TangentIn:
         x: -0
         y: -0
-        z: -1.0728754
+        z: -1.0892378
       TangentOut:
         x: 0
         y: 0
-        z: 0.5898311
+        z: 0.6102251
       Rotation:
         value:
-          x: -0.21780312
-          y: 0.9670645
-          z: -0.12012664
-          w: -0.05401362
+          x: -0.23379925
+          y: 0.95975107
+          z: -0.13413629
+          w: 0.07888722
     - Position:
-        x: -2.6120882
+        x: -1.8523293
         y: -4.3
-        z: -7.051344
+        z: -7.0488358
       TangentIn:
         x: -0
         y: -0
-        z: -1.1886011
+        z: -1.2093737
       TangentOut:
         x: 0
         y: 0
-        z: 2.4066463
+        z: 2.4056673
       Rotation:
         value:
-          x: -0.19906662
-          y: 0.7523335
-          z: -0.6070109
-          w: -0.1609491
+          x: -0.23027384
+          y: 0.74248666
+          z: -0.6171751
+          w: -0.12158283
     - Position:
         x: -2.582088
         y: -15.13
@@ -6696,11 +7156,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SplineCharacterManager
   characterPrefab: {fileID: 639621153070463812, guid: 4000eb3d97526ab469fda181ce1970ac, type: 3}
-  numberOfCharacters: 50
+  numberOfCharacters: 30
   completionTime: 10
   startingOffset: 0
   minRandomDelay: 0
   maxRandomDelay: 1
+  sizeRandomness: 0.58
+  speedRandomness: 0.2
 --- !u!1 &1824967327
 GameObject:
   m_ObjectHideFlags: 0
@@ -7107,11 +7569,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SplineCharacterManager
   characterPrefab: {fileID: 639621153070463812, guid: 4000eb3d97526ab469fda181ce1970ac, type: 3}
-  numberOfCharacters: 50
+  numberOfCharacters: 12
   completionTime: 10
   startingOffset: 0
   minRandomDelay: 0
   maxRandomDelay: 1
+  sizeRandomness: 0.58
+  speedRandomness: 0.2
 --- !u!114 &1929448682
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7487,11 +7951,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SplineCharacterManager
   characterPrefab: {fileID: 639621153070463812, guid: 4000eb3d97526ab469fda181ce1970ac, type: 3}
-  numberOfCharacters: 50
+  numberOfCharacters: 30
   completionTime: 10
   startingOffset: 0
   minRandomDelay: 0
   maxRandomDelay: 1
+  sizeRandomness: 0.58
+  speedRandomness: 0.2
 --- !u!114 &2101115464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17096,6 +17562,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AudioManagerVest
   isHapticActive: 1
+  currentlyPlayingSound: 
   vestSounds:
   - name: Generator
     clip: {fileID: 8300000, guid: fc6a7f6f0dd4749438042b2bafd33dec, type: 3}
