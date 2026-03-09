@@ -3,6 +3,9 @@ using System.Collections;
 
 public class ElevatorAudio : MonoBehaviour
 {
+    [Header("Latency Compensation")]
+    [SerializeField] private double vestLatencyDelay = 0.15;
+
     [Header("Elevator Going Up Settings")]
     [SerializeField] private Sound elevatorGoingUpAudio;
     [SerializeField] private string elevatorGoingUpVestName;
@@ -52,7 +55,6 @@ public class ElevatorAudio : MonoBehaviour
     private IEnumerator WaitForTutorialStateRoutine()
     {
         yield return new WaitUntil(() => StateMachineGame.Instance != null && StateMachineGame.Instance.state == GameState.TUTORIAL);
-        Debug.Log("Tutorial state reached, playing elevator door open sound.");
         PlayElevatorDoorOpen();
     }
 
@@ -68,45 +70,37 @@ public class ElevatorAudio : MonoBehaviour
 
     private IEnumerator ElevatorSequenceRoutine()
     {
-        float waitTime = 0f;
-
-        if (elevatorGoingUpAudio != null && elevatorGoingUpAudio.source != null)
-        {
-            waitTime = elevatorGoingUpAudio.clip.length;
-
-            if (elevatorGoingUpAudio.preventOverlay || elevatorGoingUpAudio.loop)
-            {
-                elevatorGoingUpAudio.source.Play();
-            }
-            else
-            {
-                elevatorGoingUpAudio.source.PlayOneShot(elevatorGoingUpAudio.clip);
-            }
-        }
-
         if (AudioManagerVest.Instance != null && !string.IsNullOrEmpty(elevatorGoingUpVestName))
         {
             AudioManagerVest.Instance.PlayGlobalVestSound(elevatorGoingUpVestName);
         }
 
-        yield return new WaitForSeconds(waitTime);
+        if (elevatorGoingUpAudio != null && elevatorGoingUpAudio.source != null)
+        {
+            if (vestLatencyDelay > 0)
+            {
+                double exactPlayTime = AudioSettings.dspTime + vestLatencyDelay;
+                elevatorGoingUpAudio.source.PlayScheduled(exactPlayTime);
+            }
+            else
+            {
+                if (elevatorGoingUpAudio.preventOverlay || elevatorGoingUpAudio.loop)
+                {
+                    elevatorGoingUpAudio.source.Play();
+                }
+                else
+                {
+                    elevatorGoingUpAudio.source.PlayOneShot(elevatorGoingUpAudio.clip);
+                }
+            }
+
+            yield return new WaitForSeconds(elevatorGoingUpAudio.clip.length + (float)vestLatencyDelay);
+        }
     }
 
     [ContextMenu("Play Elevator Door Open Event")]
     public void PlayElevatorDoorOpen()
     {
-        if (elevatorDoorOpenAudio != null && elevatorDoorOpenAudio.source != null)
-        {
-            if (elevatorDoorOpenAudio.preventOverlay || elevatorDoorOpenAudio.loop)
-            {
-                elevatorDoorOpenAudio.source.Play();
-            }
-            else
-            {
-                elevatorDoorOpenAudio.source.PlayOneShot(elevatorDoorOpenAudio.clip);
-            }
-        }
-
         if (AudioManagerVest.Instance != null)
         {
             AudioManagerVest.Instance.ClearVestQueue();
@@ -114,6 +108,26 @@ public class ElevatorAudio : MonoBehaviour
             if (!string.IsNullOrEmpty(elevatorDoorOpenVestName))
             {
                 AudioManagerVest.Instance.PlayGlobalVestSound(elevatorDoorOpenVestName);
+            }
+        }
+
+        if (elevatorDoorOpenAudio != null && elevatorDoorOpenAudio.source != null)
+        {
+            if (vestLatencyDelay > 0)
+            {
+                double exactPlayTime = AudioSettings.dspTime + vestLatencyDelay;
+                elevatorDoorOpenAudio.source.PlayScheduled(exactPlayTime);
+            }
+            else
+            {
+                if (elevatorDoorOpenAudio.preventOverlay || elevatorDoorOpenAudio.loop)
+                {
+                    elevatorDoorOpenAudio.source.Play();
+                }
+                else
+                {
+                    elevatorDoorOpenAudio.source.PlayOneShot(elevatorDoorOpenAudio.clip);
+                }
             }
         }
     }

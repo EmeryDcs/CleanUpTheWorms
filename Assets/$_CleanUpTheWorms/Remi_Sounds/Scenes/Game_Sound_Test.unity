@@ -21080,6 +21080,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0368b308083b8d643b8b8287717c8d89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ElevatorAudio
+  vestLatencyDelay: 0.001
   elevatorGoingUpAudio:
     name: ElevatorGoingUp
     clip: {fileID: 8300000, guid: 48412ef723d89074ba72141cd3ebca53, type: 3}
