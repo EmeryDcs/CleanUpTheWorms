@@ -63,6 +63,11 @@ public class SplineCharacterManager : MonoBehaviour
             GameObject character = Instantiate(characterPrefab, transform);
             spawnedCharacters[i] = character;
 
+            // --- ADDED: Disable mesh immediately to avoid spawning flicker ---
+            Renderer charRenderer = character.GetComponentInChildren<Renderer>();
+            if (charRenderer != null) charRenderer.enabled = false;
+            // -----------------------------------------------------------------
+
             float randomSizeFactor = Random.Range(1f - sizeRandomness, 1f + sizeRandomness);
             character.transform.localScale = characterPrefab.transform.localScale * randomSizeFactor;
 
@@ -76,15 +81,31 @@ public class SplineCharacterManager : MonoBehaviour
                 follower.SetCompletionTime(completionTime * randomTimeFactor);
 
                 follower.SetProgress(startingOffset);
+
+                // --- ADDED: Start the delay to show the mesh after 2 frames ---
+                if (charRenderer != null) StartCoroutine(ShowMeshAfterFrames(charRenderer, 2));
+                // --------------------------------------------------------------
             }
             else
             {
                 Debug.LogWarning($"Character {i} doesn't have a SplineFollower component!");
+                // Safety: show mesh anyway if no follower exists
+                if (charRenderer != null) charRenderer.enabled = true;
             }
 
             float finalDelay = baseSpawnDelay + Random.Range(minRandomDelay, maxRandomDelay);
             yield return new WaitForSeconds(finalDelay);
         }
+    }
+
+    // New helper method to wait for specific frames
+    private IEnumerator ShowMeshAfterFrames(Renderer renderer, int frameCount)
+    {
+        for (int i = 0; i < frameCount; i++)
+        {
+            yield return null; // Wait for one frame
+        }
+        if (renderer != null) renderer.enabled = true;
     }
 
     public void ClearCharacters()
