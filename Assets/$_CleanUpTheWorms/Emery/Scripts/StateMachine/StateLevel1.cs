@@ -27,9 +27,6 @@ public class StateLevel1 : MonoBehaviour
 	public GameObject ameliorationPinceText;
 	public GameObject testAllongeText;
 
-	[Header("Animator of the volet")]
-	public Animator voletAnimator;
-
 	bool isCatchingAvailable = false;
 	float timerText = 0f;
 
@@ -72,7 +69,6 @@ public class StateLevel1 : MonoBehaviour
 	void IngerationLarve()
 	{
 		isCatchingAvailable = false;
-		voletAnimator.enabled = true;
 
 		if (timerText < 10f)
 		{

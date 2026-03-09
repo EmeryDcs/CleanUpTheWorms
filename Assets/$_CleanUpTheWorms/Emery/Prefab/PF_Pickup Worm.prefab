@@ -151,7 +151,7 @@ NavMeshAgent:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7750849145400553186}
   m_Enabled: 1
-  m_AgentTypeID: -1372625422
+  m_AgentTypeID: -334000983
   m_Radius: 0.5
   m_Speed: 3.5
   m_Acceleration: 8
@@ -179,7 +179,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AILarva
   wanderRadius: 10
   wanderInterval: 3
-  movementSpeed: 0.125
+  movementSpeed: 0.05
 --- !u!114 &2568011254261703083
 MonoBehaviour:
   m_ObjectHideFlags: 0

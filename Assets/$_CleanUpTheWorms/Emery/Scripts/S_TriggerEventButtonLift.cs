@@ -7,7 +7,6 @@ public class S_TriggerEventButtonLift : MonoBehaviour
 
 	private void OnTriggerEnter(Collider other)
 	{
-		Debug.Log("Trigger entered by: " + other.gameObject.tag);
 		if (other.gameObject.CompareTag("ButtonLift"))
 			OnButtonPushed.Invoke();
 	}
