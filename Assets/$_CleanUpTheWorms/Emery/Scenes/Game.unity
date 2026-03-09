@@ -487,6 +487,7 @@ GameObject:
   - component: {fileID: 71990870}
   - component: {fileID: 71990872}
   - component: {fileID: 71990871}
+  - component: {fileID: 71990873}
   m_Layer: 3
   m_Name: Text Apparition Larve
   m_TagString: Untagged
@@ -614,6 +615,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 71990869}
   m_CullTransparentMesh: 1
+--- !u!114 &71990873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71990869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12aeb0794dbdd474cbb766eb2753c727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::S_DialogueBubbleAudio
+  isFirstBubble: 0
 --- !u!1 &83213562 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 545130859848831989, guid: 866a6f56ee92bdc4f92a94092f38484d, type: 3}
@@ -1279,6 +1293,7 @@ GameObject:
   - component: {fileID: 324198014}
   - component: {fileID: 324198016}
   - component: {fileID: 324198015}
+  - component: {fileID: 324198017}
   m_Layer: 3
   m_Name: Text Animation Opening Trash
   m_TagString: Untagged
@@ -1407,6 +1422,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 324198013}
   m_CullTransparentMesh: 1
+--- !u!114 &324198017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 324198013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12aeb0794dbdd474cbb766eb2753c727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::S_DialogueBubbleAudio
+  isFirstBubble: 0
 --- !u!1 &366829019
 GameObject:
   m_ObjectHideFlags: 0
@@ -1850,6 +1878,7 @@ GameObject:
   - component: {fileID: 547644512}
   - component: {fileID: 547644514}
   - component: {fileID: 547644513}
+  - component: {fileID: 547644515}
   m_Layer: 3
   m_Name: Text Test Allonge
   m_TagString: Untagged
@@ -1977,6 +2006,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 547644511}
   m_CullTransparentMesh: 1
+--- !u!114 &547644515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547644511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12aeb0794dbdd474cbb766eb2753c727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::S_DialogueBubbleAudio
+  isFirstBubble: 0
 --- !u!1 &567890453 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4148778239110795873, guid: 0a7d2469f24041c4284c66706f84c45e, type: 3}
@@ -4021,6 +4063,7 @@ GameObject:
   - component: {fileID: 1384281934}
   - component: {fileID: 1384281936}
   - component: {fileID: 1384281935}
+  - component: {fileID: 1384281937}
   m_Layer: 3
   m_Name: "Text Am\xE9lioration Pince"
   m_TagString: Untagged
@@ -4149,6 +4192,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1384281933}
   m_CullTransparentMesh: 1
+--- !u!114 &1384281937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384281933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12aeb0794dbdd474cbb766eb2753c727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::S_DialogueBubbleAudio
+  isFirstBubble: 0
 --- !u!1 &1400079324 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3203391661483048803, guid: d434f4befa52b204caf8be48e3d012cf, type: 3}
@@ -5111,6 +5167,7 @@ GameObject:
   - component: {fileID: 1694462623}
   - component: {fileID: 1694462625}
   - component: {fileID: 1694462624}
+  - component: {fileID: 1694462626}
   m_Layer: 3
   m_Name: "Text Ing\xE9ration Larve"
   m_TagString: Untagged
@@ -5237,6 +5294,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1694462622}
   m_CullTransparentMesh: 1
+--- !u!114 &1694462626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1694462622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12aeb0794dbdd474cbb766eb2753c727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::S_DialogueBubbleAudio
+  isFirstBubble: 0
 --- !u!1 &1722327800
 GameObject:
   m_ObjectHideFlags: 0
@@ -5499,6 +5569,7 @@ GameObject:
   - component: {fileID: 1807276484}
   - component: {fileID: 1807276486}
   - component: {fileID: 1807276485}
+  - component: {fileID: 1807276487}
   m_Layer: 3
   m_Name: Text Trigger
   m_TagString: Untagged
@@ -5627,6 +5698,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1807276483}
   m_CullTransparentMesh: 1
+--- !u!114 &1807276487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807276483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12aeb0794dbdd474cbb766eb2753c727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::S_DialogueBubbleAudio
+  isFirstBubble: 1
 --- !u!1 &1824967327
 GameObject:
   m_ObjectHideFlags: 0
@@ -6176,6 +6260,7 @@ GameObject:
   - component: {fileID: 1959060702}
   - component: {fileID: 1959060704}
   - component: {fileID: 1959060703}
+  - component: {fileID: 1959060705}
   m_Layer: 3
   m_Name: Text Button Push
   m_TagString: Untagged
@@ -6305,6 +6390,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1959060701}
   m_CullTransparentMesh: 1
+--- !u!114 &1959060705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1959060701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12aeb0794dbdd474cbb766eb2753c727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::S_DialogueBubbleAudio
+  isFirstBubble: 0
 --- !u!1001 &1982558689
 PrefabInstance:
   m_ObjectHideFlags: 0
