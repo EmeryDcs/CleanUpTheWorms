@@ -1,10 +1,13 @@
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Audio;
-using System.Collections.Generic;
 
 public class AudioManagerVest : MonoBehaviour
 {
     public static AudioManagerVest Instance;
+
+    public bool isHapticActive;
 
     [Header("Global Vest Sounds")]
     public List<Sound> vestSounds;
@@ -27,6 +30,13 @@ public class AudioManagerVest : MonoBehaviour
             Destroy(gameObject);
             return;
         }
+
+        if (System.Environment.GetCommandLineArgs().Contains("-nohaptics"))
+        {
+            isHapticActive = false;
+        }
+
+        AudioManagerVest.Instance.isAllowedSound = isHapticActive;
 
         vestSource = gameObject.GetComponent<AudioSource>();
         if (vestSource == null)

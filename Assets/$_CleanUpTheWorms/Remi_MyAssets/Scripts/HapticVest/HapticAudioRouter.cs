@@ -14,7 +14,6 @@ public class HapticAudioRouter : MonoBehaviour
 
     private BufferedWaveProvider waveProvider;
     private WaveOutEvent waveOut;
-    [SerializeField] bool isHapticActive = true;
 
     [StructLayout(LayoutKind.Sequential, Pack = 4, CharSet = CharSet.Auto)]
     private struct WAVEOUTCAPS
@@ -36,14 +35,10 @@ public class HapticAudioRouter : MonoBehaviour
     [DllImport("winmm.dll", SetLastError = true, CharSet = CharSet.Auto)]
     private static extern int waveOutGetDevCaps(int uDeviceID, out WAVEOUTCAPS pwoc, int cbwoc);
 
+
+
     void Awake()
     {
-        if (System.Environment.GetCommandLineArgs().Contains("-nohaptics"))
-        {
-            isHapticActive = false;
-        }
-
-        AudioManagerVest.Instance.isAllowedSound = isHapticActive;
 
 
 
@@ -51,7 +46,6 @@ public class HapticAudioRouter : MonoBehaviour
 
     void Start()
     {
-        if (!isHapticActive) return;
 
         int targetDeviceNumber = -1;
         int deviceCount = waveOutGetNumDevs();
@@ -95,7 +89,7 @@ public class HapticAudioRouter : MonoBehaviour
 
     void OnAudioFilterRead(float[] data, int channels)
     {
-        if (!isHapticActive || waveProvider == null) return;
+        if (waveProvider == null) return;
 
         if (Mathf.Abs(volumeMultiplier - 1.0f) > 0.001f)
         {

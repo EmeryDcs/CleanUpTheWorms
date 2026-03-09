@@ -7,10 +7,6 @@ public class NAudioDeviceLister : MonoBehaviour
 {
     void Awake()
     {
-        if (System.Environment.GetCommandLineArgs().Contains("-nohaptics"))
-        {
-            enabled = false;
-        }
     }
 
     void Start()

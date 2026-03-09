@@ -379,6 +379,8 @@ MonoBehaviour:
   numberOfCharacters: 50
   completionTime: 10
   startingOffset: 0
+  minRandomDelay: 0
+  maxRandomDelay: 1
 --- !u!114 &16965610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -950,6 +952,8 @@ MonoBehaviour:
   numberOfCharacters: 50
   completionTime: 10
   startingOffset: 0
+  minRandomDelay: 0
+  maxRandomDelay: 1
 --- !u!114 &235313670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1324,6 +1328,8 @@ MonoBehaviour:
   numberOfCharacters: 50
   completionTime: 10
   startingOffset: 0
+  minRandomDelay: 0
+  maxRandomDelay: 1
 --- !u!114 &351818258
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1760,6 +1766,8 @@ MonoBehaviour:
   numberOfCharacters: 50
   completionTime: 10
   startingOffset: 0
+  minRandomDelay: 0
+  maxRandomDelay: 1
 --- !u!114 &585682210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1964,6 +1972,8 @@ MonoBehaviour:
   numberOfCharacters: 50
   completionTime: 10
   startingOffset: 0
+  minRandomDelay: 0
+  maxRandomDelay: 1
 --- !u!114 &638148277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2143,6 +2153,8 @@ MonoBehaviour:
   numberOfCharacters: 50
   completionTime: 10
   startingOffset: 0
+  minRandomDelay: 0
+  maxRandomDelay: 1
 --- !u!114 &658362729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2332,6 +2344,8 @@ MonoBehaviour:
   numberOfCharacters: 50
   completionTime: 10
   startingOffset: 0
+  minRandomDelay: 0
+  maxRandomDelay: 1
 --- !u!114 &716531045
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2766,6 +2780,8 @@ MonoBehaviour:
   numberOfCharacters: 50
   completionTime: 10
   startingOffset: 0
+  minRandomDelay: 0
+  maxRandomDelay: 1
 --- !u!114 &798223214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3100,6 +3116,8 @@ MonoBehaviour:
   numberOfCharacters: 50
   completionTime: 10
   startingOffset: 0
+  minRandomDelay: 0
+  maxRandomDelay: 1
 --- !u!114 &836977297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4418,6 +4436,8 @@ MonoBehaviour:
   numberOfCharacters: 50
   completionTime: 10
   startingOffset: 0
+  minRandomDelay: 0
+  maxRandomDelay: 1
 --- !u!114 &1310814608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4622,6 +4642,8 @@ MonoBehaviour:
   numberOfCharacters: 50
   completionTime: 10
   startingOffset: 0
+  minRandomDelay: 0
+  maxRandomDelay: 1
 --- !u!114 &1319936262
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5428,6 +5450,8 @@ MonoBehaviour:
   numberOfCharacters: 50
   completionTime: 10
   startingOffset: 0
+  minRandomDelay: 0
+  maxRandomDelay: 1
 --- !u!114 &1736473953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5617,6 +5641,8 @@ MonoBehaviour:
   numberOfCharacters: 50
   completionTime: 10
   startingOffset: 0
+  minRandomDelay: 0
+  maxRandomDelay: 1
 --- !u!114 &1787328657
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5806,6 +5832,8 @@ MonoBehaviour:
   numberOfCharacters: 50
   completionTime: 10
   startingOffset: 0
+  minRandomDelay: 0
+  maxRandomDelay: 1
 --- !u!114 &1793312555
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5995,6 +6023,8 @@ MonoBehaviour:
   numberOfCharacters: 50
   completionTime: 10
   startingOffset: 0
+  minRandomDelay: 0
+  maxRandomDelay: 1
 --- !u!114 &1796708085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6199,6 +6229,8 @@ MonoBehaviour:
   numberOfCharacters: 50
   completionTime: 10
   startingOffset: 0
+  minRandomDelay: 0
+  maxRandomDelay: 1
 --- !u!114 &1804073352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6667,6 +6699,8 @@ MonoBehaviour:
   numberOfCharacters: 50
   completionTime: 10
   startingOffset: 0
+  minRandomDelay: 0
+  maxRandomDelay: 1
 --- !u!1 &1824967327
 GameObject:
   m_ObjectHideFlags: 0
@@ -7076,6 +7110,8 @@ MonoBehaviour:
   numberOfCharacters: 50
   completionTime: 10
   startingOffset: 0
+  minRandomDelay: 0
+  maxRandomDelay: 1
 --- !u!114 &1929448682
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7454,6 +7490,8 @@ MonoBehaviour:
   numberOfCharacters: 50
   completionTime: 10
   startingOffset: 0
+  minRandomDelay: 0
+  maxRandomDelay: 1
 --- !u!114 &2101115464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8411,7 +8449,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::HapticAudioRouter
   targetDeviceName: Casque (Realtek(R) Audio)
   volumeMultiplier: 1
-  isHapticActive: 0
 --- !u!4 &687127875057475345
 Transform:
   m_ObjectHideFlags: 0
@@ -17058,6 +17095,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f8124a5e57bfc8499a8d5baa5bffc29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AudioManagerVest
+  isHapticActive: 1
   vestSounds:
   - name: Generator
     clip: {fileID: 8300000, guid: fc6a7f6f0dd4749438042b2bafd33dec, type: 3}
