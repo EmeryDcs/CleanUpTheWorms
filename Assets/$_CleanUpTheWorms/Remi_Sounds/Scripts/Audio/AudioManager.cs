@@ -108,6 +108,7 @@ public class AudioManager : MonoBehaviour
     private Coroutine random3DRoutine;
     private bool ambientActive = false;
     private int blackoutCount = 0;
+    private bool isWaitingForButton = false;
 
     private void Awake()
     {
@@ -401,9 +402,22 @@ public class AudioManager : MonoBehaviour
         ambientRoutine = StartCoroutine(LightOffSequenceRoutine());
     }
 
+    public void TurnLightBackOn()
+    {
+        isWaitingForButton = false;
+    }
+
     private IEnumerator LightOffSequenceRoutine()
     {
-        yield return new WaitForSeconds(lightOffWaitTime);
+        if (blackoutCount == 1)
+        {
+            isWaitingForButton = true;
+            yield return new WaitUntil(() => !isWaitingForButton);
+        }
+        else
+        {
+            yield return new WaitForSeconds(lightOffWaitTime);
+        }
 
         if (generatorClip != null)
         {
@@ -423,20 +437,15 @@ public class AudioManager : MonoBehaviour
             lightsToReveal = Mathf.Min(blackoutCount + 1, lightGroups.Count);
         }
 
-        // --- NOUVELLE LOGIQUE PROGRESSIVE DES LIGHTMAPS ---
         if (progressiveLitLightmaps != null && progressiveLitLightmaps.Count > 0)
         {
-            // On sélectionne l'index correspondant au nombre de blackouts.
-            // S'il y a plus de blackouts que de lightmaps configurées, on bloque sur la dernière.
             int lightmapIndex = Mathf.Min(blackoutCount, progressiveLitLightmaps.Count - 1);
             SetLightmaps(progressiveLitLightmaps[lightmapIndex].colorMaps);
         }
         else
         {
-            // Sécurité au cas où la liste serait vide
             SetLightmaps(new Texture2D[0]);
         }
-        // --------------------------------------------------
 
         for (int i = 0; i < lightsToReveal; i++)
         {

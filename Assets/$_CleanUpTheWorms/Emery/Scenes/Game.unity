@@ -770,6 +770,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1919247036525422629, guid: d434f4befa52b204caf8be48e3d012cf, type: 3}
   m_PrefabInstance: {fileID: 3717959230181260845}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &180661028 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 69461964154097927, guid: f5a35e8400b6fb244ad15739bfa0c655, type: 3}
+  m_PrefabInstance: {fileID: 668935994}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f4ff2d0f38ff8f42bf1689659f98b02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AudioManager
 --- !u!1 &183728695
 GameObject:
   m_ObjectHideFlags: 0
@@ -24489,6 +24500,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 180661028}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: TurnLightBackOn
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

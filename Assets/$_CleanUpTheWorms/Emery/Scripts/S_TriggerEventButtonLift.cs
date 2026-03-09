@@ -3,11 +3,11 @@ using UnityEngine.Events;
 
 public class S_TriggerEventButtonLift : MonoBehaviour
 {
-	public UnityEvent OnButtonPushed;
+    public UnityEvent OnButtonPushed;
 
-	private void OnTriggerEnter(Collider other)
-	{
-		if (other.gameObject.CompareTag("ButtonLift"))
-			OnButtonPushed.Invoke();
-	}
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("ButtonLift"))
+            OnButtonPushed.Invoke();
+    }
 }
