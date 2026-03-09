@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 317040134994851281}
   - component: {fileID: 5647496106908730081}
   - component: {fileID: 4486135050206052996}
+  - component: {fileID: 5074135158172503503}
   m_Layer: 0
   m_Name: PF_Pickup Trash
   m_TagString: GrabbableElm
@@ -140,3 +141,15 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &5074135158172503503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8504915640202235412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dee7cb4cf444a494390bb4b63479b7de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::S_TeleportIfFalling

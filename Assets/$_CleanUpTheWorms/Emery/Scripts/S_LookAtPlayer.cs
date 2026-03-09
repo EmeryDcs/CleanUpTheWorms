@@ -13,7 +13,11 @@ public class S_LookAtPlayer : MonoBehaviour
 
 	// Update is called once per frame
 	void Update()
-    {
-		transform.LookAt(player.transform);
-    }
+	{
+		if (player != null)
+		{
+			Vector3 direction = transform.position - player.transform.position;
+			transform.rotation = Quaternion.LookRotation(direction);
+		}
+	}
 }

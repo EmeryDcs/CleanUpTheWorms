@@ -11,11 +11,11 @@ public enum StateLevel1TextRobot
 
 public class StateLevel1 : MonoBehaviour
 {
+	public static StateLevel1 Instance { get; private set; }
+
 	[Header("List of collectables in the level")]
 	[SerializeField]
 	List<GameObject> listCollectables;
-
-	public static StateLevel1 Instance { get; private set; }
 
 	[Header("State of the text to display")]
 	public StateLevel1TextRobot currentTextToDisplay;
@@ -26,6 +26,9 @@ public class StateLevel1 : MonoBehaviour
 	public GameObject ingerationLarveText;
 	public GameObject ameliorationPinceText;
 	public GameObject testAllongeText;
+
+	[Header("Animator of the volet")]
+	public Animator voletAnimator;
 
 	bool isCatchingAvailable = false;
 	float timerText = 0f;
@@ -69,6 +72,8 @@ public class StateLevel1 : MonoBehaviour
 	void IngerationLarve()
 	{
 		isCatchingAvailable = false;
+		voletAnimator.enabled = true;
+
 		if (timerText < 10f)
 		{
 			timerText += Time.deltaTime;
@@ -104,6 +109,7 @@ public class StateLevel1 : MonoBehaviour
 			if (listCollectables.Count == 0)
 			{
 				StateMachineGame.Instance.state = GameState.LEVEL2;
+				uiTextLevel1.SetActive(false);
 			}
 		}
 	}
@@ -120,6 +126,14 @@ public class StateLevel1 : MonoBehaviour
 		{
 			listCollectables.Remove(go);
 			Destroy(go);
+		}
+
+		if (listCollectables.Count == 0)
+		{
+			currentTextToDisplay = StateLevel1TextRobot.INGERATION_LARVE;
+			apparitionLarveText.SetActive(false);
+			ingerationLarveText.SetActive(true);
+			timerText = 0f;
 		}
 	}
 }

@@ -28,6 +28,23 @@ public class S_StateRobot : MonoBehaviour
 		{
 			Instance = this;
 		}
+
+		if (currentState == RobotState.IDLE)
+		{
+			Idling();
+		}
+		else if (currentState == RobotState.WALK)
+		{
+			Walking();
+		}
+		else if (currentState == RobotState.JUMP)
+		{
+			Jumping();
+		}
+		else if (currentState == RobotState.CLUE)
+		{
+			Clueing();
+		}
 	}
 
 	private void Update()
