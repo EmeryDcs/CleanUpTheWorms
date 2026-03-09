@@ -116,7 +116,7 @@ public class GrapplingAudio : MonoBehaviour
         yield return new WaitUntil(() => grab.Instance != null);
 
         bool wasTriggerPressed = false;
-        GameObject lastGrabbedElm = null;
+        bool wasHolding = false;
 
         while (true)
         {
@@ -134,16 +134,18 @@ public class GrapplingAudio : MonoBehaviour
             wasTriggerPressed = isTriggerPressed;
 
             GameObject currentGrabbedElm = grab.Instance.GetGrabbedElm();
-            if (currentGrabbedElm != null && lastGrabbedElm == null)
+            bool isHolding = currentGrabbedElm != null;
+
+            if (isHolding && !wasHolding)
             {
                 PlayClawGrab();
                 StartHolding();
             }
-            else if (currentGrabbedElm == null && lastGrabbedElm != null)
+            else if (!isHolding && wasHolding)
             {
                 StopHolding();
             }
-            lastGrabbedElm = currentGrabbedElm;
+            wasHolding = isHolding;
 
             yield return null;
         }
@@ -186,7 +188,7 @@ public class GrapplingAudio : MonoBehaviour
     [ContextMenu("Stop Telescopie Loop")]
     public void StopTelescopie()
     {
-        if (telescopieAudio != null && telescopieAudio.source != null && telescopieAudio.source.isPlaying)
+        if (telescopieAudio != null && telescopieAudio.source != null)
         {
             if (telescopieFade != null) StopCoroutine(telescopieFade);
             telescopieFade = StartCoroutine(FadeOut(telescopieAudio.source, telescopieAudio.volume, telescopieFadeOutDuration));
@@ -235,7 +237,7 @@ public class GrapplingAudio : MonoBehaviour
     [ContextMenu("Stop Open/Close Graplin Loop")]
     public void StopOpenCloseGraplin()
     {
-        if (graplinOpenCloseAudio != null && graplinOpenCloseAudio.source != null && graplinOpenCloseAudio.source.isPlaying)
+        if (graplinOpenCloseAudio != null && graplinOpenCloseAudio.source != null)
         {
             if (graplinFade != null) StopCoroutine(graplinFade);
             graplinFade = StartCoroutine(FadeOut(graplinOpenCloseAudio.source, graplinOpenCloseAudio.volume, graplinFadeOutDuration));
@@ -305,7 +307,7 @@ public class GrapplingAudio : MonoBehaviour
     [ContextMenu("Stop Holding Loop")]
     public void StopHolding()
     {
-        if (holdingAudio != null && holdingAudio.source != null && holdingAudio.source.isPlaying)
+        if (holdingAudio != null && holdingAudio.source != null)
         {
             if (holdingFade != null) StopCoroutine(holdingFade);
             holdingFade = StartCoroutine(FadeOut(holdingAudio.source, holdingAudio.volume, holdingFadeOutDuration));
