@@ -179,7 +179,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AILarva
   wanderRadius: 10
   wanderInterval: 3
-  movementSpeed: 0.05
+  movementSpeed: 0.125
 --- !u!114 &2568011254261703083
 MonoBehaviour:
   m_ObjectHideFlags: 0
