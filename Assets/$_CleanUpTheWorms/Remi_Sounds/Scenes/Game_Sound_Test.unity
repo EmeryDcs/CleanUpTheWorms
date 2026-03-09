@@ -821,6 +821,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5021125915358102310, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1655234450}
+    - targetCorrespondingSourceObject: {fileID: 5021125915358102310, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1655234458}
+    - targetCorrespondingSourceObject: {fileID: 5021125915358102310, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1655234459}
   m_SourcePrefab: {fileID: 100100000, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
 --- !u!1 &224479154 stripped
 GameObject:
@@ -5806,6 +5812,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a56723e2be99d8a44a03a340e48cc594, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RobotValidationTrigger
+--- !u!114 &1655234458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1655234441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Outline
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 10
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
+--- !u!114 &1655234459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1655234441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dc50671999363c4e9ddc94d3704337c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RobotOutlineController
+  activationDistance: 10
+  alertColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineThickness: 5
 --- !u!1 &1664119601 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4647679614951309158, guid: 866a6f56ee92bdc4f92a94092f38484d, type: 3}
