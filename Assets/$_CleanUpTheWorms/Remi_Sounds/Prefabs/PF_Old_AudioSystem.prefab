@@ -672,7 +672,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5555576885983887285}
   m_Layer: 0
-  m_Name: AudioSystem
+  m_Name: PF_Old_AudioSystem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

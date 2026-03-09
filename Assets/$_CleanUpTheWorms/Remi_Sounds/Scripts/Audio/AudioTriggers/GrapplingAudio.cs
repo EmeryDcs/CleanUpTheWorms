@@ -115,23 +115,26 @@ public class GrapplingAudio : MonoBehaviour
     {
         yield return new WaitUntil(() => grab.Instance != null);
 
-        bool wasTriggerPressed = false;
+        bool wasTriggerChanging = false;
+        float lastTriggerValue = 0f;
         bool wasHolding = false;
 
         while (true)
         {
             float triggerValue = inputActions.Player.Grab.ReadValue<float>();
-            bool isTriggerPressed = triggerValue > 0f;
+            bool isTriggerChanging = Mathf.Abs(triggerValue - lastTriggerValue) > 0.001f;
 
-            if (isTriggerPressed && !wasTriggerPressed)
+            if (isTriggerChanging && !wasTriggerChanging)
             {
                 StartOpenCloseGraplin();
             }
-            else if (!isTriggerPressed && wasTriggerPressed)
+            else if (!isTriggerChanging && wasTriggerChanging)
             {
                 StopOpenCloseGraplin();
             }
-            wasTriggerPressed = isTriggerPressed;
+
+            wasTriggerChanging = isTriggerChanging;
+            lastTriggerValue = triggerValue;
 
             GameObject currentGrabbedElm = grab.Instance.GetGrabbedElm();
             bool isHolding = currentGrabbedElm != null;
@@ -338,8 +341,6 @@ public class GrapplingAudio : MonoBehaviour
             source.volume = targetVolume;
         }
     }
-
-
 
     private IEnumerator FadeOut(AudioSource source, float originalVolume, float duration)
     {

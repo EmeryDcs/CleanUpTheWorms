@@ -80,6 +80,9 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private List<GameObject> lightGroups;
     [SerializeField] private float delayBetweenLights = 0.5f;
 
+    [Header("Endgame Settings")]
+    [SerializeField] private GameObject crowdLarvaObject;
+
     [Header("Lightmap Settings")]
     [SerializeField] private Texture2D[] darkLightmapColors;
     [SerializeField] private Texture2D[] litLightmapColors;
@@ -323,6 +326,8 @@ public class AudioManager : MonoBehaviour
     [ContextMenu("Trigger Light Off Event")]
     public void TriggerLightOffEvent()
     {
+        blackoutCount++;
+
         ambientActive = false;
         if (random3DRoutine != null) StopCoroutine(random3DRoutine);
 
@@ -385,7 +390,6 @@ public class AudioManager : MonoBehaviour
 
         yield return new WaitForSeconds(generatorToLightWaitTime);
 
-        blackoutCount++;
         int lightsToReveal = 1;
         if (lightGroups != null)
         {
@@ -409,6 +413,11 @@ public class AudioManager : MonoBehaviour
             if (!string.IsNullOrEmpty(vestLightOnSoundName) && AudioManagerVest.Instance != null)
             {
                 AudioManagerVest.Instance.PlayGlobalVestSound(vestLightOnSoundName);
+            }
+
+            if (i == lightGroups.Count - 1 && crowdLarvaObject != null)
+            {
+                crowdLarvaObject.SetActive(true);
             }
 
             if (i < lightsToReveal - 1)
