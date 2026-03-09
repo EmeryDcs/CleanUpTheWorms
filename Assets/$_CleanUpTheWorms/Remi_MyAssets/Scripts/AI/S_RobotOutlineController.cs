@@ -8,7 +8,6 @@ public class RobotOutlineController : MonoBehaviour
     public float outlineThickness = 5.0f;
 
     private Outline robotOutline;
-    private Transform vrCamera;
 
     void Start()
     {
@@ -18,23 +17,20 @@ public class RobotOutlineController : MonoBehaviour
         // Ensure outline is off at start
         if (robotOutline != null)
             robotOutline.enabled = false;
-
-        // Find the VR Camera
-        if (Camera.main != null)
-            vrCamera = Camera.main.transform;
     }
 
     void Update()
     {
-        if (vrCamera == null || robotOutline == null || grab.Instance == null) return;
+        // Check for robotOutline and the grab singleton instance
+        if (robotOutline == null || grab.Instance == null) return;
 
-        // 1. Calculate distance between VR Headset and this Robot
-        float distance = Vector3.Distance(vrCamera.position, transform.position);
+        // 1. Calculate distance between the Grab Instance (the hand/tool) and this Robot
+        float distance = Vector3.Distance(grab.Instance.transform.position, transform.position);
 
         // 2. Check if the robot is currently holding an object
         bool isHoldingObject = grab.Instance.GetGrabbedElm() != null;
 
-        // 3. Logic: Near camera AND holding something
+        // 3. Logic: Near the grabber AND holding something
         if (distance <= activationDistance && isHoldingObject)
         {
             if (!robotOutline.enabled)

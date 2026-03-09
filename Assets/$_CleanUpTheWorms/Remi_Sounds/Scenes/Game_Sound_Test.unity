@@ -5842,9 +5842,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dc50671999363c4e9ddc94d3704337c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RobotOutlineController
-  activationDistance: 10
+  activationDistance: 2
   alertColor: {r: 1, g: 1, b: 1, a: 1}
-  outlineThickness: 5
+  outlineThickness: 10
 --- !u!1 &1664119601 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4647679614951309158, guid: 866a6f56ee92bdc4f92a94092f38484d, type: 3}
