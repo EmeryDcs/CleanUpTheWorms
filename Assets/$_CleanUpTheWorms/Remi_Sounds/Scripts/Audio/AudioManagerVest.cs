@@ -223,6 +223,16 @@ public class AudioManagerVest : MonoBehaviour
         }
     }
 
+    public void ClearVestQueue()
+    {
+        audioStack.Clear();
+        activeLoops.Clear();
+        vestSource.Stop();
+        vestSource.clip = null;
+        currentlyPlayingSound = "";
+        isPlayingOneShot = false;
+    }
+
     private IEnumerator StateMonitorRoutine()
     {
         while (true)

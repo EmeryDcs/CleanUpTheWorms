@@ -107,9 +107,14 @@ public class ElevatorAudio : MonoBehaviour
             }
         }
 
-        if (AudioManagerVest.Instance != null && !string.IsNullOrEmpty(elevatorDoorOpenVestName))
+        if (AudioManagerVest.Instance != null)
         {
-            AudioManagerVest.Instance.PlayGlobalVestSound(elevatorDoorOpenVestName);
+            AudioManagerVest.Instance.ClearVestQueue();
+
+            if (!string.IsNullOrEmpty(elevatorDoorOpenVestName))
+            {
+                AudioManagerVest.Instance.PlayGlobalVestSound(elevatorDoorOpenVestName);
+            }
         }
     }
 }
