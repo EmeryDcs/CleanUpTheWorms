@@ -76,6 +76,14 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private string vestLightOnSoundName;
     [SerializeField, Range(0f, 1f)] private float lightOnVolume = 1f;
 
+    [Header("Progressive Light Settings")]
+    [SerializeField] private List<GameObject> lightGroups;
+    [SerializeField] private float delayBetweenLights = 0.5f;
+
+    [Header("Lightmap Settings")]
+    [SerializeField] private Texture2D[] darkLightmapColors;
+    [SerializeField] private Texture2D[] litLightmapColors;
+
     [Header("Random 3D Ambient Sound")]
     [SerializeField] private AudioClip random3DClip;
     [SerializeField, Range(0f, 1f)] private float random3DVolume = 1f;
@@ -88,6 +96,7 @@ public class AudioManager : MonoBehaviour
     private Coroutine ambientRoutine;
     private Coroutine random3DRoutine;
     private bool ambientActive = false;
+    private int blackoutCount = 0;
 
     private void Awake()
     {
@@ -129,6 +138,17 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
+        if (lightGroups != null && lightGroups.Count > 0)
+        {
+            for (int i = 0; i < lightGroups.Count; i++)
+            {
+                if (lightGroups[i] != null)
+                {
+                    lightGroups[i].SetActive(i == 0);
+                }
+            }
+        }
+
         if (startAmbientOnStart)
         {
             StartAmbientSequence();
@@ -306,6 +326,16 @@ public class AudioManager : MonoBehaviour
         ambientActive = false;
         if (random3DRoutine != null) StopCoroutine(random3DRoutine);
 
+        if (lightGroups != null)
+        {
+            foreach (GameObject group in lightGroups)
+            {
+                if (group != null) group.SetActive(false);
+            }
+        }
+
+        SetLightmaps(darkLightmapColors);
+
         if (lightOffClip != null)
         {
             PlayClipAtPoint(lightOffClip, transform.position, ambientSounds.Count > 0 ? ambientSounds[0].mixerGroup : null, lightOffVolume);
@@ -355,14 +385,36 @@ public class AudioManager : MonoBehaviour
 
         yield return new WaitForSeconds(generatorToLightWaitTime);
 
-        if (lightOnClip != null)
+        blackoutCount++;
+        int lightsToReveal = 1;
+        if (lightGroups != null)
         {
-            PlayClipAtPoint(lightOnClip, transform.position, ambientSounds.Count > 0 ? ambientSounds[0].mixerGroup : null, lightOnVolume);
+            lightsToReveal = Mathf.Min(blackoutCount + 1, lightGroups.Count);
         }
 
-        if (!string.IsNullOrEmpty(vestLightOnSoundName) && AudioManagerVest.Instance != null)
+        SetLightmaps(litLightmapColors);
+
+        for (int i = 0; i < lightsToReveal; i++)
         {
-            AudioManagerVest.Instance.PlayGlobalVestSound(vestLightOnSoundName);
+            if (lightGroups != null && lightGroups.Count > i && lightGroups[i] != null)
+            {
+                lightGroups[i].SetActive(true);
+            }
+
+            if (lightOnClip != null)
+            {
+                PlayClipAtPoint(lightOnClip, transform.position, ambientSounds.Count > 0 ? ambientSounds[0].mixerGroup : null, lightOnVolume);
+            }
+
+            if (!string.IsNullOrEmpty(vestLightOnSoundName) && AudioManagerVest.Instance != null)
+            {
+                AudioManagerVest.Instance.PlayGlobalVestSound(vestLightOnSoundName);
+            }
+
+            if (i < lightsToReveal - 1)
+            {
+                yield return new WaitForSeconds(delayBetweenLights);
+            }
         }
 
         StartAmbientSequence();
@@ -393,5 +445,18 @@ public class AudioManager : MonoBehaviour
                 Destroy(fxGo, random3DClip.length);
             }
         }
+    }
+
+    private void SetLightmaps(Texture2D[] colorMaps)
+    {
+        if (colorMaps == null || colorMaps.Length == 0) return;
+
+        LightmapData[] lightmapDataArray = new LightmapData[colorMaps.Length];
+        for (int i = 0; i < colorMaps.Length; i++)
+        {
+            lightmapDataArray[i] = new LightmapData();
+            lightmapDataArray[i].lightmapColor = colorMaps[i];
+        }
+        LightmapSettings.lightmaps = lightmapDataArray;
     }
 }
