@@ -22023,6 +22023,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 3265031150561880981}
     - target: {fileID: 69461964154097927, guid: f5a35e8400b6fb244ad15739bfa0c655, type: 3}
+      propertyPath: progressiveLitLightmaps.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 69461964154097927, guid: f5a35e8400b6fb244ad15739bfa0c655, type: 3}
       propertyPath: objectsToDisableOnSecondBlackout.Array.size
       value: 2
       objectReference: {fileID: 0}

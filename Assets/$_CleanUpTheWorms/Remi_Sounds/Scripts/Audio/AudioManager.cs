@@ -43,6 +43,12 @@ public class AmbientSoundSettings
     [HideInInspector] public AudioSource source;
 }
 
+[System.Serializable]
+public class LightmapStage
+{
+    public Texture2D[] colorMaps;
+}
+
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance;
@@ -85,9 +91,9 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private List<GameObject> objectsToDisableOnSecondBlackout;
     [SerializeField] private List<GameObject> objectsToEnableOnSecondBlackout;
 
-    [Header("Lightmap Settings")]
+    [Header("Lightmap Progressive Settings")]
     [SerializeField] private Texture2D[] darkLightmapColors;
-    [SerializeField] private Texture2D[] litLightmapColors;
+    [SerializeField] private List<LightmapStage> progressiveLitLightmaps;
 
     [Header("Random 3D Ambient Sound")]
     [SerializeField] private AudioClip random3DClip;
@@ -417,7 +423,20 @@ public class AudioManager : MonoBehaviour
             lightsToReveal = Mathf.Min(blackoutCount + 1, lightGroups.Count);
         }
 
-        SetLightmaps(litLightmapColors);
+        // --- NOUVELLE LOGIQUE PROGRESSIVE DES LIGHTMAPS ---
+        if (progressiveLitLightmaps != null && progressiveLitLightmaps.Count > 0)
+        {
+            // On sélectionne l'index correspondant au nombre de blackouts.
+            // S'il y a plus de blackouts que de lightmaps configurées, on bloque sur la dernière.
+            int lightmapIndex = Mathf.Min(blackoutCount, progressiveLitLightmaps.Count - 1);
+            SetLightmaps(progressiveLitLightmaps[lightmapIndex].colorMaps);
+        }
+        else
+        {
+            // Sécurité au cas où la liste serait vide
+            SetLightmaps(new Texture2D[0]);
+        }
+        // --------------------------------------------------
 
         for (int i = 0; i < lightsToReveal; i++)
         {
