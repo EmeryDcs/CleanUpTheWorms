@@ -1,0 +1,35 @@
+{
+    "version": 1,
+    "name": "Talkie",
+    "maps": [
+        {
+            "name": "Talkie",
+            "id": "7d703ccb-fd01-47e0-9fda-aa92df1aef5f",
+            "actions": [
+                {
+                    "name": "Talk",
+                    "type": "Button",
+                    "id": "d323549c-4449-4973-97c3-84eb69d74dcf",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "19331e4d-61cf-41c0-89f9-7b0f496ec385",
+                    "path": "<Keyboard>/t",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Talk",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

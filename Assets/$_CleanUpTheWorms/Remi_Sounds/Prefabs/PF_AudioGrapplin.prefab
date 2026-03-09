@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4994158382036239512
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7773689708186245949}
+  - component: {fileID: 7022443991274379432}
+  m_Layer: 0
+  m_Name: PF_AudioGrapplin
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7773689708186245949
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4994158382036239512}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.419, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7022443991274379432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4994158382036239512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdde3771408f0724ea23df8e8c10e4b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GrapplingAudio
+  telescopieAudio:
+    name: Telescopie
+    clip: {fileID: 8300000, guid: 3c0a53a26fc12094384f8c6458da83f3, type: 3}
+    volume: 0.5
+    pitch: 1
+    spatialBlend: 1
+    loop: 0
+    playOnAwake: 0
+    preventOverlay: 0
+    mixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    source: {fileID: 0}
+  telescopieVestName: Telescopie
+  telescopieFadeInDuration: 0.7
+  telescopieFadeOutDuration: 0.7
+  tigeReference: {fileID: 0}
+  graplinOpenCloseAudio:
+    name: OpenClose
+    clip: {fileID: 8300000, guid: bb6096f77a14bbf4fa45d0db898799dc, type: 3}
+    volume: 0.25
+    pitch: 1
+    spatialBlend: 0
+    loop: 1
+    playOnAwake: 0
+    preventOverlay: 0
+    mixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    source: {fileID: 0}
+  graplinOpenCloseVestName: OpenClose
+  graplinFadeInDuration: 0.7
+  graplinFadeOutDuration: 0.7
+  clawGrabAudio:
+    name: GrabClaw
+    clip: {fileID: 8300000, guid: 62148fe3683c828438eec433b6e6e5ec, type: 3}
+    volume: 0.25
+    pitch: 1
+    spatialBlend: 0
+    loop: 0
+    playOnAwake: 0
+    preventOverlay: 0
+    mixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    source: {fileID: 0}
+  clawGrabVestName: GrabClaw
+  holdingAudio:
+    name: 
+    clip: {fileID: 0}
+    volume: 0.7
+    pitch: 1
+    spatialBlend: 0
+    loop: 0
+    playOnAwake: 0
+    preventOverlay: 0
+    mixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    source: {fileID: 0}
+  holdingVestName: Holding
+  holdingFadeInDuration: 0.7
+  holdingFadeOutDuration: 0.7

@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 4183074328485138189}
   - component: {fileID: 8754640519423656497}
   - component: {fileID: 2568011254261703083}
+  - component: {fileID: 3185607048660529831}
   m_Layer: 0
   m_Name: PF_Pickup Worm
   m_TagString: GrabbableElm
@@ -192,3 +193,91 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dee7cb4cf444a494390bb4b63479b7de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::S_TeleportIfFalling
+--- !u!114 &3185607048660529831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7750849145400553186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7512a422575f14428ff37131dd96947, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LarvaAudio
+  speechAudios:
+  - name: Speech01
+    clip: {fileID: 8300000, guid: f8b5a96f041d40e478c41b528ab4c043, type: 3}
+    volume: 0.7
+    pitch: 1
+    spatialBlend: 1
+    loop: 0
+    playOnAwake: 0
+    preventOverlay: 0
+    mixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    source: {fileID: 0}
+  - name: Speech02
+    clip: {fileID: 8300000, guid: f564aa400660ba94695de8b16300198b, type: 3}
+    volume: 0.7
+    pitch: 1
+    spatialBlend: 1
+    loop: 0
+    playOnAwake: 0
+    preventOverlay: 0
+    mixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    source: {fileID: 0}
+  - name: Speech03
+    clip: {fileID: 8300000, guid: 8e788691101db2b47bbb80540c93ff19, type: 3}
+    volume: 0.7
+    pitch: 1
+    spatialBlend: 1
+    loop: 0
+    playOnAwake: 0
+    preventOverlay: 0
+    mixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    source: {fileID: 0}
+  - name: Speech04
+    clip: {fileID: 8300000, guid: 5a306759b4715194f9593845dcde38b5, type: 3}
+    volume: 0.7
+    pitch: 1
+    spatialBlend: 1
+    loop: 0
+    playOnAwake: 0
+    preventOverlay: 0
+    mixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    source: {fileID: 0}
+  - name: Speech05
+    clip: {fileID: 8300000, guid: 4595256bde4877043a9ff6ea3b16a53b, type: 3}
+    volume: 0.7
+    pitch: 1
+    spatialBlend: 1
+    loop: 0
+    playOnAwake: 0
+    preventOverlay: 0
+    mixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    source: {fileID: 0}
+  - name: Speech06
+    clip: {fileID: 8300000, guid: fbd935d654c8ee248b51fb311bc8fb8a, type: 3}
+    volume: 0.7
+    pitch: 1
+    spatialBlend: 1
+    loop: 0
+    playOnAwake: 0
+    preventOverlay: 0
+    mixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    source: {fileID: 0}
+  minSpeechInterval: 5
+  maxSpeechInterval: 15
+  movementAudio:
+    name: Movement
+    clip: {fileID: 8300000, guid: b190b5c87f38d6948a3faba9b41522b5, type: 3}
+    volume: 0.7
+    pitch: 1
+    spatialBlend: 1
+    loop: 1
+    playOnAwake: 0
+    preventOverlay: 0
+    mixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    source: {fileID: 0}
+  movementFadeInDuration: 1
+  movementFadeOutDuration: 1

@@ -1,0 +1,196 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7843176530499595797
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7008626528909958588}
+  - component: {fileID: 8288121765357580774}
+  m_Layer: 0
+  m_Name: PF_AudioRobot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7008626528909958588
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7843176530499595797}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2, y: 3.2050257, z: 2}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8288121765357580774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7843176530499595797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac4e0688ba01544418e742b475a0fcce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RobotAudio
+  upgradeAudio:
+    name: Upgrade
+    clip: {fileID: 8300000, guid: 66b12d2f2ffe46d4baa1a70326220a2b, type: 3}
+    volume: 0.7
+    pitch: 1
+    spatialBlend: 1
+    loop: 0
+    playOnAwake: 0
+    preventOverlay: 0
+    mixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    source: {fileID: 0}
+  upgradeVestName: Upgrade
+  speechAudios:
+  - name: Speech01
+    clip: {fileID: 8300000, guid: 590b6cb124beb104fa9aae3f966437dc, type: 3}
+    volume: 0.7
+    pitch: 1
+    spatialBlend: 1
+    loop: 0
+    playOnAwake: 0
+    preventOverlay: 0
+    mixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    source: {fileID: 0}
+  - name: Speech02
+    clip: {fileID: 8300000, guid: 7ef3b4f0a3d0c684d9671020ccbe33ce, type: 3}
+    volume: 0.7
+    pitch: 1
+    spatialBlend: 1
+    loop: 0
+    playOnAwake: 0
+    preventOverlay: 0
+    mixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    source: {fileID: 0}
+  - name: Speech03
+    clip: {fileID: 8300000, guid: 7c4172099122d6d41b0da9a1ebf7a2bf, type: 3}
+    volume: 0.7
+    pitch: 1
+    spatialBlend: 1
+    loop: 0
+    playOnAwake: 0
+    preventOverlay: 0
+    mixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    source: {fileID: 0}
+  - name: Speech04
+    clip: {fileID: 8300000, guid: d0aa91fc89fbf70499497c8f2c795550, type: 3}
+    volume: 0.7
+    pitch: 1
+    spatialBlend: 1
+    loop: 0
+    playOnAwake: 0
+    preventOverlay: 0
+    mixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    source: {fileID: 0}
+  - name: Speech05
+    clip: {fileID: 8300000, guid: 74359bf7f07a4024cb00f7fe9712205a, type: 3}
+    volume: 0.7
+    pitch: 1
+    spatialBlend: 1
+    loop: 0
+    playOnAwake: 0
+    preventOverlay: 0
+    mixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    source: {fileID: 0}
+  - name: Speech06
+    clip: {fileID: 8300000, guid: 52eced650d4b1e14fb305c1325a959e3, type: 3}
+    volume: 0.7
+    pitch: 1
+    spatialBlend: 1
+    loop: 0
+    playOnAwake: 0
+    preventOverlay: 0
+    mixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    source: {fileID: 0}
+  - name: Speech07
+    clip: {fileID: 8300000, guid: 06851c52033de544e8331fbc35f5cf86, type: 3}
+    volume: 0.7
+    pitch: 1
+    spatialBlend: 1
+    loop: 0
+    playOnAwake: 0
+    preventOverlay: 0
+    mixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    source: {fileID: 0}
+  - name: Speech08
+    clip: {fileID: 8300000, guid: eeaa638d9fe10db4fac2efe6b8493900, type: 3}
+    volume: 0.7
+    pitch: 1
+    spatialBlend: 1
+    loop: 0
+    playOnAwake: 0
+    preventOverlay: 0
+    mixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    source: {fileID: 0}
+  - name: Speech09
+    clip: {fileID: 8300000, guid: a9746212f4e15624bb46daf2e146dff0, type: 3}
+    volume: 0.7
+    pitch: 1
+    spatialBlend: 1
+    loop: 0
+    playOnAwake: 0
+    preventOverlay: 0
+    mixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    source: {fileID: 0}
+  - name: Speech10
+    clip: {fileID: 8300000, guid: b59d9dd29c525e443ba82e7ec9137623, type: 3}
+    volume: 0.7
+    pitch: 1
+    spatialBlend: 1
+    loop: 0
+    playOnAwake: 0
+    preventOverlay: 0
+    mixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    source: {fileID: 0}
+  minSpeechInterval: 5
+  maxSpeechInterval: 15
+  surprisedAudio:
+    name: Surprised
+    clip: {fileID: 8300000, guid: bbf3d07c8c2524445adf5cc782466c7d, type: 3}
+    volume: 0.7
+    pitch: 1
+    spatialBlend: 1
+    loop: 0
+    playOnAwake: 0
+    preventOverlay: 0
+    mixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    source: {fileID: 0}
+  validationAudio:
+    name: Validation
+    clip: {fileID: 8300000, guid: 18eba75e3941a8e4e8321864fedfd571, type: 3}
+    volume: 0.7
+    pitch: 1
+    spatialBlend: 1
+    loop: 0
+    playOnAwake: 0
+    preventOverlay: 0
+    mixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    source: {fileID: 0}
+  wheelAudio:
+    name: Wheel
+    clip: {fileID: 8300000, guid: 839fff8d23fff4247af4dcad27679224, type: 3}
+    volume: 0.281
+    pitch: 1
+    spatialBlend: 1
+    loop: 1
+    playOnAwake: 0
+    preventOverlay: 0
+    mixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    source: {fileID: 0}
+  wheelFadeInDuration: 1
+  wheelFadeOutDuration: 1

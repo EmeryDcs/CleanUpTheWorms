@@ -2,6 +2,7 @@ using UnityEngine;
 using NAudio.Wave;
 using System;
 using System.Runtime.InteropServices;
+using System.Linq;
 
 [RequireComponent(typeof(AudioSource))]
 public class HapticAudioRouter : MonoBehaviour
@@ -34,8 +35,18 @@ public class HapticAudioRouter : MonoBehaviour
     [DllImport("winmm.dll", SetLastError = true, CharSet = CharSet.Auto)]
     private static extern int waveOutGetDevCaps(int uDeviceID, out WAVEOUTCAPS pwoc, int cbwoc);
 
+
+
+    void Awake()
+    {
+
+
+
+    }
+
     void Start()
     {
+
         int targetDeviceNumber = -1;
         int deviceCount = waveOutGetNumDevs();
 
@@ -54,7 +65,7 @@ public class HapticAudioRouter : MonoBehaviour
 
         if (targetDeviceNumber == -1)
         {
-            Debug.LogError($"[Haptic Router] Could not find an active audio device containing the name: {targetDeviceName}");
+            Debug.LogWarning($"[Haptic Router] Could not find an active audio device containing the name: {targetDeviceName}");
             return;
         }
 
@@ -64,10 +75,14 @@ public class HapticAudioRouter : MonoBehaviour
 
         int sampleRate = AudioSettings.outputSampleRate;
         waveProvider = new BufferedWaveProvider(WaveFormat.CreateIeeeFloatWaveFormat(sampleRate, 2));
+
+        waveProvider.BufferDuration = TimeSpan.FromMilliseconds(50);
         waveProvider.DiscardOnBufferOverflow = true;
 
         waveOut = new WaveOutEvent();
         waveOut.DeviceNumber = targetDeviceNumber;
+        waveOut.DesiredLatency = 50;
+        waveOut.NumberOfBuffers = 2;
         waveOut.Init(waveProvider);
         waveOut.Play();
     }
@@ -86,6 +101,7 @@ public class HapticAudioRouter : MonoBehaviour
 
         byte[] byteBuffer = new byte[data.Length * 4];
         Buffer.BlockCopy(data, 0, byteBuffer, 0, byteBuffer.Length);
+
         waveProvider.AddSamples(byteBuffer, 0, byteBuffer.Length);
 
         Array.Clear(data, 0, data.Length);
