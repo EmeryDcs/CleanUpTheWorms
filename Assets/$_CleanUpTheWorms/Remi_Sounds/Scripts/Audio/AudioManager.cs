@@ -82,6 +82,8 @@ public class AudioManager : MonoBehaviour
 
     [Header("Endgame Settings")]
     [SerializeField] private GameObject crowdLarvaObject;
+    [SerializeField] private List<GameObject> objectsToDisableOnSecondBlackout;
+    [SerializeField] private List<GameObject> objectsToEnableOnSecondBlackout;
 
     [Header("Lightmap Settings")]
     [SerializeField] private Texture2D[] darkLightmapColors;
@@ -327,6 +329,25 @@ public class AudioManager : MonoBehaviour
     public void TriggerLightOffEvent()
     {
         blackoutCount++;
+
+        if (blackoutCount == 2)
+        {
+            if (objectsToDisableOnSecondBlackout != null)
+            {
+                foreach (GameObject obj in objectsToDisableOnSecondBlackout)
+                {
+                    if (obj != null) obj.SetActive(false);
+                }
+            }
+
+            if (objectsToEnableOnSecondBlackout != null)
+            {
+                foreach (GameObject obj in objectsToEnableOnSecondBlackout)
+                {
+                    if (obj != null) obj.SetActive(true);
+                }
+            }
+        }
 
         ambientActive = false;
         if (random3DRoutine != null) StopCoroutine(random3DRoutine);

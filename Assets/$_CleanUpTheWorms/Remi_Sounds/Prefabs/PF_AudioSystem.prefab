@@ -575,7 +575,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Telescopie
     clip: {fileID: 8300000, guid: 42bed581ef96ed144a8b81e45bbd3a4d, type: 3}
-    volume: 1
+    volume: 0.45
     pitch: 1
     spatialBlend: 0
     loop: 0
@@ -870,6 +870,8 @@ MonoBehaviour:
   - {fileID: 0}
   delayBetweenLights: 0.75
   crowdLarvaObject: {fileID: 0}
+  objectsToDisableOnSecondBlackout: []
+  objectsToEnableOnSecondBlackout: []
   darkLightmapColors: []
   litLightmapColors: []
   random3DClip: {fileID: 8300000, guid: 044c028488e415344b0df08b015c98e4, type: 3}

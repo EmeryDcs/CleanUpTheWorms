@@ -22018,6 +22018,22 @@ PrefabInstance:
       propertyPath: 'lightGroups.Array.data[3]'
       value: 
       objectReference: {fileID: 570934822}
+    - target: {fileID: 69461964154097927, guid: f5a35e8400b6fb244ad15739bfa0c655, type: 3}
+      propertyPath: objectToDisableOnSecondBlackout
+      value: 
+      objectReference: {fileID: 3265031150561880981}
+    - target: {fileID: 69461964154097927, guid: f5a35e8400b6fb244ad15739bfa0c655, type: 3}
+      propertyPath: objectsToDisableOnSecondBlackout.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 69461964154097927, guid: f5a35e8400b6fb244ad15739bfa0c655, type: 3}
+      propertyPath: 'objectsToDisableOnSecondBlackout.Array.data[0]'
+      value: 
+      objectReference: {fileID: 977628074663183442}
+    - target: {fileID: 69461964154097927, guid: f5a35e8400b6fb244ad15739bfa0c655, type: 3}
+      propertyPath: 'objectsToDisableOnSecondBlackout.Array.data[1]'
+      value: 
+      objectReference: {fileID: 3265031150561880981}
     - target: {fileID: 2194402623721829798, guid: f5a35e8400b6fb244ad15739bfa0c655, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.71252
