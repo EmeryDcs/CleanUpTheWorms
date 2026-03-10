@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PlayerLean : MonoBehaviour
+public class S_RobotLean : MonoBehaviour
 {
     [Header("Lean Settings")]
     [SerializeField] private float maxLeanAngle = 10f;
