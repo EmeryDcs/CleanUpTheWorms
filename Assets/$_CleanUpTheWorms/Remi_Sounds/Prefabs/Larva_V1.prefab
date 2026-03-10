@@ -56,6 +56,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: c6eced74345805841ba473a7343d93b7, type: 2}
+    - target: {fileID: -5754084199372789682, guid: 76dfec0c2049add488c7400963ba7904, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 4300000, guid: 0715658fc2dbb9245af0ae4a71e9d270, type: 2}
     - target: {fileID: 919132149155446097, guid: 76dfec0c2049add488c7400963ba7904, type: 3}
       propertyPath: m_Name
       value: Larva_V1
@@ -67,6 +71,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 76dfec0c2049add488c7400963ba7904, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3492469985079797177}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 76dfec0c2049add488c7400963ba7904, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7253224513716349092}
   m_SourcePrefab: {fileID: 100100000, guid: 76dfec0c2049add488c7400963ba7904, type: 3}
 --- !u!1 &639621153070463812 stripped
 GameObject:
@@ -89,3 +96,22 @@ MonoBehaviour:
   completionTime: 10
   alignToSpline: 1
   canBeginMovement: 1
+--- !u!114 &7253224513716349092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639621153070463812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e0eb9661dcb8ea4f8acb45586df32e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Whinarn.UnityMeshSimplifier.Runtime::UnityMeshSimplifier.LODBackupComponent
+  originalRenderers:
+  - {fileID: 1432312343961311889}
+--- !u!23 &1432312343961311889 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: 76dfec0c2049add488c7400963ba7904, type: 3}
+  m_PrefabInstance: {fileID: 297534293886502421}
+  m_PrefabAsset: {fileID: 0}
