@@ -58,7 +58,7 @@ public class AILarva : MonoBehaviour
     {
         if (agent != null)
         {
-            agent.enabled = false;
+            agent.enabled = true;
         }
 
         if (rb != null)
