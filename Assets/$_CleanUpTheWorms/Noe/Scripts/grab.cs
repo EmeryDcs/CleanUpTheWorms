@@ -75,6 +75,17 @@ public class grab : MonoBehaviour
 
     private void GrabElm(GameObject elm)
     {
+
+        if (elm.GetComponent<AILarva>())
+        {
+            grabbedElm = elm;
+            grabbedElm.transform.SetParent(snapPoint);
+            elm.GetComponent<AILarva>().StopBehaviorAndMakeKinematic();
+
+            return;
+        }
+
+
         grabbedElm = elm; 
         Rigidbody rb = grabbedElm.GetComponent<Rigidbody>(); 
         rb.useGravity = false;
@@ -89,6 +100,19 @@ public class grab : MonoBehaviour
 
     private void DetachElm(GameObject elm)
     {
+        if (elm.GetComponent<AILarva>())
+        {
+
+            elm.transform.SetParent(null);
+            grabbedElm = null;
+
+
+            elm.GetComponent<AILarva>().RestartBehaviorAndMakeDynamic();
+
+
+            return;
+        }
+
         Rigidbody rb = grabbedElm.GetComponent<Rigidbody>();
         rb.useGravity = true; 
         rb.isKinematic = false;

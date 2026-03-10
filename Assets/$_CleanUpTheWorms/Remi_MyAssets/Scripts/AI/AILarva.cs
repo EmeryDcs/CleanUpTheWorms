@@ -14,17 +14,32 @@ public class AILarva : MonoBehaviour
     private Rigidbody rb;
     private Coroutine wanderCoroutine;
     private Coroutine fallCoroutine;
-    
+
     private void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
         rb = GetComponent<Rigidbody>();
     }
 
-    private void Start()
+    private void OnEnable()
     {
         agent.speed = movementSpeed;
         RestartBehaviorAndMakeDynamic();
+    }
+
+    private void OnDisable()
+    {
+        if (fallCoroutine != null)
+        {
+            StopCoroutine(fallCoroutine);
+            fallCoroutine = null;
+        }
+
+        if (wanderCoroutine != null)
+        {
+            StopCoroutine(wanderCoroutine);
+            wanderCoroutine = null;
+        }
     }
 
     public void StopBehaviorAndMakeKinematic()
@@ -52,13 +67,16 @@ public class AILarva : MonoBehaviour
             rb.linearVelocity = Vector3.zero;
             rb.isKinematic = true;
         }
+
+        transform.localPosition = new Vector3(0f, -0.0839999989f, 0f);
+        transform.localRotation = Quaternion.Euler(-180f, 0f, 0f);
     }
 
     public void RestartBehaviorAndMakeDynamic()
     {
         if (agent != null)
         {
-            agent.enabled = true;
+            agent.enabled = false;
         }
 
         if (rb != null)
@@ -81,8 +99,13 @@ public class AILarva : MonoBehaviour
             yield return null;
         }
 
+        if (rb != null)
+        {
+            rb.isKinematic = true;
+        }
+
         NavMeshHit hit;
-        if (NavMesh.SamplePosition(transform.position, out hit, 1.0f, NavMesh.AllAreas))
+        if (NavMesh.SamplePosition(transform.position, out hit, 3.0f, NavMesh.AllAreas))
         {
             if (agent != null)
             {
