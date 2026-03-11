@@ -2,20 +2,28 @@ using UnityEngine;
 
 public class S_TeleportIfFalling : MonoBehaviour
 {
-	Vector3 startPosition;
+    Vector3 startPosition;
+    Rigidbody rb;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         startPosition = transform.position;
-	}
+        rb = GetComponent<Rigidbody>();
+    }
 
-    // Update is called once per frame
     void Update()
     {
         if (transform.position.y < -10f)
-		{
-			transform.position = startPosition;
-		}
-	}
+        {
+            transform.position = startPosition;
+            GetComponent<Collider>().enabled = true;
+            GetComponent<Collider>().isTrigger = false;
+
+            if (rb != null)
+            {
+                rb.linearVelocity = Vector3.zero;
+                rb.angularVelocity = Vector3.zero;
+            }
+        }
+    }
 }

@@ -44,12 +44,6 @@ public class AmbientSoundSettings
     [HideInInspector] public AudioSource source;
 }
 
-[System.Serializable]
-public class LightmapStage
-{
-    public Texture2D[] colorMaps;
-}
-
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance;
@@ -91,10 +85,6 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private GameObject crowdLarvaObject;
     [SerializeField] private List<GameObject> objectsToDisableOnSecondBlackout;
     [SerializeField] private List<GameObject> objectsToEnableOnSecondBlackout;
-
-    [Header("Lightmap Progressive Settings")]
-    [SerializeField] private Texture2D[] darkLightmapColors;
-    [SerializeField] private List<LightmapStage> progressiveLitLightmaps;
 
     [Header("APV Scenario Settings")]
     [SerializeField] private string darkScenarioName = "DarkScenario";
