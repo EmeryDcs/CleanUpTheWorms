@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 9094940346782800907}
   - component: {fileID: 2678318384094014846}
   - component: {fileID: 317040134994851281}
-  - component: {fileID: 5647496106908730081}
   - component: {fileID: 4486135050206052996}
   - component: {fileID: 5074135158172503503}
+  - component: {fileID: 978561180186024340}
   m_Layer: 0
   m_Name: PF_Pickup Trash
   m_TagString: GrabbableElm
@@ -31,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.25, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalScale: {x: 10, y: 10, z: 10}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -43,7 +43,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8504915640202235412}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: -5306749542735322260, guid: 0cf1fad7eac8cdb4db2c83fbb0843233, type: 3}
 --- !u!23 &317040134994851281
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -93,27 +93,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &5647496106908730081
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8504915640202235412}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &4486135050206052996
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -153,3 +132,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dee7cb4cf444a494390bb4b63479b7de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::S_TeleportIfFalling
+--- !u!65 &978561180186024340
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8504915640202235412}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01627712, y: 0.014068393, z: 0.013769453}
+  m_Center: {x: 0.00026881928, y: -0.0016273372, z: -0.0016417315}

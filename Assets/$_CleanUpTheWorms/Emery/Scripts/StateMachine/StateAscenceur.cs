@@ -110,8 +110,6 @@ public class StateAscenceur : MonoBehaviour
 	public void DeleteCollectableFromList(GameObject go)
 	{
 		if (go == null) return;
-		if (!isCatchingAvailable)
-			return;
 
 		if (listCollectables.Contains(go))
 		{
