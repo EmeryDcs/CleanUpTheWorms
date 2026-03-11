@@ -18,6 +18,9 @@ public class S_VacuumObject : MonoBehaviour
 		{
 			switch (StateMachineGame.Instance.state)
 			{
+				case GameState.ASCENCEUR:
+					StateAscenceur.Instance.DeleteCollectableFromList(other.gameObject);
+					break;
 				case GameState.TUTORIAL:
 					StateTutorial.Instance.DeleteCollectableFromList(other.gameObject);
 

@@ -1041,7 +1041,7 @@ MonoBehaviour:
   m_text: "Qu'est-ce que c'est que \xE7a ? Mais c'est immonde ! Vite attrapez la
     et jettez la dans ma benne !"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: acc86433bf40b4044812bfc2f2bfd7b7, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1108,7 +1108,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &71990872
@@ -3587,6 +3587,10 @@ PrefabInstance:
       propertyPath: metaCameraRig
       value: 
       objectReference: {fileID: 1321039}
+    - target: {fileID: 1719815166334922787, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: minDistanceToPlayer
+      value: 3.34
+      objectReference: {fileID: 0}
     - target: {fileID: 2869129324395240741, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
       propertyPath: m_Height
       value: 1
@@ -4626,7 +4630,7 @@ MonoBehaviour:
     d\xE9chet, veuillez me le jeter dans mon r\xE9cipient. Je l'ouvrirais lorsque
     vous aurez un d\xE9chet dans votre pince."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: acc86433bf40b4044812bfc2f2bfd7b7, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -4693,7 +4697,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &324198016
@@ -6720,7 +6724,7 @@ MonoBehaviour:
   m_text: "Tu n'as plus qu'\xE0 tester ton allonge sur les prochaines larves que
     tu verras grouiller ! Pour ce faire, tire sur le manche !"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: acc86433bf40b4044812bfc2f2bfd7b7, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -6787,7 +6791,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &547644514
@@ -12646,6 +12650,54 @@ MonoBehaviour:
       m_Data: []
   m_Knots:
     m_KnotsLink: []
+--- !u!1 &1242971189
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1242971190}
+  - component: {fileID: 1242971191}
+  m_Layer: 0
+  m_Name: RecenterPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1242971190
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1242971189}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.256, y: 0, z: -2.516}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1242971191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1242971189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fb9cd64cb935824d9ed6ec55578ada3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::S_RecenterPosition
+  head: {fileID: 1321039}
+  origin: {fileID: 1994435566}
+  target: {fileID: 1242971190}
+  recenterInput: {fileID: 8971885931855927349, guid: 052faaac586de48259a63d0c4782560b, type: 3}
 --- !u!1 &1243512553
 GameObject:
   m_ObjectHideFlags: 0
@@ -13354,7 +13406,7 @@ MonoBehaviour:
     une am\xE9lioration. On risque de croiser d'autres larves et si elle grouille
     partout, vous aurez besoin d'une allonge !"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: acc86433bf40b4044812bfc2f2bfd7b7, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -13421,7 +13473,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1384281936
@@ -14713,6 +14765,80 @@ MonoBehaviour:
   stateLevel1: {fileID: 1048932098}
   stateLevel2: {fileID: 536521960}
   ui: {fileID: 949063853}
+--- !u!1001 &1480711625
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1666708036}
+    m_Modifications:
+    - target: {fileID: 8504915640202235412, guid: d5457acd9930fe14ca6af4f3bfc77309, type: 3}
+      propertyPath: m_Name
+      value: PF_Pickup Trash
+      objectReference: {fileID: 0}
+    - target: {fileID: 9094940346782800907, guid: d5457acd9930fe14ca6af4f3bfc77309, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.099999994
+      objectReference: {fileID: 0}
+    - target: {fileID: 9094940346782800907, guid: d5457acd9930fe14ca6af4f3bfc77309, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.099999994
+      objectReference: {fileID: 0}
+    - target: {fileID: 9094940346782800907, guid: d5457acd9930fe14ca6af4f3bfc77309, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.099999994
+      objectReference: {fileID: 0}
+    - target: {fileID: 9094940346782800907, guid: d5457acd9930fe14ca6af4f3bfc77309, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.758
+      objectReference: {fileID: 0}
+    - target: {fileID: 9094940346782800907, guid: d5457acd9930fe14ca6af4f3bfc77309, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0773
+      objectReference: {fileID: 0}
+    - target: {fileID: 9094940346782800907, guid: d5457acd9930fe14ca6af4f3bfc77309, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.697
+      objectReference: {fileID: 0}
+    - target: {fileID: 9094940346782800907, guid: d5457acd9930fe14ca6af4f3bfc77309, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9094940346782800907, guid: d5457acd9930fe14ca6af4f3bfc77309, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9094940346782800907, guid: d5457acd9930fe14ca6af4f3bfc77309, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9094940346782800907, guid: d5457acd9930fe14ca6af4f3bfc77309, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9094940346782800907, guid: d5457acd9930fe14ca6af4f3bfc77309, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9094940346782800907, guid: d5457acd9930fe14ca6af4f3bfc77309, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9094940346782800907, guid: d5457acd9930fe14ca6af4f3bfc77309, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d5457acd9930fe14ca6af4f3bfc77309, type: 3}
+--- !u!4 &1480711626 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9094940346782800907, guid: d5457acd9930fe14ca6af4f3bfc77309, type: 3}
+  m_PrefabInstance: {fileID: 1480711625}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1486488879
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17007,7 +17133,8 @@ Transform:
   m_LocalPosition: {x: 1.15581, y: -0.02286, z: 0.56102}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1480711626}
   m_Father: {fileID: 1478207553}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1666708037
@@ -17028,6 +17155,7 @@ MonoBehaviour:
   buttonPushedText: {fileID: 1959060701}
   trigger: {fileID: -6510549574045978373, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   buttonLift: {fileID: 1140334778}
+  listCollectables: []
 --- !u!1001 &1673448089
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17162,7 +17290,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Mmmh... c'est d'une composition \xE9tonnante...."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: acc86433bf40b4044812bfc2f2bfd7b7, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -17229,7 +17357,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1694462625
@@ -18044,8 +18172,8 @@ MonoBehaviour:
     votre mission de nettoyage.\nV\xE9rifions que votre mat\xE9riel fonctionne correctement
     : appuyez sur la g\xE2chette de votre pince quelque fois."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: acc86433bf40b4044812bfc2f2bfd7b7, type: 2}
+  m_sharedMaterial: {fileID: -276178942293029153, guid: acc86433bf40b4044812bfc2f2bfd7b7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -18191,7 +18319,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.23584908, g: 0.17679013, b: 0.13461198, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -19808,7 +19936,7 @@ MonoBehaviour:
     Appuyez sur le bouton de l''ascenceur
     pour commencer votre mission de nettoyage.'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: acc86433bf40b4044812bfc2f2bfd7b7, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -19875,7 +20003,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1959060704
@@ -20028,7 +20156,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.23529412, g: 0.1764706, b: 0.13333334, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -42041,6 +42169,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1059584847}
+  - {fileID: 1242971190}
   - {fileID: 1321038}
   - {fileID: 198507806}
   - {fileID: 1140334782}
