@@ -199,6 +199,14 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 5942181168483870209, guid: 2f5907475b0810049a2f0b26e223da44, type: 3}
+      propertyPath: distanceMaxGun
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5942181168483870209, guid: 2f5907475b0810049a2f0b26e223da44, type: 3}
+      propertyPath: distanceMinGun
+      value: 0.25
+      objectReference: {fileID: 0}
     - target: {fileID: 5994916269614027384, guid: 2f5907475b0810049a2f0b26e223da44, type: 3}
       propertyPath: OnButtonPushed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -7066,7 +7074,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6811704862030091430, guid: f5a35e8400b6fb244ad15739bfa0c655, type: 3}
       propertyPath: isHapticActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8290,7 +8298,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4148778239110795873, guid: 0a7d2469f24041c4284c66706f84c45e, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4156531248401478031, guid: 0a7d2469f24041c4284c66706f84c45e, type: 3}
       propertyPath: m_LocalRotation.x
