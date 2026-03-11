@@ -8,7 +8,19 @@ public class S_DialogueBubbleAudio : MonoBehaviour
     TextMeshProUGUI textComponent;
     [SerializeField] float typingSpeed = 0.02f;
 
+    [SerializeField] bool isPlayingAnim;
+    [SerializeField] bool isOpening;
+
+    [Header("Special Upgrade: Blinking Light")]
+    [SerializeField] bool isSpecialUpgrade;
+    [SerializeField] Light targetLight;
+    [SerializeField] float blinkInterval = 0.15f;
+
     private Coroutine typingCoroutine;
+    private Coroutine blinkingCoroutine;
+
+    private static S_DialogueBubbleAudio currentActiveInstance;
+    private bool originalLightState;
 
     private void Start()
     {
@@ -19,6 +31,8 @@ public class S_DialogueBubbleAudio : MonoBehaviour
         }
 
         PrepareRevealText();
+        PlayingAnim();
+        HandleBlinkingState();
     }
 
     private void OnEnable()
@@ -27,8 +41,14 @@ public class S_DialogueBubbleAudio : MonoBehaviour
         {
             RobotAudio.Instance.PlayRandomSpeech();
         }
+    }
 
-       
+    private void OnDisable()
+    {
+        if (currentActiveInstance == this)
+        {
+            StopCurrentBlinking();
+        }
     }
 
     private void PrepareRevealText()
@@ -53,6 +73,57 @@ public class S_DialogueBubbleAudio : MonoBehaviour
         {
             textComponent.maxVisibleCharacters = i;
             yield return new WaitForSeconds(typingSpeed);
+        }
+    }
+
+    private void PlayingAnim()
+    {
+        if (isPlayingAnim)
+        {
+            FindFirstObjectByType<S_RobotAnim>().SetAnimOpening(isOpening);
+        }
+    }
+
+    private void HandleBlinkingState()
+    {
+        if (currentActiveInstance != null && currentActiveInstance != this)
+        {
+            currentActiveInstance.StopCurrentBlinking();
+        }
+
+        currentActiveInstance = this;
+
+        if (isSpecialUpgrade && targetLight != null)
+        {
+            originalLightState = targetLight.enabled;
+            if (blinkingCoroutine != null)
+            {
+                StopCoroutine(blinkingCoroutine);
+            }
+            blinkingCoroutine = StartCoroutine(BlinkLightCoroutine());
+        }
+    }
+
+    private void StopCurrentBlinking()
+    {
+        if (blinkingCoroutine != null)
+        {
+            StopCoroutine(blinkingCoroutine);
+            blinkingCoroutine = null;
+        }
+
+        if (targetLight != null)
+        {
+            targetLight.enabled = originalLightState;
+        }
+    }
+
+    private IEnumerator BlinkLightCoroutine()
+    {
+        while (true)
+        {
+            targetLight.enabled = !targetLight.enabled;
+            yield return new WaitForSeconds(blinkInterval);
         }
     }
 }

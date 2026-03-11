@@ -35,6 +35,7 @@ public class RobotOutlineController : MonoBehaviour
         {
             if (!robotOutline.enabled)
             {
+                FindFirstObjectByType<S_RobotAnim>().SetAnimOpening(true);
                 robotOutline.enabled = true;
                 robotOutline.OutlineColor = alertColor;
                 robotOutline.OutlineWidth = outlineThickness;
@@ -43,7 +44,11 @@ public class RobotOutlineController : MonoBehaviour
         else
         {
             if (robotOutline.enabled)
+            {
                 robotOutline.enabled = false;
+                FindFirstObjectByType<S_RobotAnim>().SetAnimOpening(false);
+            }
+                
         }
     }
 }

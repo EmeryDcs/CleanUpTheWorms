@@ -12,6 +12,8 @@ public class RobotValidationTrigger : MonoBehaviour
             if (RobotAudio.Instance != null)
             {
                 RobotAudio.Instance.PlayValidation();
+
+                FindFirstObjectByType<S_RobotAnim>().SetAnimOpening(false);
             }
         }
     }

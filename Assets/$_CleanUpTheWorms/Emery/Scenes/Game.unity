@@ -1121,6 +1121,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::S_DialogueBubbleAudio
   isFirstBubble: 0
   typingSpeed: 0.005
+  isPlayingAnim: 0
+  isOpening: 0
+  isSpecialUpgrade: 0
+  targetLight: {fileID: 0}
+  blinkInterval: 0.15
 --- !u!1 &83213562 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 545130859848831989, guid: 866a6f56ee92bdc4f92a94092f38484d, type: 3}
@@ -3562,10 +3567,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 962206429134860911, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: m_Radius
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1719815166334922787, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
       propertyPath: metaCameraRig
       value: 
       objectReference: {fileID: 1321039}
+    - target: {fileID: 2869129324395240741, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: m_Height
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2869129324395240741, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: m_Radius
+      value: 0.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 2869129324395240741, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: m_Center.y
+      value: -0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 5021125915358102310, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
       propertyPath: m_Name
       value: PF_Robot
@@ -3588,19 +3609,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5747902416189440665, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.0000029504295
       objectReference: {fileID: 0}
     - target: {fileID: 5747902416189440665, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5747902416189440665, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 5747902416189440665, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5747902416189440665, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3608,7 +3629,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5747902416189440665, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -180
       objectReference: {fileID: 0}
     - target: {fileID: 5747902416189440665, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -3644,6 +3665,11 @@ PrefabInstance:
 --- !u!1 &198507807 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5021125915358102310, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+  m_PrefabInstance: {fileID: 198507806}
+  m_PrefabAsset: {fileID: 0}
+--- !u!108 &198507808 stripped
+Light:
+  m_CorrespondingSourceObject: {fileID: 2778523413420969522, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
   m_PrefabInstance: {fileID: 198507806}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &216791453
@@ -4586,7 +4612,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Super, votre pince fonctionne correctement.\nLorsque vous ramasserez un
     d\xE9chet, veuillez me le jeter dans mon r\xE9cipient. Je l'ouvrirais lorsque
-    vous aurez un d\xE9chet dans votre pince.\n\n(animation ouverture de la poubelle)"
+    vous aurez un d\xE9chet dans votre pince."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4680,6 +4706,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::S_DialogueBubbleAudio
   isFirstBubble: 0
   typingSpeed: 0.005
+  isPlayingAnim: 1
+  isOpening: 1
+  isSpecialUpgrade: 0
+  targetLight: {fileID: 0}
+  blinkInterval: 0.15
 --- !u!1 &366829019
 GameObject:
   m_ObjectHideFlags: 0
@@ -6642,6 +6673,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::S_DialogueBubbleAudio
   isFirstBubble: 0
   typingSpeed: 0.005
+  isPlayingAnim: 1
+  isOpening: 0
+  isSpecialUpgrade: 0
+  targetLight: {fileID: 198507808}
+  blinkInterval: 0.15
 --- !u!1001 &588666878
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7591,8 +7627,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RobotOutlineController
   activationDistance: 2
-  alertColor: {r: 1, g: 0, b: 0, a: 1}
-  outlineThickness: 10
+  alertColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineThickness: 8
 --- !u!114 &761634914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8204,7 +8240,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &848027002
 Transform:
   m_ObjectHideFlags: 0
@@ -8236,7 +8272,6 @@ MonoBehaviour:
   leanSpeed: 8
   forwardLeanIntensity: 5
   turnLeanIntensity: 0.5
-  lateralThreshold: 10
   swapAxes: 0
 --- !u!23 &848027004
 MeshRenderer:
@@ -12576,6 +12611,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::S_DialogueBubbleAudio
   isFirstBubble: 0
   typingSpeed: 0.005
+  isPlayingAnim: 1
+  isOpening: 1
+  isSpecialUpgrade: 1
+  targetLight: {fileID: 198507808}
+  blinkInterval: 0.15
 --- !u!1 &1394565561
 GameObject:
   m_ObjectHideFlags: 0
@@ -16202,6 +16242,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::S_DialogueBubbleAudio
   isFirstBubble: 0
   typingSpeed: 0.005
+  isPlayingAnim: 0
+  isOpening: 0
+  isSpecialUpgrade: 0
+  targetLight: {fileID: 0}
+  blinkInterval: 0.15
 --- !u!1 &1722327800
 GameObject:
   m_ObjectHideFlags: 0
@@ -16952,6 +16997,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::S_DialogueBubbleAudio
   isFirstBubble: 1
   typingSpeed: 0.005
+  isPlayingAnim: 0
+  isOpening: 0
+  isSpecialUpgrade: 0
+  targetLight: {fileID: 0}
+  blinkInterval: 0.15
 --- !u!1 &1824967327
 GameObject:
   m_ObjectHideFlags: 0
@@ -18711,6 +18761,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::S_DialogueBubbleAudio
   isFirstBubble: 0
   typingSpeed: 0.005
+  isPlayingAnim: 1
+  isOpening: 0
+  isSpecialUpgrade: 0
+  targetLight: {fileID: 0}
+  blinkInterval: 0.15
 --- !u!1001 &1982558689
 PrefabInstance:
   m_ObjectHideFlags: 0
