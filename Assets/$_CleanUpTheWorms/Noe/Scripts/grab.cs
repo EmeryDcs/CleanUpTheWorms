@@ -110,6 +110,8 @@ public class grab : MonoBehaviour
         }
 
         Rigidbody rb = grabbedElm.GetComponent<Rigidbody>();
+
+        elm.GetComponent<Collider>().isTrigger = false;
         rb.useGravity = true;
         rb.isKinematic = false;
         elm.transform.SetParent(null);

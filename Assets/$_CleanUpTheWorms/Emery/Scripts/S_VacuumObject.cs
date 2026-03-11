@@ -20,7 +20,8 @@ public class S_VacuumObject : MonoBehaviour
 			{
 				case GameState.TUTORIAL:
 					StateTutorial.Instance.DeleteCollectableFromList(other.gameObject);
-					break;
+
+                    break;
 				case GameState.LEVEL1:
 					StateLevel1.Instance.DeleteCollectableFromList(other.gameObject);
 					break;

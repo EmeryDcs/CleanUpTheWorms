@@ -32,9 +32,11 @@ public class S_AgrandirTige : MonoBehaviour
 
     void Update()
     {
-        if (StateMachineGame.Instance.state != GameState.LEVEL2 && !isInTestingScene)
-            return;
-        ResizedStick();
+        if (StateMachineGame.Instance.state == GameState.LEVEL2 || StateMachineGame.Instance.state == GameState.END)
+        {
+            ResizedStick();
+        }
+
     }
 
     private float DistanceBetweenControllers()
