@@ -85,6 +85,7 @@ public class StateLevel1 : MonoBehaviour
 
 	public void AmeliorationPince()
 	{
+		if(RobotAudio.Instance!= null) RobotAudio.Instance.PlayUpgrade();
 		currentTextToDisplay = StateLevel1TextRobot.TEST_ALLONGE;
 		ameliorationPinceText.SetActive(false);
 		testAllongeText.SetActive(true);

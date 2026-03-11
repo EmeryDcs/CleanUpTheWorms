@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.Rendering;
 using System;
 using System.Collections.Generic;
 using System.Collections;
@@ -95,6 +96,11 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private Texture2D[] darkLightmapColors;
     [SerializeField] private List<LightmapStage> progressiveLitLightmaps;
 
+    [Header("APV Scenario Settings")]
+    [SerializeField] private string darkScenarioName = "DarkScenario";
+    [SerializeField] private List<string> progressiveLitScenarios;
+    [SerializeField] private float scenarioBlendDuration = 2f;
+
     [Header("Random 3D Ambient Sound")]
     [SerializeField] private AudioClip random3DClip;
     [SerializeField, Range(0f, 1f)] private float random3DVolume = 1f;
@@ -106,6 +112,7 @@ public class AudioManager : MonoBehaviour
     private Dictionary<AudioSource, Coroutine> activeFades = new Dictionary<AudioSource, Coroutine>();
     private Coroutine ambientRoutine;
     private Coroutine random3DRoutine;
+    private Coroutine currentAPVBlend;
     private bool ambientActive = false;
     private int blackoutCount = 0;
     private bool isWaitingForButton = false;
@@ -367,7 +374,9 @@ public class AudioManager : MonoBehaviour
             }
         }
 
-        SetLightmaps(darkLightmapColors);
+        /* SetLightmaps(darkLightmapColors); */
+        if (currentAPVBlend != null) StopCoroutine(currentAPVBlend);
+        currentAPVBlend = StartCoroutine(BlendAPVScenarioRoutine(darkScenarioName, scenarioBlendDuration));
 
         if (lightOffClip != null)
         {
@@ -437,6 +446,7 @@ public class AudioManager : MonoBehaviour
             lightsToReveal = Mathf.Min(blackoutCount + 1, lightGroups.Count);
         }
 
+        /*
         if (progressiveLitLightmaps != null && progressiveLitLightmaps.Count > 0)
         {
             int lightmapIndex = Mathf.Min(blackoutCount, progressiveLitLightmaps.Count - 1);
@@ -445,6 +455,13 @@ public class AudioManager : MonoBehaviour
         else
         {
             SetLightmaps(new Texture2D[0]);
+        }
+        */
+        if (progressiveLitScenarios != null && progressiveLitScenarios.Count > 0)
+        {
+            int scenarioIndex = Mathf.Min(blackoutCount, progressiveLitScenarios.Count - 1);
+            if (currentAPVBlend != null) StopCoroutine(currentAPVBlend);
+            currentAPVBlend = StartCoroutine(BlendAPVScenarioRoutine(progressiveLitScenarios[scenarioIndex], scenarioBlendDuration));
         }
 
         for (int i = 0; i < lightsToReveal; i++)
@@ -505,6 +522,7 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    /*
     private void SetLightmaps(Texture2D[] colorMaps)
     {
         if (colorMaps == null || colorMaps.Length == 0) return;
@@ -516,5 +534,19 @@ public class AudioManager : MonoBehaviour
             lightmapDataArray[i].lightmapColor = colorMaps[i];
         }
         LightmapSettings.lightmaps = lightmapDataArray;
+    }
+    */
+
+    private IEnumerator BlendAPVScenarioRoutine(string targetScenario, float duration)
+    {
+        float elapsed = 0f;
+        while (elapsed < duration)
+        {
+            elapsed += Time.deltaTime;
+            float t = elapsed / duration;
+            ProbeReferenceVolume.instance.BlendLightingScenario(targetScenario, t);
+            yield return null;
+        }
+        ProbeReferenceVolume.instance.BlendLightingScenario(targetScenario, 1f);
     }
 }

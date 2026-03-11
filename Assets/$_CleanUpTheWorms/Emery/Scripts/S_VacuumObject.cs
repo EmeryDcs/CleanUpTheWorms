@@ -8,7 +8,7 @@ public class S_VacuumObject : MonoBehaviour
 		{
 			if (!other.CompareTag("Pince"))
 				return;
-			if (StateMachineGame.Instance.state == GameState.LEVEL1 && StateLevel1.Instance.currentTextToDisplay == StateLevel1TextRobot.AMELIORATION_PINCE)
+			if (StateMachineGame.Instance != null && StateMachineGame.Instance.state == GameState.LEVEL1 && StateLevel1.Instance != null && StateLevel1.Instance.currentTextToDisplay == StateLevel1TextRobot.AMELIORATION_PINCE)
 			{
 				StateLevel1.Instance.AmeliorationPince();
 			}

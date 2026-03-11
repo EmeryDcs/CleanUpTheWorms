@@ -1120,6 +1120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::S_DialogueBubbleAudio
   isFirstBubble: 0
+  typingSpeed: 0.005
 --- !u!1 &83213562 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 545130859848831989, guid: 866a6f56ee92bdc4f92a94092f38484d, type: 3}
@@ -4678,6 +4679,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::S_DialogueBubbleAudio
   isFirstBubble: 0
+  typingSpeed: 0.005
 --- !u!1 &366829019
 GameObject:
   m_ObjectHideFlags: 0
@@ -6639,6 +6641,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::S_DialogueBubbleAudio
   isFirstBubble: 0
+  typingSpeed: 0.005
 --- !u!1001 &588666878
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6846,6 +6849,10 @@ PrefabInstance:
       propertyPath: crowdLarvaObject
       value: 
       objectReference: {fileID: 1882736267}
+    - target: {fileID: 69461964154097927, guid: f5a35e8400b6fb244ad15739bfa0c655, type: 3}
+      propertyPath: progressiveLitLightmaps.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2194402623721829798, guid: f5a35e8400b6fb244ad15739bfa0c655, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.76036
@@ -7036,6 +7043,54 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 203beeee6b457d24ba2fa1194aabbf3e, type: 3}
+--- !u!1 &716185623
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 716185624}
+  - component: {fileID: 716185625}
+  m_Layer: 0
+  m_Name: Obsacle (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &716185624
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 716185623}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.6967913, y: 0.120341, z: 0.120340995, w: 0.6967912}
+  m_LocalPosition: {x: 6.03, y: 0.7536599, z: 2.15}
+  m_LocalScale: {x: 1135.7968, y: 93.63187, z: 128.09996}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1574552676}
+  m_LocalEulerAnglesHint: {x: -89.98, y: 0, z: 19.597}
+--- !u!208 &716185625
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 716185623}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.004, y: 0.008, z: 0.012}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.001, y: 0.002, z: 0.002}
+  m_TimeToStationary: 0.5
 --- !u!1 &733015116
 GameObject:
   m_ObjectHideFlags: 0
@@ -12508,6 +12563,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::S_DialogueBubbleAudio
   isFirstBubble: 0
+  typingSpeed: 0.005
 --- !u!1 &1394565561
 GameObject:
   m_ObjectHideFlags: 0
@@ -13303,6 +13359,54 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8501674396973016560, guid: 2f5907475b0810049a2f0b26e223da44, type: 3}
   m_PrefabInstance: {fileID: 1321038}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1472857878
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1472857879}
+  - component: {fileID: 1472857880}
+  m_Layer: 0
+  m_Name: Obsacle (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1472857879
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472857878}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.7070372, y: -0.009921938, z: -0.0099219475, w: 0.7070371}
+  m_LocalPosition: {x: -7.25, y: 1.43, z: -4.14}
+  m_LocalScale: {x: 1036.5, y: 678.5306, z: 199.9}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1574552676}
+  m_LocalEulerAnglesHint: {x: -89.98, y: 0, z: -1.608}
+--- !u!208 &1472857880
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472857878}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.004, y: 0.008, z: 0.012}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.001, y: 0.002, z: 0.002}
+  m_TimeToStationary: 0.5
 --- !u!1 &1476445046
 GameObject:
   m_ObjectHideFlags: 0
@@ -15576,7 +15680,9 @@ Transform:
   - {fileID: 24687667}
   - {fileID: 2128986392}
   - {fileID: 1015863078}
+  - {fileID: 716185624}
   - {fileID: 216791454}
+  - {fileID: 1472857879}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1591609405
@@ -16083,6 +16189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::S_DialogueBubbleAudio
   isFirstBubble: 0
+  typingSpeed: 0.005
 --- !u!1 &1722327800
 GameObject:
   m_ObjectHideFlags: 0
@@ -16832,6 +16939,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::S_DialogueBubbleAudio
   isFirstBubble: 1
+  typingSpeed: 0.005
 --- !u!1 &1824967327
 GameObject:
   m_ObjectHideFlags: 0
@@ -18590,6 +18698,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::S_DialogueBubbleAudio
   isFirstBubble: 0
+  typingSpeed: 0.005
 --- !u!1001 &1982558689
 PrefabInstance:
   m_ObjectHideFlags: 0
