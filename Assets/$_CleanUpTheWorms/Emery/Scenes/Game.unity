@@ -215,6 +215,10 @@ PrefabInstance:
       propertyPath: _enableDynamicResolution
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7679213553276799914, guid: 2f5907475b0810049a2f0b26e223da44, type: 3}
+      propertyPath: SimultaneousHandsAndControllersEnabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8365012953539742535, guid: 2f5907475b0810049a2f0b26e223da44, type: 3}
       propertyPath: m_Layer
       value: 6
