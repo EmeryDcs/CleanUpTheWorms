@@ -16,8 +16,9 @@ public class S_DialogueBubbleAudio : MonoBehaviour
         if (isFirstBubble && RobotAudio.Instance != null)
         {
             RobotAudio.Instance.PlayRandomSpeech();
-            PrepareRevealText();
         }
+
+        PrepareRevealText();
     }
 
     private void OnEnable()
@@ -27,7 +28,7 @@ public class S_DialogueBubbleAudio : MonoBehaviour
             RobotAudio.Instance.PlayRandomSpeech();
         }
 
-        PrepareRevealText();
+       
     }
 
     private void PrepareRevealText()
