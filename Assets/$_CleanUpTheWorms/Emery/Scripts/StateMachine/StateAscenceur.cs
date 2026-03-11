@@ -88,6 +88,7 @@ public class StateAscenceur : MonoBehaviour
 		{
 			uiRobotTalk.SetActive(false);
 			StateMachineGame.Instance.state = GameState.TUTORIAL;
+			FindFirstObjectByType<S_TriggerEventButtonLift>().SetCanBePushed(false);
 		}
 	}
 }
