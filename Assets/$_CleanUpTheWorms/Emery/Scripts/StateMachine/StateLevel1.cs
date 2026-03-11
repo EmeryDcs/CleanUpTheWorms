@@ -71,8 +71,10 @@ public class StateLevel1 : MonoBehaviour
 
 	void IngerationLarve()
 	{
+		S_BlendLight.instance.SetScenario("Light On");
 		isCatchingAvailable = false;
-		voletAnimator.enabled = true;
+		if (voletAnimator != null)
+			voletAnimator.enabled = true;
 
 		if (timerText < 10f)
 		{

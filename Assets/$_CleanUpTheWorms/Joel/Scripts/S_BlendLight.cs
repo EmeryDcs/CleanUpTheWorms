@@ -4,12 +4,26 @@ using UnityEngine;
 
 public class S_BlendLight : MonoBehaviour
 {
+	public static S_BlendLight instance { get; private set; }
+
 	UnityEngine.Rendering.ProbeReferenceVolume probeRefVolume;
 	public string scenario01 = "Scenario01Name";
 	public string scenario02 = "Scenario02Name";
 	public string scenario03 = "Scenario03Name";
 	[Range(0, 1)] public float blendingFactor = 0.5f;
 	[Min(1)] public int numberOfCellsBlendedPerFrame = 10;
+
+	private void Awake()
+	{
+		if (instance != null && instance != this)
+		{
+			Destroy(this);
+		}
+		else
+		{
+			instance = this;
+		}
+	}
 
 	void Start()
 	{
@@ -18,21 +32,21 @@ public class S_BlendLight : MonoBehaviour
 		probeRefVolume.numberOfCellsBlendedPerFrame = numberOfCellsBlendedPerFrame;
 	}
 
-	public void SetScenario(int i)
+	public void SetScenario(string s)
 	{
-		switch (i)
+		switch (s)
 		{
-			case 0:
+			case "Light On":
 				probeRefVolume.lightingScenario = scenario01;
 				break;
-			case 1:
+			case "Light Off":
 				probeRefVolume.lightingScenario = scenario02;
 				break;
-			case 2:
+			case "Light Mid":
 				probeRefVolume.lightingScenario = scenario03;
 				break;
 			default:
-				Debug.LogError("Invalid scenario index: " + i);
+				Debug.LogError("Invalid scenario index: " + s);
 				break;
 		}
 	}

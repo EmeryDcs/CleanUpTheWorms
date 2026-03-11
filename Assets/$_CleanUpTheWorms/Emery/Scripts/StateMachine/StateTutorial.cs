@@ -29,6 +29,7 @@ public class StateTutorial : MonoBehaviour
     {
         if (listCollectables.Count == 0)
 		{
+			S_BlendLight.instance.SetScenario("Light Off");
 			StateMachineGame.Instance.state = GameState.LEVEL1;
 		}
 
