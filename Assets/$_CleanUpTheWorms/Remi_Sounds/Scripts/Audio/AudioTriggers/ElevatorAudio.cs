@@ -20,12 +20,11 @@ public class ElevatorAudio : MonoBehaviour
     {
         InitializeSound(elevatorGoingUpAudio, "ElevatorGoingUpAudioSource");
         InitializeSound(elevatorDoorOpenAudio, "ElevatorDoorOpenAudioSource");
-
-        PlayElevatorGoingUp();
     }
 
     private void Start()
     {
+        PlayElevatorGoingUp();
         StartCoroutine(WaitForTutorialStateRoutine());
     }
 
@@ -55,7 +54,7 @@ public class ElevatorAudio : MonoBehaviour
     private IEnumerator WaitForTutorialStateRoutine()
     {
         yield return new WaitUntil(() => StateMachineGame.Instance != null && StateMachineGame.Instance.state == GameState.TUTORIAL);
-        S_Elevator.Instance.OpenElevator(); 
+        S_Elevator.Instance.OpenElevator();
         PlayElevatorDoorOpen();
     }
 
