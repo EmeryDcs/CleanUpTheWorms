@@ -85,6 +85,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private GameObject crowdLarvaObject;
     [SerializeField] private List<GameObject> objectsToDisableOnSecondBlackout;
     [SerializeField] private List<GameObject> objectsToEnableOnSecondBlackout;
+    [SerializeField] private GameObject objectToEnableOnGeneratorSound;
 
     [Header("APV Scenario Settings")]
     [SerializeField] private string darkScenarioName = "DarkScenario";
@@ -364,7 +365,6 @@ public class AudioManager : MonoBehaviour
             }
         }
 
-        /* SetLightmaps(darkLightmapColors); */
         if (currentAPVBlend != null) StopCoroutine(currentAPVBlend);
         currentAPVBlend = StartCoroutine(BlendAPVScenarioRoutine(darkScenarioName, scenarioBlendDuration));
 
@@ -428,25 +428,34 @@ public class AudioManager : MonoBehaviour
             AudioManagerVest.Instance.PlayGlobalVestSound(vestGeneratorSoundName);
         }
 
+        if (blackoutCount == 2 && objectToEnableOnGeneratorSound != null)
+        {
+            objectToEnableOnGeneratorSound.SetActive(true);
+        }
+
         yield return new WaitForSeconds(generatorToLightWaitTime);
 
         int lightsToReveal = 1;
-        if (lightGroups != null)
-        {
-            lightsToReveal = Mathf.Min(blackoutCount + 1, lightGroups.Count);
-        }
+        int startIndex = 0;
 
-        /*
-        if (progressiveLitLightmaps != null && progressiveLitLightmaps.Count > 0)
+        if (blackoutCount == 1)
         {
-            int lightmapIndex = Mathf.Min(blackoutCount, progressiveLitLightmaps.Count - 1);
-            SetLightmaps(progressiveLitLightmaps[lightmapIndex].colorMaps);
+            startIndex = 0;
+            lightsToReveal = 3;
+        }
+        else if (blackoutCount == 2)
+        {
+            startIndex = 3;
+            lightsToReveal = 1;
         }
         else
         {
-            SetLightmaps(new Texture2D[0]);
+            if (lightGroups != null)
+            {
+                lightsToReveal = Mathf.Min(blackoutCount + 1, lightGroups.Count);
+            }
         }
-        */
+
         if (progressiveLitScenarios != null && progressiveLitScenarios.Count > 0)
         {
             int scenarioIndex = Mathf.Min(blackoutCount, progressiveLitScenarios.Count - 1);
@@ -454,7 +463,7 @@ public class AudioManager : MonoBehaviour
             currentAPVBlend = StartCoroutine(BlendAPVScenarioRoutine(progressiveLitScenarios[scenarioIndex], scenarioBlendDuration));
         }
 
-        for (int i = 0; i < lightsToReveal; i++)
+        for (int i = startIndex; i < startIndex + lightsToReveal; i++)
         {
             if (lightGroups != null && lightGroups.Count > i && lightGroups[i] != null)
             {
@@ -471,12 +480,12 @@ public class AudioManager : MonoBehaviour
                 AudioManagerVest.Instance.PlayGlobalVestSound(vestLightOnSoundName);
             }
 
-            if (i == lightGroups.Count - 1 && crowdLarvaObject != null)
+            if (lightGroups != null && i == lightGroups.Count - 1 && crowdLarvaObject != null)
             {
                 crowdLarvaObject.SetActive(true);
             }
 
-            if (i < lightsToReveal - 1)
+            if (i < (startIndex + lightsToReveal) - 1)
             {
                 yield return new WaitForSeconds(delayBetweenLights);
             }
@@ -511,21 +520,6 @@ public class AudioManager : MonoBehaviour
             }
         }
     }
-
-    /*
-    private void SetLightmaps(Texture2D[] colorMaps)
-    {
-        if (colorMaps == null || colorMaps.Length == 0) return;
-
-        LightmapData[] lightmapDataArray = new LightmapData[colorMaps.Length];
-        for (int i = 0; i < colorMaps.Length; i++)
-        {
-            lightmapDataArray[i] = new LightmapData();
-            lightmapDataArray[i].lightmapColor = colorMaps[i];
-        }
-        LightmapSettings.lightmaps = lightmapDataArray;
-    }
-    */
 
     private IEnumerator BlendAPVScenarioRoutine(string targetScenario, float duration)
     {
