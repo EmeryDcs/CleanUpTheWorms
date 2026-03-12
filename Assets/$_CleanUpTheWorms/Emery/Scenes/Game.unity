@@ -20479,7 +20479,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Mmmh... c'est d'une composition \xE9tonnante...."
+  m_text: Mmmh... c'est d'une composition etonnante....
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: acc86433bf40b4044812bfc2f2bfd7b7, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
