@@ -1,10 +1,13 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class StateLevel2 : MonoBehaviour
 {
 	[SerializeField]
 	List<GameObject> listCollectables;
+
+	[SerializeField] UnityEvent endOfGame;
 
 	public static StateLevel2 Instance { get; private set; }
 
@@ -31,6 +34,8 @@ public class StateLevel2 : MonoBehaviour
 		{
 			StateMachineGame.Instance.state = GameState.END;
 			StateMachineGame.Instance.AfficherFinDuJeu();
+
+			endOfGame.Invoke();
 		}
 
 		timerBeforeClue -= Time.deltaTime;

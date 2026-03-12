@@ -1,10 +1,13 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class StateTutorial : MonoBehaviour
 {
 	[SerializeField]
 	List<GameObject> listCollectables;
+
+	[SerializeField] UnityEvent endOfTuto;
 
 	public static StateTutorial Instance { get; private set; }
 
@@ -30,6 +33,7 @@ public class StateTutorial : MonoBehaviour
         if (listCollectables.Count == 0)
 		{
 			StateMachineGame.Instance.state = GameState.LEVEL1;
+			endOfTuto.Invoke();
 		}
 
 		timerBeforeClue -= Time.deltaTime;

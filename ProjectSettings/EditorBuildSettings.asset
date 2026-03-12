@@ -11,9 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/$_CleanUpTheWorms/Emery/Scenes/Main Menu.unity
     guid: a252c49c47d4f574b85623a85dc0a02a
-  - enabled: 1
+  - enabled: 0
     path: Assets/$_CleanUpTheWorms/Emery/Scenes/Game.unity
     guid: b3117dd81b6fe94448c9bbd7e6cea27e
+  - enabled: 1
+    path: Assets/$_CleanUpTheWorms/Joel/Scenes/Game.unity
+    guid: a088de38bdf929046aa2cad91adf7787
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: f0919308539180c41853fb268a746f97, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
