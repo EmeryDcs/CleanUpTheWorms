@@ -7151,6 +7151,10 @@ PrefabInstance:
       propertyPath: progressiveLitLightmaps.Array.size
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 844662485489521390, guid: f5a35e8400b6fb244ad15739bfa0c655, type: 3}
+      propertyPath: targetDeviceName
+      value: Headphones (Realtek(R) Audio)
+      objectReference: {fileID: 0}
     - target: {fileID: 2194402623721829798, guid: f5a35e8400b6fb244ad15739bfa0c655, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.76036
