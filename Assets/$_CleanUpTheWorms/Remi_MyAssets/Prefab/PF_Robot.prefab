@@ -374,6 +374,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8339937189981806196, guid: 0e7460c2df0fedd45acf7a2f194fd063, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8339937189981806196, guid: 0e7460c2df0fedd45acf7a2f194fd063, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 51d20cecaa51a38448a1876a0f6c5293, type: 2}
+    - target: {fileID: -8339937189981806196, guid: 0e7460c2df0fedd45acf7a2f194fd063, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 5561349426305759274, guid: 0e7460c2df0fedd45acf7a2f194fd063, type: 3}
     - target: {fileID: 919132149155446097, guid: 0e7460c2df0fedd45acf7a2f194fd063, type: 3}
       propertyPath: m_Name
       value: Robot_Model2
