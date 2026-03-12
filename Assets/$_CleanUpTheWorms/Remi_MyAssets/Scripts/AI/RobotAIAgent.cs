@@ -68,7 +68,7 @@ public class RobotAIAgent : MonoBehaviour
 		}
 		else if (objectClued == null && followCoroutine == null)
 		{
-			if (StateLevel1.Instance.currentTextToDisplay != StateLevel1TextRobot.APPARITION_LARVE)
+			if (StateLevel1.Instance != null && StateLevel1.Instance.currentTextToDisplay != StateLevel1TextRobot.APPARITION_LARVE)
 				ResumeFollowing();
 		}
 	}

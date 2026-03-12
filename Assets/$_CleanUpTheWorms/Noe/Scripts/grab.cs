@@ -16,6 +16,13 @@ public class grab : MonoBehaviour
 
     public XRNode controllerNode = XRNode.RightHand;
 
+    public Transform leftHandle;
+    public Transform rightHandle;
+    public float maxLeftHandleAngle = 45f;
+    public float maxRightHandleAngle = -45f;
+    public float grabbedLeftAngle = 30f;
+    public float grabbedRightAngle = -30f;
+
     private PlayerInputSystem inputActions;
     private float triggerValue;
     private SphereCollider sphereCollider;
@@ -45,6 +52,17 @@ public class grab : MonoBehaviour
         triggerValue = inputActions.Player.Grab.ReadValue<float>();
 
         bras.transform.localRotation = new Quaternion(0, 0, triggerValue, 1f);
+
+        if (grabbedElm == null)
+        {
+            if (leftHandle != null) leftHandle.localRotation = Quaternion.Euler(0, triggerValue * maxLeftHandleAngle, 0);
+            if (rightHandle != null) rightHandle.localRotation = Quaternion.Euler(0, triggerValue * maxRightHandleAngle, 0);
+        }
+        else
+        {
+            if (leftHandle != null) leftHandle.localRotation = Quaternion.Euler(0, grabbedLeftAngle, 0);
+            if (rightHandle != null) rightHandle.localRotation = Quaternion.Euler(0, grabbedRightAngle, 0);
+        }
 
         canGrab = (triggerValue <= 0.6f && triggerValue != 0f);
 
