@@ -11,6 +11,8 @@ public class S_DialogueBubbleAudio : MonoBehaviour
     [SerializeField] bool isPlayingAnim;
     [SerializeField] bool isOpening;
 
+    [SerializeField] int voiceOverIndex;
+
     [Header("Special Upgrade: Blinking Light")]
     [SerializeField] bool isSpecialUpgrade;
     [SerializeField] Light targetLight;
@@ -33,6 +35,8 @@ public class S_DialogueBubbleAudio : MonoBehaviour
         PrepareRevealText();
         PlayingAnim();
         HandleBlinkingState();
+
+        S_VoiceOver.Instance.PlayAudio(voiceOverIndex);
     }
 
     private void OnEnable()

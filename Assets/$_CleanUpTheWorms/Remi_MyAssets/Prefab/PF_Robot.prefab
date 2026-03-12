@@ -36,6 +36,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.31201, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 7701120203031551232}
   - {fileID: 6062316927993264548}
   - {fileID: 2984775631449369186}
   m_Father: {fileID: 0}
@@ -314,6 +315,121 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!1 &9175628110780334299
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7701120203031551232}
+  - component: {fileID: 8562614200679461478}
+  m_Layer: 0
+  m_Name: S_VoiceOver
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7701120203031551232
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9175628110780334299}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0.0000029504295}
+  m_LocalPosition: {x: 0.36568066, y: -0.54704005, z: -0.109377846}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5747902416189440665}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8562614200679461478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9175628110780334299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 192b3f9bcb746284cbeae11ae7f9e5ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::S_VoiceOver
+  speechList:
+  - name: 
+    clip: {fileID: 8300000, guid: 8b4a6535bc1857842a72530eb172fd34, type: 3}
+    volume: 1
+    pitch: 2
+    spatialBlend: 1
+    loop: 0
+    playOnAwake: 0
+    preventOverlay: 0
+    mixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    source: {fileID: 0}
+  - name: 
+    clip: {fileID: 8300000, guid: dfeb26b7cb08283439f544155ea5e18d, type: 3}
+    volume: 1
+    pitch: 2
+    spatialBlend: 1
+    loop: 0
+    playOnAwake: 0
+    preventOverlay: 0
+    mixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    source: {fileID: 0}
+  - name: 
+    clip: {fileID: 8300000, guid: 06b2250d29229e1469f248e08c5c8e39, type: 3}
+    volume: 1
+    pitch: 2
+    spatialBlend: 1
+    loop: 0
+    playOnAwake: 0
+    preventOverlay: 0
+    mixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    source: {fileID: 0}
+  - name: 
+    clip: {fileID: 8300000, guid: 66d2ef1a520ad954bbb27ae954a413d2, type: 3}
+    volume: 1
+    pitch: 2
+    spatialBlend: 1
+    loop: 0
+    playOnAwake: 0
+    preventOverlay: 0
+    mixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    source: {fileID: 0}
+  - name: 
+    clip: {fileID: 8300000, guid: 4ab47738636ca854295c3f3ed05ce7c9, type: 3}
+    volume: 1
+    pitch: 2
+    spatialBlend: 1
+    loop: 0
+    playOnAwake: 0
+    preventOverlay: 0
+    mixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    source: {fileID: 0}
+  - name: 
+    clip: {fileID: 8300000, guid: 29eb598c23bce874d9036204ab2f5628, type: 3}
+    volume: 1
+    pitch: 2
+    spatialBlend: 1
+    loop: 0
+    playOnAwake: 0
+    preventOverlay: 0
+    mixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    source: {fileID: 0}
+  - name: 
+    clip: {fileID: 8300000, guid: 02578d4ebcd46cc42a996fc1f7e6ab6f, type: 3}
+    volume: 1
+    pitch: 2
+    spatialBlend: 1
+    loop: 0
+    playOnAwake: 0
+    preventOverlay: 0
+    mixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    source: {fileID: 0}
 --- !u!1001 &3379587453419867529
 PrefabInstance:
   m_ObjectHideFlags: 0
