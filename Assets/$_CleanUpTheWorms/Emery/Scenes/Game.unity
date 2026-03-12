@@ -3699,7 +3699,7 @@ PrefabInstance:
       objectReference: {fileID: 1321039}
     - target: {fileID: 1719815166334922787, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
       propertyPath: minDistanceToPlayer
-      value: 3.34
+      value: 2.75
       objectReference: {fileID: 0}
     - target: {fileID: 2869129324395240741, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
       propertyPath: m_Height
@@ -4744,9 +4744,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Super, votre pince fonctionne correctement.\nLorsque vous ramasserez un
-    dechet, veuillez me le jeter dans mon r\xE9cipient. Je l'ouvrirais lorsque vous
-    aurez un d\xE9chet dans votre pince. Essayons avec le dechet derriere vous."
+  m_text: 'Super, votre pince fonctionne correctement.
+
+    Lorsque vous ramasserez
+    un dechet, veuillez me le jeter dans mon recipient. Je l''ouvrirais lorsque vous
+    aurez un dechet dans votre pince. Essayons avec le dechet derriere vous.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: acc86433bf40b4044812bfc2f2bfd7b7, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7201,7 +7203,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6811704862030091430, guid: f5a35e8400b6fb244ad15739bfa0c655, type: 3}
       propertyPath: isHapticActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13675,9 +13677,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Plongez votre pince ! Je crois avoir reussi \xE0 vous deverouiller une
-    am\xE9lioration. On risque de croiser d'autres larves et si elle grouille partout,
-    vous aurez besoin d'une allonge !"
+  m_text: Plongez votre pince ! Je crois avoir reussi a vous deverouiller une amelioration.
+    On risque de croiser d'autres larves et si elle grouille partout, vous aurez
+    besoin d'une allonge !
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: acc86433bf40b4044812bfc2f2bfd7b7, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -34669,8 +34671,8 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.02
-  m_Center: {x: 0, y: 0.00000002978562, z: -0.002241873}
+  m_Radius: 0.03
+  m_Center: {x: 0, y: 0.00000002978562, z: 0.01}
 --- !u!114 &7899099929175119722
 MonoBehaviour:
   m_ObjectHideFlags: 0
