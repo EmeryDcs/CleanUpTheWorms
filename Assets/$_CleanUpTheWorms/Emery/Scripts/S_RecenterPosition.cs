@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class S_RecenterPosition : MonoBehaviour
 {
@@ -11,6 +12,9 @@ public class S_RecenterPosition : MonoBehaviour
 
 	[Header("Input pour recenter")]
 	public InputActionReference recenterInput;
+
+
+	float timer = 0;
 
 	public void Awake()
 	{
@@ -40,9 +44,30 @@ public class S_RecenterPosition : MonoBehaviour
 
 	private void Update()
 	{
-		if (recenterInput.action.WasPressedThisFrame())
+		if (SceneManager.GetActiveScene().buildIndex == 0)
 		{
-			Recenter();
-		}
+            if (recenterInput.action.WasPressedThisFrame())
+            {
+                Recenter();
+            }
+        }
+		else
+        {
+            if (recenterInput.action.IsPressed())
+			{
+                timer += Time.deltaTime;
+                if (timer >= 3)
+                {
+                    timer = 0;
+                    Recenter();
+                }
+            }
+            else
+            {
+                timer = 0;
+            }
+        }
+
+
 	}
 }
