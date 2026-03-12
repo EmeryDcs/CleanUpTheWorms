@@ -16,9 +16,9 @@ TagManager:
   - Water
   - UI
   - Player
-  - NavMesh Robot
-  - NavMesh Larva
-  - NavMesh Both
+  - 
+  - 
+  - 
   - 
   - 
   - 
@@ -55,3 +55,5 @@ TagManager:
   - Light Layer 6
   - Light Layer 7
   - Decals
+  - RealTIme
+  - Bake
