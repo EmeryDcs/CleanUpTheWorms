@@ -17,6 +17,9 @@ public class StateLevel1 : MonoBehaviour
 	[SerializeField]
 	List<GameObject> listCollectables;
 
+	[Header("Anchor near the larva")]
+	public Transform anchorNearLarva;
+
 	[Header("State of the text to display")]
 	public StateLevel1TextRobot currentTextToDisplay;
 
@@ -40,6 +43,8 @@ public class StateLevel1 : MonoBehaviour
 		{
 			Instance = this;
 			currentTextToDisplay = StateLevel1TextRobot.APPARITION_LARVE;
+			RobotAIAgent.Instance.SetMinDistanceToPlayer(1f);
+			RobotAIAgent.Instance.OnEventGoToLocation(anchorNearLarva.position);
 		}
 	}
 
@@ -99,7 +104,6 @@ public class StateLevel1 : MonoBehaviour
 		}
 		else
 		{
-			currentTextToDisplay = StateLevel1TextRobot.INGERATION_LARVE;
 			testAllongeText.SetActive(false);
 			timerText = 0f;
 
@@ -128,6 +132,7 @@ public class StateLevel1 : MonoBehaviour
 		if (listCollectables.Count == 0)
 		{
 			currentTextToDisplay = StateLevel1TextRobot.INGERATION_LARVE;
+			RobotAIAgent.Instance.SetMinDistanceToPlayer(RobotAIAgent.Instance.GetMinDistanceToPlayer());
 			apparitionLarveText.SetActive(false);
 			ingerationLarveText.SetActive(true);
 			timerText = 0f;

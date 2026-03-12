@@ -1,6 +1,7 @@
-using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using System.Collections.Generic;
+using UnityEngine.Rendering;
 
 enum StateRobotText
 {
@@ -11,6 +12,8 @@ enum StateRobotText
 
 public class StateAscenceur : MonoBehaviour
 {
+	public static StateAscenceur Instance { get; private set; }
+
 	[Header("UI & Texts")]
 	public GameObject uiRobotTalk;
 	public GameObject triggerText;
@@ -23,10 +26,25 @@ public class StateAscenceur : MonoBehaviour
 	[Header("Button")]
 	public GameObject buttonLift;
 
+	[Header("List element to pickup")]
+	public List<GameObject> listCollectables;
+
 	StateRobotText currentState;
-	float timerForAnimation = 0f;
 	int testTrigger = 0;
 	bool hasTriggered = false;
+	bool isCatchingAvailable = false;
+
+	private void Awake()
+	{
+		if (Instance != null && Instance != this)
+		{
+			Destroy(this);
+		}
+		else
+		{
+			Instance = this;
+		}
+	}
 
 	private void Start()
 	{
@@ -65,15 +83,13 @@ public class StateAscenceur : MonoBehaviour
 		{
 			triggerText.SetActive(false);
 			animationOpeningTrashText.SetActive(true);
-			timerForAnimation = 0f;
 			currentState = StateRobotText.ANIMATION_OPENING_TRASH;
 		}
 	}
 
 	private void HandleAnimationOpeningTrashState()
 	{
-		timerForAnimation += Time.deltaTime;
-		if (timerForAnimation >= 10f)
+		if (listCollectables.Count <= 0)
 		{
 			animationOpeningTrashText.SetActive(false);
 			buttonPushedText.SetActive(true);
@@ -89,6 +105,16 @@ public class StateAscenceur : MonoBehaviour
 			uiRobotTalk.SetActive(false);
 			StateMachineGame.Instance.state = GameState.TUTORIAL;
 			FindFirstObjectByType<S_TriggerEventButtonLift>().SetCanBePushed(false);
+		}
+	}
+	public void DeleteCollectableFromList(GameObject go)
+	{
+		if (go == null) return;
+
+		if (listCollectables.Contains(go))
+		{
+			listCollectables.Remove(go);
+			Destroy(go);
 		}
 	}
 }

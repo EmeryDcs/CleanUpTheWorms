@@ -16,6 +16,16 @@ public class RobotAIAgent : MonoBehaviour
 	private GameObject objectClued;
 	private bool isWaitingForCollectablePickup = false;
 
+	public float GetMinDistanceToPlayer()
+	{
+		return minDistanceToPlayer;
+	}
+
+	public void SetMinDistanceToPlayer(float newDistance)
+	{
+		agent.stoppingDistance = newDistance;
+	}
+
 	private void Awake()
     {
 		if (Instance != null && Instance != this)
@@ -58,7 +68,8 @@ public class RobotAIAgent : MonoBehaviour
 		}
 		else if (objectClued == null && followCoroutine == null)
 		{
-			ResumeFollowing();
+			if (StateLevel1.Instance.currentTextToDisplay != StateLevel1TextRobot.APPARITION_LARVE)
+				ResumeFollowing();
 		}
 	}
 

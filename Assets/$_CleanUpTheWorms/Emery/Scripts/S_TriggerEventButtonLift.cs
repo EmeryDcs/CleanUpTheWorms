@@ -9,8 +9,9 @@ public class S_TriggerEventButtonLift : MonoBehaviour
     [SerializeField] private Vector3 pushOffset = new Vector3(0, -0.05f, 0);
     [SerializeField] private float smoothTime = 0.05f;
     [SerializeField] private float maxSpeed = 5f;
+	[SerializeField] private Animator animatorLift;
 
-    bool canBePushed = true;
+	bool canBePushed = true;
 
     private Vector3 initialLocalPosition;
     private Vector3 currentVelocity = Vector3.zero;
@@ -59,4 +60,9 @@ public class S_TriggerEventButtonLift : MonoBehaviour
         transform.localPosition = initialLocalPosition;
         currentVelocity = Vector3.zero;
     }
+
+	public void OpenDoors()
+	{
+		animatorLift.SetBool("isTutoOver", true);
+	}
 }
