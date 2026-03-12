@@ -183,6 +183,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: ButtonLift
       objectReference: {fileID: 0}
+    - target: {fileID: 4891189033530589176, guid: 2f5907475b0810049a2f0b26e223da44, type: 3}
+      propertyPath: m_ResetSeedOnPlay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4891189033530589176, guid: 2f5907475b0810049a2f0b26e223da44, type: 3}
+      propertyPath: m_InitialEventNameOverriden
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4983101909397273608, guid: 2f5907475b0810049a2f0b26e223da44, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -3708,6 +3716,14 @@ PrefabInstance:
     - target: {fileID: 5021125915358102310, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
       propertyPath: m_Name
       value: PF_Robot
+      objectReference: {fileID: 0}
+    - target: {fileID: 5073123856978073086, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: vfx
+      value: 
+      objectReference: {fileID: 831818374}
+    - target: {fileID: 5073123856978073086, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: duration
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5747902416189440665, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
       propertyPath: m_LocalScale.y
@@ -8837,6 +8853,11 @@ MonoBehaviour:
   installationRoutineCheckpoint:
     _installationRoutineId: 2063f481-1b63-4eda-9ee8-a00df98536bc
     _installationVariants: []
+--- !u!2083052967 &831818374 stripped
+VisualEffect:
+  m_CorrespondingSourceObject: {fileID: 3082127473938284596, guid: 2f5907475b0810049a2f0b26e223da44, type: 3}
+  m_PrefabInstance: {fileID: 1321038}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &847446087
 PrefabInstance:
   m_ObjectHideFlags: 0

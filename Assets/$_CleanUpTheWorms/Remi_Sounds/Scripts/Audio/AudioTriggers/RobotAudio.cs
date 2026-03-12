@@ -1,6 +1,8 @@
-using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.VFX;
+using UnityEngine.XR;
 
 public class RobotAudio : MonoBehaviour
 {
@@ -9,6 +11,11 @@ public class RobotAudio : MonoBehaviour
     [Header("Upgrade Settings")]
     [SerializeField] private Sound upgradeAudio;
     [SerializeField] private string upgradeVestName;
+
+    public VisualEffect vfx;
+    public float duration = 2.0f;
+    private bool hasPlayed = false;
+
 
     [Header("Speech Settings")]
     [SerializeField] private Sound[] speechAudios;
@@ -29,6 +36,9 @@ public class RobotAudio : MonoBehaviour
     private Coroutine wheelFade;
     private List<int> recentSpeechIndices = new List<int>();
 
+    public XRNode controllerNode = XRNode.RightHand;
+    public XRNode controllerNodeLeft = XRNode.LeftHand;
+
     private void Awake()
     {
         if (Instance == null)
@@ -42,6 +52,8 @@ public class RobotAudio : MonoBehaviour
         }
 
         InitializeSound(upgradeAudio, "UpgradeAudioSource");
+
+        vfx.Stop();
 
         if (speechAudios != null)
         {
@@ -161,7 +173,29 @@ public class RobotAudio : MonoBehaviour
         {
             AudioManagerVest.Instance.PlayGlobalVestSound(upgradeVestName);
         }
+
+        InputDevices.GetDeviceAtXRNode(controllerNode).SendHapticImpulse(0u, 1f, 0.4f);
+        InputDevices.GetDeviceAtXRNode(controllerNodeLeft).SendHapticImpulse(0u, 1f, 0.4f);
+
+        TriggerVFX();
     }
+
+    public void TriggerVFX()
+    {
+        if (vfx != null && !hasPlayed)
+        {
+            hasPlayed = true;
+            vfx.Play();
+            StartCoroutine(StopVFXRoutine());
+        }
+    }
+
+    private IEnumerator StopVFXRoutine()
+    {
+        yield return new WaitForSeconds(duration);
+        vfx.Stop();
+    }
+
 
     [ContextMenu("Play Random Speech")]
     public void PlayRandomSpeech()
