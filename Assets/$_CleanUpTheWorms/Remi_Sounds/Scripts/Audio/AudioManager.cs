@@ -361,10 +361,7 @@ public class AudioManager : MonoBehaviour
         }
         else if (blackoutCount == 3)
         {
-            if (crowdLarvaObject != null)
-            {
-                crowdLarvaObject.SetActive(true);
-            }
+            StartCoroutine(WaitBeforeLarvaCrowd());
         }
 
         ambientActive = false;
@@ -424,6 +421,15 @@ public class AudioManager : MonoBehaviour
 
         if (ambientRoutine != null) StopCoroutine(ambientRoutine);
         ambientRoutine = StartCoroutine(LightOffSequenceRoutine());
+    }
+
+    private IEnumerator WaitBeforeLarvaCrowd()
+    {
+        yield return new WaitForSeconds(3.5f);
+        if (crowdLarvaObject != null)
+        {
+            crowdLarvaObject.SetActive(true);
+        }
     }
 
     public void TurnLightBackOn()
