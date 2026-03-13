@@ -34,20 +34,7 @@ public class S_BlendLight : MonoBehaviour
 
 	public void SetScenario(string s)
 	{
-		switch (s)
-		{
-			case "Light On":
-				probeRefVolume.lightingScenario = scenario01;
-				break;
-			case "Light Off":
-				probeRefVolume.lightingScenario = scenario02;
-				break;
-			case "Light Mid":
-				probeRefVolume.lightingScenario = scenario03;
-				break;
-			default:
-				Debug.LogError("Invalid scenario index: " + s);
-				break;
-		}
+			probeRefVolume.lightingScenario = s;
 	}
+	
 }

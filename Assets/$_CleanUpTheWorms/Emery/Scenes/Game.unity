@@ -432,89 +432,6 @@ Camera:
   m_CorrespondingSourceObject: {fileID: 6252706944039984254, guid: 2f5907475b0810049a2f0b26e223da44, type: 3}
   m_PrefabInstance: {fileID: 1321038}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &22399002
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 22399004}
-  - component: {fileID: 22399003}
-  m_Layer: 0
-  m_Name: Water (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
---- !u!114 &22399003
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 22399002}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93eb560ae5ebcd8459ef03cd3eccbd16, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: KWS::KWS.WaterSystem
-  Profile: {fileID: 0}
-  Settings: {fileID: 471355208}
-  WaterRenderingActive: 1
-  WorldSpaceBounds:
-    m_Center: {x: -1.38, y: -16.293787, z: 44.46}
-    m_Extent: {x: 21.98719, y: 3.4406602, z: 21.98719}
-  ShowColorSettings: 1
-  ShowExpertColorSettings: 0
-  ShowWaves: 1
-  ShowExpertWavesSettings: 0
-  ShowFoam: 0
-  ShowReflectionSettings: 1
-  ShowExpertReflectionSettings: 0
-  ShowRefractionSettings: 0
-  ShowExpertRefractionSettings: 0
-  ShowVolumetricLightSettings: 1
-  ShowExpertVolumetricLightSettings: 0
-  ShowFlowMap: 0
-  ShowExpertFlowmapSettings: 0
-  FlowMapInEditMode: 0
-  FlowMapBrushStrength: 0.75
-  ShowDynamicWaves: 0
-  ShowExpertDynamicWavesSettings: 0
-  ShowShorelineMap: 0
-  ShorelineInEditMode: 0
-  ShowExpertShorelineSettings: 0
-  ShowFoamSettings: 0
-  ShowCausticEffectSettings: 1
-  ShowExpertCausticEffectSettings: 0
-  CausticDepthScaleInEditMode: 0
-  ShowUnderwaterEffectSettings: 1
-  ShowExpertUnderwaterSettings: 0
-  ShowMeshSettings: 1
-  SplineMeshInEditMode: 0
-  ShowExpertMeshSettings: 0
-  WideAngleCameraRenderingMode: 0
-  ShowRendering: 0
-  ShowExpertRenderingSettings: 0
-  _waterGUID: Game.973IB
---- !u!4 &22399004
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 22399002}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.38, y: -16.3, z: 44.46}
-  m_LocalScale: {x: 43.97438, y: 6.8564706, z: 43.97438}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &24687666
 GameObject:
   m_ObjectHideFlags: 0
@@ -6837,89 +6754,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 203beeee6b457d24ba2fa1194aabbf3e, type: 3}
---- !u!1 &521976573
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 521976575}
-  - component: {fileID: 521976574}
-  m_Layer: 0
-  m_Name: Water
-  m_TagString: Untagged
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
---- !u!114 &521976574
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 521976573}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93eb560ae5ebcd8459ef03cd3eccbd16, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: KWS::KWS.WaterSystem
-  Profile: {fileID: 0}
-  Settings: {fileID: 1986937177}
-  WaterRenderingActive: 1
-  WorldSpaceBounds:
-    m_Center: {x: -1.1403979, y: -15.039787, z: 44.850998}
-    m_Extent: {x: 15.104393, y: 11.585458, z: 15.104395}
-  ShowColorSettings: 1
-  ShowExpertColorSettings: 0
-  ShowWaves: 1
-  ShowExpertWavesSettings: 0
-  ShowFoam: 0
-  ShowReflectionSettings: 1
-  ShowExpertReflectionSettings: 0
-  ShowRefractionSettings: 0
-  ShowExpertRefractionSettings: 0
-  ShowVolumetricLightSettings: 1
-  ShowExpertVolumetricLightSettings: 0
-  ShowFlowMap: 0
-  ShowExpertFlowmapSettings: 0
-  FlowMapInEditMode: 0
-  FlowMapBrushStrength: 0.75
-  ShowDynamicWaves: 0
-  ShowExpertDynamicWavesSettings: 0
-  ShowShorelineMap: 0
-  ShorelineInEditMode: 0
-  ShowExpertShorelineSettings: 0
-  ShowFoamSettings: 0
-  ShowCausticEffectSettings: 1
-  ShowExpertCausticEffectSettings: 0
-  CausticDepthScaleInEditMode: 0
-  ShowUnderwaterEffectSettings: 1
-  ShowExpertUnderwaterSettings: 0
-  ShowMeshSettings: 1
-  SplineMeshInEditMode: 0
-  ShowExpertMeshSettings: 0
-  WideAngleCameraRenderingMode: 0
-  ShowRendering: 0
-  ShowExpertRenderingSettings: 0
-  _waterGUID: Game.LFPTZ
---- !u!4 &521976575
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 521976573}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.1404, y: -15.046, z: 44.851}
-  m_LocalScale: {x: 1510.4391, y: 1157.3033, z: 1510.4391}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &536521960
 GameObject:
   m_ObjectHideFlags: 0
@@ -6976,6 +6810,9 @@ MonoBehaviour:
   - {fileID: 1309279805}
   - {fileID: 1915100360}
   - {fileID: 224479154}
+  endOfGame:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &546834833
 GameObject:
   m_ObjectHideFlags: 0
@@ -20291,6 +20128,9 @@ MonoBehaviour:
   - {fileID: 650497725}
   - {fileID: 83213562}
   - {fileID: 1664119601}
+  endOfTuto:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &1865234480
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44472,6 +44312,71 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6997240972157477700}
   m_Mesh: {fileID: -109825729717790555, guid: 0cf1fad7eac8cdb4db2c83fbb0843233, type: 3}
+--- !u!1001 &5738738612305506654
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2038393269886009975, guid: c80fa8f18cc2f53459347f780dcf2c17, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2038393269886009975, guid: c80fa8f18cc2f53459347f780dcf2c17, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2038393269886009975, guid: c80fa8f18cc2f53459347f780dcf2c17, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2038393269886009975, guid: c80fa8f18cc2f53459347f780dcf2c17, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2038393269886009975, guid: c80fa8f18cc2f53459347f780dcf2c17, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2038393269886009975, guid: c80fa8f18cc2f53459347f780dcf2c17, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2038393269886009975, guid: c80fa8f18cc2f53459347f780dcf2c17, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2038393269886009975, guid: c80fa8f18cc2f53459347f780dcf2c17, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2038393269886009975, guid: c80fa8f18cc2f53459347f780dcf2c17, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2038393269886009975, guid: c80fa8f18cc2f53459347f780dcf2c17, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3519759087933870893, guid: c80fa8f18cc2f53459347f780dcf2c17, type: 3}
+      propertyPath: m_Name
+      value: PF_Waters
+      objectReference: {fileID: 0}
+    - target: {fileID: 5707225755778968676, guid: c80fa8f18cc2f53459347f780dcf2c17, type: 3}
+      propertyPath: Settings
+      value: 
+      objectReference: {fileID: 1986937177}
+    - target: {fileID: 8781135497904047027, guid: c80fa8f18cc2f53459347f780dcf2c17, type: 3}
+      propertyPath: Settings
+      value: 
+      objectReference: {fileID: 471355208}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c80fa8f18cc2f53459347f780dcf2c17, type: 3}
 --- !u!23 &5738738849527143297
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -58187,9 +58092,8 @@ SceneRoots:
   - {fileID: 1041143201}
   - {fileID: 668935994}
   - {fileID: 1882736266}
-  - {fileID: 521976575}
-  - {fileID: 22399004}
   - {fileID: 1551876228}
   - {fileID: 2243316871090447111}
   - {fileID: 1059584847}
   - {fileID: 3545521482843634544}
+  - {fileID: 5738738612305506654}

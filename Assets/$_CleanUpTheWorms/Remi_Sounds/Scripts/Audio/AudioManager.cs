@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.Audio;
-using UnityEngine.Rendering;
 using System;
 using System.Collections.Generic;
 using System.Collections;
@@ -87,10 +86,13 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private List<GameObject> objectsToEnableOnSecondBlackout;
     [SerializeField] private GameObject objectToEnableOnGeneratorSound;
 
-    [Header("APV Scenario Settings")]
-    [SerializeField] private string darkScenarioName = "DarkScenario";
-    [SerializeField] private List<string> progressiveLitScenarios;
-    [SerializeField] private float scenarioBlendDuration = 2f;
+    [Header("Scenario Settings")]
+    [SerializeField] private string scenario1 = "Scenario 1";
+    [SerializeField] private string scenario2 = "Scenario 2";
+    [SerializeField] private string scenario3_1 = "Scenario 3.1";
+    [SerializeField] private string scenario3_2 = "Scenario 3.2";
+    [SerializeField] private string scenario3_3 = "Scenario 3.3";
+    [SerializeField] private string scenario4 = "Scenario 4";
 
     [Header("Random 3D Ambient Sound")]
     [SerializeField] private AudioClip random3DClip;
@@ -103,7 +105,6 @@ public class AudioManager : MonoBehaviour
     private Dictionary<AudioSource, Coroutine> activeFades = new Dictionary<AudioSource, Coroutine>();
     private Coroutine ambientRoutine;
     private Coroutine random3DRoutine;
-    private Coroutine currentAPVBlend;
     private bool ambientActive = false;
     private int blackoutCount = 0;
     private bool isWaitingForButton = false;
@@ -148,6 +149,11 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
+        if (S_BlendLight.instance != null)
+        {
+            S_BlendLight.instance.SetScenario(scenario1);
+        }
+
         if (lightGroups != null && lightGroups.Count > 0)
         {
             for (int i = 0; i < lightGroups.Count; i++)
@@ -353,6 +359,13 @@ public class AudioManager : MonoBehaviour
                 }
             }
         }
+        else if (blackoutCount == 3)
+        {
+            if (crowdLarvaObject != null)
+            {
+                crowdLarvaObject.SetActive(true);
+            }
+        }
 
         ambientActive = false;
         if (random3DRoutine != null) StopCoroutine(random3DRoutine);
@@ -365,17 +378,29 @@ public class AudioManager : MonoBehaviour
             }
         }
 
-        if (currentAPVBlend != null) StopCoroutine(currentAPVBlend);
-        currentAPVBlend = StartCoroutine(BlendAPVScenarioRoutine(darkScenarioName, scenarioBlendDuration));
-
-        if (lightOffClip != null)
+        if (S_BlendLight.instance != null)
         {
-            PlayClipAtPoint(lightOffClip, transform.position, ambientSounds.Count > 0 ? ambientSounds[0].mixerGroup : null, lightOffVolume);
+            if (blackoutCount == 1 || blackoutCount == 2)
+            {
+                S_BlendLight.instance.SetScenario(scenario2);
+            }
+            else if (blackoutCount == 3)
+            {
+                S_BlendLight.instance.SetScenario(scenario4);
+            }
         }
 
-        if (!string.IsNullOrEmpty(vestLightOffSoundName) && AudioManagerVest.Instance != null)
+        if (blackoutCount < 3)
         {
-            AudioManagerVest.Instance.PlayGlobalVestSound(vestLightOffSoundName);
+            if (lightOffClip != null)
+            {
+                PlayClipAtPoint(lightOffClip, transform.position, ambientSounds.Count > 0 ? ambientSounds[0].mixerGroup : null, lightOffVolume);
+            }
+
+            if (!string.IsNullOrEmpty(vestLightOffSoundName) && AudioManagerVest.Instance != null)
+            {
+                AudioManagerVest.Instance.PlayGlobalVestSound(vestLightOffSoundName);
+            }
         }
 
         foreach (AmbientSoundSettings amb in ambientSounds)
@@ -408,6 +433,8 @@ public class AudioManager : MonoBehaviour
 
     private IEnumerator LightOffSequenceRoutine()
     {
+        if (blackoutCount == 3) yield break;
+
         if (blackoutCount == 1)
         {
             isWaitingForButton = true;
@@ -428,9 +455,14 @@ public class AudioManager : MonoBehaviour
             AudioManagerVest.Instance.PlayGlobalVestSound(vestGeneratorSoundName);
         }
 
-        if (blackoutCount == 2 && objectToEnableOnGeneratorSound != null)
+        if (blackoutCount == 2)
         {
-            objectToEnableOnGeneratorSound.SetActive(true);
+            if (objectToEnableOnGeneratorSound != null)
+            {
+                objectToEnableOnGeneratorSound.SetActive(true);
+            }
+
+
         }
 
         yield return new WaitForSeconds(generatorToLightWaitTime);
@@ -448,23 +480,24 @@ public class AudioManager : MonoBehaviour
             startIndex = 3;
             lightsToReveal = 1;
         }
-        else
-        {
-            if (lightGroups != null)
-            {
-                lightsToReveal = Mathf.Min(blackoutCount + 1, lightGroups.Count);
-            }
-        }
-
-        if (progressiveLitScenarios != null && progressiveLitScenarios.Count > 0)
-        {
-            int scenarioIndex = Mathf.Min(blackoutCount, progressiveLitScenarios.Count - 1);
-            if (currentAPVBlend != null) StopCoroutine(currentAPVBlend);
-            currentAPVBlend = StartCoroutine(BlendAPVScenarioRoutine(progressiveLitScenarios[scenarioIndex], scenarioBlendDuration));
-        }
 
         for (int i = startIndex; i < startIndex + lightsToReveal; i++)
         {
+            if (blackoutCount == 1 && S_BlendLight.instance != null)
+            {
+                if (i == 0) S_BlendLight.instance.SetScenario(scenario3_1);
+                else if (i == 1) S_BlendLight.instance.SetScenario(scenario3_2);
+                else if (i == 2) S_BlendLight.instance.SetScenario(scenario3_3);
+            }
+
+            if (blackoutCount == 2)
+            {
+                if (S_BlendLight.instance != null)
+                {
+                    S_BlendLight.instance.SetScenario(scenario3_3);
+                }
+            }
+
             if (lightGroups != null && lightGroups.Count > i && lightGroups[i] != null)
             {
                 lightGroups[i].SetActive(true);
@@ -478,11 +511,6 @@ public class AudioManager : MonoBehaviour
             if (!string.IsNullOrEmpty(vestLightOnSoundName) && AudioManagerVest.Instance != null)
             {
                 AudioManagerVest.Instance.PlayGlobalVestSound(vestLightOnSoundName);
-            }
-
-            if (lightGroups != null && i == lightGroups.Count - 1 && crowdLarvaObject != null)
-            {
-                crowdLarvaObject.SetActive(true);
             }
 
             if (i < (startIndex + lightsToReveal) - 1)
@@ -519,18 +547,5 @@ public class AudioManager : MonoBehaviour
                 Destroy(fxGo, random3DClip.length);
             }
         }
-    }
-
-    private IEnumerator BlendAPVScenarioRoutine(string targetScenario, float duration)
-    {
-        float elapsed = 0f;
-        while (elapsed < duration)
-        {
-            elapsed += Time.deltaTime;
-            float t = elapsed / duration;
-            ProbeReferenceVolume.instance.BlendLightingScenario(targetScenario, t);
-            yield return null;
-        }
-        ProbeReferenceVolume.instance.BlendLightingScenario(targetScenario, 1f);
     }
 }

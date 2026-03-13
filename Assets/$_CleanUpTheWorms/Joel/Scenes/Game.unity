@@ -3291,153 +3291,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 169413525}
   m_CullTransparentMesh: 1
---- !u!114 &172107619
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bf75699500d2c349aac22df3efb5415, type: 3}
-  m_Name: (Clone)
-  m_EditorClassIdentifier: KWS::KWS.WaterSystemScriptableData
-  Transparent: 7
-  DyeColor: {r: 1, g: 1, b: 1, a: 1}
-  TurbidityColor: {r: 0.02745098, g: 0.25490198, b: 0.3137255, a: 1}
-  UseGlobalWind: 1
-  GlobalWindZone: {fileID: 0}
-  GlobalWindZoneSpeedMultiplier: 1
-  GlobalWindZoneTurbulenceMultiplier: 1
-  GlobalWindSpeed: 5
-  GlobalWindRotation: 0
-  GlobalWindTurbulence: 0.5
-  GlobalFftWavesQuality: 256
-  GlobalFftWavesCascades: 4
-  GlobalWavesAreaScale: 1
-  GlobalTimeScale: 1
-  LocalWindSpeed: 3.5
-  LocalWindRotation: 0
-  LocalWindTurbulence: 0.4
-  LocalFftWavesQuality: 128
-  LocalFftWavesCascades: 4
-  LocalWavesAreaScale: 1
-  LocalTimeScale: 1
-  FoamProfile: 2
-  UseOceanFoam: 0
-  OceanFoamColor: {r: 0.535, g: 0.649, b: 0.664, a: 0.86}
-  OceanFoamStrength: 0.2
-  OceanFoamTextureSize: 30
-  UseIntersectionFoam: 0
-  IntersectionFoamColor: {r: 0.64705884, g: 0.9019608, b: 1, a: 0.92156863}
-  IntersectionFoamFadeDistance: 1.5
-  IntersectionTextureFoamSize: 25
-  ReflectionProfile: 2
-  UseScreenSpaceReflection: 1
-  ScreenSpaceReflectionResolutionQuality: 50
-  UseScreenSpaceReflectionHolesFilling: 1
-  UseScreenSpaceReflectionSky: 1
-  ScreenSpaceBordersStretching: 0.025
-  UsePlanarReflection: 0
-  PlanarCullingMask: -1
-  PlanarReflectionResolutionQuality: 512
-  ReflectionClipPlaneOffset: 0.0005
-  RenderPlanarShadows: 0
-  RenderPlanarVolumetricsAndFog: 0
-  RenderPlanarClouds: 0
-  UseReflectionProbes: 0
-  OverrideSkyColor: 0
-  CustomSkyColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  UseAnisotropicReflections: 1
-  AnisotropicReflectionsHighQuality: 0
-  AnisotropicReflectionsScale: 0.5
-  ReflectSun: 1
-  ReflectedSunCloudinessStrength: 0.04
-  ReflectedSunStrength: 1
-  RefractionProfile: 2
-  RefractionMode: 1
-  RefractionAproximatedDepth: 2
-  RefractionSimpleStrength: 0.25
-  UseRefractionDispersion: 1
-  RefractionDispersionStrength: 0.35
-  RefractionResolution: 50
-  VolumetricLightProfile: 2
-  UseVolumetricLight: 1
-  VolumetricLightResolutionQuality: 50
-  VolumetricLightIteration: 8
-  VolumetricLightTemporalReprojectionAccumulationFactor: 0.35
-  VolumetricLightUseAdditionalLightsCaustic: 0
-  FlowmapProfile: 2
-  UseFlowMap: 0
-  FlowMapAreaPosition: {x: 0, y: 0, z: 0}
-  FlowMapAreaSize: 200
-  FlowMapTextureResolution: 4096
-  FlowMapSpeed: 1
-  UseFluidsSimulation: 0
-  FluidsAreaSize: 40
-  FluidsSimulationIterrations: 2
-  FluidsTextureSize: 1024
-  FluidsSimulationFPS: 60
-  FluidsSpeed: 1
-  FluidsFoamStrength: 0.5
-  FlowingScriptableData: {fileID: 0}
-  DynamicWavesProfile: 2
-  UseDynamicWaves: 0
-  DynamicWavesAreaSize: 25
-  DynamicWavesResolutionPerMeter: 40
-  DynamicWavesGlobalForceScale: 0.2
-  DynamicWavesPropagationSpeed: 1
-  UseDynamicWavesRainEffect: 0
-  DynamicWavesRainStrength: 0.2
-  ShorelineProfile: 2
-  UseShorelineRendering: 0
-  ShorelineColor: {r: 1.1450981, g: 1.2156863, b: 1.2352941, a: 0.627451}
-  ShorelineFoamLodQuality: 0
-  UseShorelineFoamFastMode: 0
-  ShorelineFoamReceiveDirShadows: 1
-  ShorelineWavesScriptableData: {fileID: 0}
-  CausticProfile: 2
-  UseCausticEffect: 1
-  UseGlobalCausticHighQualityFiltering: 0
-  GlobalCausticTextureResolutionQuality: 1024
-  GlobalCausticDepth: 2
-  UseLocalCausticHighQualityFiltering: 0
-  LocalCausticTextureResolutionQuality: 1024
-  LocalCausticDepth: 2
-  UseCausticDispersion: 1
-  CausticStrength: 2
-  UnderwaterProfile: 2
-  UseUnderwaterEffect: 1
-  UnderwaterReflectionMode: 1
-  UseUnderwaterHalfLineTensionEffect: 1
-  UnderwaterHalfLineTensionScale: 0.5
-  OverrideUnderwaterTransparent: 0
-  UnderwaterTransparentOffset: 5
-  MeshProfile: 0
-  WaterMeshType: 0
-  UseAquariumMode: 0
-  OceanDetailingFarDistance: 1000
-  RiverSplineNormalOffset: 1
-  RiverSplineVertexCountBetweenPoints: 20
-  RiverSplineDepth: 10
-  CustomMesh: {fileID: 0}
-  WaterMeshQualityInfinite: 1
-  WaterMeshQualityFinite: 1
-  UseTesselation: 0
-  TesselationFactor_Infinite: 0.75
-  TesselationFactor_Finite: 200
-  TesselationFactor_Custom: 100
-  TesselationFactor_River: 100
-  TesselationMaxDistance_Infinite: 2000
-  TesselationMaxDistance_Finite: 100
-  TesselationMaxDistance_Custom: 100
-  TesselationMaxDistance_River: 100
-  SplineScriptableData: {fileID: 0}
-  RenderingProfile: 2
-  TransparentSortingPriority: -1
-  DrawToPosteffectsDepth: 0
-  WireframeMode: 0
 --- !u!1 &203785776
 GameObject:
   m_ObjectHideFlags: 0
@@ -6018,6 +5871,153 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &384939063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bf75699500d2c349aac22df3efb5415, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: KWS::KWS.WaterSystemScriptableData
+  Transparent: 7
+  DyeColor: {r: 1, g: 1, b: 1, a: 1}
+  TurbidityColor: {r: 0.02745098, g: 0.25490198, b: 0.3137255, a: 1}
+  UseGlobalWind: 1
+  GlobalWindZone: {fileID: 0}
+  GlobalWindZoneSpeedMultiplier: 1
+  GlobalWindZoneTurbulenceMultiplier: 1
+  GlobalWindSpeed: 5
+  GlobalWindRotation: 0
+  GlobalWindTurbulence: 0.5
+  GlobalFftWavesQuality: 256
+  GlobalFftWavesCascades: 4
+  GlobalWavesAreaScale: 1
+  GlobalTimeScale: 1
+  LocalWindSpeed: 3.5
+  LocalWindRotation: 0
+  LocalWindTurbulence: 0.4
+  LocalFftWavesQuality: 128
+  LocalFftWavesCascades: 4
+  LocalWavesAreaScale: 1
+  LocalTimeScale: 1
+  FoamProfile: 2
+  UseOceanFoam: 0
+  OceanFoamColor: {r: 0.535, g: 0.649, b: 0.664, a: 0.86}
+  OceanFoamStrength: 0.2
+  OceanFoamTextureSize: 30
+  UseIntersectionFoam: 0
+  IntersectionFoamColor: {r: 0.64705884, g: 0.9019608, b: 1, a: 0.92156863}
+  IntersectionFoamFadeDistance: 1.5
+  IntersectionTextureFoamSize: 25
+  ReflectionProfile: 2
+  UseScreenSpaceReflection: 1
+  ScreenSpaceReflectionResolutionQuality: 50
+  UseScreenSpaceReflectionHolesFilling: 1
+  UseScreenSpaceReflectionSky: 1
+  ScreenSpaceBordersStretching: 0.025
+  UsePlanarReflection: 0
+  PlanarCullingMask: -1
+  PlanarReflectionResolutionQuality: 512
+  ReflectionClipPlaneOffset: 0.0005
+  RenderPlanarShadows: 0
+  RenderPlanarVolumetricsAndFog: 0
+  RenderPlanarClouds: 0
+  UseReflectionProbes: 0
+  OverrideSkyColor: 0
+  CustomSkyColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  UseAnisotropicReflections: 1
+  AnisotropicReflectionsHighQuality: 0
+  AnisotropicReflectionsScale: 0.5
+  ReflectSun: 1
+  ReflectedSunCloudinessStrength: 0.04
+  ReflectedSunStrength: 1
+  RefractionProfile: 2
+  RefractionMode: 1
+  RefractionAproximatedDepth: 2
+  RefractionSimpleStrength: 0.25
+  UseRefractionDispersion: 1
+  RefractionDispersionStrength: 0.35
+  RefractionResolution: 50
+  VolumetricLightProfile: 2
+  UseVolumetricLight: 1
+  VolumetricLightResolutionQuality: 50
+  VolumetricLightIteration: 7
+  VolumetricLightTemporalReprojectionAccumulationFactor: 0.35
+  VolumetricLightUseAdditionalLightsCaustic: 0
+  FlowmapProfile: 2
+  UseFlowMap: 0
+  FlowMapAreaPosition: {x: 0, y: 0, z: 0}
+  FlowMapAreaSize: 200
+  FlowMapTextureResolution: 4096
+  FlowMapSpeed: 1
+  UseFluidsSimulation: 0
+  FluidsAreaSize: 35
+  FluidsSimulationIterrations: 2
+  FluidsTextureSize: 1536
+  FluidsSimulationFPS: 60
+  FluidsSpeed: 1
+  FluidsFoamStrength: 0.5
+  FlowingScriptableData: {fileID: 0}
+  DynamicWavesProfile: 2
+  UseDynamicWaves: 0
+  DynamicWavesAreaSize: 50
+  DynamicWavesResolutionPerMeter: 34
+  DynamicWavesGlobalForceScale: 0.2
+  DynamicWavesPropagationSpeed: 1
+  UseDynamicWavesRainEffect: 0
+  DynamicWavesRainStrength: 0.2
+  ShorelineProfile: 2
+  UseShorelineRendering: 0
+  ShorelineColor: {r: 1.1450981, g: 1.2156863, b: 1.2352941, a: 0.627451}
+  ShorelineFoamLodQuality: 0
+  UseShorelineFoamFastMode: 0
+  ShorelineFoamReceiveDirShadows: 1
+  ShorelineWavesScriptableData: {fileID: 0}
+  CausticProfile: 2
+  UseCausticEffect: 1
+  UseGlobalCausticHighQualityFiltering: 0
+  GlobalCausticTextureResolutionQuality: 1024
+  GlobalCausticDepth: 2
+  UseLocalCausticHighQualityFiltering: 0
+  LocalCausticTextureResolutionQuality: 1024
+  LocalCausticDepth: 2
+  UseCausticDispersion: 1
+  CausticStrength: 2
+  UnderwaterProfile: 2
+  UseUnderwaterEffect: 1
+  UnderwaterReflectionMode: 1
+  UseUnderwaterHalfLineTensionEffect: 1
+  UnderwaterHalfLineTensionScale: 0.5
+  OverrideUnderwaterTransparent: 0
+  UnderwaterTransparentOffset: 5
+  MeshProfile: 0
+  WaterMeshType: 3
+  UseAquariumMode: 0
+  OceanDetailingFarDistance: 1000
+  RiverSplineNormalOffset: 1
+  RiverSplineVertexCountBetweenPoints: 20
+  RiverSplineDepth: 10
+  CustomMesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  WaterMeshQualityInfinite: 1
+  WaterMeshQualityFinite: 1
+  UseTesselation: 0
+  TesselationFactor_Infinite: 0.75
+  TesselationFactor_Finite: 200
+  TesselationFactor_Custom: 100
+  TesselationFactor_River: 100
+  TesselationMaxDistance_Infinite: 2000
+  TesselationMaxDistance_Finite: 100
+  TesselationMaxDistance_Custom: 100
+  TesselationMaxDistance_River: 100
+  SplineScriptableData: {fileID: 0}
+  RenderingProfile: 2
+  TransparentSortingPriority: -1
+  DrawToPosteffectsDepth: 0
+  WireframeMode: 0
 --- !u!1 &385426067
 GameObject:
   m_ObjectHideFlags: 0
@@ -8770,6 +8770,153 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &457783851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bf75699500d2c349aac22df3efb5415, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: KWS::KWS.WaterSystemScriptableData
+  Transparent: 7
+  DyeColor: {r: 1, g: 1, b: 1, a: 1}
+  TurbidityColor: {r: 0.02745098, g: 0.25490198, b: 0.3137255, a: 1}
+  UseGlobalWind: 1
+  GlobalWindZone: {fileID: 0}
+  GlobalWindZoneSpeedMultiplier: 1
+  GlobalWindZoneTurbulenceMultiplier: 1
+  GlobalWindSpeed: 5
+  GlobalWindRotation: 0
+  GlobalWindTurbulence: 0.5
+  GlobalFftWavesQuality: 256
+  GlobalFftWavesCascades: 4
+  GlobalWavesAreaScale: 1
+  GlobalTimeScale: 1
+  LocalWindSpeed: 3.5
+  LocalWindRotation: 0
+  LocalWindTurbulence: 0.4
+  LocalFftWavesQuality: 128
+  LocalFftWavesCascades: 4
+  LocalWavesAreaScale: 1
+  LocalTimeScale: 1
+  FoamProfile: 2
+  UseOceanFoam: 0
+  OceanFoamColor: {r: 0.535, g: 0.649, b: 0.664, a: 0.86}
+  OceanFoamStrength: 0.2
+  OceanFoamTextureSize: 30
+  UseIntersectionFoam: 0
+  IntersectionFoamColor: {r: 0.64705884, g: 0.9019608, b: 1, a: 0.92156863}
+  IntersectionFoamFadeDistance: 1.5
+  IntersectionTextureFoamSize: 25
+  ReflectionProfile: 2
+  UseScreenSpaceReflection: 1
+  ScreenSpaceReflectionResolutionQuality: 50
+  UseScreenSpaceReflectionHolesFilling: 1
+  UseScreenSpaceReflectionSky: 1
+  ScreenSpaceBordersStretching: 0.025
+  UsePlanarReflection: 0
+  PlanarCullingMask: -1
+  PlanarReflectionResolutionQuality: 512
+  ReflectionClipPlaneOffset: 0.0005
+  RenderPlanarShadows: 0
+  RenderPlanarVolumetricsAndFog: 0
+  RenderPlanarClouds: 0
+  UseReflectionProbes: 0
+  OverrideSkyColor: 0
+  CustomSkyColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  UseAnisotropicReflections: 1
+  AnisotropicReflectionsHighQuality: 0
+  AnisotropicReflectionsScale: 0.5
+  ReflectSun: 1
+  ReflectedSunCloudinessStrength: 0.04
+  ReflectedSunStrength: 1
+  RefractionProfile: 2
+  RefractionMode: 1
+  RefractionAproximatedDepth: 2
+  RefractionSimpleStrength: 0.25
+  UseRefractionDispersion: 1
+  RefractionDispersionStrength: 0.35
+  RefractionResolution: 50
+  VolumetricLightProfile: 2
+  UseVolumetricLight: 1
+  VolumetricLightResolutionQuality: 50
+  VolumetricLightIteration: 7
+  VolumetricLightTemporalReprojectionAccumulationFactor: 0.35
+  VolumetricLightUseAdditionalLightsCaustic: 0
+  FlowmapProfile: 2
+  UseFlowMap: 0
+  FlowMapAreaPosition: {x: 0, y: 0, z: 0}
+  FlowMapAreaSize: 200
+  FlowMapTextureResolution: 4096
+  FlowMapSpeed: 1
+  UseFluidsSimulation: 0
+  FluidsAreaSize: 35
+  FluidsSimulationIterrations: 2
+  FluidsTextureSize: 1536
+  FluidsSimulationFPS: 60
+  FluidsSpeed: 1
+  FluidsFoamStrength: 0.5
+  FlowingScriptableData: {fileID: 0}
+  DynamicWavesProfile: 2
+  UseDynamicWaves: 0
+  DynamicWavesAreaSize: 50
+  DynamicWavesResolutionPerMeter: 34
+  DynamicWavesGlobalForceScale: 0.2
+  DynamicWavesPropagationSpeed: 1
+  UseDynamicWavesRainEffect: 0
+  DynamicWavesRainStrength: 0.2
+  ShorelineProfile: 2
+  UseShorelineRendering: 0
+  ShorelineColor: {r: 1.1450981, g: 1.2156863, b: 1.2352941, a: 0.627451}
+  ShorelineFoamLodQuality: 0
+  UseShorelineFoamFastMode: 0
+  ShorelineFoamReceiveDirShadows: 1
+  ShorelineWavesScriptableData: {fileID: 0}
+  CausticProfile: 2
+  UseCausticEffect: 1
+  UseGlobalCausticHighQualityFiltering: 0
+  GlobalCausticTextureResolutionQuality: 1024
+  GlobalCausticDepth: 2
+  UseLocalCausticHighQualityFiltering: 0
+  LocalCausticTextureResolutionQuality: 1024
+  LocalCausticDepth: 2
+  UseCausticDispersion: 1
+  CausticStrength: 2
+  UnderwaterProfile: 2
+  UseUnderwaterEffect: 1
+  UnderwaterReflectionMode: 1
+  UseUnderwaterHalfLineTensionEffect: 1
+  UnderwaterHalfLineTensionScale: 0.5
+  OverrideUnderwaterTransparent: 0
+  UnderwaterTransparentOffset: 5
+  MeshProfile: 0
+  WaterMeshType: 3
+  UseAquariumMode: 0
+  OceanDetailingFarDistance: 1000
+  RiverSplineNormalOffset: 1
+  RiverSplineVertexCountBetweenPoints: 20
+  RiverSplineDepth: 10
+  CustomMesh: {fileID: 2534964839176971238, guid: 1432ee7fb7cd1a847a5deb12a2abe560, type: 3}
+  WaterMeshQualityInfinite: 1
+  WaterMeshQualityFinite: 1
+  UseTesselation: 0
+  TesselationFactor_Infinite: 0.75
+  TesselationFactor_Finite: 200
+  TesselationFactor_Custom: 100
+  TesselationFactor_River: 100
+  TesselationMaxDistance_Infinite: 2000
+  TesselationMaxDistance_Finite: 100
+  TesselationMaxDistance_Custom: 100
+  TesselationMaxDistance_River: 100
+  SplineScriptableData: {fileID: 0}
+  RenderingProfile: 2
+  TransparentSortingPriority: -1
+  DrawToPosteffectsDepth: 0
+  WireframeMode: 0
 --- !u!1 &471483956
 GameObject:
   m_ObjectHideFlags: 0
@@ -9671,6 +9818,55 @@ MonoBehaviour:
       m_Data: []
   m_Knots:
     m_KnotsLink: []
+--- !u!1 &520910166
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 520910168}
+  - component: {fileID: 520910167}
+  m_Layer: 0
+  m_Name: BlendLight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &520910167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 520910166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96e2f57a96ba12a499bd607919790835, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::S_BlendLight
+  scenario01: Scenario01Name
+  scenario02: Scenario02Name
+  scenario03: Scenario03Name
+  blendingFactor: 0.5
+  numberOfCellsBlendedPerFrame: 10
+--- !u!4 &520910168
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 520910166}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -39.49561, y: 20.01266, z: -9.54367}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &540594598
 GameObject:
   m_ObjectHideFlags: 0
@@ -10802,153 +10998,6 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
---- !u!114 &636653620
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bf75699500d2c349aac22df3efb5415, type: 3}
-  m_Name: (Clone)
-  m_EditorClassIdentifier: KWS::KWS.WaterSystemScriptableData
-  Transparent: 7
-  DyeColor: {r: 1, g: 1, b: 1, a: 1}
-  TurbidityColor: {r: 0.02745098, g: 0.25490198, b: 0.3137255, a: 1}
-  UseGlobalWind: 1
-  GlobalWindZone: {fileID: 0}
-  GlobalWindZoneSpeedMultiplier: 1
-  GlobalWindZoneTurbulenceMultiplier: 1
-  GlobalWindSpeed: 5
-  GlobalWindRotation: 0
-  GlobalWindTurbulence: 0.5
-  GlobalFftWavesQuality: 256
-  GlobalFftWavesCascades: 4
-  GlobalWavesAreaScale: 1
-  GlobalTimeScale: 1
-  LocalWindSpeed: 3.5
-  LocalWindRotation: 0
-  LocalWindTurbulence: 0.4
-  LocalFftWavesQuality: 128
-  LocalFftWavesCascades: 4
-  LocalWavesAreaScale: 1
-  LocalTimeScale: 1
-  FoamProfile: 2
-  UseOceanFoam: 0
-  OceanFoamColor: {r: 0.535, g: 0.649, b: 0.664, a: 0.86}
-  OceanFoamStrength: 0.2
-  OceanFoamTextureSize: 30
-  UseIntersectionFoam: 0
-  IntersectionFoamColor: {r: 0.64705884, g: 0.9019608, b: 1, a: 0.92156863}
-  IntersectionFoamFadeDistance: 1.5
-  IntersectionTextureFoamSize: 25
-  ReflectionProfile: 2
-  UseScreenSpaceReflection: 1
-  ScreenSpaceReflectionResolutionQuality: 50
-  UseScreenSpaceReflectionHolesFilling: 1
-  UseScreenSpaceReflectionSky: 1
-  ScreenSpaceBordersStretching: 0.025
-  UsePlanarReflection: 0
-  PlanarCullingMask: -1
-  PlanarReflectionResolutionQuality: 368
-  ReflectionClipPlaneOffset: 0.0005
-  RenderPlanarShadows: 0
-  RenderPlanarVolumetricsAndFog: 0
-  RenderPlanarClouds: 0
-  UseReflectionProbes: 0
-  OverrideSkyColor: 0
-  CustomSkyColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  UseAnisotropicReflections: 1
-  AnisotropicReflectionsHighQuality: 0
-  AnisotropicReflectionsScale: 0.5
-  ReflectSun: 1
-  ReflectedSunCloudinessStrength: 0.04
-  ReflectedSunStrength: 1
-  RefractionProfile: 2
-  RefractionMode: 1
-  RefractionAproximatedDepth: 2
-  RefractionSimpleStrength: 0.25
-  UseRefractionDispersion: 1
-  RefractionDispersionStrength: 0.35
-  RefractionResolution: 50
-  VolumetricLightProfile: 2
-  UseVolumetricLight: 1
-  VolumetricLightResolutionQuality: 50
-  VolumetricLightIteration: 8
-  VolumetricLightTemporalReprojectionAccumulationFactor: 0.35
-  VolumetricLightUseAdditionalLightsCaustic: 0
-  FlowmapProfile: 2
-  UseFlowMap: 0
-  FlowMapAreaPosition: {x: 0, y: 0, z: 0}
-  FlowMapAreaSize: 200
-  FlowMapTextureResolution: 2048
-  FlowMapSpeed: 1
-  UseFluidsSimulation: 0
-  FluidsAreaSize: 40
-  FluidsSimulationIterrations: 2
-  FluidsTextureSize: 1024
-  FluidsSimulationFPS: 60
-  FluidsSpeed: 1
-  FluidsFoamStrength: 0.5
-  FlowingScriptableData: {fileID: 0}
-  DynamicWavesProfile: 2
-  UseDynamicWaves: 0
-  DynamicWavesAreaSize: 25
-  DynamicWavesResolutionPerMeter: 40
-  DynamicWavesGlobalForceScale: 0.2
-  DynamicWavesPropagationSpeed: 1
-  UseDynamicWavesRainEffect: 0
-  DynamicWavesRainStrength: 0.2
-  ShorelineProfile: 2
-  UseShorelineRendering: 0
-  ShorelineColor: {r: 1.1450981, g: 1.2156863, b: 1.2352941, a: 0.627451}
-  ShorelineFoamLodQuality: 0
-  UseShorelineFoamFastMode: 0
-  ShorelineFoamReceiveDirShadows: 1
-  ShorelineWavesScriptableData: {fileID: 0}
-  CausticProfile: 2
-  UseCausticEffect: 1
-  UseGlobalCausticHighQualityFiltering: 0
-  GlobalCausticTextureResolutionQuality: 1024
-  GlobalCausticDepth: 2
-  UseLocalCausticHighQualityFiltering: 0
-  LocalCausticTextureResolutionQuality: 1024
-  LocalCausticDepth: 2
-  UseCausticDispersion: 1
-  CausticStrength: 2
-  UnderwaterProfile: 2
-  UseUnderwaterEffect: 1
-  UnderwaterReflectionMode: 1
-  UseUnderwaterHalfLineTensionEffect: 1
-  UnderwaterHalfLineTensionScale: 0.5
-  OverrideUnderwaterTransparent: 0
-  UnderwaterTransparentOffset: 5
-  MeshProfile: 2
-  WaterMeshType: 0
-  UseAquariumMode: 0
-  OceanDetailingFarDistance: 1000
-  RiverSplineNormalOffset: 1
-  RiverSplineVertexCountBetweenPoints: 20
-  RiverSplineDepth: 10
-  CustomMesh: {fileID: 0}
-  WaterMeshQualityInfinite: 1
-  WaterMeshQualityFinite: 1
-  UseTesselation: 0
-  TesselationFactor_Infinite: 0.5
-  TesselationFactor_Finite: 0.5
-  TesselationFactor_Custom: 0.5
-  TesselationFactor_River: 0.5
-  TesselationMaxDistance_Infinite: 500
-  TesselationMaxDistance_Finite: 100
-  TesselationMaxDistance_Custom: 100
-  TesselationMaxDistance_River: 100
-  SplineScriptableData: {fileID: 0}
-  RenderingProfile: 2
-  TransparentSortingPriority: -1
-  DrawToPosteffectsDepth: 0
-  WireframeMode: 0
 --- !u!1 &641631590
 GameObject:
   m_ObjectHideFlags: 0
@@ -16001,7 +16050,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &977520706
 Transform:
   m_ObjectHideFlags: 0
@@ -16155,89 +16204,6 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
---- !u!1 &981597909
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 981597911}
-  - component: {fileID: 981597910}
-  m_Layer: 0
-  m_Name: Water
-  m_TagString: Untagged
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
---- !u!114 &981597910
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 981597909}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93eb560ae5ebcd8459ef03cd3eccbd16, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: KWS::KWS.WaterSystem
-  Profile: {fileID: 0}
-  Settings: {fileID: 636653620}
-  WaterRenderingActive: 1
-  WorldSpaceBounds:
-    m_Center: {x: -1.1404, y: -5014.651, z: 44.851}
-    m_Extent: {x: 500000, y: 5000, z: 500000}
-  ShowColorSettings: 1
-  ShowExpertColorSettings: 0
-  ShowWaves: 1
-  ShowExpertWavesSettings: 0
-  ShowFoam: 0
-  ShowReflectionSettings: 1
-  ShowExpertReflectionSettings: 0
-  ShowRefractionSettings: 0
-  ShowExpertRefractionSettings: 0
-  ShowVolumetricLightSettings: 1
-  ShowExpertVolumetricLightSettings: 0
-  ShowFlowMap: 0
-  ShowExpertFlowmapSettings: 0
-  FlowMapInEditMode: 0
-  FlowMapBrushStrength: 0.75
-  ShowDynamicWaves: 0
-  ShowExpertDynamicWavesSettings: 0
-  ShowShorelineMap: 0
-  ShorelineInEditMode: 0
-  ShowExpertShorelineSettings: 0
-  ShowFoamSettings: 0
-  ShowCausticEffectSettings: 1
-  ShowExpertCausticEffectSettings: 0
-  CausticDepthScaleInEditMode: 0
-  ShowUnderwaterEffectSettings: 1
-  ShowExpertUnderwaterSettings: 0
-  ShowMeshSettings: 1
-  SplineMeshInEditMode: 0
-  ShowExpertMeshSettings: 0
-  WideAngleCameraRenderingMode: 0
-  ShowRendering: 0
-  ShowExpertRenderingSettings: 0
-  _waterGUID: Game.7V5IL
---- !u!4 &981597911
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 981597909}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.1404, y: -15.046, z: 44.851}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &982570449
 GameObject:
   m_ObjectHideFlags: 0
@@ -22102,6 +22068,139 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1272496138}
   m_Mesh: {fileID: 2823152344742811244, guid: 0cf1fad7eac8cdb4db2c83fbb0843233, type: 3}
+--- !u!1001 &1297176191
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2038393269886009975, guid: c80fa8f18cc2f53459347f780dcf2c17, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2038393269886009975, guid: c80fa8f18cc2f53459347f780dcf2c17, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2038393269886009975, guid: c80fa8f18cc2f53459347f780dcf2c17, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2038393269886009975, guid: c80fa8f18cc2f53459347f780dcf2c17, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2038393269886009975, guid: c80fa8f18cc2f53459347f780dcf2c17, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2038393269886009975, guid: c80fa8f18cc2f53459347f780dcf2c17, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2038393269886009975, guid: c80fa8f18cc2f53459347f780dcf2c17, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2038393269886009975, guid: c80fa8f18cc2f53459347f780dcf2c17, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2038393269886009975, guid: c80fa8f18cc2f53459347f780dcf2c17, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2038393269886009975, guid: c80fa8f18cc2f53459347f780dcf2c17, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3519759087933870893, guid: c80fa8f18cc2f53459347f780dcf2c17, type: 3}
+      propertyPath: m_Name
+      value: PF_Waters
+      objectReference: {fileID: 0}
+    - target: {fileID: 3519759087933870893, guid: c80fa8f18cc2f53459347f780dcf2c17, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4403488816035551028, guid: c80fa8f18cc2f53459347f780dcf2c17, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4403488816035551028, guid: c80fa8f18cc2f53459347f780dcf2c17, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4403488816035551028, guid: c80fa8f18cc2f53459347f780dcf2c17, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5707225755778968676, guid: c80fa8f18cc2f53459347f780dcf2c17, type: 3}
+      propertyPath: Settings
+      value: 
+      objectReference: {fileID: 457783851}
+    - target: {fileID: 5707225755778968676, guid: c80fa8f18cc2f53459347f780dcf2c17, type: 3}
+      propertyPath: WorldSpaceBounds.m_Center.x
+      value: -1.1404
+      objectReference: {fileID: 0}
+    - target: {fileID: 5707225755778968676, guid: c80fa8f18cc2f53459347f780dcf2c17, type: 3}
+      propertyPath: WorldSpaceBounds.m_Center.y
+      value: -5014.651
+      objectReference: {fileID: 0}
+    - target: {fileID: 5707225755778968676, guid: c80fa8f18cc2f53459347f780dcf2c17, type: 3}
+      propertyPath: WorldSpaceBounds.m_Center.z
+      value: 44.851
+      objectReference: {fileID: 0}
+    - target: {fileID: 5707225755778968676, guid: c80fa8f18cc2f53459347f780dcf2c17, type: 3}
+      propertyPath: WorldSpaceBounds.m_Extent.x
+      value: 500000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5707225755778968676, guid: c80fa8f18cc2f53459347f780dcf2c17, type: 3}
+      propertyPath: WorldSpaceBounds.m_Extent.y
+      value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5707225755778968676, guid: c80fa8f18cc2f53459347f780dcf2c17, type: 3}
+      propertyPath: WorldSpaceBounds.m_Extent.z
+      value: 500000
+      objectReference: {fileID: 0}
+    - target: {fileID: 6488175898206755158, guid: c80fa8f18cc2f53459347f780dcf2c17, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6488175898206755158, guid: c80fa8f18cc2f53459347f780dcf2c17, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6488175898206755158, guid: c80fa8f18cc2f53459347f780dcf2c17, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8781135497904047027, guid: c80fa8f18cc2f53459347f780dcf2c17, type: 3}
+      propertyPath: Settings
+      value: 
+      objectReference: {fileID: 384939063}
+    - target: {fileID: 8781135497904047027, guid: c80fa8f18cc2f53459347f780dcf2c17, type: 3}
+      propertyPath: WorldSpaceBounds.m_Center.y
+      value: -5015.905
+      objectReference: {fileID: 0}
+    - target: {fileID: 8781135497904047027, guid: c80fa8f18cc2f53459347f780dcf2c17, type: 3}
+      propertyPath: WorldSpaceBounds.m_Extent.x
+      value: 500000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8781135497904047027, guid: c80fa8f18cc2f53459347f780dcf2c17, type: 3}
+      propertyPath: WorldSpaceBounds.m_Extent.y
+      value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8781135497904047027, guid: c80fa8f18cc2f53459347f780dcf2c17, type: 3}
+      propertyPath: WorldSpaceBounds.m_Extent.z
+      value: 500000
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c80fa8f18cc2f53459347f780dcf2c17, type: 3}
 --- !u!1 &1310799847 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5927955451295355118, guid: 0cf1fad7eac8cdb4db2c83fbb0843233, type: 3}
@@ -26091,89 +26190,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1973424453}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1672365442
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1672365444}
-  - component: {fileID: 1672365443}
-  m_Layer: 0
-  m_Name: Water (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
---- !u!114 &1672365443
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1672365442}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93eb560ae5ebcd8459ef03cd3eccbd16, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: KWS::KWS.WaterSystem
-  Profile: {fileID: 0}
-  Settings: {fileID: 172107619}
-  WaterRenderingActive: 1
-  WorldSpaceBounds:
-    m_Center: {x: -1.38, y: -5015.905, z: 44.46}
-    m_Extent: {x: 500000, y: 5000, z: 500000}
-  ShowColorSettings: 1
-  ShowExpertColorSettings: 0
-  ShowWaves: 1
-  ShowExpertWavesSettings: 0
-  ShowFoam: 0
-  ShowReflectionSettings: 1
-  ShowExpertReflectionSettings: 0
-  ShowRefractionSettings: 0
-  ShowExpertRefractionSettings: 0
-  ShowVolumetricLightSettings: 1
-  ShowExpertVolumetricLightSettings: 0
-  ShowFlowMap: 0
-  ShowExpertFlowmapSettings: 0
-  FlowMapInEditMode: 0
-  FlowMapBrushStrength: 0.75
-  ShowDynamicWaves: 0
-  ShowExpertDynamicWavesSettings: 0
-  ShowShorelineMap: 0
-  ShorelineInEditMode: 0
-  ShowExpertShorelineSettings: 0
-  ShowFoamSettings: 0
-  ShowCausticEffectSettings: 1
-  ShowExpertCausticEffectSettings: 0
-  CausticDepthScaleInEditMode: 0
-  ShowUnderwaterEffectSettings: 1
-  ShowExpertUnderwaterSettings: 0
-  ShowMeshSettings: 1
-  SplineMeshInEditMode: 0
-  ShowExpertMeshSettings: 0
-  WideAngleCameraRenderingMode: 0
-  ShowRendering: 0
-  ShowExpertRenderingSettings: 0
-  _waterGUID: Game.GSLYQ
---- !u!4 &1672365444
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1672365442}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.38, y: -16.3, z: 44.46}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1674008409
 GameObject:
   m_ObjectHideFlags: 0
@@ -26763,6 +26779,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 69461964154097927, guid: f5a35e8400b6fb244ad15739bfa0c655, type: 3}
+      propertyPath: scenario1
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 69461964154097927, guid: f5a35e8400b6fb244ad15739bfa0c655, type: 3}
+      propertyPath: scenario2
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 69461964154097927, guid: f5a35e8400b6fb244ad15739bfa0c655, type: 3}
+      propertyPath: scenario4
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 69461964154097927, guid: f5a35e8400b6fb244ad15739bfa0c655, type: 3}
+      propertyPath: scenario3_1
+      value: 3.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 69461964154097927, guid: f5a35e8400b6fb244ad15739bfa0c655, type: 3}
+      propertyPath: scenario3_2
+      value: 3.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 69461964154097927, guid: f5a35e8400b6fb244ad15739bfa0c655, type: 3}
+      propertyPath: scenario3_3
+      value: 3.3
+      objectReference: {fileID: 0}
     - target: {fileID: 69461964154097927, guid: f5a35e8400b6fb244ad15739bfa0c655, type: 3}
       propertyPath: crowdLarvaObject
       value: 
@@ -27802,6 +27842,120 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!1 &1733823246
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1733823250}
+  - component: {fileID: 1733823249}
+  - component: {fileID: 1733823248}
+  - component: {fileID: 1733823247}
+  m_Layer: 0
+  m_Name: Waters
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!136 &1733823247
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1733823246}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5000001
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!23 &1733823248
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1733823246}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: ecb7a0299ec719544af43fa37d4382a4, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1733823249
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1733823246}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1733823250
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1733823246}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.39072, y: -14.067141, z: 44.576}
+  m_LocalScale: {x: 29.919458, y: 10.389582, z: 29.919458}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1841810943}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1740469258
 GameObject:
   m_ObjectHideFlags: 0
@@ -33335,7 +33489,13 @@ PrefabInstance:
     - {fileID: 7081100449284569673, guid: 0cf1fad7eac8cdb4db2c83fbb0843233, type: 3}
     - {fileID: -4291025735198898006, guid: 0cf1fad7eac8cdb4db2c83fbb0843233, type: 3}
     - {fileID: 6552743258263816117, guid: 0cf1fad7eac8cdb4db2c83fbb0843233, type: 3}
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0cf1fad7eac8cdb4db2c83fbb0843233, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1733823250}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0cf1fad7eac8cdb4db2c83fbb0843233, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1847079122}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: -1047698626358352536, guid: 0cf1fad7eac8cdb4db2c83fbb0843233, type: 3}
       insertIndex: -1
@@ -33395,6 +33555,11 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!4 &1841810943 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0cf1fad7eac8cdb4db2c83fbb0843233, type: 3}
+  m_PrefabInstance: {fileID: 1841810940}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1842948638
 GameObject:
   m_ObjectHideFlags: 0
@@ -33564,6 +33729,120 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!1 &1847079118
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1847079122}
+  - component: {fileID: 1847079121}
+  - component: {fileID: 1847079120}
+  - component: {fileID: 1847079119}
+  m_Layer: 0
+  m_Name: Waters (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!136 &1847079119
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847079118}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5000001
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!23 &1847079120
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847079118}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 51c9187c417a23e4498f94f3dbcac036, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1847079121
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847079118}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1847079122
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847079118}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.21072, y: -18.77, z: 43.725998}
+  m_LocalScale: {x: 41.29493, y: 10.67262, z: 45.715405}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1841810943}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1856700435
 GameObject:
   m_ObjectHideFlags: 0
@@ -33594,7 +33873,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.RenderPipelines.Core.Runtime::UnityEngine.Rendering.ProbeVolume
   mode: 2
-  size: {x: 61.693027, y: 91.73167, z: 86.79213}
+  size: {x: 57.55925, y: 85.377945, z: 83.86276}
   overrideRendererFilters: 0
   minRendererVolumeSize: 0.1
   objectLayerMask:
@@ -33608,20 +33887,20 @@ MonoBehaviour:
     e00: 1
     e01: 0
     e02: 0
-    e03: 0.6886711
+    e03: 0.75938797
     e10: 0
     e11: 1
     e12: 0
-    e13: -21.697035
+    e13: -18.520159
     e20: 0
     e21: 0
     e22: 1
-    e23: -37.182346
+    e23: -35.717667
     e30: 0
     e31: 0
     e32: 0
     e33: 1
-  cachedHashCode: 1837520084
+  cachedHashCode: -1326401559
   fillEmptySpaces: 0
   version: 2
   globalVolume: 0
@@ -33634,7 +33913,7 @@ Transform:
   m_GameObject: {fileID: 1856700435}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.6886711, y: 21.697035, z: 37.182346}
+  m_LocalPosition: {x: -0.75938797, y: 18.520159, z: 35.717667}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -37050,13 +37329,13 @@ SceneRoots:
   - {fileID: 2031606875}
   - {fileID: 203785780}
   - {fileID: 91055867}
-  - {fileID: 981597911}
   - {fileID: 1786976404}
   - {fileID: 1138159911}
-  - {fileID: 1672365444}
   - {fileID: 1682747034}
   - {fileID: 1408388555}
   - {fileID: 1520592080}
   - {fileID: 889920567}
   - {fileID: 1856700437}
   - {fileID: 39706494}
+  - {fileID: 1297176191}
+  - {fileID: 520910168}
