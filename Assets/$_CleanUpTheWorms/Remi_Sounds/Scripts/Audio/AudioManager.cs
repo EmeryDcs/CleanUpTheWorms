@@ -383,8 +383,8 @@ public class AudioManager : MonoBehaviour
             }
             else if (blackoutCount == 3)
             {
-                S_BlendLight.instance.SetScenario(scenario4);
-            }
+				S_BlendLight.instance.SetScenario(scenario4);
+			}
         }
 
         if (blackoutCount < 3)
@@ -425,7 +425,8 @@ public class AudioManager : MonoBehaviour
 
     private IEnumerator WaitBeforeLarvaCrowd()
     {
-        yield return new WaitForSeconds(3.5f);
+
+		yield return new WaitForSeconds(3.5f);
         if (crowdLarvaObject != null)
         {
             crowdLarvaObject.SetActive(true);

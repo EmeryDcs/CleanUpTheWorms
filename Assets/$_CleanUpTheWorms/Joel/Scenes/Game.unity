@@ -297,31 +297,7 @@ MonoBehaviour:
   - {fileID: 1577629931}
   endOfTuto:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2131422521}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 408683841}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &39706492
 GameObject:
   m_ObjectHideFlags: 1
@@ -6663,7 +6639,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &396273365
 Transform:
   m_ObjectHideFlags: 0
@@ -25357,31 +25333,7 @@ MonoBehaviour:
   - {fileID: 1631190978}
   endOfGame:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 396273364}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1674008409}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &1612177159
 GameObject:
   m_ObjectHideFlags: 0
@@ -26813,7 +26765,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 69461964154097927, guid: f5a35e8400b6fb244ad15739bfa0c655, type: 3}
       propertyPath: lightGroups.Array.size
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 69461964154097927, guid: f5a35e8400b6fb244ad15739bfa0c655, type: 3}
       propertyPath: 'lightGroups.Array.data[0]'
@@ -26834,7 +26786,7 @@ PrefabInstance:
     - target: {fileID: 69461964154097927, guid: f5a35e8400b6fb244ad15739bfa0c655, type: 3}
       propertyPath: objectToEnableOnGeneratorSound
       value: 
-      objectReference: {fileID: 1674008409}
+      objectReference: {fileID: 0}
     - target: {fileID: 69461964154097927, guid: f5a35e8400b6fb244ad15739bfa0c655, type: 3}
       propertyPath: progressiveLitLightmaps.Array.size
       value: 0
@@ -26889,7 +26841,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6811704862030091430, guid: f5a35e8400b6fb244ad15739bfa0c655, type: 3}
       propertyPath: isHapticActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
