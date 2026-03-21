@@ -26793,6 +26793,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 844662485489521390, guid: f5a35e8400b6fb244ad15739bfa0c655, type: 3}
       propertyPath: targetDeviceName
+      value: Casque (Realtek(R) Audio)
+      objectReference: {fileID: 0}
+    - target: {fileID: 844662485489521390, guid: f5a35e8400b6fb244ad15739bfa0c655, type: 3}
+      propertyPath: targetDeviceNames.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 844662485489521390, guid: f5a35e8400b6fb244ad15739bfa0c655, type: 3}
+      propertyPath: 'targetDeviceNames.Array.data[0]'
+      value: Casque (Realtek(R) Audio)
+      objectReference: {fileID: 0}
+    - target: {fileID: 844662485489521390, guid: f5a35e8400b6fb244ad15739bfa0c655, type: 3}
+      propertyPath: 'targetDeviceNames.Array.data[1]'
       value: Headphones (Realtek(R) Audio)
       objectReference: {fileID: 0}
     - target: {fileID: 2194402623721829798, guid: f5a35e8400b6fb244ad15739bfa0c655, type: 3}
@@ -26842,6 +26854,38 @@ PrefabInstance:
     - target: {fileID: 6811704862030091430, guid: f5a35e8400b6fb244ad15739bfa0c655, type: 3}
       propertyPath: isHapticActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6811704862030091430, guid: f5a35e8400b6fb244ad15739bfa0c655, type: 3}
+      propertyPath: vestSounds.Array.data[0].volume
+      value: 0.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 6811704862030091430, guid: f5a35e8400b6fb244ad15739bfa0c655, type: 3}
+      propertyPath: vestSounds.Array.data[1].volume
+      value: 0.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 6811704862030091430, guid: f5a35e8400b6fb244ad15739bfa0c655, type: 3}
+      propertyPath: vestSounds.Array.data[2].volume
+      value: 0.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 6811704862030091430, guid: f5a35e8400b6fb244ad15739bfa0c655, type: 3}
+      propertyPath: vestSounds.Array.data[7].volume
+      value: 0.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 6811704862030091430, guid: f5a35e8400b6fb244ad15739bfa0c655, type: 3}
+      propertyPath: vestSounds.Array.data[8].volume
+      value: 0.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 6811704862030091430, guid: f5a35e8400b6fb244ad15739bfa0c655, type: 3}
+      propertyPath: vestSounds.Array.data[9].volume
+      value: 0.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 6811704862030091430, guid: f5a35e8400b6fb244ad15739bfa0c655, type: 3}
+      propertyPath: vestSounds.Array.data[11].volume
+      value: 0.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 6811704862030091430, guid: f5a35e8400b6fb244ad15739bfa0c655, type: 3}
+      propertyPath: vestSounds.Array.data[12].volume
+      value: 0.65
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

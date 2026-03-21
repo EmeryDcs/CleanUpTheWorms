@@ -7,7 +7,7 @@ using System.Linq;
 [RequireComponent(typeof(AudioSource))]
 public class HapticAudioRouter : MonoBehaviour
 {
-    public string targetDeviceName = "KOR-FX";
+    public string[] targetDeviceNames = new string[] { "KOR-FX" };
 
     [Range(0f, 5f)]
     public float volumeMultiplier = 1.0f;
@@ -35,18 +35,12 @@ public class HapticAudioRouter : MonoBehaviour
     [DllImport("winmm.dll", SetLastError = true, CharSet = CharSet.Auto)]
     private static extern int waveOutGetDevCaps(int uDeviceID, out WAVEOUTCAPS pwoc, int cbwoc);
 
-
-
     void Awake()
     {
-
-
-
     }
 
     void Start()
     {
-
         int targetDeviceNumber = -1;
         int deviceCount = waveOutGetNumDevs();
 
@@ -55,9 +49,17 @@ public class HapticAudioRouter : MonoBehaviour
             WAVEOUTCAPS caps;
             if (waveOutGetDevCaps(i, out caps, Marshal.SizeOf(typeof(WAVEOUTCAPS))) == 0)
             {
-                if (caps.szPname.IndexOf(targetDeviceName, StringComparison.OrdinalIgnoreCase) >= 0)
+                foreach (string deviceName in targetDeviceNames)
                 {
-                    targetDeviceNumber = i;
+                    if (!string.IsNullOrEmpty(deviceName) && caps.szPname.IndexOf(deviceName, StringComparison.OrdinalIgnoreCase) >= 0)
+                    {
+                        targetDeviceNumber = i;
+                        break;
+                    }
+                }
+
+                if (targetDeviceNumber != -1)
+                {
                     break;
                 }
             }
@@ -65,7 +67,7 @@ public class HapticAudioRouter : MonoBehaviour
 
         if (targetDeviceNumber == -1)
         {
-            Debug.LogWarning($"[Haptic Router] Could not find an active audio device containing the name: {targetDeviceName}");
+            Debug.LogWarning("[Haptic Router] Could not find an active audio device matching any of the provided names.");
             return;
         }
 
