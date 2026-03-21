@@ -9,6 +9,7 @@ public class S_RecenterPosition : MonoBehaviour
 	public Transform head;
 	public Transform origin;
 	public Transform target;
+	public Transform targetDesk;
 
 	[Header("Input pour recenter")]
 	public InputActionReference recenterInput;
@@ -24,16 +25,21 @@ public class S_RecenterPosition : MonoBehaviour
 	public IEnumerator WaitForStart()
 	{
 		yield return new WaitForEndOfFrame();
-		Recenter();
+		Recenter(target);
 	}
 
-	public void Recenter()
+	public void TeleportDesk()
+	{
+		Recenter(targetDesk);
+    }
+
+	public void Recenter(Transform _target)
 	{
 		Vector3 offset = head.position - origin.position;
 		offset.y = 0f;
-		origin.position = target.position - offset;
+		origin.position = _target.position - offset;
 		
-		Vector3 targetForward = target.forward;
+		Vector3 targetForward = _target.forward;
 		targetForward.y = 0f;
 		Vector3 cameraForward = head.forward;
 		cameraForward.y = 0f;
@@ -48,7 +54,7 @@ public class S_RecenterPosition : MonoBehaviour
 		{
             if (recenterInput.action.WasPressedThisFrame())
             {
-                Recenter();
+                Recenter(target);
             }
         }
 		else
@@ -59,7 +65,7 @@ public class S_RecenterPosition : MonoBehaviour
                 if (timer >= 3)
                 {
                     timer = 0;
-                    Recenter();
+                    Recenter(target);
                 }
             }
             else
