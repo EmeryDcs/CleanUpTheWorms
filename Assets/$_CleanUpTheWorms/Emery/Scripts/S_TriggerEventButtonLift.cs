@@ -16,7 +16,7 @@ public class S_TriggerEventButtonLift : MonoBehaviour
     [SerializeField] private float fadeDuration = 1f;
 
     bool canBePushed = true;
-    bool canTPElevator = true;
+    bool canTPElevator = false;
 
     private Vector3 initialLocalPosition;
     private Vector3 currentVelocity = Vector3.zero;
