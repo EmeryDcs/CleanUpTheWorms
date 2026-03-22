@@ -653,6 +653,7 @@ MonoBehaviour:
   head: {fileID: 5972306}
   origin: {fileID: 1681941726}
   target: {fileID: 553469145}
+  targetDesk: {fileID: 0}
   recenterInput: {fileID: 8971885931855927349, guid: 052faaac586de48259a63d0c4782560b, type: 3}
 --- !u!114 &553469147
 MonoBehaviour:
@@ -1749,6 +1750,7 @@ GameObject:
   - component: {fileID: 1882075147}
   - component: {fileID: 1882075149}
   - component: {fileID: 1882075148}
+  - component: {fileID: 1882075150}
   m_Layer: 3
   m_Name: Text Tuto
   m_TagString: Untagged
@@ -1880,6 +1882,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1882075146}
   m_CullTransparentMesh: 1
+--- !u!114 &1882075150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1882075146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3819fa9e212d89046a718a5cb758df3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::S_StandaloneTextTranslator
+  textComponent: {fileID: 1882075148}
+  isEnglish: 0
+  textFrench: 'Si vous n''etes pas dans l''ascenceur avec la porte verte devant vous,
+    veuillez regarder droit devant vous et appuyer sur A pour repositionner votre
+    corps.
+
+    Si elle est devant vous, vous pouvez lancer le jeu en maintenant
+    la gachette.'
+  textEnglish: 'If you are not in the elevator with the green door in front of you,
+    please look straight ahead and press A to reposition your body.
+
+    If it is
+    in front of you, you can start the game by holding down the trigger.'
 --- !u!1 &2018429774
 GameObject:
   m_ObjectHideFlags: 0
