@@ -24,7 +24,7 @@ public class grab : MonoBehaviour
     public float grabbedRightAngle = -30f;
 
     private PlayerInputSystem inputActions;
-    private float triggerValue;
+    [SerializeField] private float triggerValue;
     private SphereCollider sphereCollider;
 
     private void Awake()
@@ -104,8 +104,12 @@ public class grab : MonoBehaviour
             grabbedElm.transform.SetParent(snapPoint);
             elm.GetComponent<AILarva>().StopBehaviorAndMakeKinematic();
 
+            elm.GetComponent<S_GrabbableState>().SetCanBeTrashed(true);
+
             return;
         }
+
+        elm.GetComponent<S_GrabbableState>().SetCanBeTrashed(true);
 
         grabbedElm = elm;
         Rigidbody rb = grabbedElm.GetComponent<Rigidbody>();

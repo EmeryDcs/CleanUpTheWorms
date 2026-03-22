@@ -6,17 +6,19 @@ public class S_VacuumObject : MonoBehaviour
 	{
 		if (grab.Instance.GetGrabbedElm() == null)
 		{
-			if (!other.CompareTag("Pince"))
-				return;
-			if (StateMachineGame.Instance != null && StateMachineGame.Instance.state == GameState.LEVEL1 && StateLevel1.Instance != null && StateLevel1.Instance.currentTextToDisplay == StateLevel1TextRobot.AMELIORATION_PINCE)
+			if (other.CompareTag("Pince"))
 			{
-				StateLevel1.Instance.AmeliorationPince();
-			}
-			return;
+                if (StateMachineGame.Instance != null && StateMachineGame.Instance.state == GameState.LEVEL1 && StateLevel1.Instance != null && StateLevel1.Instance.currentTextToDisplay == StateLevel1TextRobot.AMELIORATION_PINCE)
+                {
+                    StateLevel1.Instance.AmeliorationPince();
+                }
+            }
+
 		}
-		if (other.CompareTag("GrabbableElm"))
-		{
-			switch (StateMachineGame.Instance.state)
+		if (other.CompareTag("GrabbableElm") && other.GetComponent<S_GrabbableState>().CanBeTrashed())
+        {
+			Debug.Log("Delete " + other.gameObject.name);
+            switch (StateMachineGame.Instance.state)
 			{
 				case GameState.ASCENCEUR:
 					StateAscenceur.Instance.DeleteCollectableFromList(other.gameObject);

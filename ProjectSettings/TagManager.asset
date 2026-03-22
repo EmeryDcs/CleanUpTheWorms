@@ -8,6 +8,7 @@ TagManager:
   - GrabbableElm
   - ButtonLift
   - Pince
+  - Robot
   layers:
   - Default
   - TransparentFX

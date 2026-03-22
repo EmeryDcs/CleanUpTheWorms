@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4486135050206052996}
   - component: {fileID: 5074135158172503503}
   - component: {fileID: 978561180186024340}
+  - component: {fileID: 1468329977440237440}
   m_Layer: 0
   m_Name: PF_Pickup Trash
   m_TagString: GrabbableElm
@@ -153,3 +154,16 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.01627712, y: 0.014068393, z: 0.013769453}
   m_Center: {x: 0.00026881928, y: -0.0016273372, z: -0.0016417315}
+--- !u!114 &1468329977440237440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8504915640202235412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 466ad8f3a7a27844fb9f0f813bde14b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::S_GrabbableState
+  canBeTrashed: 0
