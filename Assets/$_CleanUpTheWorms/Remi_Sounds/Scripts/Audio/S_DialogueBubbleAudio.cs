@@ -13,6 +13,12 @@ public class S_DialogueBubbleAudio : MonoBehaviour
 
     [SerializeField] int voiceOverIndex;
 
+    [TextArea(3, 10)]
+    [SerializeField] string textFrench;
+
+    [TextArea(3, 10)]
+    [SerializeField] string textEnglish;
+
     [Header("Special Upgrade: Blinking Light")]
     [SerializeField] bool isSpecialUpgrade;
     [SerializeField] Light targetLight;
@@ -27,6 +33,16 @@ public class S_DialogueBubbleAudio : MonoBehaviour
     private void Start()
     {
         textComponent = GetComponent<TextMeshProUGUI>();
+
+        if (S_VoiceOver.Instance != null && S_VoiceOver.Instance.isEnglish)
+        {
+            textComponent.text = textEnglish;
+        }
+        else
+        {
+            textComponent.text = textFrench;
+        }
+
         if (isFirstBubble && RobotAudio.Instance != null)
         {
             RobotAudio.Instance.PlayRandomSpeech();

@@ -1,12 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class S_VoiceOver : MonoBehaviour
 {
     public static S_VoiceOver Instance;
 
+    public bool isEnglish;
+
     [SerializeField] private Sound[] speechList;
+    [SerializeField] private Sound[] speechListEnglish;
 
     private void Awake()
     {
@@ -20,11 +24,24 @@ public class S_VoiceOver : MonoBehaviour
             return;
         }
 
+        if (System.Environment.GetCommandLineArgs().Contains("-isinenglish"))
+        {
+            isEnglish = true;
+        }
+
         if (speechList != null)
         {
             for (int i = 0; i < speechList.Length; i++)
             {
                 InitializeSound(speechList[i], "SequenceSpeechAudioSource_" + i);
+            }
+        }
+
+        if (speechListEnglish != null)
+        {
+            for (int i = 0; i < speechListEnglish.Length; i++)
+            {
+                InitializeSound(speechListEnglish[i], "SequenceSpeechAudioSource_EN_" + i);
             }
         }
     }
@@ -49,17 +66,33 @@ public class S_VoiceOver : MonoBehaviour
 
     public void PlayAudio(int index)
     {
-        if (speechList == null || index < 0 || index >= speechList.Length) return;
-
-        for (int i = 0; i < speechList.Length; i++)
+        if (speechList != null)
         {
-            if (speechList[i] != null && speechList[i].source != null)
+            for (int i = 0; i < speechList.Length; i++)
             {
-                speechList[i].source.Stop();
+                if (speechList[i] != null && speechList[i].source != null)
+                {
+                    speechList[i].source.Stop();
+                }
             }
         }
 
-        Sound currentSpeech = speechList[index];
+        if (speechListEnglish != null)
+        {
+            for (int i = 0; i < speechListEnglish.Length; i++)
+            {
+                if (speechListEnglish[i] != null && speechListEnglish[i].source != null)
+                {
+                    speechListEnglish[i].source.Stop();
+                }
+            }
+        }
+
+        Sound[] currentList = isEnglish ? speechListEnglish : speechList;
+
+        if (currentList == null || index < 0 || index >= currentList.Length) return;
+
+        Sound currentSpeech = currentList[index];
 
         if (currentSpeech != null && currentSpeech.source != null)
         {

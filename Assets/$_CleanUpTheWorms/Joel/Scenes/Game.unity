@@ -1914,6 +1914,10 @@ PrefabInstance:
       value: 142.56
       objectReference: {fileID: 0}
     - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: isEnglish
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
       propertyPath: speechList.Array.data[1].clip
       value: 
       objectReference: {fileID: 8300000, guid: 06b2250d29229e1469f248e08c5c8e39, type: 3}
@@ -3791,6 +3795,20 @@ MonoBehaviour:
   isPlayingAnim: 0
   isOpening: 0
   voiceOverIndex: 0
+  textFrench: 'Bonjour.
+
+    Je suis votre robot poubelle, et je vous accompagnerais
+    durant votre mission de nettoyage.
+
+    Verifions que votre materiel fonctionne
+    correctement : appuyez sur la gachette de votre pince quelque fois.'
+  textEnglish: 'Hello.
+
+    I am your trash robot, and I will accompany you during
+    your cleaning mission.
+
+    Let''s check that your equipment is working correctly:
+    press the trigger on your grabber a few times.'
   isSpecialUpgrade: 0
   targetLight: {fileID: 0}
   blinkInterval: 0.15
@@ -4514,6 +4532,8 @@ MonoBehaviour:
   isPlayingAnim: 0
   isOpening: 0
   voiceOverIndex: 4
+  textFrench: Mmmh... c'est d'une composition etonnante....
+  textEnglish: Hmm... it has a surprising composition....
   isSpecialUpgrade: 0
   targetLight: {fileID: 0}
   blinkInterval: 0.15
@@ -5589,6 +5609,10 @@ MonoBehaviour:
   isPlayingAnim: 0
   isOpening: 0
   voiceOverIndex: 3
+  textFrench: "Qu'est-ce que c'est que \xE7a ? Mais c'est immonde ! Vite attrapez
+    la et jettez la dans ma benne !"
+  textEnglish: What is that? That's disgusting! Quick, grab it and throw it in my
+    bin!
   isSpecialUpgrade: 0
   targetLight: {fileID: 0}
   blinkInterval: 0.15
@@ -9978,6 +10002,11 @@ MonoBehaviour:
   isPlayingAnim: 1
   isOpening: 0
   voiceOverIndex: 6
+  textFrench: Vous n'avez plus qu'a tester votre allonge sur les prochaines larves
+    que vous verrez grouiller ! Pour ce faire, tirez sur le manche quand elles sont
+    trop loin.
+  textEnglish: All you have to do now is test your extension on the next larvae you
+    see swarming! To do this, pull the handle when they are too far away.
   isSpecialUpgrade: 0
   targetLight: {fileID: 91055869}
   blinkInterval: 0.15
@@ -10509,6 +10538,14 @@ MonoBehaviour:
   isPlayingAnim: 1
   isOpening: 0
   voiceOverIndex: 2
+  textFrench: 'Allez, au travail maintenant.
+
+    Appuyez sur le bouton de l''ascenceur
+    pour commencer votre mission de nettoyage.'
+  textEnglish: 'Alright, to work now.
+
+    Press the elevator button to start your
+    cleaning mission.'
   isSpecialUpgrade: 0
   targetLight: {fileID: 0}
   blinkInterval: 0.15
@@ -22762,6 +22799,14 @@ MonoBehaviour:
   isPlayingAnim: 1
   isOpening: 1
   voiceOverIndex: 1
+  textFrench: 'Super, votre pince fonctionne correctement.
+
+    Lorsque vous ramasserez
+    un dechet, veuillez me le jeter dans mon recipient. Je l''ouvrirais lorsque vous
+    aurez un dechet dans votre pince. Essayons avec le dechet derriere vous.'
+  textEnglish: "Great, your grabber is working correctly.\nWhen you pick up a piece
+    of trash, please throw it into my container. \nI will open it when you have a
+    piece of trash in your grabber. \nLet's try with the piece of trash behind you."
   isSpecialUpgrade: 0
   targetLight: {fileID: 0}
   blinkInterval: 0.15
@@ -37497,6 +37542,12 @@ MonoBehaviour:
   isPlayingAnim: 1
   isOpening: 1
   voiceOverIndex: 5
+  textFrench: Plongez votre pince ! Je crois avoir reussi a vous deverouiller une
+    amelioration. On risque de croiser d'autres larves et si elle grouille partout,
+    vous aurez besoin d'une allonge !
+  textEnglish: Plunge your grabber in! I think I managed to unlock an upgrade for
+    you. We might come across other larvae, and if they are swarming everywhere,
+    you will need an extension!
   isSpecialUpgrade: 1
   targetLight: {fileID: 91055869}
   blinkInterval: 0.15
