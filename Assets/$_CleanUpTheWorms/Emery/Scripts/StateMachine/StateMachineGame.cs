@@ -1,4 +1,7 @@
 using UnityEngine;
+using System.Collections;
+using Mono.Cecil.Cil;
+using UnityEngine.Events;
 
 public enum GameState
 {
@@ -7,6 +10,7 @@ public enum GameState
 	LEVEL1, //Débloquage de la lance téléscopique
 	LEVEL2, //Ramassage d'une tonne de bébéte
 	END, //Cinématique avec la grosse bébéte
+	ENDING, //Fin du jeu
 }
 
 public class StateMachineGame : MonoBehaviour
@@ -22,7 +26,15 @@ public class StateMachineGame : MonoBehaviour
 	[SerializeField]
 	GameObject ui;
 
-	private void Start()
+
+	bool ending = false;
+
+	[SerializeField] S_TriggerEventButtonLift triggerEventButtonLift;
+
+	[SerializeField] UnityEvent endBubble;
+
+
+    private void Start()
 	{
 		if (Instance != null && Instance != this)
 		{
@@ -43,10 +55,39 @@ public class StateMachineGame : MonoBehaviour
 		stateTutorial.SetActive(state == GameState.TUTORIAL);
 		stateLevel1.SetActive(state == GameState.LEVEL1);
 		stateLevel2.SetActive(state == GameState.LEVEL2);
-	}
+
+		if (state == GameState.END && !ending)
+		{
+			ending = true;
+			StartCoroutine(ShowEnding());
+        }
+    }
 
 	public void AfficherFinDuJeu()
 	{
 		ui.SetActive(true);
 	}
+
+
+	IEnumerator ShowEnding()
+	{
+		yield return new WaitForSeconds(2f);
+
+		Debug.Log("ShowEnding");
+		triggerEventButtonLift.TriggerBlinking(true);
+		endBubble.Invoke();
+
+        //DOSOMETHING
+
+        yield return new WaitForSeconds(12f);
+
+		if (StateMachineGame.Instance.state != GameState.ENDING)
+		{
+			triggerEventButtonLift.SetCanActivate(false);
+			triggerEventButtonLift.Ending(false);
+        }
+
+    }
+
+
 }

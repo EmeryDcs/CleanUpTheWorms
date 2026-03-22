@@ -32,7 +32,7 @@ public class S_AgrandirTige : MonoBehaviour
 
     void Update()
     {
-        if (StateMachineGame.Instance.state == GameState.LEVEL2 || StateMachineGame.Instance.state == GameState.END)
+        if (StateMachineGame.Instance.state == GameState.LEVEL2 || StateMachineGame.Instance.state == GameState.END || StateMachineGame.Instance.state == GameState.ENDING)
         {
             ResizedStick();
         }

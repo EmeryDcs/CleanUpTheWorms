@@ -13,15 +13,30 @@ public class S_TriggerEventButtonLift : MonoBehaviour
     [SerializeField] private Animator animatorLift;
 
     [SerializeField] private Image fadeImage;
+    [SerializeField] private Image logo;
     [SerializeField] private float fadeDuration = 1f;
 
     bool canBePushed = true;
     bool canTPElevator = false;
+    [SerializeField] bool isElevator = false;
 
     private Vector3 initialLocalPosition;
     private Vector3 currentVelocity = Vector3.zero;
     private Coroutine pushCoroutine;
     private Coroutine elevatorFade;
+    private Coroutine blinking;
+
+    [SerializeField] UnityEvent winBubble;
+    [SerializeField] UnityEvent looseBubble;
+
+    [SerializeField] private Light targetLight;
+    [SerializeField] private float minIntensity = 0f;
+    [SerializeField] private float maxIntensity = 5f;
+    [SerializeField] private float pulseSpeed = 2f;
+
+
+
+    bool canActivate = true;
 
     private void Awake()
     {
@@ -45,13 +60,54 @@ public class S_TriggerEventButtonLift : MonoBehaviour
                     StopCoroutine(pushCoroutine);
                 }
                 pushCoroutine = StartCoroutine(PushAndReturnCoroutine());
+
+                SetCanBePushed(false);
             }
 
-            if (canTPElevator)
+            if (canTPElevator && StateMachineGame.Instance.state != GameState.ENDING && isElevator)
             {
                 elevatorFade = StartCoroutine(FadeTeleportFadeRoutine());
+
+            }
+
+            
+
+            if (StateMachineGame.Instance.state == GameState.END && !isElevator && canActivate)
+            {
+                Debug.Log("Button Lift Triggered");
+
+                if (pushCoroutine != null)
+                {
+                    StopCoroutine(pushCoroutine);
+                }
+                pushCoroutine = StartCoroutine(PushAndReturnCoroutine());
+
+                TriggerBlinking(false);
+                Ending(true);
+            }
+
+            else
+            {
+               Debug.Log("Button Lift Triggered but conditions not met : " + StateMachineGame.Instance.state + ", " + isElevator + ", " + canActivate);
             }
         }
+    }
+
+    public void Ending(bool value)
+    {
+        StateMachineGame.Instance.state = GameState.ENDING;
+
+        if (value)
+        {
+            winBubble.Invoke();
+        }
+        else 
+        {
+            looseBubble.Invoke();
+        }
+
+
+        StartCoroutine(FadeEnding());
     }
 
     public void SetCanBePushed(bool can)
@@ -110,5 +166,57 @@ public class S_TriggerEventButtonLift : MonoBehaviour
         }
 
         elevatorFade = null;
+    }
+
+    public void SetCanActivate(bool value)
+    {
+        canActivate = value;
+    }
+    private IEnumerator FadeEnding()
+    {
+        float elapsedTime = 0f;
+        Color color = fadeImage.color;
+        Color colorLogo = logo.color;
+
+        while (elapsedTime < fadeDuration)
+        {
+            elapsedTime += Time.deltaTime;
+            color.a = Mathf.Clamp01(elapsedTime / fadeDuration);
+            colorLogo.a = Mathf.Clamp01(elapsedTime / fadeDuration);
+            fadeImage.color = color;
+            logo.color = colorLogo;
+            yield return null;
+        }
+    }
+
+
+    public void TriggerBlinking(bool value)
+    {
+        if (value)
+        {
+            blinking = StartCoroutine(BlinkingLight());
+        }
+        else
+        {
+            if (blinking != null)
+            {
+                StopCoroutine(blinking);
+                blinking = null;
+            }
+            targetLight.intensity = minIntensity;
+        }
+    }
+
+    private IEnumerator BlinkingLight()
+    {
+        while (true)
+        {
+            while (true)
+            {
+                float pingPong = Mathf.PingPong(Time.time * pulseSpeed, 1f);
+                targetLight.intensity = Mathf.Lerp(minIntensity, maxIntensity, pingPong);
+                yield return null;
+            }
+        }
     }
 }
