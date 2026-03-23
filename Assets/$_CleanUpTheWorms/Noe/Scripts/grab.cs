@@ -103,11 +103,17 @@ public class grab : MonoBehaviour
             grabbedElm = elm;
             grabbedElm.transform.SetParent(snapPoint);
             elm.GetComponent<AILarva>().StopBehaviorAndMakeKinematic();
+            
+            elm.GetComponent<S_GrabbableState>().SetIsGrabbed(true);
 
             elm.GetComponent<S_GrabbableState>().SetCanBeTrashed(true);
+            
+
 
             return;
         }
+
+        elm.GetComponent<S_GrabbableState>().SetIsGrabbed(true);
 
         elm.GetComponent<S_GrabbableState>().SetCanBeTrashed(true);
 
@@ -127,6 +133,7 @@ public class grab : MonoBehaviour
             grabbedElm = null;
 
             elm.GetComponent<AILarva>().RestartBehaviorAndMakeDynamic();
+            elm.GetComponent<S_GrabbableState>().SetIsGrabbed(false);
 
             return;
         }
@@ -134,6 +141,8 @@ public class grab : MonoBehaviour
         Rigidbody rb = grabbedElm.GetComponent<Rigidbody>();
 
         elm.GetComponent<Collider>().isTrigger = false;
+        elm.GetComponent<S_GrabbableState>().SetIsGrabbed(false);
+
         rb.useGravity = true;
         rb.isKinematic = false;
         elm.transform.SetParent(null);

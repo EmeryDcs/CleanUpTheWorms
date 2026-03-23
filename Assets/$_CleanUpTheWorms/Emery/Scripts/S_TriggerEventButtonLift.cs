@@ -33,10 +33,12 @@ public class S_TriggerEventButtonLift : MonoBehaviour
     [SerializeField] private float minIntensity = 0f;
     [SerializeField] private float maxIntensity = 5f;
     [SerializeField] private float pulseSpeed = 2f;
+    
+    private bool canTriggerEnd = false;
 
 
 
-    bool canActivate = true;
+    bool canActivateHasNotLose = true;
 
     private void Awake()
     {
@@ -76,7 +78,7 @@ public class S_TriggerEventButtonLift : MonoBehaviour
                 
             }
 
-            if (canTPElevator && StateMachineGame.Instance.state != GameState.ENDING && isElevator)
+            if (canTPElevator && StateMachineGame.Instance.state != GameState.ENDING)
             {
                 elevatorFade = StartCoroutine(FadeTeleportFadeRoutine());
 
@@ -84,9 +86,11 @@ public class S_TriggerEventButtonLift : MonoBehaviour
 
             
 
-            if (StateMachineGame.Instance.state == GameState.END && !isElevator && canActivate)
+            if (StateMachineGame.Instance.state == GameState.END && !isElevator && canActivateHasNotLose && canTriggerEnd)
             {
                 Debug.Log("Button Lift Triggered");
+
+                canTriggerEnd = false;
 
                 if (pushCoroutine != null)
                 {
@@ -100,7 +104,7 @@ public class S_TriggerEventButtonLift : MonoBehaviour
 
             else
             {
-               Debug.Log("Button Lift Triggered but conditions not met : " + StateMachineGame.Instance.state + ", " + isElevator + ", " + canActivate);
+               Debug.Log("Button Lift Triggered but conditions not met : " + StateMachineGame.Instance.state + ", " + isElevator + ", " + canActivateHasNotLose);
             }
         }
     }
@@ -183,9 +187,9 @@ public class S_TriggerEventButtonLift : MonoBehaviour
         elevatorFade = null;
     }
 
-    public void SetCanActivate(bool value)
+    public void SetCanActivateHasNotLose(bool value)
     {
-        canActivate = value;
+        canActivateHasNotLose = value;
     }
     private IEnumerator FadeEnding()
     {
@@ -233,5 +237,10 @@ public class S_TriggerEventButtonLift : MonoBehaviour
                 yield return null;
             }
         }
+    }
+    
+    public void SetCanTriggerEnd(bool value)
+    {
+        canTriggerEnd = value;
     }
 }

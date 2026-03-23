@@ -6,9 +6,9 @@ public enum GameState
 {
 	ASCENCEUR, //Dialogue avec robot
 	TUTORIAL, //Ramassage des boulettes de papiers
-	LEVEL1, //Débloquage de la lance téléscopique
-	LEVEL2, //Ramassage d'une tonne de bébéte
-	END, //Cinématique avec la grosse bébéte
+	LEVEL1, //Dï¿½bloquage de la lance tï¿½lï¿½scopique
+	LEVEL2, //Ramassage d'une tonne de bï¿½bï¿½te
+	END, //Cinï¿½matique avec la grosse bï¿½bï¿½te
 	ENDING, //Fin du jeu
 }
 
@@ -71,6 +71,8 @@ public class StateMachineGame : MonoBehaviour
 	}
 
 
+
+
 	IEnumerator ShowEnding()
 	{
 		yield return new WaitForSeconds(2f);
@@ -79,15 +81,16 @@ public class StateMachineGame : MonoBehaviour
 		
 		endBubble.Invoke();
 
-		yield return new WaitForSeconds(1.5f);
+		yield return new WaitForSeconds(3f);
 
         triggerEventButtonLift.TriggerBlinking(true);
+        triggerEventButtonLift.SetCanTriggerEnd(true);
 
         yield return new WaitForSeconds(10f);
 
 		if (StateMachineGame.Instance.state != GameState.ENDING)
 		{
-			triggerEventButtonLift.SetCanActivate(false);
+			triggerEventButtonLift.SetCanActivateHasNotLose(false);
 			triggerEventButtonLift.Ending(false);
         }
 
