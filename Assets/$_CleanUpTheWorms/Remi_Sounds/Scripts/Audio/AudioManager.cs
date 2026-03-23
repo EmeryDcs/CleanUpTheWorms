@@ -88,11 +88,22 @@ public class AudioManager : MonoBehaviour
 
     [Header("Scenario Settings")]
     [SerializeField] private string scenario1 = "Scenario 1";
+    [SerializeField, Range(0f, 10f)] private float scenario1Transition = 0f;
+
     [SerializeField] private string scenario2 = "Scenario 2";
+    [SerializeField, Range(0f, 10f)] private float scenario2Transition = 0f;
+
     [SerializeField] private string scenario3_1 = "Scenario 3.1";
+    [SerializeField, Range(0f, 10f)] private float scenario3_1Transition = 0f;
+
     [SerializeField] private string scenario3_2 = "Scenario 3.2";
+    [SerializeField, Range(0f, 10f)] private float scenario3_2Transition = 0f;
+
     [SerializeField] private string scenario3_3 = "Scenario 3.3";
+    [SerializeField, Range(0f, 10f)] private float scenario3_3Transition = 0f;
+
     [SerializeField] private string scenario4 = "Scenario 4";
+    [SerializeField, Range(0f, 10f)] private float scenario4Transition = 0f;
 
     [Header("Random 3D Ambient Sound")]
     [SerializeField] private AudioClip random3DClip;
@@ -151,7 +162,7 @@ public class AudioManager : MonoBehaviour
     {
         if (S_BlendLight.instance != null)
         {
-            S_BlendLight.instance.SetScenario(scenario1);
+            S_BlendLight.instance.SetScenario(scenario1, scenario1Transition);
         }
 
         if (lightGroups != null && lightGroups.Count > 0)
@@ -379,12 +390,12 @@ public class AudioManager : MonoBehaviour
         {
             if (blackoutCount == 1 || blackoutCount == 2)
             {
-                S_BlendLight.instance.SetScenario(scenario2);
+                S_BlendLight.instance.SetScenario(scenario2, scenario2Transition);
             }
             else if (blackoutCount == 3)
             {
-				S_BlendLight.instance.SetScenario(scenario4);
-			}
+                S_BlendLight.instance.SetScenario(scenario4, scenario4Transition);
+            }
         }
 
         if (blackoutCount < 3)
@@ -426,7 +437,7 @@ public class AudioManager : MonoBehaviour
     private IEnumerator WaitBeforeLarvaCrowd()
     {
 
-		yield return new WaitForSeconds(3.5f);
+        yield return new WaitForSeconds(3.5f);
         if (crowdLarvaObject != null)
         {
             crowdLarvaObject.SetActive(true);
@@ -492,16 +503,16 @@ public class AudioManager : MonoBehaviour
         {
             if (blackoutCount == 1 && S_BlendLight.instance != null)
             {
-                if (i == 0) S_BlendLight.instance.SetScenario(scenario3_1);
-                else if (i == 1) S_BlendLight.instance.SetScenario(scenario3_2);
-                else if (i == 2) S_BlendLight.instance.SetScenario(scenario3_3);
+                if (i == 0) S_BlendLight.instance.SetScenario(scenario3_1, scenario3_1Transition);
+                else if (i == 1) S_BlendLight.instance.SetScenario(scenario3_2, scenario3_2Transition);
+                else if (i == 2) S_BlendLight.instance.SetScenario(scenario3_3, scenario3_3Transition);
             }
 
             if (blackoutCount == 2)
             {
                 if (S_BlendLight.instance != null)
                 {
-                    S_BlendLight.instance.SetScenario(scenario3_3);
+                    S_BlendLight.instance.SetScenario(scenario3_3, scenario3_3Transition);
                 }
             }
 
@@ -560,7 +571,7 @@ public class AudioManager : MonoBehaviour
 
     public void TriggerWinAudio()
     {
-        
+
 
 
         if (lightOffClip != null)
