@@ -23,6 +23,9 @@ public class StateMachineGame : MonoBehaviour
 	public GameObject stateLevel1;
 	public GameObject stateLevel2;
 
+
+	public bool hasWin = false;
+
 	[SerializeField]
 	GameObject ui;
 
@@ -74,12 +77,14 @@ public class StateMachineGame : MonoBehaviour
 		yield return new WaitForSeconds(2f);
 
 		Debug.Log("ShowEnding");
-		triggerEventButtonLift.TriggerBlinking(true);
+		
 		endBubble.Invoke();
 
-        //DOSOMETHING
+		yield return new WaitForSeconds(1.5f);
 
-        yield return new WaitForSeconds(12f);
+        triggerEventButtonLift.TriggerBlinking(true);
+
+        yield return new WaitForSeconds(10f);
 
 		if (StateMachineGame.Instance.state != GameState.ENDING)
 		{

@@ -10,7 +10,7 @@ public class Sound
     public string name;
     public AudioClip clip;
 
-    [Range(0f, 1f)]
+    [Range(0f, 2f)]
     public float volume = 0.7f;
     [Range(0.1f, 3f)]
     public float pitch = 1f;
@@ -553,6 +553,91 @@ public class AudioManager : MonoBehaviour
 
                 Destroy(fxGo, random3DClip.length);
             }
+        }
+    }
+
+
+
+    public void TriggerWinAudio()
+    {
+        
+
+
+        if (lightOffClip != null)
+        {
+            PlayClipAtPoint(lightOffClip, transform.position, ambientSounds.Count > 0 ? ambientSounds[0].mixerGroup : null, lightOffVolume);
+        }
+
+        if (!string.IsNullOrEmpty(vestLightOffSoundName) && AudioManagerVest.Instance != null)
+        {
+            AudioManagerVest.Instance.PlayGlobalVestSound(vestLightOffSoundName);
+        }
+
+        StartCoroutine(Win());
+
+    }
+
+    IEnumerator Win()
+    {
+        yield return new WaitForSeconds(3f);
+        foreach (AmbientSoundSettings amb in ambientSounds)
+        {
+            if (amb.source != null && amb.source.isPlaying)
+            {
+                if (amb.clip != null && amb.clip.name.ToLower().Contains("drone"))
+                {
+                    PlayPreparedSoundProgressive(amb.source, amb.reducedVolume, 1.5f);
+                }
+                else
+                {
+                    StopPreparedSoundProgressive(amb.source, 1.5f);
+                }
+            }
+        }
+
+        SpecialEventsAudio specialEvents = FindFirstObjectByType<SpecialEventsAudio>();
+        if (specialEvents != null)
+        {
+            foreach (AudioSource source in specialEvents.GetComponentsInChildren<AudioSource>())
+            {
+                if (source != null && source.isPlaying)
+                {
+                    StopPreparedSoundProgressive(source, 1.5f);
+                }
+            }
+        }
+    }
+
+    public void TriggerLoseAudio()
+    {
+        foreach (AmbientSoundSettings amb in ambientSounds)
+        {
+            if (amb.source != null && amb.source.isPlaying)
+            {
+                PlayPreparedSoundProgressive(amb.source, amb.reducedVolume, 1.5f);
+            }
+        }
+
+        SpecialEventsAudio specialEvents = FindFirstObjectByType<SpecialEventsAudio>();
+        if (specialEvents != null)
+        {
+            foreach (AudioSource source in specialEvents.GetComponentsInChildren<AudioSource>())
+            {
+                if (source != null && source.isPlaying)
+                {
+                    PlayPreparedSoundProgressive(source, source.volume * 0.2f, 1.5f);
+                }
+            }
+        }
+
+        if (lightOffClip != null)
+        {
+            PlayClipAtPoint(lightOffClip, transform.position, ambientSounds.Count > 0 ? ambientSounds[0].mixerGroup : null, lightOffVolume);
+        }
+
+        if (!string.IsNullOrEmpty(vestLightOffSoundName) && AudioManagerVest.Instance != null)
+        {
+            AudioManagerVest.Instance.PlayGlobalVestSound(vestLightOffSoundName);
         }
     }
 }

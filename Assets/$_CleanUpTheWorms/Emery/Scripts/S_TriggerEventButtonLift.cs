@@ -51,9 +51,21 @@ public class S_TriggerEventButtonLift : MonoBehaviour
 
             if (canBePushed)
             {
-                OnButtonPushed.Invoke();
+                if (isElevator)
+                {
+                    OnButtonPushed.Invoke();
+                    canTPElevator = true;
+                    SetCanBePushed(false);
+                }
+                else if (StateMachineGame.Instance.state == GameState.LEVEL1)
+                {
+                    OnButtonPushed.Invoke();
+                    SetCanBePushed(false);
 
-                canTPElevator = true;
+                }
+
+
+
 
                 if (pushCoroutine != null)
                 {
@@ -61,7 +73,7 @@ public class S_TriggerEventButtonLift : MonoBehaviour
                 }
                 pushCoroutine = StartCoroutine(PushAndReturnCoroutine());
 
-                SetCanBePushed(false);
+                
             }
 
             if (canTPElevator && StateMachineGame.Instance.state != GameState.ENDING && isElevator)
@@ -100,11 +112,14 @@ public class S_TriggerEventButtonLift : MonoBehaviour
         if (value)
         {
             winBubble.Invoke();
+            StateMachineGame.Instance.hasWin = true;
         }
         else 
         {
             looseBubble.Invoke();
         }
+
+        TriggerBlinking(false);
 
 
         StartCoroutine(FadeEnding());

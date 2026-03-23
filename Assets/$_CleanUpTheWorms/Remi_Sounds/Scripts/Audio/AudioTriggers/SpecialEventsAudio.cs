@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.Rendering.UI;
 
 public class SpecialEventsAudio : MonoBehaviour
 {
@@ -120,6 +121,8 @@ public class SpecialEventsAudio : MonoBehaviour
     [ContextMenu("Play Crowd Larva Event")]
     public void PlayCrowdLarva()
     {
+        if (StateMachineGame.Instance.hasWin) return;
+
         if (crowdLarvaSequenceRoutine != null)
         {
             StopCoroutine(crowdLarvaSequenceRoutine);
@@ -203,7 +206,7 @@ public class SpecialEventsAudio : MonoBehaviour
     [ContextMenu("Play Siren Event")]
     public void PlaySiren()
     {
-        if (sirenAudio != null && sirenAudio.source != null)
+        if (sirenAudio != null && sirenAudio.source != null && !StateMachineGame.Instance.hasWin)
         {
             if (sirenAudio.preventOverlay || sirenAudio.loop)
             {
@@ -215,7 +218,7 @@ public class SpecialEventsAudio : MonoBehaviour
             }
         }
 
-        if (AudioManagerVest.Instance != null && !string.IsNullOrEmpty(sirenVestName))
+        if (AudioManagerVest.Instance != null && !string.IsNullOrEmpty(sirenVestName) && !StateMachineGame.Instance.hasWin)
         {
             AudioManagerVest.Instance.PlayGlobalVestSound(sirenVestName);
         }
