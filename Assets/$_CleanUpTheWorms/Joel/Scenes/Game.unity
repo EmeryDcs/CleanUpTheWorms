@@ -5677,8 +5677,8 @@ MonoBehaviour:
   isPlayingAnim: 0
   isOpening: 0
   voiceOverIndex: 3
-  textFrench: "Qu'est-ce que c'est que \xE7a ? Mais c'est immonde ! Vite attrapez
-    la et jettez la dans ma benne !"
+  textFrench: Qu'est-ce que c'est que ca ? Mais c'est immonde ! Vite attrapez la
+    et jettez la dans ma benne !
   textEnglish: What is that? That's disgusting! Quick, grab it and throw it in my
     bin!
   isSpecialUpgrade: 0
@@ -5704,8 +5704,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Qu'est-ce que c'est que \xE7a ? Mais c'est immonde ! Vite attrapez la
-    et jettez la dans ma benne !"
+  m_text: Qu'est-ce que c'est que ca ? Mais c'est immonde ! Vite attrapez la et jettez
+    la dans ma benne !
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: acc86433bf40b4044812bfc2f2bfd7b7, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -24492,6 +24492,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1963211744}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   targetLight: {fileID: 1114560617}
   minIntensity: 0
   maxIntensity: 6.25
@@ -25746,6 +25758,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 670750426902005692, guid: 2f5907475b0810049a2f0b26e223da44, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 880613238480577675, guid: 2f5907475b0810049a2f0b26e223da44, type: 3}
       propertyPath: m_Name
       value: PF_CameraPlayer (1)
@@ -25757,6 +25773,10 @@ PrefabInstance:
     - target: {fileID: 1170078207188086105, guid: 2f5907475b0810049a2f0b26e223da44, type: 3}
       propertyPath: m_TagString
       value: ButtonLift
+      objectReference: {fileID: 0}
+    - target: {fileID: 1421113833432413551, guid: 2f5907475b0810049a2f0b26e223da44, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1611537918846710250, guid: 2f5907475b0810049a2f0b26e223da44, type: 3}
       propertyPath: m_TagString
@@ -25773,6 +25793,10 @@ PrefabInstance:
     - target: {fileID: 2602754172803433173, guid: 2f5907475b0810049a2f0b26e223da44, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3105983034008542124, guid: 2f5907475b0810049a2f0b26e223da44, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3147292054661778462, guid: 2f5907475b0810049a2f0b26e223da44, type: 3}
       propertyPath: m_Layer
@@ -25822,6 +25846,10 @@ PrefabInstance:
       propertyPath: instanceId
       value: 66ee20df-dbde-4afb-8a8d-bd0600be6286
       objectReference: {fileID: 0}
+    - target: {fileID: 5505164335676726826, guid: 2f5907475b0810049a2f0b26e223da44, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5512422633250716221, guid: 2f5907475b0810049a2f0b26e223da44, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -25861,6 +25889,10 @@ PrefabInstance:
     - target: {fileID: 6304312223122780786, guid: 2f5907475b0810049a2f0b26e223da44, type: 3}
       propertyPath: ikOffsetX
       value: -0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 6496031291875013029, guid: 2f5907475b0810049a2f0b26e223da44, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7540188244514007069, guid: 2f5907475b0810049a2f0b26e223da44, type: 3}
       propertyPath: m_Layer

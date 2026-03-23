@@ -180,6 +180,7 @@ public class AudioManager : MonoBehaviour
         {
             StartAmbientSequence();
         }
+        
     }
 
     public void Play(string name)

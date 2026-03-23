@@ -25,13 +25,15 @@ public class S_BlendLight : MonoBehaviour
         {
             instance = this;
         }
+        
+        probeRefVolume = UnityEngine.Rendering.ProbeReferenceVolume.instance;
+        probeRefVolume.lightingScenario = scenario01;
+        probeRefVolume.numberOfCellsBlendedPerFrame = numberOfCellsBlendedPerFrame;
     }
 
     void Start()
     {
-        probeRefVolume = UnityEngine.Rendering.ProbeReferenceVolume.instance;
-        probeRefVolume.lightingScenario = scenario01;
-        probeRefVolume.numberOfCellsBlendedPerFrame = numberOfCellsBlendedPerFrame;
+
     }
 
     public void SetScenario(string s, float transitionTime = 0f)
@@ -40,6 +42,7 @@ public class S_BlendLight : MonoBehaviour
         {
             if (blendCoroutine != null) StopCoroutine(blendCoroutine);
             probeRefVolume.lightingScenario = s;
+            Debug.Log("Starting : "  + s);
         }
         else
         {
