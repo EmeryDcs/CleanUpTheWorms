@@ -27672,7 +27672,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 69461964154097927, guid: f5a35e8400b6fb244ad15739bfa0c655, type: 3}
       propertyPath: scenario4Transition
-      value: 7
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 69461964154097927, guid: f5a35e8400b6fb244ad15739bfa0c655, type: 3}
       propertyPath: lightGroups.Array.size

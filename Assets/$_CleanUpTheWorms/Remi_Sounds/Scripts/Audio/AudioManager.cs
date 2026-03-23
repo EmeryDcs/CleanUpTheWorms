@@ -103,7 +103,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField, Range(0f, 10f)] private float scenario3_3Transition = 0f;
 
     [SerializeField] private string scenario4 = "Scenario 4";
-    [SerializeField, Range(0f, 10f)] private float scenario4Transition = 0f;
+    [SerializeField, Range(0f, 30f)] private float scenario4Transition = 0f;
 
     [Header("Random 3D Ambient Sound")]
     [SerializeField] private AudioClip random3DClip;
