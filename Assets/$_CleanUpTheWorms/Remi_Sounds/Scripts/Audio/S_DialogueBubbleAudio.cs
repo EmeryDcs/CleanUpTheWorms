@@ -19,6 +19,11 @@ public class S_DialogueBubbleAudio : MonoBehaviour
     [TextArea(3, 10)]
     [SerializeField] string textEnglish;
 
+    [TextArea(3, 10)]
+    [SerializeField] string textJapanese;
+
+    [SerializeField] TMP_FontAsset japaneseFont;
+
     [Header("Special Upgrade: Blinking Light")]
     [SerializeField] bool isSpecialUpgrade;
     [SerializeField] Light targetLight;
@@ -34,7 +39,15 @@ public class S_DialogueBubbleAudio : MonoBehaviour
     {
         textComponent = GetComponent<TextMeshProUGUI>();
 
-        if (S_VoiceOver.Instance != null && S_VoiceOver.Instance.isEnglish)
+        if (S_VoiceOver.Instance != null && S_VoiceOver.Instance.isJapanese)
+        {
+            textComponent.text = textJapanese;
+            if (japaneseFont != null)
+            {
+                textComponent.font = japaneseFont;
+            }
+        }
+        else if (S_VoiceOver.Instance != null && S_VoiceOver.Instance.isEnglish)
         {
             textComponent.text = textEnglish;
         }

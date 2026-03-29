@@ -3877,6 +3877,8 @@ MonoBehaviour:
 
     Let''s check that your equipment is working correctly:
     press the trigger on your grabber a few times.'
+  textJapanese: "\u3053\u3093\u306B\u3061\u306F\u3002\n\u79C1\u306F\u3042\u306A\u305F\u306E\u30B4\u30DF\u56DE\u53CE\u30ED\u30DC\u30C3\u30C8\u3067\u3059\u3002\u6E05\u6383\u30DF\u30C3\u30B7\u30E7\u30F3\u306E\u9593\u3001\u3042\u306A\u305F\u306B\u540C\u884C\u3057\u307E\u3059\u3002\n\u6A5F\u6750\u304C\u6B63\u5E38\u306B\u52D5\u4F5C\u3059\u308B\u304B\u78BA\u8A8D\u3057\u307E\u3057\u3087\u3046\u3002\u30A2\u30FC\u30E0\u306E\u30C8\u30EA\u30AC\u30FC\u3092\u6570\u56DE\u5F15\u3044\u3066\u307F\u3066\u304F\u3060\u3055\u3044\u3002"
+  japaneseFont: {fileID: 11400000, guid: 5abbb749a6f9aed4f8f87cab6cad6cc9, type: 2}
   isSpecialUpgrade: 0
   targetLight: {fileID: 0}
   blinkInterval: 0.15
@@ -4602,6 +4604,8 @@ MonoBehaviour:
   voiceOverIndex: 4
   textFrench: Mmmh... c'est d'une composition etonnante....
   textEnglish: Hmm... it has a surprising composition....
+  textJapanese: "\u3046\u30FC\u3093\u2026\u9A5A\u304F\u3079\u304D\u6210\u5206\u3067\u3067\u304D\u3066\u3044\u307E\u3059\u306D\u2026\u3002"
+  japaneseFont: {fileID: 0}
   isSpecialUpgrade: 0
   targetLight: {fileID: 0}
   blinkInterval: 0.15
@@ -5681,6 +5685,8 @@ MonoBehaviour:
     et jettez la dans ma benne !
   textEnglish: What is that? That's disgusting! Quick, grab it and throw it in my
     bin!
+  textJapanese: "\u3053\u308C\u306F\u4F55\u3067\u3059\u304B\uFF1F\u306A\u3093\u3066\u304A\u305E\u307E\u3057\u3044\uFF01\u65E9\u304F\u63B4\u3093\u3067\u79C1\u306E\u30B4\u30DF\u7BB1\u306B\u6295\u3052\u5165\u308C\u3066\u304F\u3060\u3055\u3044\uFF01"
+  japaneseFont: {fileID: 11400000, guid: 5abbb749a6f9aed4f8f87cab6cad6cc9, type: 2}
   isSpecialUpgrade: 0
   targetLight: {fileID: 0}
   blinkInterval: 0.15
@@ -10075,6 +10081,8 @@ MonoBehaviour:
     trop loin.
   textEnglish: All you have to do now is test your extension on the next larvae you
     see swarming! To do this, pull the handle when they are too far away.
+  textJapanese: "\u3042\u3068\u306F\u3001\u6B21\u306B\u3046\u3054\u3081\u304F\u5E7C\u866B\u3092\u898B\u305F\u3068\u304D\u306B\u5EF6\u9577\u30A2\u30FC\u30E0\u3092\u8A66\u3059\u3060\u3051\u3067\u3059\uFF01\u9060\u3059\u304E\u308B\u5834\u5408\u306F\u3001\u30CF\u30F3\u30C9\u30EB\u3092\u5F15\u3044\u3066\u304F\u3060\u3055\u3044\u3002"
+  japaneseFont: {fileID: 11400000, guid: 5abbb749a6f9aed4f8f87cab6cad6cc9, type: 2}
   isSpecialUpgrade: 0
   targetLight: {fileID: 91055869}
   blinkInterval: 0.15
@@ -10614,6 +10622,8 @@ MonoBehaviour:
 
     Press the elevator button to start your
     cleaning mission.'
+  textJapanese: "\u3055\u3042\u3001\u4ED5\u4E8B\u306E\u6642\u9593\u3067\u3059\u3002\n\u30A8\u30EC\u30D9\u30FC\u30BF\u30FC\u306E\u30DC\u30BF\u30F3\u3092\u62BC\u3057\u3066\u3001\u6E05\u6383\u30DF\u30C3\u30B7\u30E7\u30F3\u3092\u958B\u59CB\u3057\u3066\u304F\u3060\u3055\u3044\u3002"
+  japaneseFont: {fileID: 11400000, guid: 5abbb749a6f9aed4f8f87cab6cad6cc9, type: 2}
   isSpecialUpgrade: 0
   targetLight: {fileID: 0}
   blinkInterval: 0.15
@@ -12855,6 +12865,8 @@ MonoBehaviour:
     ! Vite, faites quelque chose !
   textEnglish: Alert! What is happening?! They are invading the laboratory! Quick,
     do something!
+  textJapanese: "\u8B66\u544A\uFF01\u4F55\u304C\u8D77\u304D\u3066\u3044\u308B\u3093\u3060\uFF1F\uFF01\u5974\u3089\u304C\u7814\u7A76\u6240\u306B\u4FB5\u5165\u3057\u3066\u304D\u3066\u3044\u308B\uFF01\u65E9\u304F\u3001\u4F55\u3068\u304B\u3057\u3066\u304F\u308C\uFF01"
+  japaneseFont: {fileID: 11400000, guid: 5abbb749a6f9aed4f8f87cab6cad6cc9, type: 2}
   isSpecialUpgrade: 0
   targetLight: {fileID: 91055869}
   blinkInterval: 0.15
@@ -23344,6 +23356,8 @@ MonoBehaviour:
   textEnglish: "Great, your grabber is working correctly.\nWhen you pick up a piece
     of trash, please throw it into my container. \nI will open it when you have a
     piece of trash in your grabber. \nLet's try with the piece of trash behind you."
+  textJapanese: "\u7D20\u6674\u3089\u3057\u3044\u3001\u3042\u306A\u305F\u306E\u30A2\u30FC\u30E0\u306F\u6B63\u5E38\u306B\u52D5\u4F5C\u3057\u3066\u3044\u307E\u3059\u3002\n\u30B4\u30DF\u3092\u62FE\u3063\u305F\u3089\u3001\u79C1\u306E\u30B3\u30F3\u30C6\u30CA\u306B\u6295\u3052\u5165\u308C\u3066\u304F\u3060\u3055\u3044\u3002\u30A2\u30FC\u30E0\u3067\u30B4\u30DF\u3092\u63B4\u3080\u3068\u30B3\u30F3\u30C6\u30CA\u304C\u958B\u304D\u307E\u3059\u3002\u5F8C\u308D\u306B\u3042\u308B\u30B4\u30DF\u3067\u8A66\u3057\u3066\u307F\u307E\u3057\u3087\u3046\u3002"
+  japaneseFont: {fileID: 11400000, guid: 5abbb749a6f9aed4f8f87cab6cad6cc9, type: 2}
   isSpecialUpgrade: 0
   targetLight: {fileID: 0}
   blinkInterval: 0.15
@@ -27067,6 +27081,8 @@ MonoBehaviour:
     !
   textEnglish: Great job! The lab is saved. You're definitely getting employee of
     the month!
+  textJapanese: "\u7D20\u6674\u3089\u3057\u3044\u4ED5\u4E8B\u3067\u3059\uFF01\u7814\u7A76\u6240\u306F\u6551\u308F\u308C\u307E\u3057\u305F\u3002\u3042\u306A\u305F\u306F\u4ECA\u6708\u306E\u6700\u512A\u79C0\u5F93\u696D\u54E1\u306B\u9078\u3070\u308C\u308B\u3067\u3057\u3087\u3046\uFF01"
+  japaneseFont: {fileID: 11400000, guid: 5abbb749a6f9aed4f8f87cab6cad6cc9, type: 2}
   isSpecialUpgrade: 0
   targetLight: {fileID: 91055869}
   blinkInterval: 0.15
@@ -36194,6 +36210,8 @@ MonoBehaviour:
     en prison pour ca !
   textEnglish: Oh no, it's a disaster... The lab is overrun. You're going straight
     to jail for this!
+  textJapanese: "\u3042\u3042\u3001\u306A\u3093\u3066\u3053\u3068\u3060\u2026\u5927\u60E8\u4E8B\u3060\u2026\u3002\u7814\u7A76\u6240\u304C\u4E57\u3063\u53D6\u3089\u308C\u3066\u3057\u307E\u3063\u305F\u3002\u541B\u306F\u3053\u308C\u3067\u5373\u5211\u52D9\u6240\u884C\u304D\u3060\uFF01"
+  japaneseFont: {fileID: 11400000, guid: 5abbb749a6f9aed4f8f87cab6cad6cc9, type: 2}
   isSpecialUpgrade: 0
   targetLight: {fileID: 91055869}
   blinkInterval: 0.15
@@ -38708,6 +38726,8 @@ MonoBehaviour:
   textEnglish: Plunge your grabber in! I think I managed to unlock an upgrade for
     you. We might come across other larvae, and if they are swarming everywhere,
     you will need an extension!
+  textJapanese: "\u30AF\u30ED\u30FC\u3092\u7A81\u3063\u8FBC\u3093\u3067\u304F\u3060\u3055\u3044\uFF01\u3042\u306A\u305F\u306E\u305F\u3081\u306B\u30A2\u30C3\u30D7\u30B0\u30EC\u30FC\u30C9\u3092\u89E3\u9664\u3067\u304D\u305F\u3068\u601D\u3044\u307E\u3059\u3002\u4ED6\u306B\u3082\u5E7C\u866B\u306B\u906D\u9047\u3059\u308B\u304B\u3082\u3057\u308C\u307E\u305B\u3093\u3057\u3001\u3042\u3061\u3053\u3061\u3067\u3046\u3054\u3081\u3044\u3066\u3044\u308B\u306A\u3089\u3001\u5EF6\u9577\u30AF\u30ED\u30FC\u304C\u5FC5\u8981\u306B\u306A\u308A\u307E\u3059\u3088\uFF01"
+  japaneseFont: {fileID: 11400000, guid: 5abbb749a6f9aed4f8f87cab6cad6cc9, type: 2}
   isSpecialUpgrade: 1
   targetLight: {fileID: 91055869}
   blinkInterval: 0.15

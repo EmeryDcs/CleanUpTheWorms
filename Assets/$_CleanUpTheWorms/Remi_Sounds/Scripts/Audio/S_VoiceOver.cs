@@ -8,9 +8,11 @@ public class S_VoiceOver : MonoBehaviour
     public static S_VoiceOver Instance;
 
     public bool isEnglish;
+    public bool isJapanese;
 
     [SerializeField] private Sound[] speechList;
     [SerializeField] private Sound[] speechListEnglish;
+    [SerializeField] private Sound[] speechListJapanese;
 
     private void Awake()
     {
@@ -24,7 +26,11 @@ public class S_VoiceOver : MonoBehaviour
             return;
         }
 
-        if (System.Environment.GetCommandLineArgs().Contains("-isinenglish"))
+        if (System.Environment.GetCommandLineArgs().Contains("-isjapanese"))
+        {
+            isJapanese = true;
+        }
+        else if (System.Environment.GetCommandLineArgs().Contains("-isinenglish"))
         {
             isEnglish = true;
         }
@@ -42,6 +48,14 @@ public class S_VoiceOver : MonoBehaviour
             for (int i = 0; i < speechListEnglish.Length; i++)
             {
                 InitializeSound(speechListEnglish[i], "SequenceSpeechAudioSource_EN_" + i);
+            }
+        }
+
+        if (speechListJapanese != null)
+        {
+            for (int i = 0; i < speechListJapanese.Length; i++)
+            {
+                InitializeSound(speechListJapanese[i], "SequenceSpeechAudioSource_JP_" + i);
             }
         }
     }
@@ -88,7 +102,26 @@ public class S_VoiceOver : MonoBehaviour
             }
         }
 
-        Sound[] currentList = isEnglish ? speechListEnglish : speechList;
+        if (speechListJapanese != null)
+        {
+            for (int i = 0; i < speechListJapanese.Length; i++)
+            {
+                if (speechListJapanese[i] != null && speechListJapanese[i].source != null)
+                {
+                    speechListJapanese[i].source.Stop();
+                }
+            }
+        }
+
+        Sound[] currentList = speechList;
+        if (isJapanese)
+        {
+            currentList = speechListJapanese;
+        }
+        else if (isEnglish)
+        {
+            currentList = speechListEnglish;
+        }
 
         if (currentList == null || index < 0 || index >= currentList.Length) return;
 
