@@ -1922,6 +1922,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechList.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
       propertyPath: speechList.Array.data[1].clip
       value: 
       objectReference: {fileID: 8300000, guid: 06b2250d29229e1469f248e08c5c8e39, type: 3}
@@ -1929,6 +1933,18 @@ PrefabInstance:
       propertyPath: speechList.Array.data[2].clip
       value: 
       objectReference: {fileID: 8300000, guid: dfeb26b7cb08283439f544155ea5e18d, type: 3}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechList.Array.data[7].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: e9174a1682a82c547b6d9df0c6cfa053, type: 3}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechList.Array.data[8].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 92694dc6dcc80fd449692e08cd145827, type: 3}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechList.Array.data[9].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 77e362ce5ae206d458f83730ff87e6c1, type: 3}
     - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
       propertyPath: speechListJapanese.Array.size
       value: 10
@@ -1960,6 +1976,54 @@ PrefabInstance:
     - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
       propertyPath: speechList.Array.data[6].pitch
       value: 1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechList.Array.data[7].pitch
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechList.Array.data[8].pitch
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechList.Array.data[9].pitch
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechList.Array.data[7].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechList.Array.data[8].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechList.Array.data[9].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechList.Array.data[7].mixerGroup
+      value: 
+      objectReference: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechList.Array.data[8].mixerGroup
+      value: 
+      objectReference: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechList.Array.data[9].mixerGroup
+      value: 
+      objectReference: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechList.Array.data[7].spatialBlend
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechList.Array.data[8].spatialBlend
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechList.Array.data[9].spatialBlend
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
       propertyPath: speechListEnglish.Array.data[0].pitch
