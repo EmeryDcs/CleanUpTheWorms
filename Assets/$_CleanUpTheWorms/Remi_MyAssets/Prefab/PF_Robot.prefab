@@ -359,6 +359,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 192b3f9bcb746284cbeae11ae7f9e5ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::S_VoiceOver
+  isEnglish: 0
+  isJapanese: 0
   speechList:
   - name: 
     clip: {fileID: 8300000, guid: 8b4a6535bc1857842a72530eb172fd34, type: 3}
@@ -430,6 +432,108 @@ MonoBehaviour:
     preventOverlay: 0
     mixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
     source: {fileID: 0}
+  speechListEnglish:
+  - name: 
+    clip: {fileID: 8300000, guid: 72316ef881459ef4bb94601c56788ae1, type: 3}
+    volume: 1
+    pitch: 2
+    spatialBlend: 1
+    loop: 0
+    playOnAwake: 0
+    preventOverlay: 0
+    mixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    source: {fileID: 0}
+  - name: 
+    clip: {fileID: 8300000, guid: 2717cab70e61e0c43937b9c9d9a70aeb, type: 3}
+    volume: 1
+    pitch: 2
+    spatialBlend: 1
+    loop: 0
+    playOnAwake: 0
+    preventOverlay: 0
+    mixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    source: {fileID: 0}
+  - name: 
+    clip: {fileID: 8300000, guid: 0bc4a95d685e79f48b2107cf163caa77, type: 3}
+    volume: 1
+    pitch: 2
+    spatialBlend: 1
+    loop: 0
+    playOnAwake: 0
+    preventOverlay: 0
+    mixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    source: {fileID: 0}
+  - name: 
+    clip: {fileID: 8300000, guid: 6787adb0670fcfa4880e2d41ef7910bd, type: 3}
+    volume: 1
+    pitch: 2
+    spatialBlend: 1
+    loop: 0
+    playOnAwake: 0
+    preventOverlay: 0
+    mixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    source: {fileID: 0}
+  - name: 
+    clip: {fileID: 8300000, guid: 7a2fea6ee3421ec4ca7a9dec5d25324d, type: 3}
+    volume: 1
+    pitch: 2
+    spatialBlend: 1
+    loop: 0
+    playOnAwake: 0
+    preventOverlay: 0
+    mixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    source: {fileID: 0}
+  - name: 
+    clip: {fileID: 8300000, guid: b7877aa2d73c49241a75b08896f35202, type: 3}
+    volume: 1
+    pitch: 2
+    spatialBlend: 1
+    loop: 0
+    playOnAwake: 0
+    preventOverlay: 0
+    mixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    source: {fileID: 0}
+  - name: 
+    clip: {fileID: 8300000, guid: 3b2a1b7de39efd84392a30eb1c8c7386, type: 3}
+    volume: 1
+    pitch: 2
+    spatialBlend: 1
+    loop: 0
+    playOnAwake: 0
+    preventOverlay: 0
+    mixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    source: {fileID: 0}
+  - name: 
+    clip: {fileID: 8300000, guid: 832251373fc6db54bbba8eb1026ed65c, type: 3}
+    volume: 1
+    pitch: 2
+    spatialBlend: 1
+    loop: 0
+    playOnAwake: 0
+    preventOverlay: 0
+    mixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    source: {fileID: 0}
+  - name: 
+    clip: {fileID: 8300000, guid: 31307bbd4bb3aa54abaeeec83f33974d, type: 3}
+    volume: 1
+    pitch: 2
+    spatialBlend: 1
+    loop: 0
+    playOnAwake: 0
+    preventOverlay: 0
+    mixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    source: {fileID: 0}
+  - name: 
+    clip: {fileID: 8300000, guid: 4f8e30aa3fa595f429be808405b90f1c, type: 3}
+    volume: 1
+    pitch: 2
+    spatialBlend: 1
+    loop: 0
+    playOnAwake: 0
+    preventOverlay: 0
+    mixerGroup: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    source: {fileID: 0}
+  speechListJapanese: []
 --- !u!1001 &3379587453419867529
 PrefabInstance:
   m_ObjectHideFlags: 0

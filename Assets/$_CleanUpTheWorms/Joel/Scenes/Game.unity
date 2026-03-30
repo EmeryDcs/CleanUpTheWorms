@@ -1918,6 +1918,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: isJapanese
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
       propertyPath: speechList.Array.data[1].clip
       value: 
       objectReference: {fileID: 8300000, guid: 06b2250d29229e1469f248e08c5c8e39, type: 3}
@@ -1925,6 +1929,10 @@ PrefabInstance:
       propertyPath: speechList.Array.data[2].clip
       value: 
       objectReference: {fileID: 8300000, guid: dfeb26b7cb08283439f544155ea5e18d, type: 3}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListJapanese.Array.size
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
       propertyPath: speechList.Array.data[0].pitch
       value: 1.4
@@ -1952,6 +1960,290 @@ PrefabInstance:
     - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
       propertyPath: speechList.Array.data[6].pitch
       value: 1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListEnglish.Array.data[0].pitch
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListEnglish.Array.data[1].pitch
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListEnglish.Array.data[2].pitch
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListEnglish.Array.data[3].pitch
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListEnglish.Array.data[4].pitch
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListEnglish.Array.data[5].pitch
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListEnglish.Array.data[6].pitch
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListEnglish.Array.data[7].pitch
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListEnglish.Array.data[8].pitch
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListEnglish.Array.data[9].pitch
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListJapanese.Array.data[0].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 06483c210f9feb44089af1fdf5d4eaba, type: 3}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListJapanese.Array.data[1].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 6e5a789ddb054c740a08ea9c4329f254, type: 3}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListJapanese.Array.data[2].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: dece011860a2e6a47b362826b536a623, type: 3}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListJapanese.Array.data[3].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 25ed23c3f0c139047829e658d56bcdd8, type: 3}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListJapanese.Array.data[4].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: f562b4b6406a91441a4e6dc242318da3, type: 3}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListJapanese.Array.data[5].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: cbc0dc9323a2039459f935493696ef77, type: 3}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListJapanese.Array.data[6].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 8903981fafc539045b7c735535aa71a5, type: 3}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListJapanese.Array.data[7].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: f1838ada44ec8b6478bbbcba5cf30b79, type: 3}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListJapanese.Array.data[8].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: b0857e99d791f5e419738ba3bc0f5d30, type: 3}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListJapanese.Array.data[9].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 2b34b3e05a7ba0b4fa27655537bb89ba, type: 3}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListEnglish.Array.data[0].volume
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListEnglish.Array.data[1].volume
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListEnglish.Array.data[2].volume
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListEnglish.Array.data[3].volume
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListEnglish.Array.data[4].volume
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListEnglish.Array.data[5].volume
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListEnglish.Array.data[6].volume
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListEnglish.Array.data[7].volume
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListEnglish.Array.data[8].volume
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListEnglish.Array.data[9].volume
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListJapanese.Array.data[0].pitch
+      value: 1.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListJapanese.Array.data[1].pitch
+      value: 1.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListJapanese.Array.data[2].pitch
+      value: 1.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListJapanese.Array.data[3].pitch
+      value: 1.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListJapanese.Array.data[4].pitch
+      value: 1.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListJapanese.Array.data[5].pitch
+      value: 1.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListJapanese.Array.data[6].pitch
+      value: 1.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListJapanese.Array.data[7].pitch
+      value: 1.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListJapanese.Array.data[8].pitch
+      value: 1.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListJapanese.Array.data[9].pitch
+      value: 1.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListJapanese.Array.data[0].volume
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListJapanese.Array.data[1].volume
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListJapanese.Array.data[2].volume
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListJapanese.Array.data[3].volume
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListJapanese.Array.data[4].volume
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListJapanese.Array.data[5].volume
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListJapanese.Array.data[6].volume
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListJapanese.Array.data[7].volume
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListJapanese.Array.data[8].volume
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListJapanese.Array.data[9].volume
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListJapanese.Array.data[0].mixerGroup
+      value: 
+      objectReference: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListJapanese.Array.data[1].mixerGroup
+      value: 
+      objectReference: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListJapanese.Array.data[2].mixerGroup
+      value: 
+      objectReference: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListJapanese.Array.data[3].mixerGroup
+      value: 
+      objectReference: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListJapanese.Array.data[4].mixerGroup
+      value: 
+      objectReference: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListJapanese.Array.data[5].mixerGroup
+      value: 
+      objectReference: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListJapanese.Array.data[6].mixerGroup
+      value: 
+      objectReference: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListJapanese.Array.data[7].mixerGroup
+      value: 
+      objectReference: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListJapanese.Array.data[8].mixerGroup
+      value: 
+      objectReference: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListJapanese.Array.data[9].mixerGroup
+      value: 
+      objectReference: {fileID: -2827080689467826737, guid: df5b89da8f22fa840bac48cc1f0bf3c8, type: 2}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListJapanese.Array.data[0].playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListJapanese.Array.data[0].spatialBlend
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListJapanese.Array.data[1].spatialBlend
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListJapanese.Array.data[2].spatialBlend
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListJapanese.Array.data[3].spatialBlend
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListJapanese.Array.data[4].spatialBlend
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListJapanese.Array.data[5].spatialBlend
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListJapanese.Array.data[6].spatialBlend
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListJapanese.Array.data[7].spatialBlend
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListJapanese.Array.data[8].spatialBlend
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562614200679461478, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
+      propertyPath: speechListJapanese.Array.data[9].spatialBlend
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9061344312600664553, guid: d50cb00650b3e9a4491fe3f6f19b3e47, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
