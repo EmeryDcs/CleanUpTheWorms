@@ -224,6 +224,11 @@ public class SpecialEventsAudio : MonoBehaviour
         }
     }
 
+    public void StopSiren()
+    {
+        sirenAudio.source.Stop();
+    }
+
     private IEnumerator FadeIn(AudioSource source, float targetVolume, float duration)
     {
         float startVolume = source.volume;

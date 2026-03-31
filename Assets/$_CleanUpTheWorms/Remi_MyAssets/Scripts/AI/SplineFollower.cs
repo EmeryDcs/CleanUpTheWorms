@@ -15,6 +15,9 @@ public class SplineFollower : MonoBehaviour
 
     private float splineProgress = 0f;
 
+    // Called when the follower completes one full loop
+    public System.Action<GameObject> OnSplineCompleted;
+
     public void SetSplineContainer(SplineContainer container)
     {
         splineContainer = container;
@@ -29,6 +32,9 @@ public class SplineFollower : MonoBehaviour
         if (splineProgress > 1f)
         {
             splineProgress -= 1f;
+
+            // Notify the manager that this follower completed the spline
+            OnSplineCompleted?.Invoke(gameObject);
         }
 
         Vector3 position = splineContainer.EvaluatePosition(splineProgress);

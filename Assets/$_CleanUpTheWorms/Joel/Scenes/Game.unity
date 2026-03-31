@@ -4258,13 +4258,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Bonjour.
-
-    Je suis votre robot poubelle, et je vous accompagnerais
-    durant votre mission de nettoyage.
-
-    Verifions que votre materiel fonctionne
-    correctement : appuyez sur la gachette de votre pince quelque fois.'
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: acc86433bf40b4044812bfc2f2bfd7b7, type: 2}
   m_sharedMaterial: {fileID: -276178942293029153, guid: acc86433bf40b4044812bfc2f2bfd7b7, type: 2}
@@ -4985,7 +4979,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Mmmh... c'est d'une composition etonnante....
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: acc86433bf40b4044812bfc2f2bfd7b7, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6066,8 +6060,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Qu'est-ce que c'est que ca ? Mais c'est immonde ! Vite attrapez la et jettez
-    la dans ma benne !
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: acc86433bf40b4044812bfc2f2bfd7b7, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -10502,9 +10495,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Vous n'avez plus qu'a tester votre allonge sur les prochaines larves que
-    vous verrez grouiller ! Pour ce faire, tirez sur le manche quand elles sont trop
-    loin.
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: acc86433bf40b4044812bfc2f2bfd7b7, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -11043,10 +11034,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Allez, au travail maintenant.
-
-    Appuyez sur le bouton de l''ascenceur
-    pour commencer votre mission de nettoyage.'
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: acc86433bf40b4044812bfc2f2bfd7b7, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -13286,8 +13274,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Alerte ! Qu'est-ce qu'il se passe ?! Elles envahissent le laboratoire !
-    Vite, faites quelque chose !
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: acc86433bf40b4044812bfc2f2bfd7b7, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -23865,11 +23852,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Super, votre pince fonctionne correctement.
-
-    Lorsque vous ramasserez
-    un dechet, veuillez me le jeter dans mon recipient. Je l''ouvrirais lorsque vous
-    aurez un dechet dans votre pince. Essayons avec le dechet derriere vous.'
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: acc86433bf40b4044812bfc2f2bfd7b7, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -27590,7 +27573,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Super boulot ! Le labo est sauve. Vous allez etre elu employe du mois !
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: acc86433bf40b4044812bfc2f2bfd7b7, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -28385,7 +28368,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6811704862030091430, guid: f5a35e8400b6fb244ad15739bfa0c655, type: 3}
       propertyPath: isHapticActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6811704862030091430, guid: f5a35e8400b6fb244ad15739bfa0c655, type: 3}
       propertyPath: vestSounds.Array.data[0].volume
@@ -36759,8 +36742,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Super boulot ! Le labo est sauv\xE9. Vous allez \xEAtre \xE9lu employ\xE9
-    du mois !"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: acc86433bf40b4044812bfc2f2bfd7b7, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -39304,9 +39286,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Plongez votre pince ! Je crois avoir reussi a vous deverouiller une amelioration.
-    On risque de croiser d'autres larves et si elle grouille partout, vous aurez
-    besoin d'une allonge !
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: acc86433bf40b4044812bfc2f2bfd7b7, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

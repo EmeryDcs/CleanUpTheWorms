@@ -23,6 +23,7 @@ public class SplineCharacterManager : MonoBehaviour
     private SplineContainer splineContainer;
     private GameObject[] spawnedCharacters;
     private Coroutine spawnCoroutine;
+    private bool isDraining = false;
 
     void Start()
     {
@@ -50,6 +51,7 @@ public class SplineCharacterManager : MonoBehaviour
 
         ClearCharacters();
 
+        isDraining = false;
         spawnedCharacters = new GameObject[numberOfCharacters];
         spawnCoroutine = StartCoroutine(SpawnRoutine());
     }
@@ -60,6 +62,9 @@ public class SplineCharacterManager : MonoBehaviour
 
         for (int i = 0; i < numberOfCharacters; i++)
         {
+            // Stop spawning new characters if drain mode was activated
+            if (isDraining) yield break;
+
             GameObject character = Instantiate(characterPrefab, transform);
             spawnedCharacters[i] = character;
 
@@ -81,6 +86,9 @@ public class SplineCharacterManager : MonoBehaviour
                 follower.SetCompletionTime(completionTime * randomTimeFactor);
 
                 follower.SetProgress(startingOffset);
+
+                // Wire up the drain callback
+                follower.OnSplineCompleted += OnFollowerReachedEnd;
 
                 // --- ADDED: Start the delay to show the mesh after 2 frames ---
                 if (charRenderer != null) StartCoroutine(ShowMeshAfterFrames(charRenderer, 2));
@@ -106,6 +114,33 @@ public class SplineCharacterManager : MonoBehaviour
             yield return null; // Wait for one frame
         }
         if (renderer != null) renderer.enabled = true;
+    }
+
+    /// <summary>
+    /// Stops spawning new characters and destroys each existing one
+    /// as it naturally reaches the end of the spline.
+    /// </summary>
+    public void BeginDrainMode()
+    {
+        isDraining = true;
+
+        // Stop the spawn coroutine so no new characters are queued
+        if (spawnCoroutine != null)
+        {
+            StopCoroutine(spawnCoroutine);
+            spawnCoroutine = null;
+        }
+    }
+
+    private void OnFollowerReachedEnd(GameObject character)
+    {
+        if (!isDraining) return;
+
+        // Unsubscribe before destroying to be safe
+        SplineFollower follower = character.GetComponent<SplineFollower>();
+        if (follower != null) follower.OnSplineCompleted -= OnFollowerReachedEnd;
+
+        Destroy(character);
     }
 
     public void ClearCharacters()

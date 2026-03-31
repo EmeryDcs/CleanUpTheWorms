@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class S_TriggerEventButtonLift : MonoBehaviour
 {
+    private int m_WaitToEnd = 6;
     public UnityEvent OnButtonPushed;
 
     [SerializeField] private Vector3 pushOffset = new Vector3(0, -0.05f, 0);
@@ -117,7 +118,12 @@ public class S_TriggerEventButtonLift : MonoBehaviour
         {
             winBubble.Invoke();
             StateMachineGame.Instance.hasWin = true;
+            S_BlendLight.instance.SetScenario("3.3", 20);
+            m_WaitToEnd = 8;
             fadeDuration = 1;
+
+            foreach (var manager in FindObjectsByType<SplineCharacterManager>(FindObjectsSortMode.None))
+                manager.BeginDrainMode();
         }
         else 
         {
@@ -194,7 +200,7 @@ public class S_TriggerEventButtonLift : MonoBehaviour
     }
     private IEnumerator FadeEnding()
     {
-        yield return new WaitForSeconds(6);
+        yield return new WaitForSeconds(m_WaitToEnd);
         float elapsedTime = 0f;
         Color color = fadeImage.color;
         Color colorLogo = logo.color;

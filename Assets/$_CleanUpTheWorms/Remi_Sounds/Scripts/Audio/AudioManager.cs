@@ -585,13 +585,15 @@ public class AudioManager : MonoBehaviour
             AudioManagerVest.Instance.PlayGlobalVestSound(vestLightOffSoundName);
         }
 
+        FindFirstObjectByType<SpecialEventsAudio>().StopSiren();
+
         StartCoroutine(Win());
 
     }
 
     IEnumerator Win()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(1.5f);
         foreach (AmbientSoundSettings amb in ambientSounds)
         {
             if (amb.source != null && amb.source.isPlaying)
