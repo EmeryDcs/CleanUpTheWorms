@@ -18,7 +18,9 @@ public class S_VacuumObject : MonoBehaviour
 
 		if (other.CompareTag("GrabbableElm") && other.GetComponent<S_GrabbableState>().CanBeTrashed())
         {
-			Debug.Log("Delete " + other.gameObject.name);
+            RobotAudio.Instance.PlayValidation();
+
+            Debug.Log("Delete " + other.gameObject.name);
             switch (StateMachineGame.Instance.state)
 			{
 				case GameState.ASCENCEUR:
@@ -55,7 +57,9 @@ public class S_VacuumObject : MonoBehaviour
 
 		if (other.gameObject.CompareTag("GrabbableElm") && other.gameObject.GetComponent<S_GrabbableState>().CanBeTrashed())
         {
-			Debug.Log("Delete " + other.gameObject.name);
+            RobotAudio.Instance.PlayValidation();
+
+            Debug.Log("Delete " + other.gameObject.name);
             switch (StateMachineGame.Instance.state)
 			{
 				case GameState.ASCENCEUR:

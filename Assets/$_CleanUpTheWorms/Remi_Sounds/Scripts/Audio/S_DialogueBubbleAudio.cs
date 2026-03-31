@@ -41,11 +41,13 @@ public class S_DialogueBubbleAudio : MonoBehaviour
 
         if (S_VoiceOver.Instance != null && S_VoiceOver.Instance.isJapanese)
         {
-            textComponent.text = textJapanese;
             if (japaneseFont != null)
             {
                 textComponent.font = japaneseFont;
             }
+
+            textComponent.text = textJapanese;
+
         }
         else if (S_VoiceOver.Instance != null && S_VoiceOver.Instance.isEnglish)
         {
@@ -67,6 +69,7 @@ public class S_DialogueBubbleAudio : MonoBehaviour
 
         S_VoiceOver.Instance.PlayAudio(voiceOverIndex);
     }
+
 
     private void OnEnable()
     {

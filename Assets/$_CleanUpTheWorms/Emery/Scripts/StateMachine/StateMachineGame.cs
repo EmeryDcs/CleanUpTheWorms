@@ -81,7 +81,7 @@ public class StateMachineGame : MonoBehaviour
 		
 		endBubble.Invoke();
 
-		yield return new WaitForSeconds(3f);
+		yield return new WaitForSeconds(6f);
 
         triggerEventButtonLift.TriggerBlinking(true);
         triggerEventButtonLift.SetCanTriggerEnd(true);

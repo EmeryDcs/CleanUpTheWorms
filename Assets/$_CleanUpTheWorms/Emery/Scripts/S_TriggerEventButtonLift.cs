@@ -117,6 +117,7 @@ public class S_TriggerEventButtonLift : MonoBehaviour
         {
             winBubble.Invoke();
             StateMachineGame.Instance.hasWin = true;
+            fadeDuration = 1;
         }
         else 
         {
@@ -193,6 +194,7 @@ public class S_TriggerEventButtonLift : MonoBehaviour
     }
     private IEnumerator FadeEnding()
     {
+        yield return new WaitForSeconds(6);
         float elapsedTime = 0f;
         Color color = fadeImage.color;
         Color colorLogo = logo.color;
