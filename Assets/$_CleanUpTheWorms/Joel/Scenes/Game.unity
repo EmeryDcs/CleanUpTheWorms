@@ -28322,6 +28322,10 @@ PrefabInstance:
       propertyPath: 'targetDeviceNames.Array.data[1]'
       value: Headphones (Realtek(R) Audio)
       objectReference: {fileID: 0}
+    - target: {fileID: 1979519291953750602, guid: f5a35e8400b6fb244ad15739bfa0c655, type: 3}
+      propertyPath: sirenAudio.volume
+      value: 0.45
+      objectReference: {fileID: 0}
     - target: {fileID: 2194402623721829798, guid: f5a35e8400b6fb244ad15739bfa0c655, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.76036
