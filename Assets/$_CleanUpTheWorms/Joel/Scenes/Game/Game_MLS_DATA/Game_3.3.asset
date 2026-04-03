@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30d7fc3fce64943af982260b857a69, type: 3}
   m_Name: Game_3.3
   m_EditorClassIdentifier: Assembly-CSharp::MagicLightmapSwitcher.StoredLightmapData
-  sceneGUID: -1571670547
+  sceneGUID: -780144805
   dataPrefix: Game
   dataName: 3.3
   blendingIndex: 4
@@ -21,21 +21,51 @@ MonoBehaviour:
   sceneLightingData:
     lightmapName: 3.3
     rendererDatas:
+    - objectId: 8b294137-2326-4b98-b55b-7f8be60bc831
+      lightmapIndex: 0
+      rotation: {x: 0.003041853, y: 0.70710015, z: -0.7071003, w: 0.0030417468}
+      position: {x: 1.1950636, y: 1.2569239, z: -1.4024003}
+      lightmapScaleOffset: {x: 0.11754134, y: 0.11883458, z: 0.85808164, w: 0.88715476}
+    - objectId: 4376007c-03c3-417b-9cb8-31834726aee8
+      lightmapIndex: 0
+      rotation: {x: -0.018582042, y: 0.7068625, z: -0.7068626, w: -0.018582154}
+      position: {x: 1.1950636, y: 1.256924, z: 0.03668487}
+      lightmapScaleOffset: {x: 0.103707, y: 0.10432561, z: 0.88604814, w: 0.8479087}
+    - objectId: 55aa792d-7e8d-4558-b829-022fb67b3862
+      lightmapIndex: 0
+      rotation: {x: 0.000000030908623, y: 0.7071068, z: -0.7071067, w: -0.000000030908616}
+      position: {x: -1.0292801, y: 1.1364281, z: -1.579512}
+      lightmapScaleOffset: {x: 0.40361473, y: 0.40413618, z: 0.6879468, w: 0.618525}
+    - objectId: 9ef68fde-4ccb-4634-b3ee-ef4a439efe67
+      lightmapIndex: 0
+      rotation: {x: 0.000000030908623, y: 0.7071068, z: -0.7071067, w: -0.000000030908616}
+      position: {x: 0.47071996, y: 1.1364279, z: -1.579512}
+      lightmapScaleOffset: {x: 0.40361473, y: 0.40413618, z: 0.7758374, w: 0.62340784}
+    - objectId: 0aa1b425-758c-4f44-bf39-fcc0261bf2b7
+      lightmapIndex: 0
+      rotation: {x: -0.5000007, y: 0.49999934, z: 0.49999934, w: 0.5000007}
+      position: {x: -0.312, y: 2.6222, z: -1.3627}
+      lightmapScaleOffset: {x: 0.046993155, y: 0.04670451, z: 0.3788097, w: 0.9345373}
+    - objectId: 1744178a-7829-46b2-b03c-19b7ee770a35
+      lightmapIndex: 0
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      position: {x: -0.67, y: -14.09, z: 45.04}
+      lightmapScaleOffset: {x: 1.0042953, y: 1.0037607, z: -0.003891068, w: -0.0021216779}
     - objectId: 95fda517-24a7-4e4c-a2e5-6ff34e69a81f
       lightmapIndex: 0
       rotation: {x: -0.115332164, y: 0.69763803, z: 0.6976375, w: 0.11533254}
       position: {x: -4.8501186, y: 0.879219, z: 2.8417854}
-      lightmapScaleOffset: {x: 0.038850974, y: 0.039106652, z: 0.96095216, w: 0.7665874}
+      lightmapScaleOffset: {x: 0.038850974, y: 0.039106652, z: 0.684585, w: 0.6845561}
     - objectId: 1972fcd9-97b1-4143-8ac7-1154b5ccaadc
       lightmapIndex: 0
       rotation: {x: -0.11533227, y: 0.69763786, z: 0.69763774, w: 0.115332276}
       position: {x: -0.8022373, y: 0.66299355, z: 2.485008}
-      lightmapScaleOffset: {x: 0.038850974, y: 0.039106652, z: 0.29688966, w: 0.67088425}
+      lightmapScaleOffset: {x: 0.038850974, y: 0.039106652, z: 0.25294435, w: 0.6376811}
     - objectId: c036b35a-aaea-45eb-835e-755a54d56eaa
       lightmapIndex: 1
       rotation: {x: -0.6913282, y: 0.14854382, z: 0.1485438, w: 0.6913283}
       position: {x: 3.7832491, y: 0.7460817, z: 0.9921853}
-      lightmapScaleOffset: {x: 0.1374264, y: 0.13742802, z: 0.32456565, w: 0.20347181}
+      lightmapScaleOffset: {x: 0.1374264, y: 0.13742802, z: 0.6097219, w: 0.5101124}
     - objectId: 957bfe43-e3ab-4462-915d-714bfaca6183
       lightmapIndex: 2
       rotation: {x: -0.38820753, y: 0.5910118, z: 0.5910117, w: 0.38820758}
@@ -90,7 +120,7 @@ MonoBehaviour:
       lightmapIndex: 0
       rotation: {x: -0.38820753, y: 0.5910118, z: 0.5910117, w: 0.38820758}
       position: {x: 3.236264, y: 1.842009, z: 2.6099887}
-      lightmapScaleOffset: {x: 0.09470417, y: 0.09537287, z: 0.0107579, w: 0.6562072}
+      lightmapScaleOffset: {x: 0.09470417, y: 0.09537287, z: 0.015640713, w: 0.64741814}
     - objectId: 89af4792-7d34-442b-a045-cab429e15764
       lightmapIndex: 0
       rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
@@ -115,252 +145,252 @@ MonoBehaviour:
       lightmapIndex: 0
       rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
       position: {x: -0.7409937, y: 0.67370385, z: 2.3848703}
-      lightmapScaleOffset: {x: 0.0070217224, y: 0.007508304, z: 0.7936757, w: 0.97721696}
+      lightmapScaleOffset: {x: 0.0070217224, y: 0.007508304, z: 0.78781635, w: 0.6656935}
     - objectId: 5e887b64-4343-4762-92c5-8438e3c33a9a
       lightmapIndex: 0
       rotation: {x: 0.6371492, y: -0.30666015, z: 0.30665994, w: 0.63715}
       position: {x: -5.185135, y: 0.9291842, z: 2.6659262}
-      lightmapScaleOffset: {x: 0.07357133, y: 0.07139081, z: 0.3942413, w: 0.6554118}
+      lightmapScaleOffset: {x: 0.07357133, y: 0.07139081, z: 0.7311554, w: 0.7774821}
     - objectId: 74c754e2-9c74-4a4b-894a-0778938cf53b
       lightmapIndex: 0
       rotation: {x: 0.6242596, y: -0.3321139, z: 0.33211377, w: 0.6242602}
       position: {x: -5.1915336, y: 0.85681283, z: 2.6572118}
-      lightmapScaleOffset: {x: 0.05874018, y: 0.060116764, z: 0.7662949, w: 0.7591886}
+      lightmapScaleOffset: {x: 0.05874018, y: 0.060116764, z: 0.3180527, w: 0.70059484}
     - objectId: f288ddcc-97fb-4f7e-a9d3-c1038dba8c48
       lightmapIndex: 0
       rotation: {x: 0.637583, y: -0.30575758, z: 0.30575752, w: 0.6375834}
       position: {x: -5.1848984, y: 0.79147106, z: 2.6662228}
-      lightmapScaleOffset: {x: 0.07358077, y: 0.071396016, z: 0.69306755, w: 0.9327545}
+      lightmapScaleOffset: {x: 0.07358077, y: 0.071396016, z: 0.88056755, w: 0.76283264}
     - objectId: 1743f2c1-30a8-47da-bd9b-5efcd890015b
       lightmapIndex: 0
       rotation: {x: 0.62196565, y: -0.33639035, z: 0.33639017, w: 0.6219663}
       position: {x: -4.9210825, y: 0.857831, z: 2.836089}
-      lightmapScaleOffset: {x: 0.05874019, y: 0.06011677, z: 0.33953708, w: 0.7543058}
+      lightmapScaleOffset: {x: 0.05874019, y: 0.06011677, z: 0.69500583, w: 0.9359464}
     - objectId: f9cbe5bb-e06f-48f1-a711-2680f5b5a6ee
       lightmapIndex: 0
       rotation: {x: -0.7343376, y: 0.08364991, z: 0.076239295, w: 0.6692821}
       position: {x: -3.288427, y: 0.68393266, z: 2.6232028}
-      lightmapScaleOffset: {x: 0.05874018, y: 0.06011677, z: 0.8991074, w: 0.74161047}
+      lightmapScaleOffset: {x: 0.05874018, y: 0.06011677, z: 0.3834824, w: 0.66641515}
     - objectId: 858a6908-3a45-41e9-b309-8197aa164f90
       lightmapIndex: 0
       rotation: {x: -0.6879746, y: -0.1633741, z: -0.16337411, w: 0.6879745}
       position: {x: -3.209142, y: 1.0210859, z: 3.5309412}
-      lightmapScaleOffset: {x: 0.05874018, y: 0.06011677, z: 0.7614121, w: 0.8998136}
+      lightmapScaleOffset: {x: 0.05874018, y: 0.06011677, z: 0.66375583, w: 0.65567297}
     - objectId: 7e6ccd86-f1e9-48df-a7d1-7c6c73a3f551
       lightmapIndex: 0
       rotation: {x: -0.6919649, y: -0.14554958, z: -0.1455496, w: 0.6919648}
       position: {x: -8.004582, y: 0.71759224, z: 0.5956349}
-      lightmapScaleOffset: {x: 0.05874018, y: 0.06011677, z: 0.2789902, w: 0.6439542}
+      lightmapScaleOffset: {x: 0.05874018, y: 0.06011677, z: 0.8366074, w: 0.6937589}
     - objectId: e2089b78-42d4-47a0-8787-46e84f14b844
       lightmapIndex: 0
       rotation: {x: -0.69726473, y: -0.1175668, z: -0.117566824, w: 0.6972646}
       position: {x: -8.004582, y: 0.650383, z: 0.5956349}
-      lightmapScaleOffset: {x: 0.05874018, y: 0.06011677, z: 0.91863865, w: 0.90079015}
+      lightmapScaleOffset: {x: 0.05874018, y: 0.06011677, z: 0.705748, w: 0.64786047}
     - objectId: 4440f00b-9fde-4f52-bd11-130c4006cafe
       lightmapIndex: 0
       rotation: {x: -0.63190377, y: -0.31732887, z: -0.31732884, w: 0.6319038}
       position: {x: -7.659353, y: 0.65038294, z: 0.7461281}
-      lightmapScaleOffset: {x: 0.05874018, y: 0.06011677, z: 0.9489121, w: 0.9105558}
+      lightmapScaleOffset: {x: 0.05874018, y: 0.06011677, z: 0.658873, w: 0.6439542}
     - objectId: 2be77d8d-4d35-4964-9aa9-266ca1e3be4e
       lightmapIndex: 0
       rotation: {x: -0.6622044, y: -0.24796222, z: -0.24796219, w: 0.66220456}
       position: {x: -1.6491909, y: -0.026139447, z: 2.126656}
-      lightmapScaleOffset: {x: 0.05874018, y: 0.06011677, z: 0.64031833, w: 0.6312589}
+      lightmapScaleOffset: {x: 0.05874018, y: 0.06011677, z: -0.002259777, w: 0.94278234}
     - objectId: 4a0e127b-179e-4cb9-9f99-a2003ac8d367
       lightmapIndex: 0
       rotation: {x: 0.18850245, y: 0.6815181, z: 0.681518, w: -0.18850243}
       position: {x: -7.0472407, y: 0.8085839, z: -3.238899}
-      lightmapScaleOffset: {x: 0.05874018, y: 0.06011677, z: 0.69500583, w: 0.66934484}
+      lightmapScaleOffset: {x: 0.05874018, y: 0.06011677, z: -0.0032363394, w: 0.9359464}
     - objectId: 7c542e81-4299-440d-95b3-24595a79f2c7
       lightmapIndex: 0
       rotation: {x: -0.15709496, y: 0.6894355, z: 0.6894354, w: 0.15709496}
       position: {x: -5.6459064, y: 0.8085839, z: -3.084468}
-      lightmapScaleOffset: {x: 0.05874018, y: 0.06011677, z: 0.7770371, w: 0.9339933}
+      lightmapScaleOffset: {x: 0.05874018, y: 0.06011677, z: 0.3131699, w: 0.6517667}
     - objectId: fead2e26-85d3-4f7e-aa2c-82d30d5f0797
       lightmapIndex: 0
       rotation: {x: -0.5626894, y: 0.4282296, z: 0.42822963, w: 0.5626894}
       position: {x: -2.3775258, y: 0.9443505, z: 0.3924317}
-      lightmapScaleOffset: {x: 0.05874018, y: 0.06011677, z: 0.9410996, w: 0.91934484}
+      lightmapScaleOffset: {x: 0.05874018, y: 0.06011677, z: 0.6979355, w: 0.92715734}
     - objectId: 59a39a8d-1092-4e79-b61d-78319ee96690
       lightmapIndex: 0
       rotation: {x: -0.5427464, y: 0.45323986, z: 0.45323992, w: 0.5427463}
       position: {x: -2.3775258, y: 0.8744041, z: 0.3924317}
-      lightmapScaleOffset: {x: 0.05874018, y: 0.06011677, z: -0.011048839, w: 0.93204015}
+      lightmapScaleOffset: {x: 0.05874018, y: 0.06011677, z: 0.38152927, w: 0.9330167}
     - objectId: 8de43704-4b31-450b-9a00-d39b14cd6221
       lightmapIndex: 0
       rotation: {x: -0.55629313, y: 0.43650657, z: 0.43650657, w: 0.5562931}
       position: {x: -2.3775258, y: 0.80858356, z: 0.3924317}
-      lightmapScaleOffset: {x: 0.05874018, y: 0.06011677, z: 0.9332871, w: 0.78360265}
+      lightmapScaleOffset: {x: 0.05874018, y: 0.06011677, z: 0.64031833, w: 0.6312589}
     - objectId: 295c59a3-ed7f-4836-a415-6687c51e7f1d
       lightmapIndex: 0
       rotation: {x: -0.70710236, y: 0.0024846664, z: 0.0024846662, w: 0.7071025}
       position: {x: -1.115226, y: 0.6503831, z: 2.3584113}
-      lightmapScaleOffset: {x: 0.05874018, y: 0.06011677, z: 0.38934177, w: 0.9466886}
+      lightmapScaleOffset: {x: 0.05874018, y: 0.06011677, z: 0.7926621, w: 0.62735265}
     - objectId: 858bae6f-88d3-49e8-a22f-9b83dc460297
       lightmapIndex: 0
       rotation: {x: -0.62360597, y: -0.39126793, z: -0.35969064, w: 0.573278}
       position: {x: -3.2306333, y: 0.6645333, z: 2.3599668}
-      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: -0.2634204, w: 0.14135635}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: 0.20825928, w: 0.32397354}
     - objectId: c13b1e6a-042a-4467-a8a8-3aa98f20d6be
       lightmapIndex: 0
       rotation: {x: -0.5489891, y: -0.004603596, z: 0.8357874, w: 0.0070085134}
       position: {x: 2.7497907, y: 1.6926198, z: 2.785386}
-      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: 0.05005616, w: 0.12280166}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: 0.09009522, w: 0.119871974}
     - objectId: dabacbf5-8184-4218-9c2c-6b19cb549902
       lightmapIndex: 0
       rotation: {x: 0.36626327, y: 0.6048564, z: 0.6048563, w: -0.3662633}
       position: {x: -3.3287828, y: -0.019030472, z: 1.1181247}
-      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: 0.23560303, w: 0.26049697}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: -0.060295403, w: 0.46655166}
     - objectId: b799ca0e-1c71-40ff-8557-9c07bc12e5b7
       lightmapIndex: 0
       rotation: {x: -0.6915269, y: -0.14761643, z: -0.14761642, w: 0.6915269}
       position: {x: -3.7139351, y: -0.01620483, z: 1.3335474}
-      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: -0.30638915, w: 0.12670791}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: -0.38158447, w: 0.123778224}
     - objectId: a9107364-0fde-4c9b-b7b1-b227dc9a7085
       lightmapIndex: 0
       rotation: {x: -0.69539523, y: -0.1281617, z: -0.1281617, w: 0.6953953}
       position: {x: -3.4586127, y: -0.019030472, z: 1.7235098}
-      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: -0.33080322, w: 0.123778224}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: -0.10619384, w: 0.44897354}
     - objectId: 762e2cc0-0976-4605-9b48-112494f28293
       lightmapIndex: 0
       rotation: {x: -0.61424226, y: -0.35029483, z: -0.35029483, w: 0.61424226}
       position: {x: -3.6468632, y: -0.019030472, z: 1.5733879}
-      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: -0.5085376, w: 0.44604385}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: 0.4553296, w: 0.16577041}
     - objectId: e9ad830b-8f30-43b4-b486-026d0836ab6b
       lightmapIndex: 0
       rotation: {x: -0.65620697, y: -0.26342455, z: -0.26342458, w: 0.65620685}
       position: {x: -2.8663447, y: -0.01620483, z: 0.8461117}
-      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: -0.19799072, w: 0.12573135}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: 0.28150147, w: 0.19116104}
     - objectId: 65754d14-e078-4210-b430-24028400bb2a
       lightmapIndex: 0
       rotation: {x: -0.5489891, y: -0.004603596, z: 0.8357874, w: 0.0070085134}
       position: {x: 2.8388693, y: 1.8856387, z: 2.9912157}
-      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: -0.17357665, w: 0.3278798}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: -0.20189697, w: 0.12866104}
     - objectId: e51d5ba3-061d-4628-8e80-712b7f38a471
       lightmapIndex: 0
       rotation: {x: -0.545479, y: -0.4499474, z: -0.44994745, w: 0.54547894}
       position: {x: -2.8838086, y: -0.019030472, z: 1.0945411}
-      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: -0.22533447, w: 0.4343251}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: -0.15795165, w: 0.33666885}
     - objectId: 0dcbcda3-d7a5-45f7-a088-fed1c4eb6a8e
       lightmapIndex: 0
       rotation: {x: -0.5489891, y: -0.004603596, z: 0.8357874, w: 0.0070085134}
       position: {x: 2.7657747, y: 1.302693, z: 2.822319}
-      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: 0.0051342845, w: 0.119871974}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: -0.088615716, w: 0.4655751}
     - objectId: 61ce0981-361a-4198-841e-035c4a6e6683
       lightmapIndex: 0
       rotation: {x: -0.6317024, y: -0.00087891414, z: 0.7751534, w: 0.009402203}
       position: {x: 1.3383842, y: 2.6489532, z: -0.10115135}
-      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: -0.24291259, w: 0.4606923}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: 0.047126472, w: 0.123778224}
     - objectId: cd4a2bf1-c735-4b57-b9ef-420e7d5d528a
       lightmapIndex: 0
       rotation: {x: -0.6308772, y: -0.032291744, z: 0.7737268, w: 0.047937594}
       position: {x: 1.3670728, y: 2.6373475, z: -0.005462438}
-      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: 0.15454835, w: 0.4548329}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: -0.21947509, w: 0.16772354}
     - objectId: b901e6db-ac42-4ae6-a14d-1d10bc458dae
       lightmapIndex: 0
       rotation: {x: -0.5323814, y: -0.46537086, z: -0.46537077, w: 0.5323815}
       position: {x: -1.5732849, y: -0.01620483, z: 1.4064174}
-      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: -0.14818603, w: 0.46752822}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: 0.41724366, w: 0.26635635}
     - objectId: 64c2e4bc-06a3-461c-bb64-803827696c13
       lightmapIndex: 0
       rotation: {x: -0.5452252, y: -0.4502549, z: -0.45025507, w: 0.5452251}
       position: {x: -1.7702842, y: -0.019030472, z: 1.8288523}
-      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: -0.13939697, w: 0.4499501}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: -0.44994384, w: 0.46166885}
     - objectId: 900ccc6a-53db-4d8e-bbb1-8bbd6459a0dc
       lightmapIndex: 0
       rotation: {x: 0.36626327, y: 0.6048564, z: 0.6048563, w: -0.3662633}
       position: {x: -1.7418303, y: -0.019030472, z: 1.58976}
-      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: 0.26294678, w: 0.17455947}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: 0.29322022, w: 0.32397354}
     - objectId: 9ebf7fad-6b82-4c15-8225-27da0e209cba
       lightmapIndex: 0
       rotation: {x: -0.6915269, y: -0.14761643, z: -0.14761642, w: 0.6915269}
       position: {x: -2.1269827, y: -0.01620483, z: 1.8051827}
-      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: 0.23560303, w: 0.23998916}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: -0.22728759, w: 0.4470204}
     - objectId: 7b1286b6-09f9-40d3-900f-fdff0801f3d4
       lightmapIndex: 0
       rotation: {x: -0.69539523, y: -0.1281617, z: -0.1281617, w: 0.6953953}
       position: {x: -1.8716602, y: -0.019030472, z: 2.1951451}
-      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: -0.48314697, w: 0.44799697}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: 0.1428296, w: 0.4528798}
     - objectId: 2469587f-5058-4ede-9fd5-9f6fe648a4c2
       lightmapIndex: 0
       rotation: {x: -0.61424226, y: -0.35029483, z: -0.35029483, w: 0.61424226}
       position: {x: -2.0599105, y: -0.019030472, z: 2.0450232}
-      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: -0.20287353, w: 0.1608876}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: 0.17505616, w: 0.119871974}
     - objectId: 1ae5d016-cb4b-4473-9d64-7bb92dd5c010
       lightmapIndex: 0
       rotation: {x: -0.65620697, y: -0.26342455, z: -0.26342458, w: 0.65620685}
       position: {x: -1.2793922, y: -0.01620483, z: 1.317747}
-      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: -0.45287353, w: 0.46655166}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: 0.000251472, w: 0.12475479}
     - objectId: 8b8358a3-7d29-44fc-b59d-7c33a8ec475e
       lightmapIndex: 0
       rotation: {x: -0.6633375, y: -0.24491489, z: -0.24491487, w: 0.6633376}
       position: {x: -1.170033, y: -0.019030472, z: 1.7708479}
-      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: -0.15306884, w: 0.43041885}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: -0.5163501, w: 0.41284072}
     - objectId: 0cd70f5b-993f-4e0e-ae2d-e8e952202750
       lightmapIndex: 0
       rotation: {x: -0.545479, y: -0.4499474, z: -0.44994745, w: 0.54547894}
       position: {x: -1.2968562, y: -0.019030472, z: 1.5661763}
-      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: 0.44556397, w: 0.16381729}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: 0.44068116, w: 0.22045791}
     - objectId: efd2cc70-f825-4b05-80fd-a4d08fad6ad4
       lightmapIndex: 0
       rotation: {x: -0.7014757, y: 0.089060806, z: 0.089060806, w: 0.70147574}
       position: {x: -1.4636707, y: -0.01620483, z: 1.9747375}
-      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: -0.06713134, w: 0.4655751}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: 0.23169678, w: 0.4079579}
     - objectId: 04c81bb8-3f5a-464e-9919-6c965fe19166
       lightmapIndex: 0
       rotation: {x: -0.6987017, y: 0.10870147, z: 0.10870146, w: 0.6987017}
       position: {x: -1.0209156, y: -0.019030472, z: 2.1204355}
-      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: -0.48900634, w: 0.4655751}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: -0.26439697, w: 0.4655751}
     - objectId: cf1871b7-0413-491c-b5ca-88ff15907fda
       lightmapIndex: 0
       rotation: {x: -0.6954675, y: -0.12776947, z: -0.12776946, w: 0.6954675}
       position: {x: -1.2616949, y: -0.019030472, z: 2.1204355}
-      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: 0.08521241, w: 0.12768447}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: -0.2399829, w: 0.4655751}
     - objectId: 95f49268-8bef-4606-8533-953f33112937
       lightmapIndex: 0
       rotation: {x: -0.6552047, y: -0.26590747, z: -0.26590744, w: 0.6552048}
       position: {x: -2.5099888, y: 0.81674486, z: -0.76391876}
-      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: -0.17845947, w: 0.19409072}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: 0.2365796, w: 0.2937001}
     - objectId: 24dd83fa-d27f-4104-a3a3-97161b249d6d
       lightmapIndex: 0
       rotation: {x: -0.53542066, y: 0.46187103, z: 0.4618717, w: 0.5354198}
       position: {x: -2.4488869, y: 0.81288445, z: -0.8318707}
-      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: -0.20775634, w: 0.18823135}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: -0.40990478, w: 0.12768447}
     - objectId: 8622d9a4-713d-4f61-863e-6864800194a7
       lightmapIndex: 0
       rotation: {x: -0.48847005, y: 0.51127, z: 0.5112702, w: 0.48846984}
       position: {x: -2.819725, y: 0.8151032, z: -0.752203}
-      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: 0.22974366, w: 0.45092666}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: 0.10864991, w: 0.46655166}
     - objectId: 6737d9c1-dd4f-4595-a52e-e1f13ae32383
       lightmapIndex: 0
       rotation: {x: -0.3345464, y: 0.62295973, z: 0.6229596, w: 0.33454645}
       position: {x: -2.819725, y: 0.81124276, z: -0.8435863}
-      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: -0.17162353, w: 0.34448135}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: 0.33228272, w: 0.26830947}
     - objectId: 858ea99d-e9de-4250-a10c-98ac3cb0d5d0
       lightmapIndex: 0
       rotation: {x: -0.48847005, y: 0.51127, z: 0.5112702, w: 0.48846984}
       position: {x: -2.819725, y: 0.8151032, z: 0.39703327}
-      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: 0.45337647, w: 0.33471572}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: -0.4743579, w: 0.46459854}
     - objectId: 506efa9d-2d42-4206-893a-7f8a741bf856
       lightmapIndex: 0
       rotation: {x: -0.3345464, y: 0.62295973, z: 0.6229596, w: 0.33454645}
       position: {x: -2.819725, y: 0.81124276, z: 0.30564976}
-      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: 0.110603034, w: 0.123778224}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: -0.31517822, w: 0.12084854}
     - objectId: cc4a012d-18a8-4086-87d8-40ceae3a0800
       lightmapIndex: 0
       rotation: {x: -0.70698524, y: 0.013111895, z: 0.013111875, w: 0.70698524}
       position: {x: -0.3989298, y: 0.66299355, z: 2.3011603}
-      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: 0.1272046, w: 0.46655166}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: -0.11888915, w: 0.46752822}
     - objectId: 9314ece7-50d2-484d-a261-a5a730fc0aca
       lightmapIndex: 0
       rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
       position: {x: -7.433901, y: 0.7244308, z: 0.94492936}
-      lightmapScaleOffset: {x: 0.029316835, y: 0.029656624, z: 0.4208358, w: 0.9715767}
+      lightmapScaleOffset: {x: 0.029316835, y: 0.029656624, z: 0.27532798, w: 0.6541939}
     - objectId: 7378aaca-e77d-4f99-ba6c-db95e8327981
       lightmapIndex: 0
       rotation: {x: -0.7071069, y: -0, z: 0, w: 0.7071067}
       position: {x: -0.03662193, y: 0.7216904, z: 2.4576447}
-      lightmapScaleOffset: {x: 0.029316835, y: 0.029656624, z: 0.2352889, w: 0.64149857}
+      lightmapScaleOffset: {x: 0.029316835, y: 0.029656624, z: 0.7675155, w: 0.69423294}
     - objectId: a6f755a6-a52a-49e2-8266-168090b9eab2
       lightmapIndex: 7
       rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
@@ -375,42 +405,42 @@ MonoBehaviour:
       lightmapIndex: 1
       rotation: {x: -0.12323671, y: 0.69628495, z: 0.69628495, w: 0.12323661}
       position: {x: -5.859858, y: 1.1623069, z: -3.7173927}
-      lightmapScaleOffset: {x: 0.086061455, y: 0.08642036, z: 0.9083918, w: 0.4103396}
+      lightmapScaleOffset: {x: 0.086061455, y: 0.08642036, z: 0.79413396, w: 0.62713647}
     - objectId: 85327c7e-c887-422a-baba-948d0a69a39f
       lightmapIndex: 1
       rotation: {x: 0.07207662, y: 0.70342386, z: 0.7034236, w: -0.07207672}
       position: {x: -6.737472, y: 1.0688295, z: -3.6686838}
-      lightmapScaleOffset: {x: 0.086061455, y: 0.08642036, z: 0.7960871, w: 0.51873803}
+      lightmapScaleOffset: {x: 0.086061455, y: 0.08642036, z: 0.7570246, w: 0.48260522}
     - objectId: d8ecffdd-fa5c-4f6d-beda-169b90799fec
       lightmapIndex: 1
       rotation: {x: -0.6189103, y: -0.34197962, z: -0.34197974, w: 0.6189103}
       position: {x: -9.705358, y: 1.1818968, z: 1.3221004}
-      lightmapScaleOffset: {x: 0.086061455, y: 0.08642036, z: 0.6417902, w: 0.8527224}
+      lightmapScaleOffset: {x: 0.086061455, y: 0.08642036, z: 0.8585871, w: 0.9025271}
     - objectId: dce83522-23c4-4d60-b87d-c5bdc5264b5e
       lightmapIndex: 1
       rotation: {x: -0.6957026, y: -0.12648249, z: -0.12648258, w: 0.6957027}
       position: {x: -6.813317, y: 1.1818963, z: 2.5901542}
-      lightmapScaleOffset: {x: 0.086061455, y: 0.08642036, z: 0.75018865, w: 0.4933474}
+      lightmapScaleOffset: {x: 0.086061455, y: 0.08642036, z: 0.54413396, w: 0.82342553}
     - objectId: b000edac-ba0b-4d52-a8ed-683c1bcc44ba
       lightmapIndex: 0
       rotation: {x: 0.000000030908623, y: 0.7071068, z: -0.7071067, w: -0.000000030908616}
       position: {x: 10.311134, y: 1.256924, z: -2.0803328}
-      lightmapScaleOffset: {x: 0.11754134, y: 0.11883458, z: 0.81901914, w: 0.8939907}
+      lightmapScaleOffset: {x: 0.11754134, y: 0.11883458, z: 0.8356207, w: 0.8549282}
     - objectId: 89fd5869-2ffd-42b8-a5bf-a613790086e3
       lightmapIndex: 0
       rotation: {x: 0.000000030908623, y: 0.7071068, z: -0.7071067, w: -0.000000030908616}
       position: {x: 5.93365, y: 1.256924, z: -2.31111}
-      lightmapScaleOffset: {x: 0.11754134, y: 0.11883458, z: 0.8746832, w: 0.8881313}
+      lightmapScaleOffset: {x: 0.11754134, y: 0.11883458, z: 0.8356207, w: 0.87152976}
     - objectId: 65c3faa8-4702-4243-9557-3df1d0cde82c
       lightmapIndex: 0
       rotation: {x: 0.000000030908623, y: 0.7071068, z: -0.7071067, w: -0.000000030908616}
       position: {x: 10.311134, y: 1.256924, z: -0.6412474}
-      lightmapScaleOffset: {x: 0.103707, y: 0.10432561, z: 0.017884068, w: 0.6311118}
+      lightmapScaleOffset: {x: 0.103707, y: 0.10432561, z: 0.6946419, w: 0.6467368}
     - objectId: df1cf715-55eb-40ca-8c2b-42feddaaa70f
       lightmapIndex: 0
       rotation: {x: 0.000000030908623, y: 0.7071068, z: -0.7071067, w: -0.000000030908616}
       position: {x: 5.93365, y: 1.256924, z: -0.8720249}
-      lightmapScaleOffset: {x: 0.103707, y: 0.10432561, z: 0.7415169, w: 0.6438071}
+      lightmapScaleOffset: {x: 0.103707, y: 0.10432561, z: 0.72198564, w: 0.6721274}
     - objectId: f1501643-08be-4b7a-9d1e-f7f8740867d5
       lightmapIndex: 1
       rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
@@ -430,12 +460,12 @@ MonoBehaviour:
       lightmapIndex: 0
       rotation: {x: 0.49999997, y: -0.49999994, z: 0.50000006, w: 0.49999997}
       position: {x: -5.29591, y: 1.256924, z: -3.090926}
-      lightmapScaleOffset: {x: 0.11754134, y: 0.11883458, z: 0.87370664, w: 0.8529751}
+      lightmapScaleOffset: {x: 0.11754134, y: 0.11883458, z: 0.8434332, w: 0.8725063}
     - objectId: 0e24875a-c27d-4055-a76d-64e4c6bc6872
       lightmapIndex: 0
       rotation: {x: 0.5751741, y: -0.41130865, z: 0.41130874, w: 0.575174}
       position: {x: -3.8568242, y: 1.256924, z: -3.090926}
-      lightmapScaleOffset: {x: 0.103707, y: 0.10432561, z: 0.38800126, w: 0.65064305}
+      lightmapScaleOffset: {x: 0.103707, y: 0.10432561, z: 0.0032356307, w: 0.6369712}
     - objectId: 72eb05bf-3b3a-4b27-b8ea-fdf2ccf6581f
       lightmapIndex: 1
       rotation: {x: 0.5, y: -0.49999997, z: -0.5, w: -0.5}
@@ -450,17 +480,17 @@ MonoBehaviour:
       lightmapIndex: 1
       rotation: {x: -0.7037433, y: 0.06888717, z: 0.068887174, w: 0.7037432}
       position: {x: 3.198979, y: 1.2036169, z: 2.556807}
-      lightmapScaleOffset: {x: 0.056816738, y: 0.05695475, z: 0.76775163, w: 0.85368603}
+      lightmapScaleOffset: {x: 0.056816738, y: 0.05695475, z: 0.93962663, w: 0.46208444}
     - objectId: 6ffdca0c-7f23-4977-ac15-5012928e91d2
       lightmapIndex: 1
       rotation: {x: -0.06598609, y: 0.7040213, z: 0.70402116, w: 0.065985985}
       position: {x: -6.1361055, y: 0.8506949, z: -3.1176217}
-      lightmapScaleOffset: {x: 0.056816738, y: 0.05695475, z: 0.4699001, w: 0.3566157}
+      lightmapScaleOffset: {x: 0.056816738, y: 0.05695475, z: 0.7628688, w: 0.8575923}
     - objectId: 8467c82f-6220-4760-9538-6e63a416421c
       lightmapIndex: 1
       rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
       position: {x: -0.83829147, y: -4.132399, z: 44.920227}
-      lightmapScaleOffset: {x: 0.18205804, y: 0.18124248, z: 0.81965864, w: 0.77184284}
+      lightmapScaleOffset: {x: 0.18205804, y: 0.18124248, z: 0.8147758, w: 0.7757491}
     - objectId: dfbea446-52b0-43fa-b74b-396da66130b9
       lightmapIndex: 7
       rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
@@ -505,17 +535,17 @@ MonoBehaviour:
       lightmapIndex: 0
       rotation: {x: -0.00000003774895, y: -0, z: -0, w: 1}
       position: {x: -9.608665, y: 0.89736277, z: -4.516}
-      lightmapScaleOffset: {x: 0.21455345, y: 0.214569, z: -0.018477567, w: 0.6250754}
+      lightmapScaleOffset: {x: 0.21455345, y: 0.214569, z: 0.78620994, w: 0.7578879}
     - objectId: 0eca754d-73f5-42f5-bcc9-77f3d9381d5a
       lightmapIndex: 1
       rotation: {x: -0.00000013767877, y: 0.7071068, z: 0.70710677, w: 0.00000013767878}
       position: {x: -6.3997765, y: 0.7902069, z: -3.4264805}
-      lightmapScaleOffset: {x: 0.16044462, y: 0.16059344, z: 0.1582277, w: 0.2793047}
+      lightmapScaleOffset: {x: 0.16044462, y: 0.16059344, z: 0.2568605, w: 0.23731253}
     - objectId: 4b2ee9d3-910c-4ce2-a731-6b767778f0c4
       lightmapIndex: 1
       rotation: {x: 0.5, y: 0.49999997, z: 0.5, w: -0.5}
       position: {x: -2.5384657, y: 0.7902069, z: -0.3620795}
-      lightmapScaleOffset: {x: 0.16044462, y: 0.16059344, z: 0.5957277, w: 0.13086721}
+      lightmapScaleOffset: {x: 0.16044462, y: 0.16059344, z: 0.8037355, w: 0.23145315}
     - objectId: dff64e37-517b-4a4c-ae3b-8691ce01c784
       lightmapIndex: 1
       rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
@@ -572,10 +602,10 @@ MonoBehaviour:
       position: {x: 2.6323752, y: -0.02286, z: -0.8618672}
       lightmapScaleOffset: {x: 0.6515239, y: 0.6529323, z: 0.30950478, w: 0.48208493}
     - objectId: e3451be0-9e03-4477-954b-f4120967f612
-      lightmapIndex: 1
+      lightmapIndex: 2
       rotation: {x: -0.6147102, y: -0.34947303, z: -0.34947303, w: 0.61471015}
       position: {x: -3.00648, y: 0.58540577, z: -0.35820484}
-      lightmapScaleOffset: {x: 0.07755502, y: 0.07792387, z: 0.85094523, w: 0.32358226}
+      lightmapScaleOffset: {x: 0.07755502, y: 0.07792387, z: 0.77282023, w: 0.023777576}
     - objectId: 704a1a18-cbcf-49d9-a04e-e34952781ad2
       lightmapIndex: -1
       rotation: {x: -0.7064204, y: 0.031147446, z: 0.031147445, w: 0.7064205}
@@ -585,7 +615,7 @@ MonoBehaviour:
       lightmapIndex: 1
       rotation: {x: -0.7059795, y: 0.039913252, z: 0.039913252, w: 0.7059794}
       position: {x: -6.2934957, y: 0.58540577, z: -2.6816804}
-      lightmapScaleOffset: {x: 0.07755502, y: 0.07792387, z: 0.5237968, w: 0.82162917}
+      lightmapScaleOffset: {x: 0.07755502, y: 0.07792387, z: 0.5628593, w: 0.34994945}
     - objectId: 2979987e-b3e3-40ce-8331-ce948a20581c
       lightmapIndex: -1
       rotation: {x: -0.16716959, y: 0.6870622, z: 0.6870621, w: 0.16716962}
@@ -595,7 +625,7 @@ MonoBehaviour:
       lightmapIndex: 2
       rotation: {x: -0.19757442, y: 0.67894363, z: 0.6789436, w: 0.19757445}
       position: {x: -8.756052, y: 0.5854057, z: -0.2359305}
-      lightmapScaleOffset: {x: 0.07755502, y: 0.07792387, z: 0.88414836, w: 0.015965076}
+      lightmapScaleOffset: {x: 0.07755502, y: 0.07792387, z: 0.02086708, w: 0.30112132}
     - objectId: 38740b48-86c1-4254-8251-a54bb7d00443
       lightmapIndex: -1
       rotation: {x: -0.5128675, y: -0.48679256, z: -0.486794, w: 0.51286596}
@@ -605,7 +635,7 @@ MonoBehaviour:
       lightmapIndex: 1
       rotation: {x: 0.25095978, y: 0.6610742, z: 0.66107434, w: -0.25095975}
       position: {x: -7.2141347, y: 0.5854057, z: 0.11774817}
-      lightmapScaleOffset: {x: 0.07755502, y: 0.07792387, z: 0.7708671, w: 0.3460432}
+      lightmapScaleOffset: {x: 0.07755502, y: 0.07792387, z: 0.85289836, w: 0.545262}
     - objectId: 505ea11a-7d26-4381-bdaf-45a508ff573b
       lightmapIndex: -1
       rotation: {x: -0.2674427, y: 0.65457964, z: 0.6545796, w: 0.2674427}
@@ -615,12 +645,12 @@ MonoBehaviour:
       lightmapIndex: 1
       rotation: {x: -0.1726288, y: 0.6857108, z: 0.6857108, w: 0.1726288}
       position: {x: -5.8095503, y: 0.5854057, z: 1.2024}
-      lightmapScaleOffset: {x: 0.07755502, y: 0.07792387, z: 0.597039, w: 0.5735823}
+      lightmapScaleOffset: {x: 0.07755502, y: 0.07792387, z: 0.6507499, w: 0.529637}
     - objectId: 0218f780-a8a8-49b5-9061-cbe0c3d082b9
       lightmapIndex: 1
       rotation: {x: -0.639597, y: 0.30152223, z: 0.3015222, w: 0.63959706}
       position: {x: -2.3421793, y: 0.5854057, z: 1.5276821}
-      lightmapScaleOffset: {x: 0.07755502, y: 0.07792387, z: 0.8909843, w: 0.81186354}
+      lightmapScaleOffset: {x: 0.07755502, y: 0.07792387, z: 0.41149208, w: 0.71030104}
     - objectId: 536c0eca-7b98-41b6-90e6-75428962070f
       lightmapIndex: -1
       rotation: {x: -0.64739877, y: 0.28438503, z: 0.28438506, w: 0.64739877}
@@ -635,422 +665,422 @@ MonoBehaviour:
       lightmapIndex: 1
       rotation: {x: -0.33269602, y: 0.6239498, z: 0.6239498, w: 0.332696}
       position: {x: -0.28062075, y: 0.5854057, z: 2.0232327}
-      lightmapScaleOffset: {x: 0.07755502, y: 0.07792387, z: 0.5911796, w: 0.43002757}
+      lightmapScaleOffset: {x: 0.07755502, y: 0.07792387, z: 0.64489055, w: 0.6253401}
     - objectId: 6cef9ebc-4d18-4628-b125-bffaa8ea1563
-      lightmapIndex: 0
+      lightmapIndex: 1
       rotation: {x: 0.0259028, y: 0.70663226, z: 0.7066322, w: -0.025902908}
       position: {x: 1.6225064, y: 0.8645504, z: 0.37945753}
-      lightmapScaleOffset: {x: 0.075170875, y: 0.07529156, z: 0.31756824, w: 0.92401147}
+      lightmapScaleOffset: {x: 0.075170875, y: 0.07529156, z: 0.89276356, w: 0.9210818}
     - objectId: 510bb0e9-0a70-4004-8941-3dcfc2f0814f
       lightmapIndex: 1
       rotation: {x: -0.0027240498, y: 0.7071017, z: 0.70710146, w: 0.0027239455}
       position: {x: -7.60711, y: 0.6170706, z: -3.4659026}
-      lightmapScaleOffset: {x: 0.075170875, y: 0.07529156, z: 0.8781151, w: 0.353699}
+      lightmapScaleOffset: {x: 0.075170875, y: 0.07529156, z: 0.9093651, w: 0.40448025}
     - objectId: dd248289-ad04-4d26-8a5a-a9e397b8992d
       lightmapIndex: 1
       rotation: {x: -0.0027240498, y: 0.7071017, z: 0.70710146, w: 0.0027239455}
       position: {x: -4.9231353, y: 2.569794, z: -3.4659026}
-      lightmapScaleOffset: {x: 0.075170875, y: 0.07529156, z: 0.88006824, w: 0.9152224}
+      lightmapScaleOffset: {x: 0.075170875, y: 0.07529156, z: 0.5968651, w: 0.40740994}
     - objectId: f7bf5010-7ad7-445a-b345-653375514573
       lightmapIndex: 1
       rotation: {x: -0.00030777752, y: 0.7071069, z: 0.7071066, w: 0.00030767324}
       position: {x: -5.8424196, y: 0.9391299, z: -3.7246644}
-      lightmapScaleOffset: {x: 0.075170875, y: 0.07529156, z: 0.82538074, w: 0.60955834}
+      lightmapScaleOffset: {x: 0.075170875, y: 0.07529156, z: 0.79901356, w: 0.5216677}
     - objectId: f2e82386-b10f-493b-abdb-bb0cd326241d
       lightmapIndex: 1
       rotation: {x: -0.5487495, y: 0.44595292, z: 0.44595295, w: 0.5487494}
       position: {x: -2.3003511, y: 1.1634923, z: -0.1558671}
-      lightmapScaleOffset: {x: 0.086061455, y: 0.08642036, z: 0.5490168, w: 0.8449099}
+      lightmapScaleOffset: {x: 0.086061455, y: 0.08642036, z: 0.8888605, w: 0.34198022}
     - objectId: 0752adc6-e3c8-41af-9268-16e9c7981539
       lightmapIndex: 1
       rotation: {x: -0.5633929, y: 0.42730376, z: 0.42730376, w: 0.56339276}
       position: {x: -2.8171973, y: 0.84250134, z: -0.27117735}
-      lightmapScaleOffset: {x: 0.056816738, y: 0.05695475, z: 0.5187282, w: 0.9376704}
+      lightmapScaleOffset: {x: 0.056816738, y: 0.05695475, z: 0.47087666, w: 0.35563913}
     - objectId: fb8d67f0-0da1-4442-8ab3-22dce33dfd4c
       lightmapIndex: 1
       rotation: {x: -0.5636934, y: 0.42690724, z: 0.42690727, w: 0.5636933}
       position: {x: -2.300222, y: 0.9375165, z: -0.09481859}
-      lightmapScaleOffset: {x: 0.0744116, y: 0.074396044, z: 0.6388606, w: 0.62616557}
+      lightmapScaleOffset: {x: 0.0744116, y: 0.074396044, z: 0.35956374, w: 0.38690776}
     - objectId: da1d79f5-5672-4b93-bd4f-d7602955f918
-      lightmapIndex: 1
+      lightmapIndex: 0
       rotation: {x: -0.59683585, y: 0.3791926, z: 0.37919262, w: 0.59683573}
       position: {x: -2.3532007, y: 0.83856934, z: -0.122353554}
-      lightmapScaleOffset: {x: 0.075170875, y: 0.07529156, z: 0.57049793, w: 0.40936306}
+      lightmapScaleOffset: {x: 0.075170875, y: 0.07529156, z: 0.3185448, w: 0.9201052}
     - objectId: 5ba5dfe2-000a-42d7-8eee-f31c5e3904b8
-      lightmapIndex: 1
+      lightmapIndex: 2
       rotation: {x: -0.00030777752, y: 0.7071069, z: 0.7071066, w: 0.00030767324}
       position: {x: -6.6222396, y: 0.84566545, z: -3.7472837}
-      lightmapScaleOffset: {x: 0.0744116, y: 0.074396044, z: 0.35956374, w: 0.38690776}
+      lightmapScaleOffset: {x: 0.0744116, y: 0.074396044, z: 0.32538405, w: 0.32245463}
     - objectId: f9f77bdb-6262-4a16-ad7f-f87d333fdb13
       lightmapIndex: 1
       rotation: {x: -0.695271, y: 0.12883388, z: 0.12883388, w: 0.6952711}
       position: {x: 3.0811822, y: 2.4834678, z: 2.7102296}
-      lightmapScaleOffset: {x: 0.0744116, y: 0.074396044, z: 0.6417903, w: 0.500189}
+      lightmapScaleOffset: {x: 0.0744116, y: 0.074396044, z: 0.47089186, w: 0.78339213}
     - objectId: 4aa04ff6-2614-4583-8288-38226afa43db
       lightmapIndex: 1
       rotation: {x: -0.67568123, y: 0.20845866, z: 0.20845868, w: 0.6756811}
       position: {x: 3.0631776, y: 2.388576, z: 2.6633148}
-      lightmapScaleOffset: {x: 0.0744116, y: 0.074396044, z: 0.47382155, w: 0.7892515}
+      lightmapScaleOffset: {x: 0.0744116, y: 0.074396044, z: 0.43964186, w: 0.91327494}
     - objectId: 6b1b13c0-a937-40c2-8844-780890c4d52e
       lightmapIndex: 1
       rotation: {x: -0.526006, y: -0.47256503, z: -0.47256523, w: 0.5260058}
       position: {x: 0.91083175, y: 0.22985132, z: 2.6651285}
-      lightmapScaleOffset: {x: 0.0744116, y: 0.074396044, z: 0.9230403, w: 0.42694682}
+      lightmapScaleOffset: {x: 0.0744116, y: 0.074396044, z: 0.92108715, w: 0.7062437}
     - objectId: f30123ee-2324-40ba-8eef-90613fcfbe28
       lightmapIndex: 2
       rotation: {x: 0.21938677, y: 0.6722124, z: 0.67221224, w: -0.21938692}
       position: {x: 2.9535868, y: 0.33865574, z: 0.24723095}
-      lightmapScaleOffset: {x: 0.0744116, y: 0.074396044, z: 0.3185481, w: 0.1925718}
+      lightmapScaleOffset: {x: 0.0744116, y: 0.074396044, z: 0.40839186, w: 0.30292338}
     - objectId: 3b042166-a866-4c00-a4fd-13a139e50866
       lightmapIndex: 1
       rotation: {x: 0.020675562, y: 0.7068045, z: 0.70680445, w: -0.02067567}
       position: {x: 1.6456032, y: 0.7710863, z: 0.3501097}
-      lightmapScaleOffset: {x: 0.0744116, y: 0.074396044, z: 0.91327465, w: 0.7091734}
+      lightmapScaleOffset: {x: 0.0744116, y: 0.074396044, z: 0.6388606, w: 0.81659526}
     - objectId: e99479cc-4e2d-43bf-a660-9a6c3e726b29
       lightmapIndex: 1
       rotation: {x: -0.06414897, y: 0.704191, z: 0.7041909, w: 0.06414888}
       position: {x: -7.575232, y: 0.52360654, z: -3.482354}
-      lightmapScaleOffset: {x: 0.0744116, y: 0.074396044, z: 0.43671218, w: 0.9171812}
+      lightmapScaleOffset: {x: 0.0744116, y: 0.074396044, z: 0.51971996, w: 0.92304057}
     - objectId: 88ac25d2-1223-4fa6-a693-f09fe1af837c
       lightmapIndex: 1
       rotation: {x: -0.06414897, y: 0.704191, z: 0.7041909, w: 0.06414888}
       position: {x: -4.891257, y: 2.4763298, z: -3.482354}
-      lightmapScaleOffset: {x: 0.0744116, y: 0.074396044, z: 0.84003246, w: 0.5343687}
+      lightmapScaleOffset: {x: 0.0744116, y: 0.074396044, z: 0.63983715, w: 0.92304057}
     - objectId: 16e5cf9b-b8c2-4f2a-baca-d19453238f83
       lightmapIndex: 2
       rotation: {x: -0.00030777752, y: 0.7071069, z: 0.7071066, w: 0.00030767324}
       position: {x: -5.8140187, y: 0.8456655, z: -3.7465804}
-      lightmapScaleOffset: {x: 0.0744116, y: 0.074396044, z: 0.40839186, w: 0.30292338}
+      lightmapScaleOffset: {x: 0.0744116, y: 0.074396044, z: 0.91620433, w: 0.8156187}
     - objectId: be58474d-3e7b-424c-8d5b-b4bc4732aeab
       lightmapIndex: 0
       rotation: {x: -0.7390866, y: -0, z: 0, w: 0.6736104}
       position: {x: -0.6592976, y: 0.7324377, z: 2.8117013}
-      lightmapScaleOffset: {x: 0.02310486, y: 0.02301674, z: -0.0010963706, w: 0.9198193}
+      lightmapScaleOffset: {x: 0.02310486, y: 0.02301674, z: 0.011598942, w: 0.96571773}
     - objectId: 54c93e70-fca3-447c-9dd5-827c4e59431b
       lightmapIndex: 0
       rotation: {x: -0.55369455, y: 0.43979812, z: 0.4397984, w: 0.55369425}
       position: {x: 3.6122441, y: 0.13964973, z: -0.36657792}
-      lightmapScaleOffset: {x: 0.5606271, y: 0.47676283, z: 0.74986887, w: 0.5742403}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.47676283, z: 0.68736887, w: 0.5664278}
     - objectId: 212065b7-71c0-43a2-9de0-e4474a8cd611
       lightmapIndex: 0
       rotation: {x: -0.70113885, y: 0.09167546, z: 0.09167548, w: 0.70113873}
       position: {x: 2.9962523, y: 0.13964973, z: 0.4902166}
-      lightmapScaleOffset: {x: 0.5606271, y: 0.47676283, z: 0.7567048, w: 0.5976778}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.47676283, z: 0.72740793, w: 0.5879122}
     - objectId: 24204d7e-2e39-414b-ab1b-1e667b8bfeca
       lightmapIndex: 0
       rotation: {x: -0.44059545, y: 0.5530603, z: 0.55305994, w: 0.4405958}
       position: {x: 6.725985, y: 0.6684776, z: -0.47555572}
-      lightmapScaleOffset: {x: 0.5606271, y: 0.47676283, z: 0.8113923, w: 0.5693575}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.47676283, z: 0.87779856, w: 0.5595919}
     - objectId: 21509f0a-99e2-4b97-9be1-586d14d69f11
       lightmapIndex: 0
       rotation: {x: -0.7071068, y: -0.00015600282, z: -0.00015589851, w: 0.7071068}
       position: {x: 4.241066, y: 0.13964972, z: 1.4893339}
-      lightmapScaleOffset: {x: 0.5606271, y: 0.47676283, z: 0.8270173, w: 0.5595919}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.47676283, z: 0.89049387, w: 0.5849825}
     - objectId: bcd19e15-fab7-442c-aaa3-7de7babda8de
       lightmapIndex: 0
       rotation: {x: 0.19139124, y: 0.6807124, z: 0.68071246, w: -0.19139118}
       position: {x: -4.1381946, y: 2.6229916, z: -3.4552853}
-      lightmapScaleOffset: {x: 0.5606271, y: 0.47676283, z: 0.658072, w: 0.561545}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.47676283, z: 0.66979074, w: 0.5625216}
     - objectId: 7ca3ded0-e182-4e9b-b271-3362ba6a593c
       lightmapIndex: 0
       rotation: {x: -0.48420206, y: 0.5153139, z: 0.5153137, w: 0.4842023}
       position: {x: -3.163888, y: 2.5285995, z: -3.4552853}
-      lightmapScaleOffset: {x: 0.5606271, y: 0.47676283, z: 0.71959543, w: 0.57131064}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.47676283, z: 0.65123606, w: 0.57326376}
     - objectId: ea312137-d3fe-43d5-abd4-316150ed5fc0
       lightmapIndex: 0
       rotation: {x: -0.6929249, y: 0.1409083, z: 0.14090842, w: 0.69292486}
       position: {x: -3.163888, y: 0.13964972, z: -1.9938145}
-      lightmapScaleOffset: {x: 0.5606271, y: 0.47676283, z: 0.2567048, w: 0.58400595}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.47676283, z: 0.87779856, w: 0.59963095}
     - objectId: de9bc62b-a3e5-483d-b6e8-3a7ef3eb3702
       lightmapIndex: 0
       rotation: {x: -0.3219106, y: 0.62958205, z: 0.62958217, w: 0.32191065}
       position: {x: -3.9619431, y: 0.5020989, z: 2.2359924}
-      lightmapScaleOffset: {x: 0.5606271, y: 0.47676283, z: 0.77623606, w: 0.5664278}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.47676283, z: 0.7772126, w: 0.5937716}
     - objectId: 6010ce80-834c-41e6-befc-de165261cfbc
       lightmapIndex: 0
       rotation: {x: -0.70371705, y: -0.06915492, z: -0.06915493, w: 0.70371693}
       position: {x: -2.417945, y: 0.13964973, z: 2.6395645}
-      lightmapScaleOffset: {x: 0.5606271, y: 0.47676283, z: 0.25377512, w: 0.5957247}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.47676283, z: 0.8582673, w: 0.5976778}
     - objectId: f8088c57-9e2f-4d5a-8827-7e306b8acd50
       lightmapIndex: 0
       rotation: {x: -0.7066027, y: -0.026693955, z: -0.02669384, w: 0.7066028}
       position: {x: -2.3519566, y: 0.9863166, z: -0.7081133}
-      lightmapScaleOffset: {x: 0.5606271, y: 0.47676283, z: 0.72643137, w: 0.5781466}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.47676283, z: 0.83678293, w: 0.5820528}
     - objectId: e6f7961c-3f12-4581-bd56-9cd0ecee3376
       lightmapIndex: 0
       rotation: {x: -0.7071069, y: -0, z: 0, w: 0.7071067}
       position: {x: 1.5639536, y: 0.13964973, z: 2.5652804}
-      lightmapScaleOffset: {x: 0.5606271, y: 0.47676283, z: 0.27428293, w: 0.5693575}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.47676283, z: 0.89147043, w: 0.5703341}
     - objectId: 4b24baee-5609-48d5-a14a-ad2c757c4a54
       lightmapIndex: 0
       rotation: {x: -0.7066027, y: -0.026693955, z: -0.02669384, w: 0.7066028}
       position: {x: -2.3519566, y: 0.9863166, z: -0.7081133}
-      lightmapScaleOffset: {x: 0.13555837, y: 0.1359264, z: 0.7523115, w: 0.8821171}
+      lightmapScaleOffset: {x: 0.13555837, y: 0.1359264, z: 0.7796553, w: 0.7043827}
     - objectId: 9feeabad-75e7-409c-88fe-10934b902ee3
       lightmapIndex: 0
       rotation: {x: -0.5242691, y: 0.47449124, z: 0.4744914, w: 0.5242689}
       position: {x: 3.6122441, y: 0.4961024, z: -0.36657792}
-      lightmapScaleOffset: {x: 0.13555837, y: 0.1359264, z: 0.8616865, w: 0.8606327}
+      lightmapScaleOffset: {x: 0.13555837, y: 0.1359264, z: 0.88219434, w: 0.6731327}
     - objectId: 81202695-ccb7-47ff-b5e6-7ea2bbd3e257
       lightmapIndex: 0
       rotation: {x: -0.55369455, y: 0.43979812, z: 0.4397984, w: 0.55369425}
       position: {x: 3.6122441, y: 0.13964973, z: -0.36657792}
-      lightmapScaleOffset: {x: 0.13555837, y: 0.1359264, z: 0.7874678, w: 0.90457803}
+      lightmapScaleOffset: {x: 0.13555837, y: 0.1359264, z: 0.38317093, w: 0.62821084}
     - objectId: 5f6f88ee-74af-44e8-9946-a3b635004d50
       lightmapIndex: 0
       rotation: {x: -0.70113885, y: 0.09167546, z: 0.09167548, w: 0.70113873}
       position: {x: 2.9962523, y: 0.13964973, z: 0.4902166}
-      lightmapScaleOffset: {x: 0.13555837, y: 0.1359264, z: 0.69957715, w: 0.88114053}
+      lightmapScaleOffset: {x: 0.13555837, y: 0.1359264, z: 0.87438184, w: 0.7053593}
     - objectId: 81ce20fb-44de-4892-85ee-a9bd695bf01e
       lightmapIndex: 0
       rotation: {x: -0.44059545, y: 0.5530603, z: 0.55305994, w: 0.4405958}
       position: {x: 6.725985, y: 0.6684776, z: -0.47555572}
-      lightmapScaleOffset: {x: 0.13555837, y: 0.1359264, z: 0.81969434, w: 0.6809452}
+      lightmapScaleOffset: {x: 0.13555837, y: 0.1359264, z: 0.7064131, w: 0.6321171}
     - objectId: 20033ef0-cd56-4f9c-b34d-8c8a2db1231d
       lightmapIndex: 0
       rotation: {x: -0.7071068, y: -0.00015600282, z: -0.00015589851, w: 0.7071068}
       position: {x: 4.241066, y: 0.13964972, z: 1.4893339}
-      lightmapScaleOffset: {x: 0.13555837, y: 0.1359264, z: 0.7640303, w: 0.89871866}
+      lightmapScaleOffset: {x: 0.13555837, y: 0.1359264, z: 0.7298506, w: 0.6213749}
     - objectId: 858ee228-e898-4713-8fea-b409a048c48f
       lightmapIndex: 0
       rotation: {x: 0.19139124, y: 0.6807124, z: 0.68071246, w: -0.19139118}
       position: {x: -4.1381946, y: 2.6229916, z: -3.4552853}
-      lightmapScaleOffset: {x: 0.13555837, y: 0.1359264, z: 0.36168656, w: 0.62332803}
+      lightmapScaleOffset: {x: 0.13555837, y: 0.1359264, z: 0.8753584, w: 0.66922647}
     - objectId: d0879bea-c62a-4f12-80a6-10a7edf27f4b
       lightmapIndex: 0
       rotation: {x: -0.48420206, y: 0.5153139, z: 0.5153137, w: 0.4842023}
       position: {x: -3.163888, y: 2.5285995, z: -3.4552853}
-      lightmapScaleOffset: {x: 0.13555837, y: 0.1359264, z: 0.8831709, w: 0.90164834}
+      lightmapScaleOffset: {x: 0.13555837, y: 0.1359264, z: 0.7835615, w: 0.6682499}
     - objectId: 57fde322-0e90-40ae-804b-a4f36edffdf8
       lightmapIndex: 0
       rotation: {x: -0.6929249, y: 0.1409083, z: 0.14090842, w: 0.69292486}
       position: {x: -3.163888, y: 0.13964972, z: -1.9938145}
-      lightmapScaleOffset: {x: 0.13555837, y: 0.1359264, z: 0.30797562, w: 0.6448124}
+      lightmapScaleOffset: {x: 0.13555837, y: 0.1359264, z: -0.025032202, w: 0.64090616}
     - objectId: 92dbf720-1366-4a0b-ab47-496f88778b13
       lightmapIndex: 0
       rotation: {x: -0.509653, y: -0.49015707, z: -0.4901575, w: 0.5096524}
       position: {x: -3.9619431, y: 0.13964972, z: 2.2359924}
-      lightmapScaleOffset: {x: 0.13555837, y: 0.1359264, z: 0.7064131, w: 0.89090616}
+      lightmapScaleOffset: {x: 0.13555837, y: 0.1359264, z: 0.8724287, w: 0.6809452}
     - objectId: 39cba9f7-45a8-4527-8928-3ff0c3c88886
       lightmapIndex: 0
       rotation: {x: -0.6704739, y: 0.22464378, z: 0.22464372, w: 0.6704738}
       position: {x: -4.8949404, y: 0.66136575, z: 2.7962797}
-      lightmapScaleOffset: {x: 0.13555837, y: 0.1359264, z: 0.83531934, w: 0.62332803}
+      lightmapScaleOffset: {x: 0.13555837, y: 0.1359264, z: 0.8909834, w: 0.65164834}
     - objectId: 381c694e-6e62-4d29-8b94-c803383d0a0c
       lightmapIndex: 0
       rotation: {x: -0.70371705, y: -0.06915492, z: -0.06915493, w: 0.70371693}
       position: {x: -2.417945, y: 0.13964973, z: 2.6395645}
-      lightmapScaleOffset: {x: 0.13555837, y: 0.1359264, z: -0.021125952, w: 0.65360147}
+      lightmapScaleOffset: {x: 0.13555837, y: 0.1359264, z: 0.33824906, w: 0.64578897}
     - objectId: 8c64c3d1-8c05-4eb2-a923-b0e394bdc579
       lightmapIndex: 0
       rotation: {x: -0.7059811, y: 0.039885025, z: 0.039885037, w: 0.70598096}
       position: {x: 1.0077231, y: 0.13964973, z: 2.7883813}
-      lightmapScaleOffset: {x: 0.13555837, y: 0.1359264, z: 0.8304365, w: 0.8401249}
+      lightmapScaleOffset: {x: 0.13555837, y: 0.1359264, z: 0.30699906, w: 0.6682499}
     - objectId: 05fd7ad3-1ae0-4f19-8676-71c9741e1034
       lightmapIndex: 0
       rotation: {x: -0.7071069, y: -0, z: 0, w: 0.7071067}
       position: {x: 1.5639536, y: 0.13964973, z: 2.5652804}
-      lightmapScaleOffset: {x: 0.13555837, y: 0.1359264, z: 0.7796553, w: 0.74051553}
+      lightmapScaleOffset: {x: 0.13555837, y: 0.1359264, z: 0.26793656, w: 0.61453897}
     - objectId: b6700e1b-ee2e-496f-af3c-46e3a1610938
       lightmapIndex: 0
       rotation: {x: -0.55470455, y: -0.43852365, z: -0.43852395, w: 0.55470425}
       position: {x: -7.7662067, y: 0.13964973, z: -3.39514}
-      lightmapScaleOffset: {x: 0.5606271, y: 0.4767628, z: 0.8719392, w: 0.57619345}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.4767628, z: 0.7625642, w: 0.5664278}
     - objectId: b36ecf14-206c-4bb5-94d7-da2792a9b666
       lightmapIndex: 0
       rotation: {x: -0.7070327, y: -0.010239067, z: -0.010239083, w: 0.7070326}
       position: {x: 7.100362, y: 0.13964973, z: -0.41780937}
-      lightmapScaleOffset: {x: 0.5606271, y: 0.4767628, z: 0.7938142, w: 0.5849825}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.4767628, z: 0.81822824, w: 0.56349814}
     - objectId: 888e9a7f-5c77-43e4-aa43-3bb022874021
       lightmapIndex: 0
       rotation: {x: -0.70681906, y: 0.02017066, z: 0.020170664, w: 0.706819}
       position: {x: 6.4705424, y: 0.13964973, z: -0.3731038}
-      lightmapScaleOffset: {x: 0.5606271, y: 0.4767628, z: 0.8084626, w: 0.5830294}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.4767628, z: 0.7410798, w: 0.56838095}
     - objectId: 8920b524-419d-4fb3-a58b-816b4ec74733
       lightmapIndex: 0
       rotation: {x: 0.09590291, y: 0.700573, z: 0.70057315, w: -0.09590291}
       position: {x: 4.5298653, y: 0.71048677, z: 2.1077914}
-      lightmapScaleOffset: {x: 0.5606271, y: 0.4767628, z: 0.71666574, w: 0.57912314}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.4767628, z: 0.73522043, w: 0.5752169}
     - objectId: 27d55a6f-d22d-4b88-ba56-ab07977ef311
       lightmapIndex: 0
       rotation: {x: 0.10754551, y: 0.6988805, z: 0.6988805, w: -0.107545525}
       position: {x: 4.0528817, y: 0.13964973, z: 2.0885117}
-      lightmapScaleOffset: {x: 0.5606271, y: 0.4767628, z: 0.7625642, w: 0.5830294}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.4767628, z: 0.84947824, w: 0.5664278}
     - objectId: 2c78d32c-0214-4b70-b4d6-f3061a30c627
       lightmapIndex: 0
       rotation: {x: 0.13749582, y: 0.69361013, z: 0.6936101, w: -0.13749582}
       position: {x: 4.6331587, y: 0.13964973, z: 1.8396138}
-      lightmapScaleOffset: {x: 0.5606271, y: 0.4767628, z: 0.89928293, w: 0.5703341}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.4767628, z: 0.67760324, w: 0.592795}
     - objectId: 8cffe51b-ebde-4f8c-a384-4d9649ac459d
       lightmapIndex: 0
       rotation: {x: -0.52757615, y: -0.47081143, z: -0.47081167, w: 0.52757597}
       position: {x: -2.5075994, y: 0.71048677, z: -2.1813765}
-      lightmapScaleOffset: {x: 0.5606271, y: 0.4767628, z: 0.8738923, w: 0.5879122}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.4767628, z: 0.27428293, w: 0.5625216}
     - objectId: 0c2022c6-97ce-48d9-9bf0-105fd6c979c9
       lightmapIndex: 0
       rotation: {x: -0.5353363, y: -0.46196875, z: -0.4619689, w: 0.53533614}
       position: {x: -2.6019242, y: 0.13964973, z: -1.7134151}
-      lightmapScaleOffset: {x: 0.5606271, y: 0.4767628, z: 0.89342356, w: 0.58888876}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.4767628, z: 0.74986887, w: 0.58107626}
     - objectId: 093562f6-30d1-4633-93f2-5cd60542d0f1
       lightmapIndex: 0
       rotation: {x: -0.55470455, y: -0.43852365, z: -0.43852395, w: 0.55470425}
       position: {x: -2.7561116, y: 0.13964973, z: -2.3257039}
-      lightmapScaleOffset: {x: 0.5606271, y: 0.4767628, z: 0.2645173, w: 0.59670126}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.4767628, z: 0.27623606, w: 0.5908419}
     - objectId: c0d417f4-f570-443a-9cfa-9e59c5036dda
       lightmapIndex: 0
       rotation: {x: -0.49925414, y: 0.5007448, z: 0.5007261, w: 0.49927276}
       position: {x: -2.3895032, y: 0.13964973, z: 0.47056594}
-      lightmapScaleOffset: {x: 0.5606271, y: 0.4767628, z: 0.85729074, w: 0.561545}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.4767628, z: 0.69811106, w: 0.56838095}
     - objectId: 1aea81d9-11d8-4b74-910c-96d4211839c6
       lightmapIndex: 0
       rotation: {x: -0.36412856, y: 0.43217948, z: 0.19639534, w: 0.80128664}
       position: {x: -4.1168942, y: 0.9356487, z: 3.0164356}
-      lightmapScaleOffset: {x: 0.5606271, y: 0.47676283, z: 0.72643137, w: 0.6006075}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.47676283, z: 0.76842356, w: 0.5859591}
     - objectId: 9b139748-a7d0-49f5-b736-0b5b06a145e6
       lightmapIndex: 0
       rotation: {x: -0.07599953, y: 0.7030108, z: 0.70301074, w: 0.075999506}
       position: {x: -4.4232903, y: 0.13964973, z: 2.6621222}
-      lightmapScaleOffset: {x: 0.5606271, y: 0.4767628, z: 0.87584543, w: 0.59963095}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.4767628, z: 0.27721262, w: 0.5830294}
     - objectId: 15c6f0d1-0ae9-4593-9cae-6affccf304c5
       lightmapIndex: 0
       rotation: {x: -0.12447165, y: 0.6960653, z: 0.69606525, w: 0.12447165}
       position: {x: -5.0000567, y: 0.13964973, z: 2.5888872}
-      lightmapScaleOffset: {x: 0.5606271, y: 0.4767628, z: 0.84361887, w: 0.57717}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.4767628, z: 0.2567048, w: 0.57912314}
     - objectId: 80f67342-33e0-4069-8f2f-6c11d6b38497
       lightmapIndex: 0
       rotation: {x: -0.04570198, y: 0.7056283, z: 0.70562845, w: 0.045701973}
       position: {x: -3.796096, y: 0.13964973, z: 2.734918}
-      lightmapScaleOffset: {x: 0.5606271, y: 0.4767628, z: 0.26940012, w: 0.58107626}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.4767628, z: 0.71666574, w: 0.5820528}
     - objectId: ff21d477-3e86-4e69-aecb-20bc1f813a27
       lightmapIndex: 0
       rotation: {x: -0.35285848, y: 0.61277306, z: 0.6127732, w: 0.35285845}
       position: {x: -2.9632921, y: 0.13964973, z: 2.3731108}
-      lightmapScaleOffset: {x: 0.5606271, y: 0.4767628, z: 0.76354074, w: 0.56056845}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.4767628, z: 0.81529856, w: 0.5908419}
     - objectId: cdd0d8ab-5632-4b5c-a157-c1f92821cf5b
       lightmapIndex: 0
       rotation: {x: -0.2278221, y: 0.2131521, z: 0.6694007, w: 0.67421514}
       position: {x: 1.7722535, y: 3.0242093, z: -0.53876853}
-      lightmapScaleOffset: {x: 0.5606271, y: 0.4767628, z: 0.80748606, w: 0.5908419}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.4767628, z: 0.7596345, w: 0.58400595}
     - objectId: 043bce46-d290-4987-80da-7e2dd1cd3746
       lightmapIndex: 0
       rotation: {x: -0.41727933, y: -0.5708573, z: -0.57086116, w: 0.41727385}
       position: {x: 1.4607201, y: 2.62814, z: -0.8000001}
-      lightmapScaleOffset: {x: 0.5606271, y: 0.4767628, z: 0.64635324, w: 0.56838095}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.4767628, z: 0.8631501, w: 0.57717}
     - objectId: 285570b7-4aa7-41fb-b681-d4f6ed416c18
       lightmapIndex: 0
       rotation: {x: -0.4703491, y: 0.52798855, z: 0.5279878, w: 0.47034964}
       position: {x: 1.7683911, y: 2.6283965, z: -0.2439292}
-      lightmapScaleOffset: {x: 0.5606271, y: 0.4767628, z: 0.65416574, w: 0.5879122}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.4767628, z: 0.7078767, w: 0.59181845}
     - objectId: e2abbd0e-d575-4537-89c9-f6d59e293944
       lightmapIndex: 0
       rotation: {x: -0.33012834, y: 0.62531215, z: 0.62531215, w: 0.33012834}
       position: {x: 1.8636522, y: 0.7080233, z: 0.40908673}
-      lightmapScaleOffset: {x: 0.5606271, y: 0.4767628, z: 0.79967356, w: 0.56545126}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.4767628, z: 0.8006501, w: 0.58693564}
     - objectId: ecd05f8a-0d8e-4c98-b7c4-c6c1cf460cef
       lightmapIndex: 0
       rotation: {x: -0.4703491, y: 0.52798855, z: 0.5279878, w: 0.47034964}
       position: {x: 1.7683911, y: 0.13964973, z: 0.43488055}
-      lightmapScaleOffset: {x: 0.5606271, y: 0.4767628, z: 0.8973298, w: 0.59670126}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.4767628, z: 0.81236887, w: 0.5976778}
     - objectId: dd5bd299-1287-41e0-abe8-dbcd337fbd48
       lightmapIndex: 0
       rotation: {x: -0.55470455, y: -0.43852365, z: -0.43852395, w: 0.55470425}
       position: {x: -7.7662067, y: 0.13964973, z: -3.39514}
-      lightmapScaleOffset: {x: 0.20445214, y: 0.20360623, z: 0.7147054, w: 0.7685684}
+      lightmapScaleOffset: {x: 0.20445214, y: 0.20360623, z: 0.30845538, w: 0.8281387}
     - objectId: 0bfe1c07-ba85-4dfa-a8d8-2584d123e453
       lightmapIndex: 0
       rotation: {x: -0.7070327, y: -0.010239067, z: -0.010239083, w: 0.7070326}
       position: {x: 7.100362, y: 0.13964973, z: -0.41780937}
-      lightmapScaleOffset: {x: 0.20445214, y: 0.20360623, z: 0.86411947, w: 0.6797012}
+      lightmapScaleOffset: {x: 0.20445214, y: 0.20360623, z: 0.88853353, w: 0.73048246}
     - objectId: 42c12164-c89f-4856-a2bf-b08cf516f861
       lightmapIndex: 0
       rotation: {x: -0.70681906, y: 0.02017066, z: 0.020170664, w: 0.706819}
       position: {x: 6.4705424, y: 0.13964973, z: -0.3731038}
-      lightmapScaleOffset: {x: 0.20445214, y: 0.20360623, z: 0.8348226, w: 0.82423246}
+      lightmapScaleOffset: {x: 0.20445214, y: 0.20360623, z: 0.8426351, w: 0.7236465}
     - objectId: 5679579d-8042-44d4-8ed0-2237191ffa81
       lightmapIndex: 0
       rotation: {x: -0.018556349, y: 0.7068633, z: 0.7068633, w: 0.018556373}
       position: {x: 4.5298653, y: 0.6693422, z: 2.1077914}
-      lightmapScaleOffset: {x: 0.20445214, y: 0.20360623, z: 0.31431475, w: 0.61329496}
+      lightmapScaleOffset: {x: 0.20445214, y: 0.20360623, z: 0.7693929, w: 0.8388809}
     - objectId: b6e1b673-ca8c-4f50-a635-968a439f4163
       lightmapIndex: 0
       rotation: {x: 0.10754551, y: 0.6988805, z: 0.6988805, w: -0.107545525}
       position: {x: 4.0528817, y: 0.13964973, z: 2.0885117}
-      lightmapScaleOffset: {x: 0.20445214, y: 0.20360623, z: 0.7225179, w: 0.77540433}
+      lightmapScaleOffset: {x: 0.20445214, y: 0.20360623, z: 0.30943194, w: 0.6308731}
     - objectId: 43933842-4c62-41f3-a22e-beae3f155ace
       lightmapIndex: 0
       rotation: {x: 0.13749582, y: 0.69361013, z: 0.6936101, w: -0.13749582}
       position: {x: 4.6331587, y: 0.13964973, z: 1.8396138}
-      lightmapScaleOffset: {x: 0.20445214, y: 0.20360623, z: 0.69029135, w: 0.8056778}
+      lightmapScaleOffset: {x: 0.20445214, y: 0.20360623, z: -0.031388365, w: 0.60352933}
     - objectId: b1449494-3086-4b11-bf65-6b88998ca018
       lightmapIndex: 0
       rotation: {x: 0.44456947, y: 0.54987097, z: 0.5498708, w: -0.44456962}
       position: {x: -2.5075994, y: 0.6693422, z: -2.1813765}
-      lightmapScaleOffset: {x: 0.20445214, y: 0.20360623, z: 0.77036947, w: 0.7978653}
+      lightmapScaleOffset: {x: 0.20445214, y: 0.20360623, z: 0.7117757, w: 0.8261856}
     - objectId: 6d4c0d47-74f8-4d0d-bbe7-686e03b3c7d6
       lightmapIndex: 0
       rotation: {x: -0.5353363, y: -0.46196875, z: -0.4619689, w: 0.53533614}
       position: {x: -2.6019242, y: 0.13964973, z: -1.7134151}
-      lightmapScaleOffset: {x: 0.20445214, y: 0.20360623, z: 0.7508382, w: 0.6455215}
+      lightmapScaleOffset: {x: 0.20445214, y: 0.20360623, z: 0.85435385, w: 0.606459}
     - objectId: e683b4e9-1202-4204-949a-deb17666567b
       lightmapIndex: 0
       rotation: {x: -0.55470455, y: -0.43852365, z: -0.43852395, w: 0.55470425}
       position: {x: -2.7561116, y: 0.13964973, z: -2.3257039}
-      lightmapScaleOffset: {x: 0.20445214, y: 0.20360623, z: 0.30747882, w: 0.6172012}
+      lightmapScaleOffset: {x: 0.20445214, y: 0.20360623, z: 0.3416585, w: 0.61622465}
     - objectId: 55d430fc-965a-4188-a8cf-9445ba91b1df
       lightmapIndex: 0
       rotation: {x: -0.49925414, y: 0.5007448, z: 0.5007261, w: 0.49927276}
       position: {x: -2.3895032, y: 0.13964973, z: 0.47056594}
-      lightmapScaleOffset: {x: 0.20445214, y: 0.20360623, z: 0.8113851, w: 0.7841934}
+      lightmapScaleOffset: {x: 0.20445214, y: 0.20360623, z: 0.30747882, w: 0.8388809}
     - objectId: 7aa33725-7d56-4f2b-978c-9e0a6aebb65b
       lightmapIndex: 0
       rotation: {x: -0.19990583, y: 0.67826074, z: 0.67826074, w: 0.19990584}
       position: {x: -4.019123, y: 0.6693422, z: 2.9161577}
-      lightmapScaleOffset: {x: 0.20445214, y: 0.20360623, z: 0.9002523, w: 0.62696683}
+      lightmapScaleOffset: {x: 0.20445214, y: 0.20360623, z: 0.31626788, w: 0.8369278}
     - objectId: 93067223-21b1-43a2-86d6-e311c7c68a95
       lightmapIndex: 0
       rotation: {x: -0.07599953, y: 0.7030108, z: 0.70301074, w: 0.075999506}
       position: {x: -4.4232903, y: 0.13964973, z: 2.6621222}
-      lightmapScaleOffset: {x: 0.20445214, y: 0.20360623, z: 0.8758382, w: 0.7666153}
+      lightmapScaleOffset: {x: 0.20445214, y: 0.20360623, z: 0.7977132, w: 0.6259903}
     - objectId: fd3bf231-d2fc-4172-b932-8c447f294628
       lightmapIndex: 0
       rotation: {x: -0.12447165, y: 0.6960653, z: 0.69606525, w: 0.12447165}
       position: {x: -5.0000567, y: 0.13964973, z: 2.5888872}
-      lightmapScaleOffset: {x: 0.20445214, y: 0.20360623, z: 0.8914632, w: 0.80079496}
+      lightmapScaleOffset: {x: 0.20445214, y: 0.20360623, z: 0.89634603, w: 0.68653715}
     - objectId: 40ef1c95-2526-481c-a1ce-1b210e31cd9e
       lightmapIndex: 0
       rotation: {x: -0.04570198, y: 0.7056283, z: 0.70562845, w: 0.045701973}
       position: {x: -3.796096, y: 0.13964973, z: 2.734918}
-      lightmapScaleOffset: {x: 0.20445214, y: 0.20360623, z: 0.89829916, w: 0.80665433}
+      lightmapScaleOffset: {x: 0.20445214, y: 0.20360623, z: 0.3211507, w: 0.62403715}
     - objectId: 24acab37-d8cc-46d7-a423-7189e2f21442
       lightmapIndex: 0
       rotation: {x: -0.35285848, y: 0.61277306, z: 0.6127732, w: 0.35285845}
       position: {x: -2.9632921, y: 0.13964973, z: 2.3731108}
-      lightmapScaleOffset: {x: 0.20445214, y: 0.20360623, z: 0.91392416, w: 0.61622465}
+      lightmapScaleOffset: {x: 0.20445214, y: 0.20360623, z: 0.7127523, w: 0.83204496}
     - objectId: c0138a38-37e9-4dee-accf-0b2edbd05b24
       lightmapIndex: 0
       rotation: {x: -0.5054305, y: 0.49450988, z: 0.49451303, w: 0.50542736}
       position: {x: 1.7683911, y: 3.1543427, z: -0.6838789}
-      lightmapScaleOffset: {x: 0.20445214, y: 0.20360623, z: 0.8455648, w: 0.6953262}
+      lightmapScaleOffset: {x: 0.20445214, y: 0.20360623, z: 0.6863851, w: 0.83790433}
     - objectId: 33f329b8-c400-4f00-8516-39bb12c78282
       lightmapIndex: 0
       rotation: {x: -0.41727933, y: -0.5708573, z: -0.57086116, w: 0.41727385}
       position: {x: 1.4607201, y: 2.62814, z: -0.8000001}
-      lightmapScaleOffset: {x: 0.20445214, y: 0.20360623, z: 0.8191976, w: 0.61622465}
+      lightmapScaleOffset: {x: 0.20445214, y: 0.20360623, z: 0.68540853, w: 0.6250137}
     - objectId: 4894bf08-fb4a-432e-b3be-67c7fba76a18
       lightmapIndex: 0
       rotation: {x: -0.4703491, y: 0.52798855, z: 0.5279878, w: 0.47034964}
       position: {x: 1.7683911, y: 2.6283965, z: -0.2439292}
-      lightmapScaleOffset: {x: 0.20445214, y: 0.20360623, z: 0.7830648, w: 0.75196683}
+      lightmapScaleOffset: {x: 0.20445214, y: 0.20360623, z: 0.9149007, w: 0.83204496}
     - objectId: 1fe0609e-3e7e-4427-9646-05ac23942386
       lightmapIndex: 0
       rotation: {x: -0.4858511, y: 0.51375943, z: 0.5137586, w: 0.48585188}
       position: {x: 1.7683911, y: 0.6683653, z: 0.43488055}
-      lightmapScaleOffset: {x: 0.20445214, y: 0.20360623, z: 0.89048666, w: 0.6611465}
+      lightmapScaleOffset: {x: 0.20445214, y: 0.20360623, z: 0.9129476, w: 0.825209}
     - objectId: 194b2321-8e5c-44e6-a1c9-35a6e7c0b740
       lightmapIndex: 0
       rotation: {x: -0.4703491, y: 0.52798855, z: 0.5279878, w: 0.47034964}
       position: {x: 1.7683911, y: 0.13964973, z: 0.43488055}
-      lightmapScaleOffset: {x: 0.20445214, y: 0.20360623, z: 0.33091632, w: 0.62696683}
+      lightmapScaleOffset: {x: 0.20445214, y: 0.20360623, z: 0.78111166, w: 0.65040433}
     - objectId: 8c92b340-0396-4c1c-940b-af2533ab7257
       lightmapIndex: 0
       rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
@@ -1065,7 +1095,7 @@ MonoBehaviour:
       lightmapIndex: 1
       rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
       position: {x: -0.6510976, y: 4.066639, z: 3.6417556}
-      lightmapScaleOffset: {x: 0.18127806, y: 0.18165703, z: 0.818368, w: 0.15231666}
+      lightmapScaleOffset: {x: 0.18127806, y: 0.18165703, z: 0.54200083, w: 0.13473853}
     - objectId: 53daabd6-2a27-49a6-8f5c-723c199e34c9
       lightmapIndex: 1
       rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
@@ -1075,7 +1105,7 @@ MonoBehaviour:
       lightmapIndex: 0
       rotation: {x: -0.00000013767878, y: 0.7071069, z: 0.70710665, w: 0.0000001376788}
       position: {x: -27.022577, y: 9.614552, z: 21.499123}
-      lightmapScaleOffset: {x: 0.080349304, y: 0.07945237, z: 0.66448617, w: 0.63241297}
+      lightmapScaleOffset: {x: 0.080349304, y: 0.07945237, z: 0.67327523, w: 0.9283114}
     - objectId: 0fad1d8e-b4ac-4770-9e53-de459f4554fd
       lightmapIndex: 1
       rotation: {x: -0.00000013767878, y: 0.7071069, z: 0.70710665, w: 0.0000001376788}
@@ -1085,12 +1115,12 @@ MonoBehaviour:
       lightmapIndex: 0
       rotation: {x: -0.00000013767877, y: 0.7071069, z: 0.70710665, w: 0.00000013767878}
       position: {x: -27.432316, y: 9.522121, z: 21.499123}
-      lightmapScaleOffset: {x: 0.20011586, y: 0.20076199, z: 0.74753416, w: 0.817752}
+      lightmapScaleOffset: {x: 0.20011586, y: 0.20076199, z: 0.32468262, w: 0.6175567}
     - objectId: 703e0014-2237-444d-961f-5a753940b43d
       lightmapIndex: 0
       rotation: {x: -0.00000013767878, y: 0.7071069, z: 0.70710665, w: 0.0000001376788}
       position: {x: -27.02258, y: 9.614553, z: 41.43327}
-      lightmapScaleOffset: {x: 0.080349304, y: 0.07945237, z: 0.6840174, w: 0.9156161}
+      lightmapScaleOffset: {x: 0.080349304, y: 0.07945237, z: 0.7885096, w: 0.9078036}
     - objectId: daecf702-12c5-4839-8869-8cc87c2b6354
       lightmapIndex: 1
       rotation: {x: -0.00000013767878, y: 0.7071069, z: 0.70710665, w: 0.0000001376788}
@@ -1100,27 +1130,27 @@ MonoBehaviour:
       lightmapIndex: 0
       rotation: {x: -0.00000013767877, y: 0.7071069, z: 0.70710665, w: 0.00000013767878}
       position: {x: -27.432318, y: 9.522124, z: 41.433273}
-      lightmapScaleOffset: {x: 0.20011586, y: 0.20076199, z: 0.346167, w: 0.61365044}
+      lightmapScaleOffset: {x: 0.20011586, y: 0.20076199, z: 0.34812012, w: 0.6126739}
     - objectId: 80193956-41ad-4b9b-bf94-db46a5899e55
       lightmapIndex: 0
       rotation: {x: -0.00000013767878, y: 0.7071069, z: 0.70710665, w: 0.0000001376788}
       position: {x: -27.022581, y: 9.614559, z: 61.45271}
-      lightmapScaleOffset: {x: 0.080349304, y: 0.07945237, z: 0.69671273, w: 0.6685458}
+      lightmapScaleOffset: {x: 0.080349304, y: 0.07945237, z: 0.7601893, w: 0.9175692}
     - objectId: 50c8980b-9550-4abb-b0bb-ec01bd778135
       lightmapIndex: 1
       rotation: {x: -0.00000013767878, y: 0.7071069, z: 0.70710665, w: 0.0000001376788}
       position: {x: -26.472338, y: 10.707732, z: 61.452717}
       lightmapScaleOffset: {x: 0.49593967, y: 0.49470833, z: 0.49267766, w: 0.6461774}
     - objectId: c163720b-ec92-43ce-9de4-dc8439d5c8b7
-      lightmapIndex: 0
+      lightmapIndex: 1
       rotation: {x: -0.00000013767877, y: 0.7071069, z: 0.70710665, w: 0.00000013767878}
       position: {x: -27.432322, y: 9.522128, z: 61.452705}
-      lightmapScaleOffset: {x: 0.20011586, y: 0.20076199, z: 0.8012451, w: 0.80115044}
+      lightmapScaleOffset: {x: 0.20011586, y: 0.20076199, z: 0.76022947, w: 0.33825982}
     - objectId: 501d9b05-fb36-488e-87ff-44bb94d86a31
       lightmapIndex: 0
       rotation: {x: -0.7071069, y: -0, z: -0, w: 0.7071067}
       position: {x: 25.289997, y: 9.614558, z: 61.440937}
-      lightmapScaleOffset: {x: 0.080349304, y: 0.07945237, z: 0.90179086, w: 0.6910067}
+      lightmapScaleOffset: {x: 0.080349304, y: 0.07945237, z: 0.0023768134, w: 0.6470614}
     - objectId: cae88671-e564-4193-8026-119b0b34f5e6
       lightmapIndex: 1
       rotation: {x: -0.7071069, y: -0, z: -0, w: 0.7071067}
@@ -1130,47 +1160,37 @@ MonoBehaviour:
       lightmapIndex: 0
       rotation: {x: -0.7071069, y: -0, z: 0, w: 0.7071067}
       position: {x: 25.699736, y: 9.522128, z: 61.440937}
-      lightmapScaleOffset: {x: 0.20011586, y: 0.20076199, z: 0.6996826, w: 0.6361114}
+      lightmapScaleOffset: {x: 0.20011586, y: 0.20076199, z: 0.8110107, w: 0.802127}
     - objectId: 6a31d5a7-1dfe-4e17-8e0f-1fccb485c690
       lightmapIndex: 0
       rotation: {x: -0.7071069, y: -0, z: -0, w: 0.7071067}
       position: {x: 25.289997, y: 9.6145525, z: 41.506783}
-      lightmapScaleOffset: {x: 0.080349304, y: 0.07945237, z: 0.69085336, w: 0.92733485}
+      lightmapScaleOffset: {x: 0.080349304, y: 0.07945237, z: 0.7699549, w: 0.9029208}
     - objectId: 0c9b3767-6324-44ae-bf34-52fdbf1f4c7a
       lightmapIndex: 2
       rotation: {x: -0.7071069, y: -0, z: -0, w: 0.7071067}
       position: {x: 24.739756, y: 10.707726, z: 41.506783}
       lightmapScaleOffset: {x: 0.49593967, y: 0.49470833, z: 0.5864277, w: 0.6491071}
     - objectId: 7b386fb1-571f-4f4f-a456-af880f31b341
-      lightmapIndex: 0
+      lightmapIndex: 1
       rotation: {x: -0.7071069, y: -0, z: 0, w: 0.7071067}
       position: {x: 25.699736, y: 9.522124, z: 41.50678}
-      lightmapScaleOffset: {x: 0.20011586, y: 0.20076199, z: 0.7963623, w: 0.6361114}
+      lightmapScaleOffset: {x: 0.20011586, y: 0.20076199, z: 0.80710447, w: 0.54822075}
     - objectId: afb63ec3-38fb-4867-8b38-2a9b6cd3d289
       lightmapIndex: 0
       rotation: {x: -0.7071069, y: -0, z: -0, w: 0.7071067}
       position: {x: 25.289997, y: 9.61455, z: 21.487347}
-      lightmapScaleOffset: {x: 0.080349304, y: 0.07945237, z: 0.653744, w: 0.6265536}
+      lightmapScaleOffset: {x: 0.080349304, y: 0.07945237, z: 0.75921273, w: 0.91366297}
     - objectId: 0313653e-ab09-434a-9ad3-e9d64065695b
       lightmapIndex: 1
       rotation: {x: -0.7071069, y: -0, z: -0, w: 0.7071067}
       position: {x: 24.739756, y: 10.707723, z: 21.487345}
       lightmapScaleOffset: {x: 0.49593967, y: 0.49470833, z: 0.64502144, w: 0.5768415}
     - objectId: 146e69df-36f8-447b-84f9-5b64c7fe7d93
-      lightmapIndex: 0
+      lightmapIndex: 1
       rotation: {x: -0.7071069, y: -0, z: 0, w: 0.7071067}
       position: {x: 25.699736, y: 9.522121, z: 21.487345}
-      lightmapScaleOffset: {x: 0.20011586, y: 0.20076199, z: 0.7699951, w: 0.6517364}
-    - objectId: 0aa1b425-758c-4f44-bf39-fcc0261bf2b7
-      lightmapIndex: 0
-      rotation: {x: -0.5000007, y: 0.49999934, z: 0.49999934, w: 0.5000007}
-      position: {x: -0.312, y: 2.6222, z: -1.3627}
-      lightmapScaleOffset: {x: 0.046993155, y: 0.04670451, z: 0.35439563, w: 0.87301385}
-    - objectId: 1744178a-7829-46b2-b03c-19b7ee770a35
-      lightmapIndex: 0
-      rotation: {x: -0, y: -0, z: -0, w: 1}
-      position: {x: -0.67, y: -14.09, z: 45.04}
-      lightmapScaleOffset: {x: 1.0042953, y: 1.0037607, z: -0.003891068, w: -0.0021216779}
+      lightmapScaleOffset: {x: 0.20011586, y: 0.20076199, z: 0.19772948, w: 0.4349395}
     - objectId: b20e293d-27f4-4d82-aae5-0656d5e21da4
       lightmapIndex: 14
       rotation: {x: -0, y: -0, z: -0, w: 1}
@@ -1179,7 +1199,7 @@ MonoBehaviour:
     terrainDatas: []
     lightSourceDatas:
     - name: Left-Main
-      instanceID: 95850
+      instanceID: 264188
       lightUID: 72bdded1-2954-485e-ad1b-409ef940228a
       position: {x: -10.521, y: 4.542, z: 2.7129998}
       rotation: {x: 0.9248957, y: -0.061854064, z: 0.22845486, w: 0.29757434}
@@ -1194,7 +1214,7 @@ MonoBehaviour:
       enableTime: 0
       disableTime: 0
     - name: Spot Light (3)
-      instanceID: 95882
+      instanceID: 264234
       lightUID: fa5377f9-8b4d-43fd-8c1e-88a79c578485
       position: {x: -23.8, y: 17.54, z: 38.6}
       rotation: {x: -0.07120984, y: -0.66700083, z: 0.6812105, w: -0.2932429}
@@ -1209,7 +1229,7 @@ MonoBehaviour:
       enableTime: 0
       disableTime: 0
     - name: Central-Orange-fill
-      instanceID: 95966
+      instanceID: 264330
       lightUID: f95a062e-4970-4d29-a5d5-0425cf16ab37
       position: {x: -0.66400003, y: 3.6820002, z: 0.921}
       rotation: {x: -0, y: -0, z: -0, w: 1}
@@ -1224,7 +1244,7 @@ MonoBehaviour:
       enableTime: 0
       disableTime: 0
     - name: Point Light (11)
-      instanceID: 95976
+      instanceID: 264340
       lightUID: 5079ff91-84d8-442d-8dac-758fd34abdc9
       position: {x: 6.0150003, y: -1.6179998, z: 28.357}
       rotation: {x: -0, y: -0, z: -0, w: 1}
@@ -1239,7 +1259,7 @@ MonoBehaviour:
       enableTime: 0
       disableTime: 0
     - name: Spot Light (5)
-      instanceID: 96044
+      instanceID: 264440
       lightUID: aa2be2ac-4a1b-4f2d-9228-6aa1104933d5
       position: {x: 22.22, y: 17.54, z: 61.73}
       rotation: {x: 0.6812103, y: -0.29324487, z: 0.07121185, w: 0.66699994}
@@ -1253,23 +1273,8 @@ MonoBehaviour:
       areaSize: {x: 1, y: 1}
       enableTime: 0
       disableTime: 0
-    - name: Main-Rim-Light
-      instanceID: 96064
-      lightUID: 3472497a-2f4f-4d91-8d28-daffedad0c8a
-      position: {x: 0.08899999, y: 7.0320005, z: 16.923}
-      rotation: {x: 0.92445695, y: -0.15540463, z: -0.11314559, w: 0.32928234}
-      intensity: 150
-      color: {r: 0.990566, g: 0.990566, b: 0.990566, a: 1}
-      temperature: 6570
-      range: 120.03
-      spotAngle: 103.139786
-      shadowType: 1
-      shadowStrength: 0
-      areaSize: {x: 1, y: 1}
-      enableTime: 0
-      disableTime: 0
     - name: Point Light (8)
-      instanceID: 96110
+      instanceID: 264530
       lightUID: 06995f0f-dfd0-452d-998c-72eb37112009
       position: {x: 5.968, y: -1.6179998, z: 61.481}
       rotation: {x: -0, y: -0, z: -0, w: 1}
@@ -1284,7 +1289,7 @@ MonoBehaviour:
       enableTime: 0
       disableTime: 0
     - name: Spot Light (5)
-      instanceID: 96138
+      instanceID: 264558
       lightUID: ee83efcd-9e9d-4284-bafa-a0b863762e5a
       position: {x: -23.800098, y: 17.54, z: 21.67}
       rotation: {x: -0.07120984, y: -0.66700083, z: 0.6812105, w: -0.2932429}
@@ -1299,7 +1304,7 @@ MonoBehaviour:
       enableTime: 0
       disableTime: 0
     - name: Central-Light-Main
-      instanceID: 96210
+      instanceID: 264642
       lightUID: aa43c2be-9af5-4b0b-aeba-e0ae42102510
       position: {x: -0.66400003, y: 3.6820002, z: 3.583}
       rotation: {x: -0, y: -0, z: -0, w: 1}
@@ -1314,7 +1319,7 @@ MonoBehaviour:
       enableTime: 0
       disableTime: 0
     - name: GameFill-Light
-      instanceID: 96266
+      instanceID: 264716
       lightUID: d93aafb6-4fb7-4b22-869b-9fcfc5c70353
       position: {x: 0.10571998, y: 3.454, z: 1.1659999}
       rotation: {x: 0.80516297, y: -0, z: -0, w: 0.59305364}
@@ -1329,7 +1334,7 @@ MonoBehaviour:
       enableTime: 0
       disableTime: 0
     - name: Window-Right-Fill
-      instanceID: 96284
+      instanceID: 264740
       lightUID: ae3c7d74-9a12-463e-bf21-a54144eb6b76
       position: {x: 7.5, y: 3.58, z: 4.92}
       rotation: {x: -0, y: -0, z: -0, w: 1}
@@ -1344,7 +1349,7 @@ MonoBehaviour:
       enableTime: 0
       disableTime: 0
     - name: Point Light (5)
-      instanceID: 96314
+      instanceID: 264780
       lightUID: 318758b5-1ee0-47ec-b0b2-38e87351c0ab
       position: {x: -17.386, y: -1.6179998, z: 38.100998}
       rotation: {x: -0, y: -0, z: -0, w: 1}
@@ -1359,7 +1364,7 @@ MonoBehaviour:
       enableTime: 0
       disableTime: 0
     - name: Spot Light (2)
-      instanceID: 96346
+      instanceID: 264816
       lightUID: f3c6df24-db7b-4cd9-8ef8-df56acfbbb87
       position: {x: 22.22, y: 17.54, z: 22.630001}
       rotation: {x: 0.6812103, y: -0.29324487, z: 0.07121185, w: 0.66699994}
@@ -1374,7 +1379,7 @@ MonoBehaviour:
       enableTime: 0
       disableTime: 0
     - name: Spot Light (3)
-      instanceID: 96426
+      instanceID: 264934
       lightUID: f3a86577-78bf-4ea2-8420-c7df1c9374df
       position: {x: 22.22, y: 17.54, z: 44.8}
       rotation: {x: 0.6812103, y: -0.29324487, z: 0.07121185, w: 0.66699994}
@@ -1389,7 +1394,7 @@ MonoBehaviour:
       enableTime: 0
       disableTime: 0
     - name: Window-Left-Fill
-      instanceID: 96504
+      instanceID: 265044
       lightUID: 644d6c5e-e219-4241-b6c4-9c88f031d35a
       position: {x: -9.23, y: 3.37, z: 4.15}
       rotation: {x: -0, y: -0, z: -0, w: 1}
@@ -1404,7 +1409,7 @@ MonoBehaviour:
       enableTime: 0
       disableTime: 0
     - name: Window-Rim-Left
-      instanceID: 96514
+      instanceID: 265056
       lightUID: 56eb3677-b8c1-4d98-b942-e8713b6f4157
       position: {x: -4.83, y: 1.894, z: 8.35}
       rotation: {x: -0, y: -0, z: -0, w: 1}
@@ -1419,7 +1424,7 @@ MonoBehaviour:
       enableTime: 0
       disableTime: 0
     - name: Screen-Rim-Left
-      instanceID: 96590
+      instanceID: 265146
       lightUID: 030cdf73-0f91-4865-b9c2-474568d7f835
       position: {x: -3.58, y: 3.85, z: 7.3}
       rotation: {x: -0, y: -0, z: -0, w: 1}
@@ -1434,7 +1439,7 @@ MonoBehaviour:
       enableTime: 0
       disableTime: 0
     - name: Under-Cuve-Left
-      instanceID: 96622
+      instanceID: 265178
       lightUID: f76f2979-7b01-4986-8e79-b6a191ba94c7
       position: {x: -13.35, y: -13.8, z: 21.16}
       rotation: {x: -0.20155661, y: 0.10303023, z: -0.11798921, w: 0.96687037}
@@ -1449,7 +1454,7 @@ MonoBehaviour:
       enableTime: 0
       disableTime: 0
     - name: Point Light (4)
-      instanceID: 96728
+      instanceID: 265324
       lightUID: 3c663941-f741-4570-85a4-114f57691977
       position: {x: -7.672, y: -1.6179998, z: 28.374}
       rotation: {x: -0, y: -0, z: -0, w: 1}
@@ -1464,7 +1469,7 @@ MonoBehaviour:
       enableTime: 0
       disableTime: 0
     - name: Window-Rightmoste-Rim2
-      instanceID: 96750
+      instanceID: 265346
       lightUID: c93cfd7b-e118-4053-ac17-30c783d1fa6f
       position: {x: 10.6, y: 1.894, z: 3.89}
       rotation: {x: -0, y: -0, z: -0, w: 1}
@@ -1479,7 +1484,7 @@ MonoBehaviour:
       enableTime: 0
       disableTime: 0
     - name: Back-Left
-      instanceID: 96760
+      instanceID: 265356
       lightUID: 06373f4b-cf6f-47ef-9e3d-f06b983ae374
       position: {x: -23.799868, y: 17.54, z: 60.77}
       rotation: {x: -0.07120984, y: -0.66700083, z: 0.6812105, w: -0.2932429}
@@ -1494,7 +1499,7 @@ MonoBehaviour:
       enableTime: 0
       disableTime: 0
     - name: Point Light (1)
-      instanceID: 96812
+      instanceID: 265424
       lightUID: b6fee8ac-8f01-410b-9f9a-38bffa53d2fb
       position: {x: -0.831, y: -1.6179998, z: 19.883001}
       rotation: {x: -0, y: -0, z: -0, w: 1}
@@ -1509,7 +1514,7 @@ MonoBehaviour:
       enableTime: 0
       disableTime: 0
     - name: Right-Rim-Light (1)
-      instanceID: 96860
+      instanceID: 265490
       lightUID: 444fe308-9561-499b-a026-94b94aafb52b
       position: {x: 14.069, y: -3.9479997, z: 20.123001}
       rotation: {x: 0.8912481, y: -0.040294856, z: -0.1860616, w: -0.4116239}
@@ -1524,7 +1529,7 @@ MonoBehaviour:
       enableTime: 0
       disableTime: 0
     - name: LeftMost-Left
-      instanceID: 96882
+      instanceID: 265512
       lightUID: 82469c3b-e556-4305-bbb7-730e2d18b3a8
       position: {x: -13.99, y: 3.85, z: 3.36}
       rotation: {x: -0, y: -0, z: -0, w: 1}
@@ -1539,7 +1544,7 @@ MonoBehaviour:
       enableTime: 0
       disableTime: 0
     - name: Screen-Rim-Right
-      instanceID: 96934
+      instanceID: 265568
       lightUID: 8222bb0c-30e1-4a72-beb2-b46d2e628d00
       position: {x: 2.12, y: 3.85, z: 7.42}
       rotation: {x: -0, y: -0, z: -0, w: 1}
@@ -1554,7 +1559,7 @@ MonoBehaviour:
       enableTime: 0
       disableTime: 0
     - name: Right-Main
-      instanceID: 96998
+      instanceID: 265654
       lightUID: 5d5f4b1a-c0fe-442d-89d4-cc28991bfaaf
       position: {x: 9.919001, y: 4.542, z: 1.9629999}
       rotation: {x: 0.91446114, y: 0.09603313, z: -0.26717868, w: 0.28836444}
@@ -1569,7 +1574,7 @@ MonoBehaviour:
       enableTime: 0
       disableTime: 0
     - name: Windoz-Left
-      instanceID: 97118
+      instanceID: 265906
       lightUID: d6571ab3-8419-4f58-93a0-e1532ba020d0
       position: {x: -4.27, y: 3.58, z: 5.49}
       rotation: {x: -0, y: -0, z: -0, w: 1}
@@ -1584,7 +1589,7 @@ MonoBehaviour:
       enableTime: 0
       disableTime: 0
     - name: Center-BackMost-Light
-      instanceID: 97158
+      instanceID: 265960
       lightUID: cf50560b-2ef0-48ce-a98a-a61bc1e3c201
       position: {x: -2.4, y: 5.2, z: 55.13}
       rotation: {x: -0.00031421141, y: -0, z: -0, w: 0.99999994}
@@ -1599,7 +1604,7 @@ MonoBehaviour:
       enableTime: 0
       disableTime: 0
     - name: Back-Right
-      instanceID: 97198
+      instanceID: 266012
       lightUID: 9981412e-79cf-46f5-b08c-0e5fc2f3fde0
       position: {x: 20.9, y: 17.54, z: 70.7}
       rotation: {x: 0.6812103, y: -0.29324487, z: 0.07121185, w: 0.66699994}
@@ -1614,7 +1619,7 @@ MonoBehaviour:
       enableTime: 0
       disableTime: 0
     - name: Window-Rim-Right2
-      instanceID: 97212
+      instanceID: 266034
       lightUID: c7baa622-564d-4bfa-88fe-227dcf867382
       position: {x: 3.26, y: 1.894, z: 8.35}
       rotation: {x: -0, y: -0, z: -0, w: 1}
@@ -1629,7 +1634,7 @@ MonoBehaviour:
       enableTime: 0
       disableTime: 0
     - name: Left-Orange-Fill
-      instanceID: 97222
+      instanceID: 266044
       lightUID: aef85c27-46e1-463f-b577-de6a8f1586ab
       position: {x: -3.2710001, y: 1.6120001, z: -1.1399999}
       rotation: {x: -0, y: -0, z: -0, w: 1}
@@ -1644,7 +1649,7 @@ MonoBehaviour:
       enableTime: 0
       disableTime: 0
     - name: Point Light (10)
-      instanceID: 97256
+      instanceID: 266082
       lightUID: 2119558b-fe8e-4da2-a76c-ad9f7ff3a03c
       position: {x: 15.6779995, y: -1.6179998, z: 38.029}
       rotation: {x: -0, y: -0, z: -0, w: 1}
@@ -1659,7 +1664,7 @@ MonoBehaviour:
       enableTime: 0
       disableTime: 0
     - name: Point Light (2)
-      instanceID: 97272
+      instanceID: 266102
       lightUID: 3c81e1bb-e86e-4da2-ad6c-23420f72bfc5
       position: {x: -0.831, y: -1.6179998, z: 11.558001}
       rotation: {x: -0, y: -0, z: -0, w: 1}
@@ -1674,7 +1679,7 @@ MonoBehaviour:
       enableTime: 0
       disableTime: 0
     - name: Window-Fill-Light
-      instanceID: 97326
+      instanceID: 266188
       lightUID: cff561a8-7bb4-4df2-9dc4-923d078a8987
       position: {x: -2.6839, y: 2.06781, z: 3.90778}
       rotation: {x: -0, y: -0, z: -0, w: 1}
@@ -1689,7 +1694,7 @@ MonoBehaviour:
       enableTime: 0
       disableTime: 0
     - name: Point Light (9)
-      instanceID: 97336
+      instanceID: 266208
       lightUID: a9772744-8ff7-4959-ae6a-023c2a21c28d
       position: {x: 15.637, y: -1.6179998, z: 51.733997}
       rotation: {x: -0, y: -0, z: -0, w: 1}
@@ -1704,7 +1709,7 @@ MonoBehaviour:
       enableTime: 0
       disableTime: 0
     - name: Window-Leftmost-Rim
-      instanceID: 97374
+      instanceID: 266256
       lightUID: 5129647f-3c3e-4bc7-9fda-7f5b1bda0a5e
       position: {x: -12.28, y: 1.894, z: 3.89}
       rotation: {x: -0, y: -0, z: -0, w: 1}
@@ -1719,7 +1724,7 @@ MonoBehaviour:
       enableTime: 0
       disableTime: 0
     - name: Window-Rim-Right
-      instanceID: 97406
+      instanceID: 266306
       lightUID: deebf797-aa7b-4ea2-93f7-fb51061b3443
       position: {x: 2.08, y: 3.58, z: 5.49}
       rotation: {x: -0, y: -0, z: -0, w: 1}
@@ -1734,7 +1739,7 @@ MonoBehaviour:
       enableTime: 0
       disableTime: 0
     - name: Left-Rim-Light (2)
-      instanceID: 97428
+      instanceID: 266336
       lightUID: 0ce5962c-10ac-474c-8d97-112feccec82f
       position: {x: -12.171, y: -3.9479997, z: 20.123001}
       rotation: {x: 0.90742666, y: 0.079537414, z: 0.0773902, w: -0.40529177}
@@ -1749,7 +1754,7 @@ MonoBehaviour:
       enableTime: 0
       disableTime: 0
     - name: Point Light (6)
-      instanceID: 97492
+      instanceID: 266406
       lightUID: b6be748f-7b53-438e-972a-581f39bd52ef
       position: {x: -17.276, y: -1.6179998, z: 51.734997}
       rotation: {x: -0, y: -0, z: -0, w: 1}
@@ -1764,7 +1769,7 @@ MonoBehaviour:
       enableTime: 0
       disableTime: 0
     - name: Window-Rightmoste-Rim
-      instanceID: 97632
+      instanceID: 266584
       lightUID: c5c2f78d-7469-4e68-b7fa-aecd7d388191
       position: {x: 10.6, y: 1.894, z: 3.89}
       rotation: {x: -0, y: -0, z: -0, w: 1}
@@ -1779,7 +1784,7 @@ MonoBehaviour:
       enableTime: 0
       disableTime: 0
     - name: Point Light (3)
-      instanceID: 97674
+      instanceID: 267530
       lightUID: 32d23004-975a-4cdf-b850-66abdd76ef4b
       position: {x: -0.831, y: -1.6179998, z: 28.218}
       rotation: {x: -0, y: -0, z: -0, w: 1}
@@ -1794,7 +1799,7 @@ MonoBehaviour:
       enableTime: 0
       disableTime: 0
     - name: Point Light (7)
-      instanceID: 97764
+      instanceID: 267646
       lightUID: 091176b4-efe5-4614-b746-31f9416269e4
       position: {x: -7.685, y: -1.6179998, z: 61.404}
       rotation: {x: -0, y: -0, z: -0, w: 1}
@@ -1809,7 +1814,7 @@ MonoBehaviour:
       enableTime: 0
       disableTime: 0
     - name: Right-Orange-Fill
-      instanceID: 97852
+      instanceID: 267756
       lightUID: 133eeb47-a8de-4d74-85ca-5c21126a4814
       position: {x: 4.189, y: 1.6120001, z: -1.1399999}
       rotation: {x: -0, y: -0, z: -0, w: 1}
@@ -1824,7 +1829,7 @@ MonoBehaviour:
       enableTime: 0
       disableTime: 0
     - name: Spot Light
-      instanceID: 97870
+      instanceID: 267776
       lightUID: a02a93c8-7bbe-4bf2-8878-26d6a201543f
       position: {x: -0.351, y: 4.542, z: 5.033}
       rotation: {x: 0.93802804, y: -0.09511743, z: 0.037006322, w: 0.33118978}
@@ -1839,7 +1844,7 @@ MonoBehaviour:
       enableTime: 0
       disableTime: 0
     - name: Under-Cuve-Right
-      instanceID: 97900
+      instanceID: 267816
       lightUID: b5730e93-9f82-4b05-88f9-54ccd7c0456f
       position: {x: 11.46, y: -13.8, z: 21.16}
       rotation: {x: -0.16458526, y: -0.1482095, z: -0.1657052, w: 0.96098256}
@@ -1855,37 +1860,37 @@ MonoBehaviour:
       disableTime: 0
     customBlendableDatas: []
     lightmapsLight:
-    - {fileID: 2800000, guid: 962812df2d3ebda49b0c43a90d29e31f, type: 3}
-    - {fileID: 2800000, guid: cfdec251c826b204c818c81aadb78678, type: 3}
-    - {fileID: 2800000, guid: 99defaebd17ca3742b16e0096f218cd0, type: 3}
-    - {fileID: 2800000, guid: 32c6641ff6097704abb138a6d42dc52d, type: 3}
-    - {fileID: 2800000, guid: bb35a5d2e377a3e498a99829f88c5bc5, type: 3}
-    - {fileID: 2800000, guid: 20f2820af280ffd45aa0b42dfbc5430b, type: 3}
-    - {fileID: 2800000, guid: a18e7be05264b9043baf944399292cac, type: 3}
-    - {fileID: 2800000, guid: 92d88e05105b52a45ab9516af2ab115a, type: 3}
-    - {fileID: 2800000, guid: e80b1d1c71a91bc4d8c24bbbcce1ed7a, type: 3}
-    - {fileID: 2800000, guid: 4b3ade01c57f74147a448562c24a4602, type: 3}
-    - {fileID: 2800000, guid: 2ee32a37c44af6e4fbeda12c05026334, type: 3}
-    - {fileID: 2800000, guid: 724a9ba9057305d4599e124dd7b30bba, type: 3}
-    - {fileID: 2800000, guid: 0670967021ff82a40a81665e43aed734, type: 3}
-    - {fileID: 2800000, guid: 6955d755d46b9ee46947a758299192d2, type: 3}
-    - {fileID: 2800000, guid: 7d164e752a5f4bf4ab1afaf8d239db1d, type: 3}
+    - {fileID: 2800000, guid: 80fdd4bb07a624941848896edd7c1098, type: 3}
+    - {fileID: 2800000, guid: 9952d55e9dca9b449ab24316c2947a5c, type: 3}
+    - {fileID: 2800000, guid: ce6fc910fd071314b9a0634cff05892a, type: 3}
+    - {fileID: 2800000, guid: aab7adab94355c142a15d7cb898c5e5d, type: 3}
+    - {fileID: 2800000, guid: cf2755d78c4b6da449dbb3f813a97f90, type: 3}
+    - {fileID: 2800000, guid: 336e3f40809b59449be54579b916c4ef, type: 3}
+    - {fileID: 2800000, guid: fc71e90cf30bacc4ea36b340e915df35, type: 3}
+    - {fileID: 2800000, guid: 72ee0219a5de07c43806026159aa001c, type: 3}
+    - {fileID: 2800000, guid: d6a7793d24d079e46b08e6be19d09651, type: 3}
+    - {fileID: 2800000, guid: 1a36eaba7fb139f4a9394c0a6a3fdd71, type: 3}
+    - {fileID: 2800000, guid: d9fe104f1a823da48887ed834f507550, type: 3}
+    - {fileID: 2800000, guid: 48965adfb9333a0419458a3283fc1c0d, type: 3}
+    - {fileID: 2800000, guid: ecbfcf99777394749bb787efcf671d2c, type: 3}
+    - {fileID: 2800000, guid: 9351c5c6964484245b487a33537f5a6f, type: 3}
+    - {fileID: 2800000, guid: 7c06ca15d6866754890f90598adbb3d3, type: 3}
     lightmapsDirectional:
-    - {fileID: 2800000, guid: 4506b0bdfcfd6a844ad3590ad9f5fb1e, type: 3}
-    - {fileID: 2800000, guid: 19236b283d4bd894cbb4fe4a80f7b4d1, type: 3}
-    - {fileID: 2800000, guid: 0f56db0cdeae68d498346f5752d6cde6, type: 3}
-    - {fileID: 2800000, guid: 4721ac85be93b3c4db3ac738b4d42194, type: 3}
-    - {fileID: 2800000, guid: 4085358cd76e1ae4987efda8e50462de, type: 3}
-    - {fileID: 2800000, guid: e58a5d071eae2c54db1473418ccbb663, type: 3}
-    - {fileID: 2800000, guid: d5247a3b0511c59408d06859ce7857f0, type: 3}
-    - {fileID: 2800000, guid: 6800fc9ee52160749a47598ab1a8aee8, type: 3}
-    - {fileID: 2800000, guid: 5300b3d6248f0424daeff957965c2652, type: 3}
-    - {fileID: 2800000, guid: cc0b3e73670134046ae0b022961a6718, type: 3}
-    - {fileID: 2800000, guid: 46bd31b3cf9a659418eabda83128bb80, type: 3}
-    - {fileID: 2800000, guid: 278bbbc8c9a4270409d6091fa35b592f, type: 3}
-    - {fileID: 2800000, guid: 6b7c2f3ca877cfd47bdacbd7a2ed6cb9, type: 3}
-    - {fileID: 2800000, guid: c86020d6af8bb2b4ba5cfbc2ee5d13cc, type: 3}
-    - {fileID: 2800000, guid: 896d78a11b128de419a867c0459e055c, type: 3}
+    - {fileID: 2800000, guid: 00d6f729d876d394c881134ad3a9f4ff, type: 3}
+    - {fileID: 2800000, guid: 4dacc9b4c5e8842409608aa4f98e07f6, type: 3}
+    - {fileID: 2800000, guid: a2ea253d24eae0d41b6919162784591e, type: 3}
+    - {fileID: 2800000, guid: 5ddd640f46edce2408da5a0cf58c12b9, type: 3}
+    - {fileID: 2800000, guid: 81f9fc0a8ac9c6a41ab8d461c0a9dc2c, type: 3}
+    - {fileID: 2800000, guid: 4cc1ccf523d670041bc30078a297e7aa, type: 3}
+    - {fileID: 2800000, guid: f5a8557021dc8c24aa92a16e90b39f79, type: 3}
+    - {fileID: 2800000, guid: 5f8f3d067c4621640a25d216b7f50d6c, type: 3}
+    - {fileID: 2800000, guid: 82eb37c9a93c1814da4c6403951847cc, type: 3}
+    - {fileID: 2800000, guid: 6c64276e11835694496ec108850bb450, type: 3}
+    - {fileID: 2800000, guid: 4b5c2a1cdd16177409a732d7f5fbb97e, type: 3}
+    - {fileID: 2800000, guid: 3383f5f41ce27f843bb6d62a141b2574, type: 3}
+    - {fileID: 2800000, guid: 187be2ca038c9904488ebbbf0df8b38c, type: 3}
+    - {fileID: 2800000, guid: 93953c1b542c00e489cb62336b9d0db5, type: 3}
+    - {fileID: 2800000, guid: feec603203dae03418860c0fe21a5a58, type: 3}
     lightmapsShadowmask:
     - {fileID: 0}
     - {fileID: 0}
@@ -1922,9 +1927,1353 @@ MonoBehaviour:
       - {fileID: 0}
     skyboxReflectionTexture:
     - {fileID: 8900000, guid: 203aedfde2d61394b858dce7dc04b78a, type: 3}
-    lightProbes: []
-    lightProbes1D: []
-    initialLightProbesArrayPosition: 0
+    lightProbes:
+    - coefficients:
+      - 1.2864488
+      - 0.30408248
+      - 0.68785733
+      - -0.6061205
+      - -0.06988122
+      - 0.089690216
+      - 0.026660465
+      - -0.1269354
+      - 0.033522435
+      - 1.0334684
+      - 0.25479063
+      - 0.7222144
+      - -0.45754835
+      - -0.05547814
+      - 0.08147514
+      - 0.028700836
+      - -0.13472737
+      - 0.02293215
+      - 0.8944546
+      - 0.2179691
+      - 0.68067414
+      - -0.36711615
+      - -0.047203586
+      - 0.07441578
+      - 0.028965248
+      - -0.12177064
+      - 0.017371373
+      position: {x: 0, y: 0, z: 0}
+    - coefficients:
+      - 0.53500533
+      - 0.08838509
+      - 0.22082835
+      - -0.18583485
+      - -0.019528933
+      - 0.029279945
+      - 0.019953437
+      - -0.07477111
+      - 0.015841383
+      - 0.3342449
+      - 0.057493106
+      - 0.17908143
+      - -0.10567608
+      - -0.011971798
+      - 0.023626301
+      - 0.017842192
+      - -0.049624342
+      - 0.008771341
+      - 0.24714126
+      - 0.044101246
+      - 0.16371213
+      - -0.07834358
+      - -0.009135554
+      - 0.020258984
+      - 0.015322601
+      - -0.03935887
+      - 0.0063568186
+      position: {x: 0, y: 0, z: 0}
+    - coefficients:
+      - 0.35688487
+      - 0.2440149
+      - -0.036907777
+      - -0.07941603
+      - -0.033758946
+      - -0.00835315
+      - -0.0077241873
+      - 0.00012296805
+      - -0.018070554
+      - 0.2269802
+      - 0.18535973
+      - -0.011979089
+      - -0.050110415
+      - -0.021942027
+      - -0.0043593696
+      - -0.005587805
+      - -0.00080534554
+      - -0.013230599
+      - 0.17161433
+      - 0.1423935
+      - -0.017067691
+      - -0.034608297
+      - -0.015267899
+      - -0.006786666
+      - -0.0042951857
+      - 0.00022432118
+      - -0.009891803
+      position: {x: 0, y: 0, z: 0}
+    - coefficients:
+      - 0.36070174
+      - 0.21922822
+      - 0.15860578
+      - -0.09201631
+      - -0.02538106
+      - 0.05584892
+      - 0.0039165774
+      - -0.017482534
+      - -0.016241485
+      - 0.27948123
+      - 0.1897883
+      - 0.14136602
+      - -0.06400318
+      - -0.02017396
+      - 0.04797829
+      - 0.0035538909
+      - -0.014368777
+      - -0.012903889
+      - 0.2385867
+      - 0.16590743
+      - 0.12871805
+      - -0.05333795
+      - -0.017233897
+      - 0.042166814
+      - 0.0028473027
+      - -0.012568754
+      - -0.0110751465
+      position: {x: 0, y: 0, z: 0}
+    - coefficients:
+      - 1.8579644
+      - 0.5558863
+      - 0.77588576
+      - 0.63810354
+      - 0.10640896
+      - 0.08124044
+      - 0.0552679
+      - 0.030911816
+      - 0.015196635
+      - 1.3448501
+      - 0.37878296
+      - 0.95143604
+      - 0.35786667
+      - 0.066796534
+      - 0.10500177
+      - 0.049420122
+      - 0.08095401
+      - 0.0054772315
+      - 1.0875409
+      - 0.2863097
+      - 0.8799933
+      - 0.23088431
+      - 0.048341986
+      - 0.09450863
+      - 0.045355696
+      - 0.0675472
+      - 0.0039750612
+      position: {x: 0, y: 0, z: 0}
+    - coefficients:
+      - 0.6592629
+      - 0.06936545
+      - 0.28942636
+      - 0.126948
+      - 0.024681697
+      - 0.027360369
+      - 0.023160258
+      - 0.042093623
+      - -0.0021348496
+      - 0.36433664
+      - 0.052591715
+      - 0.20895118
+      - 0.07183078
+      - 0.008054632
+      - 0.017833194
+      - 0.01725326
+      - 0.014932152
+      - 0.00020603772
+      - 0.26478392
+      - 0.041730467
+      - 0.18399534
+      - 0.046876848
+      - 0.004377559
+      - 0.014947109
+      - 0.014380752
+      - 0.0095387865
+      - 0.0006832774
+      position: {x: 0, y: 0, z: 0}
+    - coefficients:
+      - 0.35499305
+      - 0.1950487
+      - -0.016387243
+      - 0.06244562
+      - 0.06575134
+      - 0.035702456
+      - -0.015840193
+      - -0.013681701
+      - -0.046650287
+      - 0.23354721
+      - 0.13662755
+      - 0.0123719955
+      - 0.043078016
+      - 0.04356099
+      - 0.035563935
+      - -0.010710928
+      - -0.012805285
+      - -0.029850041
+      - 0.17594665
+      - 0.0977498
+      - 0.0069545126
+      - 0.033116914
+      - 0.030857673
+      - 0.0267347
+      - -0.007449038
+      - -0.015076561
+      - -0.020081785
+      position: {x: 0, y: 0, z: 0}
+    - coefficients:
+      - 0.349805
+      - 0.20521657
+      - 0.14455703
+      - 0.09510929
+      - 0.030914258
+      - 0.04819516
+      - 0.0032722752
+      - 0.020940647
+      - -0.014310585
+      - 0.24427459
+      - 0.15654913
+      - 0.11884528
+      - 0.06930378
+      - 0.02198349
+      - 0.037330806
+      - 0.0037234176
+      - 0.016692353
+      - -0.008811355
+      - 0.1974383
+      - 0.12866627
+      - 0.10542377
+      - 0.057921465
+      - 0.018232787
+      - 0.03147855
+      - 0.002908946
+      - 0.014207073
+      - -0.006720892
+      position: {x: 0, y: 0, z: 0}
+    - coefficients:
+      - 2.0541139
+      - -0.07039889
+      - 1.210433
+      - 0.022819117
+      - -0.07629283
+      - -0.072591096
+      - 0.06318121
+      - 0.18827043
+      - 0.04726344
+      - 1.8758899
+      - -0.10313623
+      - 1.2963982
+      - 0.12961322
+      - -0.063268736
+      - -0.06743867
+      - 0.063864805
+      - 0.16944565
+      - 0.04007269
+      - 1.712533
+      - -0.14366901
+      - 1.3374568
+      - 0.24515997
+      - -0.04896373
+      - -0.06448207
+      - 0.06791989
+      - 0.15545958
+      - 0.031785306
+      position: {x: 0, y: 0, z: 0}
+    - coefficients:
+      - 2.3975017
+      - 0.14919262
+      - 0.77466124
+      - -0.14027533
+      - 0.16486555
+      - -0.110486746
+      - 0.05366032
+      - -0.52795815
+      - 0.10783339
+      - 2.0744283
+      - 0.036298744
+      - 0.9857703
+      - -0.33101618
+      - 0.12915272
+      - -0.075248264
+      - 0.05093583
+      - -0.46935403
+      - 0.0961794
+      - 1.7252504
+      - -0.1055092
+      - 1.1553693
+      - -0.59072995
+      - 0.076313645
+      - -0.041786633
+      - 0.058769524
+      - -0.39466414
+      - 0.0771351
+      position: {x: 0, y: 0, z: 0}
+    - coefficients:
+      - 1.9379185
+      - 0.27843335
+      - 0.83170724
+      - 0.14662473
+      - -0.032022536
+      - 0.06812368
+      - 0.034565136
+      - 0.16632196
+      - -0.0022131952
+      - 1.7051036
+      - 0.21453115
+      - 0.9405947
+      - 0.21325752
+      - -0.010430617
+      - 0.089070834
+      - 0.037108272
+      - 0.15150549
+      - 0.0055499463
+      - 1.5191741
+      - 0.18711258
+      - 0.98815835
+      - 0.26848015
+      - 0.005998546
+      - 0.09519219
+      - 0.042099413
+      - 0.14421014
+      - 0.012315494
+      position: {x: 0, y: 0, z: 0}
+    - coefficients:
+      - 2.0037813
+      - 0.4295053
+      - 0.8084822
+      - -0.61711746
+      - -0.1199203
+      - 0.19195423
+      - 0.014174876
+      - -0.26454118
+      - 0.020001905
+      - 1.8215652
+      - 0.40982383
+      - 0.90514547
+      - -0.63758516
+      - -0.13696688
+      - 0.20152989
+      - 0.0181199
+      - -0.25968271
+      - 0.030891217
+      - 1.6457918
+      - 0.40722665
+      - 0.96314806
+      - -0.66092366
+      - -0.15773152
+      - 0.20149218
+      - 0.025889298
+      - -0.257496
+      - 0.040338907
+      position: {x: 0, y: 0, z: 0}
+    - coefficients:
+      - 1.5447896
+      - 0.2149472
+      - 0.9337689
+      - -1.0501729
+      - -0.10535743
+      - 0.057182208
+      - 0.0051742624
+      - -0.27361503
+      - 0.08188867
+      - 1.5280058
+      - 0.21988226
+      - 0.93769926
+      - -1.056024
+      - -0.10520941
+      - 0.05633436
+      - 0.005616044
+      - -0.27389315
+      - 0.081127144
+      - 1.5101883
+      - 0.2252354
+      - 0.93866926
+      - -1.0604515
+      - -0.10487228
+      - 0.055322457
+      - 0.0059922272
+      - -0.27503574
+      - 0.080661915
+      position: {x: 0, y: 0, z: 0}
+    - coefficients:
+      - 2.6462843
+      - 0.2357831
+      - -1.1466842
+      - -1.8414192
+      - -0.19427541
+      - -0.09630624
+      - -0.03905564
+      - 0.39374557
+      - 0.124016926
+      - 2.5605044
+      - 0.21203935
+      - -1.0898528
+      - -1.8052241
+      - -0.1877224
+      - -0.08878518
+      - -0.040086266
+      - 0.37743667
+      - 0.1206864
+      - 2.4477558
+      - 0.17880823
+      - -1.0158038
+      - -1.7536746
+      - -0.17917873
+      - -0.07837295
+      - -0.04154726
+      - 0.3541675
+      - 0.11633304
+      position: {x: 0, y: 0, z: 0}
+    - coefficients:
+      - 2.1116645
+      - 1.7805513
+      - -0.83403754
+      - -0.7586128
+      - -0.28237748
+      - -0.2932611
+      - -0.042930763
+      - 0.13617446
+      - -0.12006601
+      - 2.0667558
+      - 1.7597066
+      - -0.8072228
+      - -0.7507302
+      - -0.27763224
+      - -0.28770462
+      - -0.043082688
+      - 0.13152422
+      - -0.1200257
+      - 2.0098422
+      - 1.7296144
+      - -0.7752543
+      - -0.73702514
+      - -0.27141675
+      - -0.2799153
+      - -0.04324729
+      - 0.12426258
+      - -0.11951394
+      position: {x: 0, y: 0, z: 0}
+    - coefficients:
+      - 0.63717496
+      - 0.47875786
+      - 0.16809438
+      - -0.18579032
+      - -0.06984409
+      - 0.06718661
+      - -0.008782765
+      - -0.019629462
+      - -0.026199631
+      - 0.605926
+      - 0.46851864
+      - 0.17966588
+      - -0.19012603
+      - -0.06962597
+      - 0.06803767
+      - -0.008325393
+      - -0.020096608
+      - -0.027058579
+      - 0.5757835
+      - 0.45522928
+      - 0.18948664
+      - -0.1878058
+      - -0.06839764
+      - 0.069501325
+      - -0.007982004
+      - -0.02179517
+      - -0.027514799
+      position: {x: 0, y: 0, z: 0}
+    - coefficients:
+      - 0.082640715
+      - -0.0021294612
+      - 0.042387247
+      - 0.022911549
+      - 0.0007940061
+      - -0.003269146
+      - 0.001243555
+      - 0.0048137424
+      - 0.0021769502
+      - 0.06405944
+      - -0.0025007564
+      - 0.04171501
+      - 0.016818853
+      - 0.00078764756
+      - -0.0027117236
+      - 0.0016205773
+      - 0.0047646156
+      - 0.0009615747
+      - 0.052564703
+      - -0.0017693198
+      - 0.03879519
+      - 0.013490547
+      - 0.0009080854
+      - -0.0022222707
+      - 0.0016865327
+      - 0.0040616556
+      - 0.0004062165
+      position: {x: 0, y: 0, z: 0}
+    - coefficients:
+      - 0.035155557
+      - 0.017103177
+      - 0.013112543
+      - 0.019118527
+      - 0.0036318377
+      - 0.0032545638
+      - -0.00056802883
+      - 0.0030919553
+      - 0.0009526916
+      - 0.024406075
+      - 0.014181674
+      - 0.011349103
+      - 0.012629729
+      - 0.0029373034
+      - 0.0031304394
+      - -0.00024730898
+      - 0.0025892018
+      - 0.00016289341
+      - 0.017438488
+      - 0.011317553
+      - 0.009510564
+      - 0.007883707
+      - 0.002173085
+      - 0.0028176932
+      - -0.00005481401
+      - 0.0019748986
+      - -0.000291232
+      position: {x: 0, y: 0, z: 0}
+    - coefficients:
+      - 0.16037014
+      - 0.11377917
+      - 0.08072806
+      - -0.021567984
+      - -0.0051226486
+      - 0.026106391
+      - 0.00015574243
+      - -0.0027990714
+      - -0.0089725675
+      - 0.11247536
+      - 0.08637279
+      - 0.06019516
+      - -0.014580273
+      - -0.0037475151
+      - 0.019946005
+      - 0.00020376024
+      - -0.0025581121
+      - -0.006553279
+      - 0.08779092
+      - 0.068799525
+      - 0.049102508
+      - -0.011191896
+      - -0.003217539
+      - 0.016228916
+      - 0.00019942956
+      - -0.0022861867
+      - -0.005331507
+      position: {x: 0, y: 0, z: 0}
+    - coefficients:
+      - 0.3905306
+      - 0.100847386
+      - 0.32136342
+      - -0.033564627
+      - -0.005213434
+      - 0.041323543
+      - 0.020542994
+      - -0.0064691254
+      - -0.0017834948
+      - 0.2876632
+      - 0.07236125
+      - 0.24588205
+      - -0.020938303
+      - -0.0040155184
+      - 0.029220684
+      - 0.015790816
+      - -0.0054376796
+      - -0.0017566503
+      - 0.22747818
+      - 0.05573886
+      - 0.20102495
+      - -0.015467412
+      - -0.0032420314
+      - 0.021988964
+      - 0.012832472
+      - -0.004528074
+      - -0.0017797713
+      position: {x: 0, y: 0, z: 0}
+    - coefficients:
+      - 0.4002502
+      - -0.14778836
+      - 0.23018003
+      - -0.016146712
+      - -0.011290856
+      - -0.053944863
+      - 0.009182787
+      - 0.002323793
+      - -0.00146772
+      - 0.37706518
+      - -0.14646272
+      - 0.2448155
+      - -0.0069310158
+      - -0.011109414
+      - -0.053871408
+      - 0.009661334
+      - -0.00036627863
+      - -0.0033155673
+      - 0.3610719
+      - -0.14466164
+      - 0.24898085
+      - -0.005260144
+      - -0.011280464
+      - -0.054089215
+      - 0.009940266
+      - 0.00018943407
+      - -0.0044296305
+      position: {x: 0, y: 0, z: 0}
+    - coefficients:
+      - 0.31436732
+      - 0.20347036
+      - 0.15382817
+      - 0.03498908
+      - 0.011521858
+      - 0.0490844
+      - 0.003143617
+      - 0.013824042
+      - -0.0090270825
+      - 0.30385444
+      - 0.20255223
+      - 0.16157609
+      - 0.03745902
+      - 0.011508362
+      - 0.049960922
+      - 0.0031964376
+      - 0.013280827
+      - -0.009504967
+      - 0.28997105
+      - 0.19756714
+      - 0.16550857
+      - 0.040761583
+      - 0.0120497905
+      - 0.050537664
+      - 0.0033173894
+      - 0.013803523
+      - -0.010037834
+      position: {x: 0, y: 0, z: 0}
+    - coefficients:
+      - 2.210544
+      - 1.8916322
+      - -0.8791849
+      - 0.7773939
+      - 0.29809085
+      - -0.3154978
+      - -0.04568536
+      - -0.15339193
+      - -0.12707815
+      - 2.2008061
+      - 1.893896
+      - -0.86905646
+      - 0.7803871
+      - 0.29678226
+      - -0.31461558
+      - -0.04606251
+      - -0.15471618
+      - -0.12776962
+      - 2.184547
+      - 1.8895508
+      - -0.8633126
+      - 0.78809816
+      - 0.29772523
+      - -0.31418878
+      - -0.046022717
+      - -0.15421756
+      - -0.12855849
+      position: {x: 0, y: 0, z: 0}
+    - coefficients:
+      - 0.920015
+      - -0.701693
+      - -0.1904679
+      - 0.033295207
+      - -0.0812163
+      - 0.07356719
+      - -0.02632197
+      - -0.029712185
+      - -0.05489202
+      - 0.90683395
+      - -0.7013462
+      - -0.17543292
+      - 0.035837665
+      - -0.081193
+      - 0.07383155
+      - -0.026726918
+      - -0.03274021
+      - -0.055224426
+      - 0.8863457
+      - -0.7022771
+      - -0.16731544
+      - 0.044247143
+      - -0.08059039
+      - 0.073556915
+      - -0.026675062
+      - -0.03192858
+      - -0.056268673
+      position: {x: 0, y: 0, z: 0}
+    lightProbes1D:
+    - 1.2864488
+    - 0.30408248
+    - 0.68785733
+    - -0.6061205
+    - -0.06988122
+    - 0.089690216
+    - 0.026660465
+    - -0.1269354
+    - 0.033522435
+    - 1.0334684
+    - 0.25479063
+    - 0.7222144
+    - -0.45754835
+    - -0.05547814
+    - 0.08147514
+    - 0.028700836
+    - -0.13472737
+    - 0.02293215
+    - 0.8944546
+    - 0.2179691
+    - 0.68067414
+    - -0.36711615
+    - -0.047203586
+    - 0.07441578
+    - 0.028965248
+    - -0.12177064
+    - 0.017371373
+    - 0.53500533
+    - 0.08838509
+    - 0.22082835
+    - -0.18583485
+    - -0.019528933
+    - 0.029279945
+    - 0.019953437
+    - -0.07477111
+    - 0.015841383
+    - 0.3342449
+    - 0.057493106
+    - 0.17908143
+    - -0.10567608
+    - -0.011971798
+    - 0.023626301
+    - 0.017842192
+    - -0.049624342
+    - 0.008771341
+    - 0.24714126
+    - 0.044101246
+    - 0.16371213
+    - -0.07834358
+    - -0.009135554
+    - 0.020258984
+    - 0.015322601
+    - -0.03935887
+    - 0.0063568186
+    - 0.35688487
+    - 0.2440149
+    - -0.036907777
+    - -0.07941603
+    - -0.033758946
+    - -0.00835315
+    - -0.0077241873
+    - 0.00012296805
+    - -0.018070554
+    - 0.2269802
+    - 0.18535973
+    - -0.011979089
+    - -0.050110415
+    - -0.021942027
+    - -0.0043593696
+    - -0.005587805
+    - -0.00080534554
+    - -0.013230599
+    - 0.17161433
+    - 0.1423935
+    - -0.017067691
+    - -0.034608297
+    - -0.015267899
+    - -0.006786666
+    - -0.0042951857
+    - 0.00022432118
+    - -0.009891803
+    - 0.36070174
+    - 0.21922822
+    - 0.15860578
+    - -0.09201631
+    - -0.02538106
+    - 0.05584892
+    - 0.0039165774
+    - -0.017482534
+    - -0.016241485
+    - 0.27948123
+    - 0.1897883
+    - 0.14136602
+    - -0.06400318
+    - -0.02017396
+    - 0.04797829
+    - 0.0035538909
+    - -0.014368777
+    - -0.012903889
+    - 0.2385867
+    - 0.16590743
+    - 0.12871805
+    - -0.05333795
+    - -0.017233897
+    - 0.042166814
+    - 0.0028473027
+    - -0.012568754
+    - -0.0110751465
+    - 1.8579644
+    - 0.5558863
+    - 0.77588576
+    - 0.63810354
+    - 0.10640896
+    - 0.08124044
+    - 0.0552679
+    - 0.030911816
+    - 0.015196635
+    - 1.3448501
+    - 0.37878296
+    - 0.95143604
+    - 0.35786667
+    - 0.066796534
+    - 0.10500177
+    - 0.049420122
+    - 0.08095401
+    - 0.0054772315
+    - 1.0875409
+    - 0.2863097
+    - 0.8799933
+    - 0.23088431
+    - 0.048341986
+    - 0.09450863
+    - 0.045355696
+    - 0.0675472
+    - 0.0039750612
+    - 0.6592629
+    - 0.06936545
+    - 0.28942636
+    - 0.126948
+    - 0.024681697
+    - 0.027360369
+    - 0.023160258
+    - 0.042093623
+    - -0.0021348496
+    - 0.36433664
+    - 0.052591715
+    - 0.20895118
+    - 0.07183078
+    - 0.008054632
+    - 0.017833194
+    - 0.01725326
+    - 0.014932152
+    - 0.00020603772
+    - 0.26478392
+    - 0.041730467
+    - 0.18399534
+    - 0.046876848
+    - 0.004377559
+    - 0.014947109
+    - 0.014380752
+    - 0.0095387865
+    - 0.0006832774
+    - 0.35499305
+    - 0.1950487
+    - -0.016387243
+    - 0.06244562
+    - 0.06575134
+    - 0.035702456
+    - -0.015840193
+    - -0.013681701
+    - -0.046650287
+    - 0.23354721
+    - 0.13662755
+    - 0.0123719955
+    - 0.043078016
+    - 0.04356099
+    - 0.035563935
+    - -0.010710928
+    - -0.012805285
+    - -0.029850041
+    - 0.17594665
+    - 0.0977498
+    - 0.0069545126
+    - 0.033116914
+    - 0.030857673
+    - 0.0267347
+    - -0.007449038
+    - -0.015076561
+    - -0.020081785
+    - 0.349805
+    - 0.20521657
+    - 0.14455703
+    - 0.09510929
+    - 0.030914258
+    - 0.04819516
+    - 0.0032722752
+    - 0.020940647
+    - -0.014310585
+    - 0.24427459
+    - 0.15654913
+    - 0.11884528
+    - 0.06930378
+    - 0.02198349
+    - 0.037330806
+    - 0.0037234176
+    - 0.016692353
+    - -0.008811355
+    - 0.1974383
+    - 0.12866627
+    - 0.10542377
+    - 0.057921465
+    - 0.018232787
+    - 0.03147855
+    - 0.002908946
+    - 0.014207073
+    - -0.006720892
+    - 2.0541139
+    - -0.07039889
+    - 1.210433
+    - 0.022819117
+    - -0.07629283
+    - -0.072591096
+    - 0.06318121
+    - 0.18827043
+    - 0.04726344
+    - 1.8758899
+    - -0.10313623
+    - 1.2963982
+    - 0.12961322
+    - -0.063268736
+    - -0.06743867
+    - 0.063864805
+    - 0.16944565
+    - 0.04007269
+    - 1.712533
+    - -0.14366901
+    - 1.3374568
+    - 0.24515997
+    - -0.04896373
+    - -0.06448207
+    - 0.06791989
+    - 0.15545958
+    - 0.031785306
+    - 2.3975017
+    - 0.14919262
+    - 0.77466124
+    - -0.14027533
+    - 0.16486555
+    - -0.110486746
+    - 0.05366032
+    - -0.52795815
+    - 0.10783339
+    - 2.0744283
+    - 0.036298744
+    - 0.9857703
+    - -0.33101618
+    - 0.12915272
+    - -0.075248264
+    - 0.05093583
+    - -0.46935403
+    - 0.0961794
+    - 1.7252504
+    - -0.1055092
+    - 1.1553693
+    - -0.59072995
+    - 0.076313645
+    - -0.041786633
+    - 0.058769524
+    - -0.39466414
+    - 0.0771351
+    - 1.9379185
+    - 0.27843335
+    - 0.83170724
+    - 0.14662473
+    - -0.032022536
+    - 0.06812368
+    - 0.034565136
+    - 0.16632196
+    - -0.0022131952
+    - 1.7051036
+    - 0.21453115
+    - 0.9405947
+    - 0.21325752
+    - -0.010430617
+    - 0.089070834
+    - 0.037108272
+    - 0.15150549
+    - 0.0055499463
+    - 1.5191741
+    - 0.18711258
+    - 0.98815835
+    - 0.26848015
+    - 0.005998546
+    - 0.09519219
+    - 0.042099413
+    - 0.14421014
+    - 0.012315494
+    - 2.0037813
+    - 0.4295053
+    - 0.8084822
+    - -0.61711746
+    - -0.1199203
+    - 0.19195423
+    - 0.014174876
+    - -0.26454118
+    - 0.020001905
+    - 1.8215652
+    - 0.40982383
+    - 0.90514547
+    - -0.63758516
+    - -0.13696688
+    - 0.20152989
+    - 0.0181199
+    - -0.25968271
+    - 0.030891217
+    - 1.6457918
+    - 0.40722665
+    - 0.96314806
+    - -0.66092366
+    - -0.15773152
+    - 0.20149218
+    - 0.025889298
+    - -0.257496
+    - 0.040338907
+    - 1.5447896
+    - 0.2149472
+    - 0.9337689
+    - -1.0501729
+    - -0.10535743
+    - 0.057182208
+    - 0.0051742624
+    - -0.27361503
+    - 0.08188867
+    - 1.5280058
+    - 0.21988226
+    - 0.93769926
+    - -1.056024
+    - -0.10520941
+    - 0.05633436
+    - 0.005616044
+    - -0.27389315
+    - 0.081127144
+    - 1.5101883
+    - 0.2252354
+    - 0.93866926
+    - -1.0604515
+    - -0.10487228
+    - 0.055322457
+    - 0.0059922272
+    - -0.27503574
+    - 0.080661915
+    - 2.6462843
+    - 0.2357831
+    - -1.1466842
+    - -1.8414192
+    - -0.19427541
+    - -0.09630624
+    - -0.03905564
+    - 0.39374557
+    - 0.124016926
+    - 2.5605044
+    - 0.21203935
+    - -1.0898528
+    - -1.8052241
+    - -0.1877224
+    - -0.08878518
+    - -0.040086266
+    - 0.37743667
+    - 0.1206864
+    - 2.4477558
+    - 0.17880823
+    - -1.0158038
+    - -1.7536746
+    - -0.17917873
+    - -0.07837295
+    - -0.04154726
+    - 0.3541675
+    - 0.11633304
+    - 2.1116645
+    - 1.7805513
+    - -0.83403754
+    - -0.7586128
+    - -0.28237748
+    - -0.2932611
+    - -0.042930763
+    - 0.13617446
+    - -0.12006601
+    - 2.0667558
+    - 1.7597066
+    - -0.8072228
+    - -0.7507302
+    - -0.27763224
+    - -0.28770462
+    - -0.043082688
+    - 0.13152422
+    - -0.1200257
+    - 2.0098422
+    - 1.7296144
+    - -0.7752543
+    - -0.73702514
+    - -0.27141675
+    - -0.2799153
+    - -0.04324729
+    - 0.12426258
+    - -0.11951394
+    - 0.63717496
+    - 0.47875786
+    - 0.16809438
+    - -0.18579032
+    - -0.06984409
+    - 0.06718661
+    - -0.008782765
+    - -0.019629462
+    - -0.026199631
+    - 0.605926
+    - 0.46851864
+    - 0.17966588
+    - -0.19012603
+    - -0.06962597
+    - 0.06803767
+    - -0.008325393
+    - -0.020096608
+    - -0.027058579
+    - 0.5757835
+    - 0.45522928
+    - 0.18948664
+    - -0.1878058
+    - -0.06839764
+    - 0.069501325
+    - -0.007982004
+    - -0.02179517
+    - -0.027514799
+    - 0.082640715
+    - -0.0021294612
+    - 0.042387247
+    - 0.022911549
+    - 0.0007940061
+    - -0.003269146
+    - 0.001243555
+    - 0.0048137424
+    - 0.0021769502
+    - 0.06405944
+    - -0.0025007564
+    - 0.04171501
+    - 0.016818853
+    - 0.00078764756
+    - -0.0027117236
+    - 0.0016205773
+    - 0.0047646156
+    - 0.0009615747
+    - 0.052564703
+    - -0.0017693198
+    - 0.03879519
+    - 0.013490547
+    - 0.0009080854
+    - -0.0022222707
+    - 0.0016865327
+    - 0.0040616556
+    - 0.0004062165
+    - 0.035155557
+    - 0.017103177
+    - 0.013112543
+    - 0.019118527
+    - 0.0036318377
+    - 0.0032545638
+    - -0.00056802883
+    - 0.0030919553
+    - 0.0009526916
+    - 0.024406075
+    - 0.014181674
+    - 0.011349103
+    - 0.012629729
+    - 0.0029373034
+    - 0.0031304394
+    - -0.00024730898
+    - 0.0025892018
+    - 0.00016289341
+    - 0.017438488
+    - 0.011317553
+    - 0.009510564
+    - 0.007883707
+    - 0.002173085
+    - 0.0028176932
+    - -0.00005481401
+    - 0.0019748986
+    - -0.000291232
+    - 0.16037014
+    - 0.11377917
+    - 0.08072806
+    - -0.021567984
+    - -0.0051226486
+    - 0.026106391
+    - 0.00015574243
+    - -0.0027990714
+    - -0.0089725675
+    - 0.11247536
+    - 0.08637279
+    - 0.06019516
+    - -0.014580273
+    - -0.0037475151
+    - 0.019946005
+    - 0.00020376024
+    - -0.0025581121
+    - -0.006553279
+    - 0.08779092
+    - 0.068799525
+    - 0.049102508
+    - -0.011191896
+    - -0.003217539
+    - 0.016228916
+    - 0.00019942956
+    - -0.0022861867
+    - -0.005331507
+    - 0.3905306
+    - 0.100847386
+    - 0.32136342
+    - -0.033564627
+    - -0.005213434
+    - 0.041323543
+    - 0.020542994
+    - -0.0064691254
+    - -0.0017834948
+    - 0.2876632
+    - 0.07236125
+    - 0.24588205
+    - -0.020938303
+    - -0.0040155184
+    - 0.029220684
+    - 0.015790816
+    - -0.0054376796
+    - -0.0017566503
+    - 0.22747818
+    - 0.05573886
+    - 0.20102495
+    - -0.015467412
+    - -0.0032420314
+    - 0.021988964
+    - 0.012832472
+    - -0.004528074
+    - -0.0017797713
+    - 0.4002502
+    - -0.14778836
+    - 0.23018003
+    - -0.016146712
+    - -0.011290856
+    - -0.053944863
+    - 0.009182787
+    - 0.002323793
+    - -0.00146772
+    - 0.37706518
+    - -0.14646272
+    - 0.2448155
+    - -0.0069310158
+    - -0.011109414
+    - -0.053871408
+    - 0.009661334
+    - -0.00036627863
+    - -0.0033155673
+    - 0.3610719
+    - -0.14466164
+    - 0.24898085
+    - -0.005260144
+    - -0.011280464
+    - -0.054089215
+    - 0.009940266
+    - 0.00018943407
+    - -0.0044296305
+    - 0.31436732
+    - 0.20347036
+    - 0.15382817
+    - 0.03498908
+    - 0.011521858
+    - 0.0490844
+    - 0.003143617
+    - 0.013824042
+    - -0.0090270825
+    - 0.30385444
+    - 0.20255223
+    - 0.16157609
+    - 0.03745902
+    - 0.011508362
+    - 0.049960922
+    - 0.0031964376
+    - 0.013280827
+    - -0.009504967
+    - 0.28997105
+    - 0.19756714
+    - 0.16550857
+    - 0.040761583
+    - 0.0120497905
+    - 0.050537664
+    - 0.0033173894
+    - 0.013803523
+    - -0.010037834
+    - 2.210544
+    - 1.8916322
+    - -0.8791849
+    - 0.7773939
+    - 0.29809085
+    - -0.3154978
+    - -0.04568536
+    - -0.15339193
+    - -0.12707815
+    - 2.2008061
+    - 1.893896
+    - -0.86905646
+    - 0.7803871
+    - 0.29678226
+    - -0.31461558
+    - -0.04606251
+    - -0.15471618
+    - -0.12776962
+    - 2.184547
+    - 1.8895508
+    - -0.8633126
+    - 0.78809816
+    - 0.29772523
+    - -0.31418878
+    - -0.046022717
+    - -0.15421756
+    - -0.12855849
+    - 0.920015
+    - -0.701693
+    - -0.1904679
+    - 0.033295207
+    - -0.0812163
+    - 0.07356719
+    - -0.02632197
+    - -0.029712185
+    - -0.05489202
+    - 0.90683395
+    - -0.7013462
+    - -0.17543292
+    - 0.035837665
+    - -0.081193
+    - 0.07383155
+    - -0.026726918
+    - -0.03274021
+    - -0.055224426
+    - 0.8863457
+    - -0.7022771
+    - -0.16731544
+    - 0.044247143
+    - -0.08059039
+    - 0.073556915
+    - -0.026675062
+    - -0.03192858
+    - -0.056268673
+    initialLightProbesArrayPosition: 24
     fogSettings:
       enabled: 0
       fogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}

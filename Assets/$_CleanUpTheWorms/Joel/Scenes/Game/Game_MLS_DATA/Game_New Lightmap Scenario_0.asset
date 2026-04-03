@@ -57,10 +57,10 @@ MonoBehaviour:
   blendingOrder: 000000000100000002000000030000000400000005000000
   startValues:
   - 0
-  - 0
-  - 0
-  - 0
-  - 0
+  - 0.2
+  - 0.4
+  - 0.6
+  - 0.8
   - 1
   collectedCustomBlendableDatas: []
   cyclic: 0
@@ -74,7 +74,7 @@ MonoBehaviour:
   lightingDataFromIndex: 0
   lightingDataToIndex: 1
   lightProbesArrayPosition: 0
-  eventsListId: 0
+  eventsListId: 1
   blendingModules:
     serializedVersion: 2
     m_Bits: 4294967295
