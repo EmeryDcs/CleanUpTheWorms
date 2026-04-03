@@ -3,6 +3,7 @@ using UnityEngine.Audio;
 using System;
 using System.Collections.Generic;
 using System.Collections;
+using MagicLightmapSwitcher;
 
 [System.Serializable]
 public class Sound
@@ -87,23 +88,15 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private GameObject objectToEnableOnGeneratorSound;
 
     [Header("Scenario Settings")]
-    [SerializeField] private string scenario1 = "Scenario 1";
-    [SerializeField, Range(0f, 10f)] private float scenario1Transition = 0f;
+    [SerializeField] private RuntimeAPI rAPI;
+    [SerializeField] private StoredLightingScenario storedScenarios;
 
-    [SerializeField] private string scenario2 = "Scenario 2";
-    [SerializeField, Range(0f, 10f)] private float scenario2Transition = 0f;
-
-    [SerializeField] private string scenario3_1 = "Scenario 3.1";
-    [SerializeField, Range(0f, 10f)] private float scenario3_1Transition = 0f;
-
-    [SerializeField] private string scenario3_2 = "Scenario 3.2";
-    [SerializeField, Range(0f, 10f)] private float scenario3_2Transition = 0f;
-
-    [SerializeField] private string scenario3_3 = "Scenario 3.3";
-    [SerializeField, Range(0f, 10f)] private float scenario3_3Transition = 0f;
-
-    [SerializeField] private string scenario4 = "Scenario 4";
-    [SerializeField, Range(0f, 30f)] private float scenario4Transition = 0f;
+    private int scenario1 = 0;
+    private int scenario2 = 1;
+    private int scenario3_1 = 2;
+    private int scenario3_2 = 3;
+    private int scenario3_3 = 4;
+    private int scenario4 = 5;
 
     [Header("Random 3D Ambient Sound")]
     [SerializeField] private AudioClip random3DClip;
@@ -156,13 +149,16 @@ public class AudioManager : MonoBehaviour
             amb.source.volume = 0f;
             amb.source.playOnAwake = false;
         }
+
+        rAPI = new RuntimeAPI();
     }
 
     private void Start()
     {
-        if (S_BlendLight.instance != null)
+        if (rAPI != null)
         {
-            S_BlendLight.instance.SetScenario(scenario1, scenario1Transition);
+            Debug.Log("ID Scenario : " + scenario1);
+            rAPI.SwitchLightmap(scenario1, storedScenarios);
         }
 
         if (lightGroups != null && lightGroups.Count > 0)
@@ -387,15 +383,15 @@ public class AudioManager : MonoBehaviour
             }
         }
 
-        if (S_BlendLight.instance != null)
+        if (rAPI != null)
         {
             if (blackoutCount == 1 || blackoutCount == 2)
             {
-                S_BlendLight.instance.SetScenario(scenario2, scenario2Transition);
+                rAPI.SwitchLightmap(scenario2, storedScenarios);
             }
             else if (blackoutCount == 3)
             {
-                S_BlendLight.instance.SetScenario(scenario4, scenario4Transition);
+                rAPI.SwitchLightmap(scenario4, storedScenarios);
             }
         }
 
@@ -502,18 +498,18 @@ public class AudioManager : MonoBehaviour
 
         for (int i = startIndex; i < startIndex + lightsToReveal; i++)
         {
-            if (blackoutCount == 1 && S_BlendLight.instance != null)
+            if (blackoutCount == 1 && rAPI != null)
             {
-                if (i == 0) S_BlendLight.instance.SetScenario(scenario3_1, scenario3_1Transition);
-                else if (i == 1) S_BlendLight.instance.SetScenario(scenario3_2, scenario3_2Transition);
-                else if (i == 2) S_BlendLight.instance.SetScenario(scenario3_3, scenario3_3Transition);
+                if (i == 0) rAPI.SwitchLightmap(scenario3_1, storedScenarios);
+                else if (i == 1) rAPI.SwitchLightmap(scenario3_2, storedScenarios);
+                else if (i == 2) rAPI.SwitchLightmap(scenario3_3, storedScenarios);
             }
 
             if (blackoutCount == 2)
             {
-                if (S_BlendLight.instance != null)
+                if (rAPI != null)
                 {
-                    S_BlendLight.instance.SetScenario(scenario3_3, scenario3_3Transition);
+                    rAPI.SwitchLightmap(scenario3_3, storedScenarios);
                 }
             }
 

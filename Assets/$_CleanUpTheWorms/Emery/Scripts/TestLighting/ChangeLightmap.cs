@@ -139,6 +139,11 @@ public class ChangeLightmap : MonoBehaviour
             for (int i = 0; i < infos.Length; i++)
             {
                 var info = infos[i];
+                if (info == null || info.renderer == null)
+                {
+                    continue;
+                }
+
                 info.renderer.lightmapIndex = infos[i].lightmapIndex;
                 if (!info.renderer.isPartOfStaticBatch)
                 {

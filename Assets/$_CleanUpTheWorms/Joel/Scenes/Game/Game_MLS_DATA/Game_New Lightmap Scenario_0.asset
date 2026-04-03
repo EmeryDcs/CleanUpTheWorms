@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: beb0b92923d69da46ae6f11cc86035f6, type: 3}
+  m_Name: Game_New Lightmap Scenario_0
+  m_EditorClassIdentifier: Assembly-CSharp::MagicLightmapSwitcher.StoredLightingScenario
+  workflow: 1
+  sourceObject: {fileID: 0}
+  targetScene: Game
+  prefix: Game_
+  scenarioName: New Lightmap Scenario_0
+  blendableLightmaps:
+  - blendingIndex: 0
+    prevBlendingIndex: 0
+    startValue: 0
+    reflectionsBlendingRange: {x: 0, y: 1}
+    lightmapBlendingRange: {x: 0, y: 1}
+    lightingData: {fileID: 11400000, guid: d35bf9404a393014f916123ad07dde76, type: 2}
+  - blendingIndex: 1
+    prevBlendingIndex: 0
+    startValue: 0.25
+    reflectionsBlendingRange: {x: 0, y: 1}
+    lightmapBlendingRange: {x: 0, y: 1}
+    lightingData: {fileID: 11400000, guid: dbe614f2618c80946915b72d24e9730d, type: 2}
+  - blendingIndex: 2
+    prevBlendingIndex: 0
+    startValue: 0.5
+    reflectionsBlendingRange: {x: 0, y: 1}
+    lightmapBlendingRange: {x: 0, y: 1}
+    lightingData: {fileID: 11400000, guid: a123364906c4a654cb1f0f87068b2da3, type: 2}
+  - blendingIndex: 3
+    prevBlendingIndex: 0
+    startValue: 0.75
+    reflectionsBlendingRange: {x: 0, y: 1}
+    lightmapBlendingRange: {x: 0, y: 1}
+    lightingData: {fileID: 11400000, guid: 2992bcd152cbe8f40828f9f59724d895, type: 2}
+  - blendingIndex: 4
+    prevBlendingIndex: 0
+    startValue: 1
+    reflectionsBlendingRange: {x: 0, y: 1}
+    lightmapBlendingRange: {x: 0, y: 1}
+    lightingData: {fileID: 11400000, guid: 611e69ab13e8e7049a76b71a57b30ad4, type: 2}
+  - blendingIndex: 5
+    prevBlendingIndex: 0
+    startValue: 1.25
+    reflectionsBlendingRange: {x: 0, y: 1}
+    lightmapBlendingRange: {x: 0, y: 1}
+    lightingData: {fileID: 11400000, guid: ce16c64175eb43047b403b9278f3b11a, type: 2}
+  blendingOrder: 000000000100000002000000030000000400000005000000
+  startValues:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 1
+  collectedCustomBlendableDatas: []
+  cyclic: 0
+  rangesSettingMode: 0
+  lastBlendableLightmapsCount: 6
+  globalBlendFactor: 0
+  localBlendFactor: 0
+  reflectionsRangedBlendFactor: 0
+  lightmapsRangedBlendFactor: 0
+  stopPreviewPlayback: 1
+  lightingDataFromIndex: 0
+  lightingDataToIndex: 1
+  lightProbesArrayPosition: 0
+  eventsListId: 0
+  blendingModules:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  OnBlendingValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  OnLoadedLightmapChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  orderedStoredLightmapDatas: []
+  tempLightmapDataList: []
+  prevBlendValue: 0
+  orderChanged: 0
+  removed: 0
+  selfTestCompleted: 1
+  selfTestSuccess: 1
+  initialized: 0

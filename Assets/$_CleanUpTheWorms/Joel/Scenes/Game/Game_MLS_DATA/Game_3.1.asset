@@ -1,0 +1,1386 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d30d7fc3fce64943af982260b857a69, type: 3}
+  m_Name: Game_3.1
+  m_EditorClassIdentifier: Assembly-CSharp::MagicLightmapSwitcher.StoredLightmapData
+  sceneGUID: -1571670547
+  dataPrefix: Game
+  dataName: 3.1
+  blendingIndex: 2
+  blendingRange: {x: 0, y: 1}
+  startValue: 0
+  sceneLightingData:
+    lightmapName: 3.1
+    rendererDatas:
+    - objectId: 95fda517-24a7-4e4c-a2e5-6ff34e69a81f
+      lightmapIndex: 0
+      rotation: {x: -0.115332164, y: 0.69763803, z: 0.6976375, w: 0.11533254}
+      position: {x: -4.8501186, y: 0.879219, z: 2.8417854}
+      lightmapScaleOffset: {x: 0.038850974, y: 0.039106652, z: 0.96095216, w: 0.7665874}
+    - objectId: 1972fcd9-97b1-4143-8ac7-1154b5ccaadc
+      lightmapIndex: 0
+      rotation: {x: -0.11533227, y: 0.69763786, z: 0.69763774, w: 0.115332276}
+      position: {x: -0.8022373, y: 0.66299355, z: 2.485008}
+      lightmapScaleOffset: {x: 0.038850974, y: 0.039106652, z: 0.29688966, w: 0.67088425}
+    - objectId: c036b35a-aaea-45eb-835e-755a54d56eaa
+      lightmapIndex: 1
+      rotation: {x: -0.6913282, y: 0.14854382, z: 0.1485438, w: 0.6913283}
+      position: {x: 3.7832491, y: 0.7460817, z: 0.9921853}
+      lightmapScaleOffset: {x: 0.1374264, y: 0.13742802, z: 0.32456565, w: 0.20347181}
+    - objectId: 957bfe43-e3ab-4462-915d-714bfaca6183
+      lightmapIndex: 2
+      rotation: {x: -0.38820753, y: 0.5910118, z: 0.5910117, w: 0.38820758}
+      position: {x: 3.236264, y: 1.842009, z: 2.6099887}
+      lightmapScaleOffset: {x: 0.2646549, y: 0.26365745, z: 0.67650694, w: 0.24297115}
+    - objectId: 193b3be9-26ba-4ef3-a38c-f1dcf09fb715
+      lightmapIndex: 1
+      rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+      position: {x: 7.489923, y: 1.842009, z: -3.4212337}
+      lightmapScaleOffset: {x: 0.25313094, y: 0.2535749, z: 0.27366564, w: 0.45820808}
+    - objectId: 6437ef3f-20bf-49ab-90ef-48f2e77c6788
+      lightmapIndex: 2
+      rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+      position: {x: 7.489923, y: 1.842009, z: -2.3957303}
+      lightmapScaleOffset: {x: 0.25313094, y: 0.2535749, z: 0.27268907, w: 0.668169}
+    - objectId: 9799f47b-e271-4802-ba5e-afb4ad2b50b8
+      lightmapIndex: 6
+      rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+      position: {x: 7.489923, y: 1.842009, z: -1.3394355}
+      lightmapScaleOffset: {x: 0.25313094, y: 0.2535749, z: 0.6008141, w: 0.6720753}
+    - objectId: 3c04fba2-3936-4f08-9f84-66416602d5e1
+      lightmapIndex: 5
+      rotation: {x: -0.00000013767877, y: 0.7071068, z: 0.70710677, w: 0.00000013767878}
+      position: {x: 6.3807964, y: 1.842009, z: -3.1959486}
+      lightmapScaleOffset: {x: 0.25313094, y: 0.2535749, z: 0.22483751, w: 0.74531746}
+    - objectId: 0e02396a-3771-49f7-8e6a-1770a380953b
+      lightmapIndex: 5
+      rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+      position: {x: 2.9193811, y: 1.842009, z: -3.3505974}
+      lightmapScaleOffset: {x: 0.25313094, y: 0.2535749, z: 0.43772814, w: 0.48555183}
+    - objectId: 60f1029d-f4bc-41a6-8be1-2bd12cbe5831
+      lightmapIndex: 5
+      rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+      position: {x: 2.9193811, y: 1.842009, z: -2.0748894}
+      lightmapScaleOffset: {x: 0.25313094, y: 0.2535749, z: 0.41331407, w: 0.47480965}
+    - objectId: 473317e8-8af8-4dd0-a214-a7b4c5076665
+      lightmapIndex: 3
+      rotation: {x: -0.7071068, y: -0.00000004214685, z: -0.00000004214686, w: 0.7071067}
+      position: {x: -12.406849, y: 1.842009, z: -1.9037538}
+      lightmapScaleOffset: {x: 0.25313094, y: 0.2535749, z: 0.025618764, w: 0.29512215}
+    - objectId: b8d85014-2ee8-4976-b02c-984437c77809
+      lightmapIndex: 3
+      rotation: {x: 0.5, y: 0.49999997, z: 0.5, w: -0.5}
+      position: {x: -12.207726, y: 1.842009, z: -3.5671904}
+      lightmapScaleOffset: {x: 0.25313094, y: 0.2535749, z: 0.7072594, w: -0.0017528478}
+    - objectId: 8c69d85f-bc4f-45b2-81b8-0804b459919b
+      lightmapIndex: 6
+      rotation: {x: 0.5, y: 0.49999997, z: 0.5, w: -0.5}
+      position: {x: -11.167006, y: 1.842009, z: -3.5671904}
+      lightmapScaleOffset: {x: 0.25313094, y: 0.2535749, z: 0.6027672, w: 0.6632862}
+    - objectId: 11ceae4a-d474-4005-bb31-f7f09c01a85e
+      lightmapIndex: 0
+      rotation: {x: -0.38820753, y: 0.5910118, z: 0.5910117, w: 0.38820758}
+      position: {x: 3.236264, y: 1.842009, z: 2.6099887}
+      lightmapScaleOffset: {x: 0.09470417, y: 0.09537287, z: 0.0107579, w: 0.6562072}
+    - objectId: 89af4792-7d34-442b-a045-cab429e15764
+      lightmapIndex: 0
+      rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+      position: {x: -2.000966, y: -0.023263404, z: -2.1041543}
+      lightmapScaleOffset: {x: 0.49248376, y: 0.49243414, z: 0.6370249, w: 0.6087167}
+    - objectId: 4ca3b5c7-d531-4235-9df3-15d616a4b56d
+      lightmapIndex: 8
+      rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+      position: {x: -0.83829045, y: -4.1323986, z: 44.920227}
+      lightmapScaleOffset: {x: 0.8666643, y: 0.86696035, z: 0.0787577, w: 0.10316114}
+    - objectId: ba71bdb2-8f22-4fa1-8985-6b681b3824fd
+      lightmapIndex: 0
+      rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+      position: {x: -0.83828956, y: -3.8917112, z: 44.920227}
+      lightmapScaleOffset: {x: 0.23610844, y: 0.23519324, z: 0.7680664, w: 0.74365234}
+    - objectId: 320a701d-96bf-4743-9318-cdcb482d5596
+      lightmapIndex: 1
+      rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+      position: {x: -0.83828956, y: -3.8917112, z: 44.920227}
+      lightmapScaleOffset: {x: 2.7722142, y: 2.7733293, z: -1.1038485, w: -1.0175161}
+    - objectId: 2f40f7ed-ebc1-4cc8-b149-e782cdf9115d
+      lightmapIndex: 0
+      rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
+      position: {x: -0.7409937, y: 0.67370385, z: 2.3848703}
+      lightmapScaleOffset: {x: 0.0070217224, y: 0.007508304, z: 0.7936757, w: 0.97721696}
+    - objectId: 5e887b64-4343-4762-92c5-8438e3c33a9a
+      lightmapIndex: 0
+      rotation: {x: 0.6371492, y: -0.30666015, z: 0.30665994, w: 0.63715}
+      position: {x: -5.185135, y: 0.9291842, z: 2.6659262}
+      lightmapScaleOffset: {x: 0.07357133, y: 0.07139081, z: 0.3942413, w: 0.6554118}
+    - objectId: 74c754e2-9c74-4a4b-894a-0778938cf53b
+      lightmapIndex: 0
+      rotation: {x: 0.6242596, y: -0.3321139, z: 0.33211377, w: 0.6242602}
+      position: {x: -5.1915336, y: 0.85681283, z: 2.6572118}
+      lightmapScaleOffset: {x: 0.05874018, y: 0.060116764, z: 0.7662949, w: 0.7591886}
+    - objectId: f288ddcc-97fb-4f7e-a9d3-c1038dba8c48
+      lightmapIndex: 0
+      rotation: {x: 0.637583, y: -0.30575758, z: 0.30575752, w: 0.6375834}
+      position: {x: -5.1848984, y: 0.79147106, z: 2.6662228}
+      lightmapScaleOffset: {x: 0.07358077, y: 0.071396016, z: 0.69306755, w: 0.9327545}
+    - objectId: 1743f2c1-30a8-47da-bd9b-5efcd890015b
+      lightmapIndex: 0
+      rotation: {x: 0.62196565, y: -0.33639035, z: 0.33639017, w: 0.6219663}
+      position: {x: -4.9210825, y: 0.857831, z: 2.836089}
+      lightmapScaleOffset: {x: 0.05874019, y: 0.06011677, z: 0.33953708, w: 0.7543058}
+    - objectId: f9cbe5bb-e06f-48f1-a711-2680f5b5a6ee
+      lightmapIndex: 0
+      rotation: {x: -0.7343376, y: 0.08364991, z: 0.076239295, w: 0.6692821}
+      position: {x: -3.288427, y: 0.68393266, z: 2.6232028}
+      lightmapScaleOffset: {x: 0.05874018, y: 0.06011677, z: 0.8991074, w: 0.74161047}
+    - objectId: 858a6908-3a45-41e9-b309-8197aa164f90
+      lightmapIndex: 0
+      rotation: {x: -0.6879746, y: -0.1633741, z: -0.16337411, w: 0.6879745}
+      position: {x: -3.209142, y: 1.0210859, z: 3.5309412}
+      lightmapScaleOffset: {x: 0.05874018, y: 0.06011677, z: 0.7614121, w: 0.8998136}
+    - objectId: 7e6ccd86-f1e9-48df-a7d1-7c6c73a3f551
+      lightmapIndex: 0
+      rotation: {x: -0.6919649, y: -0.14554958, z: -0.1455496, w: 0.6919648}
+      position: {x: -8.004582, y: 0.71759224, z: 0.5956349}
+      lightmapScaleOffset: {x: 0.05874018, y: 0.06011677, z: 0.2789902, w: 0.6439542}
+    - objectId: e2089b78-42d4-47a0-8787-46e84f14b844
+      lightmapIndex: 0
+      rotation: {x: -0.69726473, y: -0.1175668, z: -0.117566824, w: 0.6972646}
+      position: {x: -8.004582, y: 0.650383, z: 0.5956349}
+      lightmapScaleOffset: {x: 0.05874018, y: 0.06011677, z: 0.91863865, w: 0.90079015}
+    - objectId: 4440f00b-9fde-4f52-bd11-130c4006cafe
+      lightmapIndex: 0
+      rotation: {x: -0.63190377, y: -0.31732887, z: -0.31732884, w: 0.6319038}
+      position: {x: -7.659353, y: 0.65038294, z: 0.7461281}
+      lightmapScaleOffset: {x: 0.05874018, y: 0.06011677, z: 0.9489121, w: 0.9105558}
+    - objectId: 2be77d8d-4d35-4964-9aa9-266ca1e3be4e
+      lightmapIndex: 0
+      rotation: {x: -0.6622044, y: -0.24796222, z: -0.24796219, w: 0.66220456}
+      position: {x: -1.6491909, y: -0.026139447, z: 2.126656}
+      lightmapScaleOffset: {x: 0.05874018, y: 0.06011677, z: 0.64031833, w: 0.6312589}
+    - objectId: 4a0e127b-179e-4cb9-9f99-a2003ac8d367
+      lightmapIndex: 0
+      rotation: {x: 0.18850245, y: 0.6815181, z: 0.681518, w: -0.18850243}
+      position: {x: -7.0472407, y: 0.8085839, z: -3.238899}
+      lightmapScaleOffset: {x: 0.05874018, y: 0.06011677, z: 0.69500583, w: 0.66934484}
+    - objectId: 7c542e81-4299-440d-95b3-24595a79f2c7
+      lightmapIndex: 0
+      rotation: {x: -0.15709496, y: 0.6894355, z: 0.6894354, w: 0.15709496}
+      position: {x: -5.6459064, y: 0.8085839, z: -3.084468}
+      lightmapScaleOffset: {x: 0.05874018, y: 0.06011677, z: 0.7770371, w: 0.9339933}
+    - objectId: fead2e26-85d3-4f7e-aa2c-82d30d5f0797
+      lightmapIndex: 0
+      rotation: {x: -0.5626894, y: 0.4282296, z: 0.42822963, w: 0.5626894}
+      position: {x: -2.3775258, y: 0.9443505, z: 0.3924317}
+      lightmapScaleOffset: {x: 0.05874018, y: 0.06011677, z: 0.9410996, w: 0.91934484}
+    - objectId: 59a39a8d-1092-4e79-b61d-78319ee96690
+      lightmapIndex: 0
+      rotation: {x: -0.5427464, y: 0.45323986, z: 0.45323992, w: 0.5427463}
+      position: {x: -2.3775258, y: 0.8744041, z: 0.3924317}
+      lightmapScaleOffset: {x: 0.05874018, y: 0.06011677, z: -0.011048839, w: 0.93204015}
+    - objectId: 8de43704-4b31-450b-9a00-d39b14cd6221
+      lightmapIndex: 0
+      rotation: {x: -0.55629313, y: 0.43650657, z: 0.43650657, w: 0.5562931}
+      position: {x: -2.3775258, y: 0.80858356, z: 0.3924317}
+      lightmapScaleOffset: {x: 0.05874018, y: 0.06011677, z: 0.9332871, w: 0.78360265}
+    - objectId: 295c59a3-ed7f-4836-a415-6687c51e7f1d
+      lightmapIndex: 0
+      rotation: {x: -0.70710236, y: 0.0024846664, z: 0.0024846662, w: 0.7071025}
+      position: {x: -1.115226, y: 0.6503831, z: 2.3584113}
+      lightmapScaleOffset: {x: 0.05874018, y: 0.06011677, z: 0.38934177, w: 0.9466886}
+    - objectId: 858bae6f-88d3-49e8-a22f-9b83dc460297
+      lightmapIndex: 0
+      rotation: {x: -0.62360597, y: -0.39126793, z: -0.35969064, w: 0.573278}
+      position: {x: -3.2306333, y: 0.6645333, z: 2.3599668}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: -0.2634204, w: 0.14135635}
+    - objectId: c13b1e6a-042a-4467-a8a8-3aa98f20d6be
+      lightmapIndex: 0
+      rotation: {x: -0.5489891, y: -0.004603596, z: 0.8357874, w: 0.0070085134}
+      position: {x: 2.7497907, y: 1.6926198, z: 2.785386}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: 0.05005616, w: 0.12280166}
+    - objectId: dabacbf5-8184-4218-9c2c-6b19cb549902
+      lightmapIndex: 0
+      rotation: {x: 0.36626327, y: 0.6048564, z: 0.6048563, w: -0.3662633}
+      position: {x: -3.3287828, y: -0.019030472, z: 1.1181247}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: 0.23560303, w: 0.26049697}
+    - objectId: b799ca0e-1c71-40ff-8557-9c07bc12e5b7
+      lightmapIndex: 0
+      rotation: {x: -0.6915269, y: -0.14761643, z: -0.14761642, w: 0.6915269}
+      position: {x: -3.7139351, y: -0.01620483, z: 1.3335474}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: -0.30638915, w: 0.12670791}
+    - objectId: a9107364-0fde-4c9b-b7b1-b227dc9a7085
+      lightmapIndex: 0
+      rotation: {x: -0.69539523, y: -0.1281617, z: -0.1281617, w: 0.6953953}
+      position: {x: -3.4586127, y: -0.019030472, z: 1.7235098}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: -0.33080322, w: 0.123778224}
+    - objectId: 762e2cc0-0976-4605-9b48-112494f28293
+      lightmapIndex: 0
+      rotation: {x: -0.61424226, y: -0.35029483, z: -0.35029483, w: 0.61424226}
+      position: {x: -3.6468632, y: -0.019030472, z: 1.5733879}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: -0.5085376, w: 0.44604385}
+    - objectId: e9ad830b-8f30-43b4-b486-026d0836ab6b
+      lightmapIndex: 0
+      rotation: {x: -0.65620697, y: -0.26342455, z: -0.26342458, w: 0.65620685}
+      position: {x: -2.8663447, y: -0.01620483, z: 0.8461117}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: -0.19799072, w: 0.12573135}
+    - objectId: 65754d14-e078-4210-b430-24028400bb2a
+      lightmapIndex: 0
+      rotation: {x: -0.5489891, y: -0.004603596, z: 0.8357874, w: 0.0070085134}
+      position: {x: 2.8388693, y: 1.8856387, z: 2.9912157}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: -0.17357665, w: 0.3278798}
+    - objectId: e51d5ba3-061d-4628-8e80-712b7f38a471
+      lightmapIndex: 0
+      rotation: {x: -0.545479, y: -0.4499474, z: -0.44994745, w: 0.54547894}
+      position: {x: -2.8838086, y: -0.019030472, z: 1.0945411}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: -0.22533447, w: 0.4343251}
+    - objectId: 0dcbcda3-d7a5-45f7-a088-fed1c4eb6a8e
+      lightmapIndex: 0
+      rotation: {x: -0.5489891, y: -0.004603596, z: 0.8357874, w: 0.0070085134}
+      position: {x: 2.7657747, y: 1.302693, z: 2.822319}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: 0.0051342845, w: 0.119871974}
+    - objectId: 61ce0981-361a-4198-841e-035c4a6e6683
+      lightmapIndex: 0
+      rotation: {x: -0.6317024, y: -0.00087891414, z: 0.7751534, w: 0.009402203}
+      position: {x: 1.3383842, y: 2.6489532, z: -0.10115135}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: -0.24291259, w: 0.4606923}
+    - objectId: cd4a2bf1-c735-4b57-b9ef-420e7d5d528a
+      lightmapIndex: 0
+      rotation: {x: -0.6308772, y: -0.032291744, z: 0.7737268, w: 0.047937594}
+      position: {x: 1.3670728, y: 2.6373475, z: -0.005462438}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: 0.15454835, w: 0.4548329}
+    - objectId: b901e6db-ac42-4ae6-a14d-1d10bc458dae
+      lightmapIndex: 0
+      rotation: {x: -0.5323814, y: -0.46537086, z: -0.46537077, w: 0.5323815}
+      position: {x: -1.5732849, y: -0.01620483, z: 1.4064174}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: -0.14818603, w: 0.46752822}
+    - objectId: 64c2e4bc-06a3-461c-bb64-803827696c13
+      lightmapIndex: 0
+      rotation: {x: -0.5452252, y: -0.4502549, z: -0.45025507, w: 0.5452251}
+      position: {x: -1.7702842, y: -0.019030472, z: 1.8288523}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: -0.13939697, w: 0.4499501}
+    - objectId: 900ccc6a-53db-4d8e-bbb1-8bbd6459a0dc
+      lightmapIndex: 0
+      rotation: {x: 0.36626327, y: 0.6048564, z: 0.6048563, w: -0.3662633}
+      position: {x: -1.7418303, y: -0.019030472, z: 1.58976}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: 0.26294678, w: 0.17455947}
+    - objectId: 9ebf7fad-6b82-4c15-8225-27da0e209cba
+      lightmapIndex: 0
+      rotation: {x: -0.6915269, y: -0.14761643, z: -0.14761642, w: 0.6915269}
+      position: {x: -2.1269827, y: -0.01620483, z: 1.8051827}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: 0.23560303, w: 0.23998916}
+    - objectId: 7b1286b6-09f9-40d3-900f-fdff0801f3d4
+      lightmapIndex: 0
+      rotation: {x: -0.69539523, y: -0.1281617, z: -0.1281617, w: 0.6953953}
+      position: {x: -1.8716602, y: -0.019030472, z: 2.1951451}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: -0.48314697, w: 0.44799697}
+    - objectId: 2469587f-5058-4ede-9fd5-9f6fe648a4c2
+      lightmapIndex: 0
+      rotation: {x: -0.61424226, y: -0.35029483, z: -0.35029483, w: 0.61424226}
+      position: {x: -2.0599105, y: -0.019030472, z: 2.0450232}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: -0.20287353, w: 0.1608876}
+    - objectId: 1ae5d016-cb4b-4473-9d64-7bb92dd5c010
+      lightmapIndex: 0
+      rotation: {x: -0.65620697, y: -0.26342455, z: -0.26342458, w: 0.65620685}
+      position: {x: -1.2793922, y: -0.01620483, z: 1.317747}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: -0.45287353, w: 0.46655166}
+    - objectId: 8b8358a3-7d29-44fc-b59d-7c33a8ec475e
+      lightmapIndex: 0
+      rotation: {x: -0.6633375, y: -0.24491489, z: -0.24491487, w: 0.6633376}
+      position: {x: -1.170033, y: -0.019030472, z: 1.7708479}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: -0.15306884, w: 0.43041885}
+    - objectId: 0cd70f5b-993f-4e0e-ae2d-e8e952202750
+      lightmapIndex: 0
+      rotation: {x: -0.545479, y: -0.4499474, z: -0.44994745, w: 0.54547894}
+      position: {x: -1.2968562, y: -0.019030472, z: 1.5661763}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: 0.44556397, w: 0.16381729}
+    - objectId: efd2cc70-f825-4b05-80fd-a4d08fad6ad4
+      lightmapIndex: 0
+      rotation: {x: -0.7014757, y: 0.089060806, z: 0.089060806, w: 0.70147574}
+      position: {x: -1.4636707, y: -0.01620483, z: 1.9747375}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: -0.06713134, w: 0.4655751}
+    - objectId: 04c81bb8-3f5a-464e-9919-6c965fe19166
+      lightmapIndex: 0
+      rotation: {x: -0.6987017, y: 0.10870147, z: 0.10870146, w: 0.6987017}
+      position: {x: -1.0209156, y: -0.019030472, z: 2.1204355}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: -0.48900634, w: 0.4655751}
+    - objectId: cf1871b7-0413-491c-b5ca-88ff15907fda
+      lightmapIndex: 0
+      rotation: {x: -0.6954675, y: -0.12776947, z: -0.12776946, w: 0.6954675}
+      position: {x: -1.2616949, y: -0.019030472, z: 2.1204355}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: 0.08521241, w: 0.12768447}
+    - objectId: 95f49268-8bef-4606-8533-953f33112937
+      lightmapIndex: 0
+      rotation: {x: -0.6552047, y: -0.26590747, z: -0.26590744, w: 0.6552048}
+      position: {x: -2.5099888, y: 0.81674486, z: -0.76391876}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: -0.17845947, w: 0.19409072}
+    - objectId: 24dd83fa-d27f-4104-a3a3-97161b249d6d
+      lightmapIndex: 0
+      rotation: {x: -0.53542066, y: 0.46187103, z: 0.4618717, w: 0.5354198}
+      position: {x: -2.4488869, y: 0.81288445, z: -0.8318707}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: -0.20775634, w: 0.18823135}
+    - objectId: 8622d9a4-713d-4f61-863e-6864800194a7
+      lightmapIndex: 0
+      rotation: {x: -0.48847005, y: 0.51127, z: 0.5112702, w: 0.48846984}
+      position: {x: -2.819725, y: 0.8151032, z: -0.752203}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: 0.22974366, w: 0.45092666}
+    - objectId: 6737d9c1-dd4f-4595-a52e-e1f13ae32383
+      lightmapIndex: 0
+      rotation: {x: -0.3345464, y: 0.62295973, z: 0.6229596, w: 0.33454645}
+      position: {x: -2.819725, y: 0.81124276, z: -0.8435863}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: -0.17162353, w: 0.34448135}
+    - objectId: 858ea99d-e9de-4250-a10c-98ac3cb0d5d0
+      lightmapIndex: 0
+      rotation: {x: -0.48847005, y: 0.51127, z: 0.5112702, w: 0.48846984}
+      position: {x: -2.819725, y: 0.8151032, z: 0.39703327}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: 0.45337647, w: 0.33471572}
+    - objectId: 506efa9d-2d42-4206-893a-7f8a741bf856
+      lightmapIndex: 0
+      rotation: {x: -0.3345464, y: 0.62295973, z: 0.6229596, w: 0.33454645}
+      position: {x: -2.819725, y: 0.81124276, z: 0.30564976}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: 0.110603034, w: 0.123778224}
+    - objectId: cc4a012d-18a8-4086-87d8-40ceae3a0800
+      lightmapIndex: 0
+      rotation: {x: -0.70698524, y: 0.013111895, z: 0.013111875, w: 0.70698524}
+      position: {x: -0.3989298, y: 0.66299355, z: 2.3011603}
+      lightmapScaleOffset: {x: 1.175074, y: 1.1784234, z: 0.1272046, w: 0.46655166}
+    - objectId: 9314ece7-50d2-484d-a261-a5a730fc0aca
+      lightmapIndex: 0
+      rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+      position: {x: -7.433901, y: 0.7244308, z: 0.94492936}
+      lightmapScaleOffset: {x: 0.029316835, y: 0.029656624, z: 0.4208358, w: 0.9715767}
+    - objectId: 7378aaca-e77d-4f99-ba6c-db95e8327981
+      lightmapIndex: 0
+      rotation: {x: -0.7071069, y: -0, z: 0, w: 0.7071067}
+      position: {x: -0.03662193, y: 0.7216904, z: 2.4576447}
+      lightmapScaleOffset: {x: 0.029316835, y: 0.029656624, z: 0.2352889, w: 0.64149857}
+    - objectId: a6f755a6-a52a-49e2-8266-168090b9eab2
+      lightmapIndex: 7
+      rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+      position: {x: -0.27928, y: 0.023716295, z: 2.807789}
+      lightmapScaleOffset: {x: 0.36797443, y: 0.36847317, z: 0.58762807, w: 0.6032428}
+    - objectId: 11e58293-9e57-408e-a1f1-29f178c4dfd4
+      lightmapIndex: 7
+      rotation: {x: -0.69146776, y: -0.14789292, z: -0.1478929, w: 0.6914678}
+      position: {x: -7.8213973, y: 0.023716295, z: 1.1942137}
+      lightmapScaleOffset: {x: 0.36797443, y: 0.36847317, z: 0.6149718, w: 0.59933656}
+    - objectId: e18d0ebc-4ce2-4a86-825a-f0e3637e812f
+      lightmapIndex: 1
+      rotation: {x: -0.12323671, y: 0.69628495, z: 0.69628495, w: 0.12323661}
+      position: {x: -5.859858, y: 1.1623069, z: -3.7173927}
+      lightmapScaleOffset: {x: 0.086061455, y: 0.08642036, z: 0.9083918, w: 0.4103396}
+    - objectId: 85327c7e-c887-422a-baba-948d0a69a39f
+      lightmapIndex: 1
+      rotation: {x: 0.07207662, y: 0.70342386, z: 0.7034236, w: -0.07207672}
+      position: {x: -6.737472, y: 1.0688295, z: -3.6686838}
+      lightmapScaleOffset: {x: 0.086061455, y: 0.08642036, z: 0.7960871, w: 0.51873803}
+    - objectId: d8ecffdd-fa5c-4f6d-beda-169b90799fec
+      lightmapIndex: 1
+      rotation: {x: -0.6189103, y: -0.34197962, z: -0.34197974, w: 0.6189103}
+      position: {x: -9.705358, y: 1.1818968, z: 1.3221004}
+      lightmapScaleOffset: {x: 0.086061455, y: 0.08642036, z: 0.6417902, w: 0.8527224}
+    - objectId: dce83522-23c4-4d60-b87d-c5bdc5264b5e
+      lightmapIndex: 1
+      rotation: {x: -0.6957026, y: -0.12648249, z: -0.12648258, w: 0.6957027}
+      position: {x: -6.813317, y: 1.1818963, z: 2.5901542}
+      lightmapScaleOffset: {x: 0.086061455, y: 0.08642036, z: 0.75018865, w: 0.4933474}
+    - objectId: b000edac-ba0b-4d52-a8ed-683c1bcc44ba
+      lightmapIndex: 0
+      rotation: {x: 0.000000030908623, y: 0.7071068, z: -0.7071067, w: -0.000000030908616}
+      position: {x: 10.311134, y: 1.256924, z: -2.0803328}
+      lightmapScaleOffset: {x: 0.11754134, y: 0.11883458, z: 0.81901914, w: 0.8939907}
+    - objectId: 89fd5869-2ffd-42b8-a5bf-a613790086e3
+      lightmapIndex: 0
+      rotation: {x: 0.000000030908623, y: 0.7071068, z: -0.7071067, w: -0.000000030908616}
+      position: {x: 5.93365, y: 1.256924, z: -2.31111}
+      lightmapScaleOffset: {x: 0.11754134, y: 0.11883458, z: 0.8746832, w: 0.8881313}
+    - objectId: 65c3faa8-4702-4243-9557-3df1d0cde82c
+      lightmapIndex: 0
+      rotation: {x: 0.000000030908623, y: 0.7071068, z: -0.7071067, w: -0.000000030908616}
+      position: {x: 10.311134, y: 1.256924, z: -0.6412474}
+      lightmapScaleOffset: {x: 0.103707, y: 0.10432561, z: 0.017884068, w: 0.6311118}
+    - objectId: df1cf715-55eb-40ca-8c2b-42feddaaa70f
+      lightmapIndex: 0
+      rotation: {x: 0.000000030908623, y: 0.7071068, z: -0.7071067, w: -0.000000030908616}
+      position: {x: 5.93365, y: 1.256924, z: -0.8720249}
+      lightmapScaleOffset: {x: 0.103707, y: 0.10432561, z: 0.7415169, w: 0.6438071}
+    - objectId: f1501643-08be-4b7a-9d1e-f7f8740867d5
+      lightmapIndex: 1
+      rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+      position: {x: 10.654124, y: 1.0212419, z: -1.1453047}
+      lightmapScaleOffset: {x: 0.366337, y: 0.36587542, z: 0.4982959, w: 0.2854523}
+    - objectId: 372015e6-7df7-4a8d-b872-7cbe71d94913
+      lightmapIndex: 1
+      rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+      position: {x: 6.2766395, y: 1.0212419, z: -1.3760821}
+      lightmapScaleOffset: {x: 0.366337, y: 0.36587542, z: 0.29907715, w: 0.64580387}
+    - objectId: 2a3eacb2-3203-4ec5-8e51-a7d54b28f596
+      lightmapIndex: 7
+      rotation: {x: -0.5, y: -0.49999997, z: -0.49999997, w: 0.50000006}
+      position: {x: -3.1857843, y: 1.8420091, z: -3.5671895}
+      lightmapScaleOffset: {x: 0.25313094, y: 0.2535749, z: 0.35179064, w: 0.7443409}
+    - objectId: c4a8241f-4d76-485f-8dd1-6f65db13b33d
+      lightmapIndex: 0
+      rotation: {x: 0.49999997, y: -0.49999994, z: 0.50000006, w: 0.49999997}
+      position: {x: -5.29591, y: 1.256924, z: -3.090926}
+      lightmapScaleOffset: {x: 0.11754134, y: 0.11883458, z: 0.87370664, w: 0.8529751}
+    - objectId: 0e24875a-c27d-4055-a76d-64e4c6bc6872
+      lightmapIndex: 0
+      rotation: {x: 0.5751741, y: -0.41130865, z: 0.41130874, w: 0.575174}
+      position: {x: -3.8568242, y: 1.256924, z: -3.090926}
+      lightmapScaleOffset: {x: 0.103707, y: 0.10432561, z: 0.38800126, w: 0.65064305}
+    - objectId: 72eb05bf-3b3a-4b27-b8ea-fdf2ccf6581f
+      lightmapIndex: 1
+      rotation: {x: 0.5, y: -0.49999997, z: -0.5, w: -0.5}
+      position: {x: -4.360882, y: 1.0212419, z: -3.4339154}
+      lightmapScaleOffset: {x: 0.366337, y: 0.36587542, z: 0.49145997, w: 0.30303043}
+    - objectId: 0e586ec3-811e-47ef-a9a4-82e4a7f4da4b
+      lightmapIndex: 1
+      rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+      position: {x: 1.5380533, y: 1.0212419, z: -0.46737236}
+      lightmapScaleOffset: {x: 0.366337, y: 0.36587542, z: 0.33228028, w: 0.61260074}
+    - objectId: aca2e8a7-1aec-417d-82fb-f33536c8c465
+      lightmapIndex: 1
+      rotation: {x: -0.7037433, y: 0.06888717, z: 0.068887174, w: 0.7037432}
+      position: {x: 3.198979, y: 1.2036169, z: 2.556807}
+      lightmapScaleOffset: {x: 0.056816738, y: 0.05695475, z: 0.76775163, w: 0.85368603}
+    - objectId: 6ffdca0c-7f23-4977-ac15-5012928e91d2
+      lightmapIndex: 1
+      rotation: {x: -0.06598609, y: 0.7040213, z: 0.70402116, w: 0.065985985}
+      position: {x: -6.1361055, y: 0.8506949, z: -3.1176217}
+      lightmapScaleOffset: {x: 0.056816738, y: 0.05695475, z: 0.4699001, w: 0.3566157}
+    - objectId: 8467c82f-6220-4760-9538-6e63a416421c
+      lightmapIndex: 1
+      rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+      position: {x: -0.83829147, y: -4.132399, z: 44.920227}
+      lightmapScaleOffset: {x: 0.18205804, y: 0.18124248, z: 0.81965864, w: 0.77184284}
+    - objectId: dfbea446-52b0-43fa-b74b-396da66130b9
+      lightmapIndex: 7
+      rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+      position: {x: -0.83828956, y: 20.73398, z: 44.920227}
+      lightmapScaleOffset: {x: 1.3186059, y: 1.3198338, z: -0.206731, w: -0.17176771}
+    - objectId: d1f96a3a-b963-4b02-ba14-4cb40bda5188
+      lightmapIndex: 3
+      rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+      position: {x: -0.8382905, y: -0.32865602, z: -1.0863545}
+      lightmapScaleOffset: {x: 1.0694007, y: 1.0684654, z: -0.038019717, w: -0.03798604}
+    - objectId: a2ae341d-60ca-45d1-ae1e-b72fbbef076f
+      lightmapIndex: 9
+      rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+      position: {x: -0.83828956, y: 62.6623, z: 44.920227}
+      lightmapScaleOffset: {x: 1.1299849, y: 1.1291226, z: -0.08522167, w: -0.08515627}
+    - objectId: 673e8a52-5e25-4a71-9c72-e9f15e42f240
+      lightmapIndex: 10
+      rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+      position: {x: -0.8382905, y: -0.32865602, z: -1.0863545}
+      lightmapScaleOffset: {x: 1.1792976, y: 1.1783915, z: -0.071341895, w: -0.0712867}
+    - objectId: 3fba0683-b9c8-4e95-bce6-b8c2ecc37bcb
+      lightmapIndex: 7
+      rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+      position: {x: -0.83828956, y: -4.748166, z: 44.920227}
+      lightmapScaleOffset: {x: 1.1174589, y: 1.1183276, z: -0.070038535, w: -0.070093356}
+    - objectId: 78f8e843-ce49-4cfa-84a2-9796b968547e
+      lightmapIndex: 5
+      rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+      position: {x: -0.27928, y: -0.02286, z: 0.464}
+      lightmapScaleOffset: {x: 1.1204733, y: 1.1210853, z: -0.06909183, w: -0.06912983}
+    - objectId: c7dab14a-10f1-4e02-b0b2-49cda65ca623
+      lightmapIndex: 0
+      rotation: {x: -0.00000003774895, y: -0, z: -0, w: 1}
+      position: {x: 0.23891306, y: 1.8484441, z: -3.2463381}
+      lightmapScaleOffset: {x: 0.29121745, y: 0.28989774, z: 0.7015769, w: 0.7164072}
+    - objectId: 94f2355d-7866-4575-9839-24e123a50964
+      lightmapIndex: 1
+      rotation: {x: -0.00000003774895, y: -0, z: -0, w: 1}
+      position: {x: 0.23891306, y: 1.8484441, z: -3.2463381}
+      lightmapScaleOffset: {x: 1.253124, y: 1.254377, z: -0.047392845, w: -0.09862524}
+    - objectId: 69b50f25-d6b1-40cb-94d8-9f6e44831fa0
+      lightmapIndex: 0
+      rotation: {x: -0.00000003774895, y: -0, z: -0, w: 1}
+      position: {x: -9.608665, y: 0.89736277, z: -4.516}
+      lightmapScaleOffset: {x: 0.21455345, y: 0.214569, z: -0.018477567, w: 0.6250754}
+    - objectId: 0eca754d-73f5-42f5-bcc9-77f3d9381d5a
+      lightmapIndex: 1
+      rotation: {x: -0.00000013767877, y: 0.7071068, z: 0.70710677, w: 0.00000013767878}
+      position: {x: -6.3997765, y: 0.7902069, z: -3.4264805}
+      lightmapScaleOffset: {x: 0.16044462, y: 0.16059344, z: 0.1582277, w: 0.2793047}
+    - objectId: 4b2ee9d3-910c-4ce2-a731-6b767778f0c4
+      lightmapIndex: 1
+      rotation: {x: 0.5, y: 0.49999997, z: 0.5, w: -0.5}
+      position: {x: -2.5384657, y: 0.7902069, z: -0.3620795}
+      lightmapScaleOffset: {x: 0.16044462, y: 0.16059344, z: 0.5957277, w: 0.13086721}
+    - objectId: dff64e37-517b-4a4c-ae3b-8691ce01c784
+      lightmapIndex: 1
+      rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+      position: {x: -0.83828956, y: -4.1323986, z: 44.920227}
+      lightmapScaleOffset: {x: 1.0279018, y: 1.0281031, z: -0.018756801, w: -0.018760571}
+    - objectId: 15916c41-3070-484d-9f8f-2482ec232bd1
+      lightmapIndex: 2
+      rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+      position: {x: -0.83828956, y: 20.73398, z: 44.920227}
+      lightmapScaleOffset: {x: 1.1377845, y: 1.1374891, z: -0.088846594, w: -0.0888234}
+    - objectId: a0211921-d0c2-4e5d-ae78-b541fef16809
+      lightmapIndex: 4
+      rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+      position: {x: -0.83828956, y: -4.1323986, z: 44.920227}
+      lightmapScaleOffset: {x: 1.1133372, y: 1.113345, z: -0.07464739, w: -0.07464792}
+    - objectId: abe7c13c-3dca-45df-b4d5-aaace8920278
+      lightmapIndex: 12
+      rotation: {x: -0.00000003774895, y: -0, z: -0, w: 1}
+      position: {x: -0.27928, y: -0.02286, z: 0.464}
+      lightmapScaleOffset: {x: 1.3010536, y: 1.3002872, z: -0.14754051, w: -0.14745331}
+    - objectId: a767b1d1-d18c-4bf4-a38f-975d38679c95
+      lightmapIndex: 6
+      rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+      position: {x: -0.27928, y: -0.02286, z: 0.464}
+      lightmapScaleOffset: {x: 1.1296115, y: 1.1290536, z: -0.085192494, w: -0.085150175}
+    - objectId: 03de8335-11fd-48e0-a5ac-f40d1f50aa63
+      lightmapIndex: 14
+      rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+      position: {x: -0.27928, y: -0.02286, z: 0.464}
+      lightmapScaleOffset: {x: 2.2342243, y: 2.2369885, z: -0.69011503, w: -0.034719467}
+    - objectId: 8d6b5550-a3d5-48f8-bbdb-7bc8fe549ae9
+      lightmapIndex: 13
+      rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+      position: {x: -0.27928, y: -0.02286, z: 0.464}
+      lightmapScaleOffset: {x: 1.334542, y: 1.3328505, z: -0.21855563, w: -0.21827799}
+    - objectId: 368e157a-37b6-41f3-9ba2-afcc001d2830
+      lightmapIndex: 11
+      rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+      position: {x: -0.83829087, y: -0.32865602, z: -1.0863543}
+      lightmapScaleOffset: {x: 1.2030027, y: 1.2037853, z: -0.13341667, w: -0.13350378}
+    - objectId: e50498e8-e086-4771-ad97-3e915827fc2c
+      lightmapIndex: 1
+      rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+      position: {x: -0.6381667, y: 3.5889359, z: 6.296443}
+      lightmapScaleOffset: {x: 0.2729611, y: 0.27240375, z: 0.28313503, w: 0.52633214}
+    - objectId: fc4900e9-2e66-44a8-8119-f242fcfeb569
+      lightmapIndex: 7
+      rotation: {x: -0.00000003774895, y: -0, z: -0, w: 1}
+      position: {x: -0.27928, y: -0.37285998, z: 0.824}
+      lightmapScaleOffset: {x: 0.8247432, y: 0.8244346, z: 0.2205977, w: 0.1825372}
+    - objectId: f2dcca1d-96ca-42b5-ae73-9e75fad2e468
+      lightmapIndex: 1
+      rotation: {x: -0.00000003774895, y: -0, z: -0, w: 1}
+      position: {x: 2.6323752, y: -0.02286, z: -0.8618672}
+      lightmapScaleOffset: {x: 0.6515239, y: 0.6529323, z: 0.30950478, w: 0.48208493}
+    - objectId: e3451be0-9e03-4477-954b-f4120967f612
+      lightmapIndex: 1
+      rotation: {x: -0.6147102, y: -0.34947303, z: -0.34947303, w: 0.61471015}
+      position: {x: -3.00648, y: 0.58540577, z: -0.35820484}
+      lightmapScaleOffset: {x: 0.07755502, y: 0.07792387, z: 0.85094523, w: 0.32358226}
+    - objectId: 704a1a18-cbcf-49d9-a04e-e34952781ad2
+      lightmapIndex: -1
+      rotation: {x: -0.7064204, y: 0.031147446, z: 0.031147445, w: 0.7064205}
+      position: {x: -6.2926435, y: 0.59257674, z: -2.6782036}
+      lightmapScaleOffset: {x: 1, y: 1, z: 0, w: 0}
+    - objectId: 39d02fb5-cd70-47e8-b80a-08dc8883a5c4
+      lightmapIndex: 1
+      rotation: {x: -0.7059795, y: 0.039913252, z: 0.039913252, w: 0.7059794}
+      position: {x: -6.2934957, y: 0.58540577, z: -2.6816804}
+      lightmapScaleOffset: {x: 0.07755502, y: 0.07792387, z: 0.5237968, w: 0.82162917}
+    - objectId: 2979987e-b3e3-40ce-8331-ce948a20581c
+      lightmapIndex: -1
+      rotation: {x: -0.16716959, y: 0.6870622, z: 0.6870621, w: 0.16716962}
+      position: {x: -8.750295, y: 0.5854057, z: -0.21309638}
+      lightmapScaleOffset: {x: 1, y: 1, z: 0, w: 0}
+    - objectId: 32680de0-d6c4-42c3-8c9b-5aade143ad95
+      lightmapIndex: 2
+      rotation: {x: -0.19757442, y: 0.67894363, z: 0.6789436, w: 0.19757445}
+      position: {x: -8.756052, y: 0.5854057, z: -0.2359305}
+      lightmapScaleOffset: {x: 0.07755502, y: 0.07792387, z: 0.88414836, w: 0.015965076}
+    - objectId: 38740b48-86c1-4254-8251-a54bb7d00443
+      lightmapIndex: -1
+      rotation: {x: -0.5128675, y: -0.48679256, z: -0.486794, w: 0.51286596}
+      position: {x: -7.1896505, y: 0.5854057, z: 0.10393104}
+      lightmapScaleOffset: {x: 1, y: 1, z: 0, w: 0}
+    - objectId: 60864dfd-bed5-4139-b2f5-861937d0df7e
+      lightmapIndex: 1
+      rotation: {x: 0.25095978, y: 0.6610742, z: 0.66107434, w: -0.25095975}
+      position: {x: -7.2141347, y: 0.5854057, z: 0.11774817}
+      lightmapScaleOffset: {x: 0.07755502, y: 0.07792387, z: 0.7708671, w: 0.3460432}
+    - objectId: 505ea11a-7d26-4381-bdaf-45a508ff573b
+      lightmapIndex: -1
+      rotation: {x: -0.2674427, y: 0.65457964, z: 0.6545796, w: 0.2674427}
+      position: {x: -5.78031, y: 0.5854057, z: 1.2390003}
+      lightmapScaleOffset: {x: 1, y: 1, z: 0, w: 0}
+    - objectId: 9375b3b7-05ac-46c6-8888-cb7a12f26d85
+      lightmapIndex: 1
+      rotation: {x: -0.1726288, y: 0.6857108, z: 0.6857108, w: 0.1726288}
+      position: {x: -5.8095503, y: 0.5854057, z: 1.2024}
+      lightmapScaleOffset: {x: 0.07755502, y: 0.07792387, z: 0.597039, w: 0.5735823}
+    - objectId: 0218f780-a8a8-49b5-9061-cbe0c3d082b9
+      lightmapIndex: 1
+      rotation: {x: -0.639597, y: 0.30152223, z: 0.3015222, w: 0.63959706}
+      position: {x: -2.3421793, y: 0.5854057, z: 1.5276821}
+      lightmapScaleOffset: {x: 0.07755502, y: 0.07792387, z: 0.8909843, w: 0.81186354}
+    - objectId: 536c0eca-7b98-41b6-90e6-75428962070f
+      lightmapIndex: -1
+      rotation: {x: -0.64739877, y: 0.28438503, z: 0.28438506, w: 0.64739877}
+      position: {x: -2.3271062, y: 0.5854057, z: 1.509422}
+      lightmapScaleOffset: {x: 1, y: 1, z: 0, w: 0}
+    - objectId: 9a72091d-e399-49f6-9f10-c4a8ab75e1b7
+      lightmapIndex: -1
+      rotation: {x: -0.33269602, y: 0.6239498, z: 0.6239498, w: 0.332696}
+      position: {x: -0.28062075, y: 0.5854057, z: 2.0232327}
+      lightmapScaleOffset: {x: 1, y: 1, z: 0, w: 0}
+    - objectId: 27dd0c4e-2213-429f-89c9-6af4c59ef9b3
+      lightmapIndex: 1
+      rotation: {x: -0.33269602, y: 0.6239498, z: 0.6239498, w: 0.332696}
+      position: {x: -0.28062075, y: 0.5854057, z: 2.0232327}
+      lightmapScaleOffset: {x: 0.07755502, y: 0.07792387, z: 0.5911796, w: 0.43002757}
+    - objectId: 6cef9ebc-4d18-4628-b125-bffaa8ea1563
+      lightmapIndex: 0
+      rotation: {x: 0.0259028, y: 0.70663226, z: 0.7066322, w: -0.025902908}
+      position: {x: 1.6225064, y: 0.8645504, z: 0.37945753}
+      lightmapScaleOffset: {x: 0.075170875, y: 0.07529156, z: 0.31756824, w: 0.92401147}
+    - objectId: 510bb0e9-0a70-4004-8941-3dcfc2f0814f
+      lightmapIndex: 1
+      rotation: {x: -0.0027240498, y: 0.7071017, z: 0.70710146, w: 0.0027239455}
+      position: {x: -7.60711, y: 0.6170706, z: -3.4659026}
+      lightmapScaleOffset: {x: 0.075170875, y: 0.07529156, z: 0.8781151, w: 0.353699}
+    - objectId: dd248289-ad04-4d26-8a5a-a9e397b8992d
+      lightmapIndex: 1
+      rotation: {x: -0.0027240498, y: 0.7071017, z: 0.70710146, w: 0.0027239455}
+      position: {x: -4.9231353, y: 2.569794, z: -3.4659026}
+      lightmapScaleOffset: {x: 0.075170875, y: 0.07529156, z: 0.88006824, w: 0.9152224}
+    - objectId: f7bf5010-7ad7-445a-b345-653375514573
+      lightmapIndex: 1
+      rotation: {x: -0.00030777752, y: 0.7071069, z: 0.7071066, w: 0.00030767324}
+      position: {x: -5.8424196, y: 0.9391299, z: -3.7246644}
+      lightmapScaleOffset: {x: 0.075170875, y: 0.07529156, z: 0.82538074, w: 0.60955834}
+    - objectId: f2e82386-b10f-493b-abdb-bb0cd326241d
+      lightmapIndex: 1
+      rotation: {x: -0.5487495, y: 0.44595292, z: 0.44595295, w: 0.5487494}
+      position: {x: -2.3003511, y: 1.1634923, z: -0.1558671}
+      lightmapScaleOffset: {x: 0.086061455, y: 0.08642036, z: 0.5490168, w: 0.8449099}
+    - objectId: 0752adc6-e3c8-41af-9268-16e9c7981539
+      lightmapIndex: 1
+      rotation: {x: -0.5633929, y: 0.42730376, z: 0.42730376, w: 0.56339276}
+      position: {x: -2.8171973, y: 0.84250134, z: -0.27117735}
+      lightmapScaleOffset: {x: 0.056816738, y: 0.05695475, z: 0.5187282, w: 0.9376704}
+    - objectId: fb8d67f0-0da1-4442-8ab3-22dce33dfd4c
+      lightmapIndex: 1
+      rotation: {x: -0.5636934, y: 0.42690724, z: 0.42690727, w: 0.5636933}
+      position: {x: -2.300222, y: 0.9375165, z: -0.09481859}
+      lightmapScaleOffset: {x: 0.0744116, y: 0.074396044, z: 0.6388606, w: 0.62616557}
+    - objectId: da1d79f5-5672-4b93-bd4f-d7602955f918
+      lightmapIndex: 1
+      rotation: {x: -0.59683585, y: 0.3791926, z: 0.37919262, w: 0.59683573}
+      position: {x: -2.3532007, y: 0.83856934, z: -0.122353554}
+      lightmapScaleOffset: {x: 0.075170875, y: 0.07529156, z: 0.57049793, w: 0.40936306}
+    - objectId: 5ba5dfe2-000a-42d7-8eee-f31c5e3904b8
+      lightmapIndex: 1
+      rotation: {x: -0.00030777752, y: 0.7071069, z: 0.7071066, w: 0.00030767324}
+      position: {x: -6.6222396, y: 0.84566545, z: -3.7472837}
+      lightmapScaleOffset: {x: 0.0744116, y: 0.074396044, z: 0.35956374, w: 0.38690776}
+    - objectId: f9f77bdb-6262-4a16-ad7f-f87d333fdb13
+      lightmapIndex: 1
+      rotation: {x: -0.695271, y: 0.12883388, z: 0.12883388, w: 0.6952711}
+      position: {x: 3.0811822, y: 2.4834678, z: 2.7102296}
+      lightmapScaleOffset: {x: 0.0744116, y: 0.074396044, z: 0.6417903, w: 0.500189}
+    - objectId: 4aa04ff6-2614-4583-8288-38226afa43db
+      lightmapIndex: 1
+      rotation: {x: -0.67568123, y: 0.20845866, z: 0.20845868, w: 0.6756811}
+      position: {x: 3.0631776, y: 2.388576, z: 2.6633148}
+      lightmapScaleOffset: {x: 0.0744116, y: 0.074396044, z: 0.47382155, w: 0.7892515}
+    - objectId: 6b1b13c0-a937-40c2-8844-780890c4d52e
+      lightmapIndex: 1
+      rotation: {x: -0.526006, y: -0.47256503, z: -0.47256523, w: 0.5260058}
+      position: {x: 0.91083175, y: 0.22985132, z: 2.6651285}
+      lightmapScaleOffset: {x: 0.0744116, y: 0.074396044, z: 0.9230403, w: 0.42694682}
+    - objectId: f30123ee-2324-40ba-8eef-90613fcfbe28
+      lightmapIndex: 2
+      rotation: {x: 0.21938677, y: 0.6722124, z: 0.67221224, w: -0.21938692}
+      position: {x: 2.9535868, y: 0.33865574, z: 0.24723095}
+      lightmapScaleOffset: {x: 0.0744116, y: 0.074396044, z: 0.3185481, w: 0.1925718}
+    - objectId: 3b042166-a866-4c00-a4fd-13a139e50866
+      lightmapIndex: 1
+      rotation: {x: 0.020675562, y: 0.7068045, z: 0.70680445, w: -0.02067567}
+      position: {x: 1.6456032, y: 0.7710863, z: 0.3501097}
+      lightmapScaleOffset: {x: 0.0744116, y: 0.074396044, z: 0.91327465, w: 0.7091734}
+    - objectId: e99479cc-4e2d-43bf-a660-9a6c3e726b29
+      lightmapIndex: 1
+      rotation: {x: -0.06414897, y: 0.704191, z: 0.7041909, w: 0.06414888}
+      position: {x: -7.575232, y: 0.52360654, z: -3.482354}
+      lightmapScaleOffset: {x: 0.0744116, y: 0.074396044, z: 0.43671218, w: 0.9171812}
+    - objectId: 88ac25d2-1223-4fa6-a693-f09fe1af837c
+      lightmapIndex: 1
+      rotation: {x: -0.06414897, y: 0.704191, z: 0.7041909, w: 0.06414888}
+      position: {x: -4.891257, y: 2.4763298, z: -3.482354}
+      lightmapScaleOffset: {x: 0.0744116, y: 0.074396044, z: 0.84003246, w: 0.5343687}
+    - objectId: 16e5cf9b-b8c2-4f2a-baca-d19453238f83
+      lightmapIndex: 2
+      rotation: {x: -0.00030777752, y: 0.7071069, z: 0.7071066, w: 0.00030767324}
+      position: {x: -5.8140187, y: 0.8456655, z: -3.7465804}
+      lightmapScaleOffset: {x: 0.0744116, y: 0.074396044, z: 0.40839186, w: 0.30292338}
+    - objectId: be58474d-3e7b-424c-8d5b-b4bc4732aeab
+      lightmapIndex: 0
+      rotation: {x: -0.7390866, y: -0, z: 0, w: 0.6736104}
+      position: {x: -0.6592976, y: 0.7324377, z: 2.8117013}
+      lightmapScaleOffset: {x: 0.02310486, y: 0.02301674, z: -0.0010963706, w: 0.9198193}
+    - objectId: 54c93e70-fca3-447c-9dd5-827c4e59431b
+      lightmapIndex: 0
+      rotation: {x: -0.55369455, y: 0.43979812, z: 0.4397984, w: 0.55369425}
+      position: {x: 3.6122441, y: 0.13964973, z: -0.36657792}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.47676283, z: 0.74986887, w: 0.5742403}
+    - objectId: 212065b7-71c0-43a2-9de0-e4474a8cd611
+      lightmapIndex: 0
+      rotation: {x: -0.70113885, y: 0.09167546, z: 0.09167548, w: 0.70113873}
+      position: {x: 2.9962523, y: 0.13964973, z: 0.4902166}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.47676283, z: 0.7567048, w: 0.5976778}
+    - objectId: 24204d7e-2e39-414b-ab1b-1e667b8bfeca
+      lightmapIndex: 0
+      rotation: {x: -0.44059545, y: 0.5530603, z: 0.55305994, w: 0.4405958}
+      position: {x: 6.725985, y: 0.6684776, z: -0.47555572}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.47676283, z: 0.8113923, w: 0.5693575}
+    - objectId: 21509f0a-99e2-4b97-9be1-586d14d69f11
+      lightmapIndex: 0
+      rotation: {x: -0.7071068, y: -0.00015600282, z: -0.00015589851, w: 0.7071068}
+      position: {x: 4.241066, y: 0.13964972, z: 1.4893339}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.47676283, z: 0.8270173, w: 0.5595919}
+    - objectId: bcd19e15-fab7-442c-aaa3-7de7babda8de
+      lightmapIndex: 0
+      rotation: {x: 0.19139124, y: 0.6807124, z: 0.68071246, w: -0.19139118}
+      position: {x: -4.1381946, y: 2.6229916, z: -3.4552853}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.47676283, z: 0.658072, w: 0.561545}
+    - objectId: 7ca3ded0-e182-4e9b-b271-3362ba6a593c
+      lightmapIndex: 0
+      rotation: {x: -0.48420206, y: 0.5153139, z: 0.5153137, w: 0.4842023}
+      position: {x: -3.163888, y: 2.5285995, z: -3.4552853}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.47676283, z: 0.71959543, w: 0.57131064}
+    - objectId: ea312137-d3fe-43d5-abd4-316150ed5fc0
+      lightmapIndex: 0
+      rotation: {x: -0.6929249, y: 0.1409083, z: 0.14090842, w: 0.69292486}
+      position: {x: -3.163888, y: 0.13964972, z: -1.9938145}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.47676283, z: 0.2567048, w: 0.58400595}
+    - objectId: de9bc62b-a3e5-483d-b6e8-3a7ef3eb3702
+      lightmapIndex: 0
+      rotation: {x: -0.3219106, y: 0.62958205, z: 0.62958217, w: 0.32191065}
+      position: {x: -3.9619431, y: 0.5020989, z: 2.2359924}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.47676283, z: 0.77623606, w: 0.5664278}
+    - objectId: 6010ce80-834c-41e6-befc-de165261cfbc
+      lightmapIndex: 0
+      rotation: {x: -0.70371705, y: -0.06915492, z: -0.06915493, w: 0.70371693}
+      position: {x: -2.417945, y: 0.13964973, z: 2.6395645}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.47676283, z: 0.25377512, w: 0.5957247}
+    - objectId: f8088c57-9e2f-4d5a-8827-7e306b8acd50
+      lightmapIndex: 0
+      rotation: {x: -0.7066027, y: -0.026693955, z: -0.02669384, w: 0.7066028}
+      position: {x: -2.3519566, y: 0.9863166, z: -0.7081133}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.47676283, z: 0.72643137, w: 0.5781466}
+    - objectId: e6f7961c-3f12-4581-bd56-9cd0ecee3376
+      lightmapIndex: 0
+      rotation: {x: -0.7071069, y: -0, z: 0, w: 0.7071067}
+      position: {x: 1.5639536, y: 0.13964973, z: 2.5652804}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.47676283, z: 0.27428293, w: 0.5693575}
+    - objectId: 4b24baee-5609-48d5-a14a-ad2c757c4a54
+      lightmapIndex: 0
+      rotation: {x: -0.7066027, y: -0.026693955, z: -0.02669384, w: 0.7066028}
+      position: {x: -2.3519566, y: 0.9863166, z: -0.7081133}
+      lightmapScaleOffset: {x: 0.13555837, y: 0.1359264, z: 0.7523115, w: 0.8821171}
+    - objectId: 9feeabad-75e7-409c-88fe-10934b902ee3
+      lightmapIndex: 0
+      rotation: {x: -0.5242691, y: 0.47449124, z: 0.4744914, w: 0.5242689}
+      position: {x: 3.6122441, y: 0.4961024, z: -0.36657792}
+      lightmapScaleOffset: {x: 0.13555837, y: 0.1359264, z: 0.8616865, w: 0.8606327}
+    - objectId: 81202695-ccb7-47ff-b5e6-7ea2bbd3e257
+      lightmapIndex: 0
+      rotation: {x: -0.55369455, y: 0.43979812, z: 0.4397984, w: 0.55369425}
+      position: {x: 3.6122441, y: 0.13964973, z: -0.36657792}
+      lightmapScaleOffset: {x: 0.13555837, y: 0.1359264, z: 0.7874678, w: 0.90457803}
+    - objectId: 5f6f88ee-74af-44e8-9946-a3b635004d50
+      lightmapIndex: 0
+      rotation: {x: -0.70113885, y: 0.09167546, z: 0.09167548, w: 0.70113873}
+      position: {x: 2.9962523, y: 0.13964973, z: 0.4902166}
+      lightmapScaleOffset: {x: 0.13555837, y: 0.1359264, z: 0.69957715, w: 0.88114053}
+    - objectId: 81ce20fb-44de-4892-85ee-a9bd695bf01e
+      lightmapIndex: 0
+      rotation: {x: -0.44059545, y: 0.5530603, z: 0.55305994, w: 0.4405958}
+      position: {x: 6.725985, y: 0.6684776, z: -0.47555572}
+      lightmapScaleOffset: {x: 0.13555837, y: 0.1359264, z: 0.81969434, w: 0.6809452}
+    - objectId: 20033ef0-cd56-4f9c-b34d-8c8a2db1231d
+      lightmapIndex: 0
+      rotation: {x: -0.7071068, y: -0.00015600282, z: -0.00015589851, w: 0.7071068}
+      position: {x: 4.241066, y: 0.13964972, z: 1.4893339}
+      lightmapScaleOffset: {x: 0.13555837, y: 0.1359264, z: 0.7640303, w: 0.89871866}
+    - objectId: 858ee228-e898-4713-8fea-b409a048c48f
+      lightmapIndex: 0
+      rotation: {x: 0.19139124, y: 0.6807124, z: 0.68071246, w: -0.19139118}
+      position: {x: -4.1381946, y: 2.6229916, z: -3.4552853}
+      lightmapScaleOffset: {x: 0.13555837, y: 0.1359264, z: 0.36168656, w: 0.62332803}
+    - objectId: d0879bea-c62a-4f12-80a6-10a7edf27f4b
+      lightmapIndex: 0
+      rotation: {x: -0.48420206, y: 0.5153139, z: 0.5153137, w: 0.4842023}
+      position: {x: -3.163888, y: 2.5285995, z: -3.4552853}
+      lightmapScaleOffset: {x: 0.13555837, y: 0.1359264, z: 0.8831709, w: 0.90164834}
+    - objectId: 57fde322-0e90-40ae-804b-a4f36edffdf8
+      lightmapIndex: 0
+      rotation: {x: -0.6929249, y: 0.1409083, z: 0.14090842, w: 0.69292486}
+      position: {x: -3.163888, y: 0.13964972, z: -1.9938145}
+      lightmapScaleOffset: {x: 0.13555837, y: 0.1359264, z: 0.30797562, w: 0.6448124}
+    - objectId: 92dbf720-1366-4a0b-ab47-496f88778b13
+      lightmapIndex: 0
+      rotation: {x: -0.509653, y: -0.49015707, z: -0.4901575, w: 0.5096524}
+      position: {x: -3.9619431, y: 0.13964972, z: 2.2359924}
+      lightmapScaleOffset: {x: 0.13555837, y: 0.1359264, z: 0.7064131, w: 0.89090616}
+    - objectId: 39cba9f7-45a8-4527-8928-3ff0c3c88886
+      lightmapIndex: 0
+      rotation: {x: -0.6704739, y: 0.22464378, z: 0.22464372, w: 0.6704738}
+      position: {x: -4.8949404, y: 0.66136575, z: 2.7962797}
+      lightmapScaleOffset: {x: 0.13555837, y: 0.1359264, z: 0.83531934, w: 0.62332803}
+    - objectId: 381c694e-6e62-4d29-8b94-c803383d0a0c
+      lightmapIndex: 0
+      rotation: {x: -0.70371705, y: -0.06915492, z: -0.06915493, w: 0.70371693}
+      position: {x: -2.417945, y: 0.13964973, z: 2.6395645}
+      lightmapScaleOffset: {x: 0.13555837, y: 0.1359264, z: -0.021125952, w: 0.65360147}
+    - objectId: 8c64c3d1-8c05-4eb2-a923-b0e394bdc579
+      lightmapIndex: 0
+      rotation: {x: -0.7059811, y: 0.039885025, z: 0.039885037, w: 0.70598096}
+      position: {x: 1.0077231, y: 0.13964973, z: 2.7883813}
+      lightmapScaleOffset: {x: 0.13555837, y: 0.1359264, z: 0.8304365, w: 0.8401249}
+    - objectId: 05fd7ad3-1ae0-4f19-8676-71c9741e1034
+      lightmapIndex: 0
+      rotation: {x: -0.7071069, y: -0, z: 0, w: 0.7071067}
+      position: {x: 1.5639536, y: 0.13964973, z: 2.5652804}
+      lightmapScaleOffset: {x: 0.13555837, y: 0.1359264, z: 0.7796553, w: 0.74051553}
+    - objectId: b6700e1b-ee2e-496f-af3c-46e3a1610938
+      lightmapIndex: 0
+      rotation: {x: -0.55470455, y: -0.43852365, z: -0.43852395, w: 0.55470425}
+      position: {x: -7.7662067, y: 0.13964973, z: -3.39514}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.4767628, z: 0.8719392, w: 0.57619345}
+    - objectId: b36ecf14-206c-4bb5-94d7-da2792a9b666
+      lightmapIndex: 0
+      rotation: {x: -0.7070327, y: -0.010239067, z: -0.010239083, w: 0.7070326}
+      position: {x: 7.100362, y: 0.13964973, z: -0.41780937}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.4767628, z: 0.7938142, w: 0.5849825}
+    - objectId: 888e9a7f-5c77-43e4-aa43-3bb022874021
+      lightmapIndex: 0
+      rotation: {x: -0.70681906, y: 0.02017066, z: 0.020170664, w: 0.706819}
+      position: {x: 6.4705424, y: 0.13964973, z: -0.3731038}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.4767628, z: 0.8084626, w: 0.5830294}
+    - objectId: 8920b524-419d-4fb3-a58b-816b4ec74733
+      lightmapIndex: 0
+      rotation: {x: 0.09590291, y: 0.700573, z: 0.70057315, w: -0.09590291}
+      position: {x: 4.5298653, y: 0.71048677, z: 2.1077914}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.4767628, z: 0.71666574, w: 0.57912314}
+    - objectId: 27d55a6f-d22d-4b88-ba56-ab07977ef311
+      lightmapIndex: 0
+      rotation: {x: 0.10754551, y: 0.6988805, z: 0.6988805, w: -0.107545525}
+      position: {x: 4.0528817, y: 0.13964973, z: 2.0885117}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.4767628, z: 0.7625642, w: 0.5830294}
+    - objectId: 2c78d32c-0214-4b70-b4d6-f3061a30c627
+      lightmapIndex: 0
+      rotation: {x: 0.13749582, y: 0.69361013, z: 0.6936101, w: -0.13749582}
+      position: {x: 4.6331587, y: 0.13964973, z: 1.8396138}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.4767628, z: 0.89928293, w: 0.5703341}
+    - objectId: 8cffe51b-ebde-4f8c-a384-4d9649ac459d
+      lightmapIndex: 0
+      rotation: {x: -0.52757615, y: -0.47081143, z: -0.47081167, w: 0.52757597}
+      position: {x: -2.5075994, y: 0.71048677, z: -2.1813765}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.4767628, z: 0.8738923, w: 0.5879122}
+    - objectId: 0c2022c6-97ce-48d9-9bf0-105fd6c979c9
+      lightmapIndex: 0
+      rotation: {x: -0.5353363, y: -0.46196875, z: -0.4619689, w: 0.53533614}
+      position: {x: -2.6019242, y: 0.13964973, z: -1.7134151}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.4767628, z: 0.89342356, w: 0.58888876}
+    - objectId: 093562f6-30d1-4633-93f2-5cd60542d0f1
+      lightmapIndex: 0
+      rotation: {x: -0.55470455, y: -0.43852365, z: -0.43852395, w: 0.55470425}
+      position: {x: -2.7561116, y: 0.13964973, z: -2.3257039}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.4767628, z: 0.2645173, w: 0.59670126}
+    - objectId: c0d417f4-f570-443a-9cfa-9e59c5036dda
+      lightmapIndex: 0
+      rotation: {x: -0.49925414, y: 0.5007448, z: 0.5007261, w: 0.49927276}
+      position: {x: -2.3895032, y: 0.13964973, z: 0.47056594}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.4767628, z: 0.85729074, w: 0.561545}
+    - objectId: 1aea81d9-11d8-4b74-910c-96d4211839c6
+      lightmapIndex: 0
+      rotation: {x: -0.36412856, y: 0.43217948, z: 0.19639534, w: 0.80128664}
+      position: {x: -4.1168942, y: 0.9356487, z: 3.0164356}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.47676283, z: 0.72643137, w: 0.6006075}
+    - objectId: 9b139748-a7d0-49f5-b736-0b5b06a145e6
+      lightmapIndex: 0
+      rotation: {x: -0.07599953, y: 0.7030108, z: 0.70301074, w: 0.075999506}
+      position: {x: -4.4232903, y: 0.13964973, z: 2.6621222}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.4767628, z: 0.87584543, w: 0.59963095}
+    - objectId: 15c6f0d1-0ae9-4593-9cae-6affccf304c5
+      lightmapIndex: 0
+      rotation: {x: -0.12447165, y: 0.6960653, z: 0.69606525, w: 0.12447165}
+      position: {x: -5.0000567, y: 0.13964973, z: 2.5888872}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.4767628, z: 0.84361887, w: 0.57717}
+    - objectId: 80f67342-33e0-4069-8f2f-6c11d6b38497
+      lightmapIndex: 0
+      rotation: {x: -0.04570198, y: 0.7056283, z: 0.70562845, w: 0.045701973}
+      position: {x: -3.796096, y: 0.13964973, z: 2.734918}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.4767628, z: 0.26940012, w: 0.58107626}
+    - objectId: ff21d477-3e86-4e69-aecb-20bc1f813a27
+      lightmapIndex: 0
+      rotation: {x: -0.35285848, y: 0.61277306, z: 0.6127732, w: 0.35285845}
+      position: {x: -2.9632921, y: 0.13964973, z: 2.3731108}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.4767628, z: 0.76354074, w: 0.56056845}
+    - objectId: cdd0d8ab-5632-4b5c-a157-c1f92821cf5b
+      lightmapIndex: 0
+      rotation: {x: -0.2278221, y: 0.2131521, z: 0.6694007, w: 0.67421514}
+      position: {x: 1.7722535, y: 3.0242093, z: -0.53876853}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.4767628, z: 0.80748606, w: 0.5908419}
+    - objectId: 043bce46-d290-4987-80da-7e2dd1cd3746
+      lightmapIndex: 0
+      rotation: {x: -0.41727933, y: -0.5708573, z: -0.57086116, w: 0.41727385}
+      position: {x: 1.4607201, y: 2.62814, z: -0.8000001}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.4767628, z: 0.64635324, w: 0.56838095}
+    - objectId: 285570b7-4aa7-41fb-b681-d4f6ed416c18
+      lightmapIndex: 0
+      rotation: {x: -0.4703491, y: 0.52798855, z: 0.5279878, w: 0.47034964}
+      position: {x: 1.7683911, y: 2.6283965, z: -0.2439292}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.4767628, z: 0.65416574, w: 0.5879122}
+    - objectId: e2abbd0e-d575-4537-89c9-f6d59e293944
+      lightmapIndex: 0
+      rotation: {x: -0.33012834, y: 0.62531215, z: 0.62531215, w: 0.33012834}
+      position: {x: 1.8636522, y: 0.7080233, z: 0.40908673}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.4767628, z: 0.79967356, w: 0.56545126}
+    - objectId: ecd05f8a-0d8e-4c98-b7c4-c6c1cf460cef
+      lightmapIndex: 0
+      rotation: {x: -0.4703491, y: 0.52798855, z: 0.5279878, w: 0.47034964}
+      position: {x: 1.7683911, y: 0.13964973, z: 0.43488055}
+      lightmapScaleOffset: {x: 0.5606271, y: 0.4767628, z: 0.8973298, w: 0.59670126}
+    - objectId: dd5bd299-1287-41e0-abe8-dbcd337fbd48
+      lightmapIndex: 0
+      rotation: {x: -0.55470455, y: -0.43852365, z: -0.43852395, w: 0.55470425}
+      position: {x: -7.7662067, y: 0.13964973, z: -3.39514}
+      lightmapScaleOffset: {x: 0.20445214, y: 0.20360623, z: 0.7147054, w: 0.7685684}
+    - objectId: 0bfe1c07-ba85-4dfa-a8d8-2584d123e453
+      lightmapIndex: 0
+      rotation: {x: -0.7070327, y: -0.010239067, z: -0.010239083, w: 0.7070326}
+      position: {x: 7.100362, y: 0.13964973, z: -0.41780937}
+      lightmapScaleOffset: {x: 0.20445214, y: 0.20360623, z: 0.86411947, w: 0.6797012}
+    - objectId: 42c12164-c89f-4856-a2bf-b08cf516f861
+      lightmapIndex: 0
+      rotation: {x: -0.70681906, y: 0.02017066, z: 0.020170664, w: 0.706819}
+      position: {x: 6.4705424, y: 0.13964973, z: -0.3731038}
+      lightmapScaleOffset: {x: 0.20445214, y: 0.20360623, z: 0.8348226, w: 0.82423246}
+    - objectId: 5679579d-8042-44d4-8ed0-2237191ffa81
+      lightmapIndex: 0
+      rotation: {x: -0.018556349, y: 0.7068633, z: 0.7068633, w: 0.018556373}
+      position: {x: 4.5298653, y: 0.6693422, z: 2.1077914}
+      lightmapScaleOffset: {x: 0.20445214, y: 0.20360623, z: 0.31431475, w: 0.61329496}
+    - objectId: b6e1b673-ca8c-4f50-a635-968a439f4163
+      lightmapIndex: 0
+      rotation: {x: 0.10754551, y: 0.6988805, z: 0.6988805, w: -0.107545525}
+      position: {x: 4.0528817, y: 0.13964973, z: 2.0885117}
+      lightmapScaleOffset: {x: 0.20445214, y: 0.20360623, z: 0.7225179, w: 0.77540433}
+    - objectId: 43933842-4c62-41f3-a22e-beae3f155ace
+      lightmapIndex: 0
+      rotation: {x: 0.13749582, y: 0.69361013, z: 0.6936101, w: -0.13749582}
+      position: {x: 4.6331587, y: 0.13964973, z: 1.8396138}
+      lightmapScaleOffset: {x: 0.20445214, y: 0.20360623, z: 0.69029135, w: 0.8056778}
+    - objectId: b1449494-3086-4b11-bf65-6b88998ca018
+      lightmapIndex: 0
+      rotation: {x: 0.44456947, y: 0.54987097, z: 0.5498708, w: -0.44456962}
+      position: {x: -2.5075994, y: 0.6693422, z: -2.1813765}
+      lightmapScaleOffset: {x: 0.20445214, y: 0.20360623, z: 0.77036947, w: 0.7978653}
+    - objectId: 6d4c0d47-74f8-4d0d-bbe7-686e03b3c7d6
+      lightmapIndex: 0
+      rotation: {x: -0.5353363, y: -0.46196875, z: -0.4619689, w: 0.53533614}
+      position: {x: -2.6019242, y: 0.13964973, z: -1.7134151}
+      lightmapScaleOffset: {x: 0.20445214, y: 0.20360623, z: 0.7508382, w: 0.6455215}
+    - objectId: e683b4e9-1202-4204-949a-deb17666567b
+      lightmapIndex: 0
+      rotation: {x: -0.55470455, y: -0.43852365, z: -0.43852395, w: 0.55470425}
+      position: {x: -2.7561116, y: 0.13964973, z: -2.3257039}
+      lightmapScaleOffset: {x: 0.20445214, y: 0.20360623, z: 0.30747882, w: 0.6172012}
+    - objectId: 55d430fc-965a-4188-a8cf-9445ba91b1df
+      lightmapIndex: 0
+      rotation: {x: -0.49925414, y: 0.5007448, z: 0.5007261, w: 0.49927276}
+      position: {x: -2.3895032, y: 0.13964973, z: 0.47056594}
+      lightmapScaleOffset: {x: 0.20445214, y: 0.20360623, z: 0.8113851, w: 0.7841934}
+    - objectId: 7aa33725-7d56-4f2b-978c-9e0a6aebb65b
+      lightmapIndex: 0
+      rotation: {x: -0.19990583, y: 0.67826074, z: 0.67826074, w: 0.19990584}
+      position: {x: -4.019123, y: 0.6693422, z: 2.9161577}
+      lightmapScaleOffset: {x: 0.20445214, y: 0.20360623, z: 0.9002523, w: 0.62696683}
+    - objectId: 93067223-21b1-43a2-86d6-e311c7c68a95
+      lightmapIndex: 0
+      rotation: {x: -0.07599953, y: 0.7030108, z: 0.70301074, w: 0.075999506}
+      position: {x: -4.4232903, y: 0.13964973, z: 2.6621222}
+      lightmapScaleOffset: {x: 0.20445214, y: 0.20360623, z: 0.8758382, w: 0.7666153}
+    - objectId: fd3bf231-d2fc-4172-b932-8c447f294628
+      lightmapIndex: 0
+      rotation: {x: -0.12447165, y: 0.6960653, z: 0.69606525, w: 0.12447165}
+      position: {x: -5.0000567, y: 0.13964973, z: 2.5888872}
+      lightmapScaleOffset: {x: 0.20445214, y: 0.20360623, z: 0.8914632, w: 0.80079496}
+    - objectId: 40ef1c95-2526-481c-a1ce-1b210e31cd9e
+      lightmapIndex: 0
+      rotation: {x: -0.04570198, y: 0.7056283, z: 0.70562845, w: 0.045701973}
+      position: {x: -3.796096, y: 0.13964973, z: 2.734918}
+      lightmapScaleOffset: {x: 0.20445214, y: 0.20360623, z: 0.89829916, w: 0.80665433}
+    - objectId: 24acab37-d8cc-46d7-a423-7189e2f21442
+      lightmapIndex: 0
+      rotation: {x: -0.35285848, y: 0.61277306, z: 0.6127732, w: 0.35285845}
+      position: {x: -2.9632921, y: 0.13964973, z: 2.3731108}
+      lightmapScaleOffset: {x: 0.20445214, y: 0.20360623, z: 0.91392416, w: 0.61622465}
+    - objectId: c0138a38-37e9-4dee-accf-0b2edbd05b24
+      lightmapIndex: 0
+      rotation: {x: -0.5054305, y: 0.49450988, z: 0.49451303, w: 0.50542736}
+      position: {x: 1.7683911, y: 3.1543427, z: -0.6838789}
+      lightmapScaleOffset: {x: 0.20445214, y: 0.20360623, z: 0.8455648, w: 0.6953262}
+    - objectId: 33f329b8-c400-4f00-8516-39bb12c78282
+      lightmapIndex: 0
+      rotation: {x: -0.41727933, y: -0.5708573, z: -0.57086116, w: 0.41727385}
+      position: {x: 1.4607201, y: 2.62814, z: -0.8000001}
+      lightmapScaleOffset: {x: 0.20445214, y: 0.20360623, z: 0.8191976, w: 0.61622465}
+    - objectId: 4894bf08-fb4a-432e-b3be-67c7fba76a18
+      lightmapIndex: 0
+      rotation: {x: -0.4703491, y: 0.52798855, z: 0.5279878, w: 0.47034964}
+      position: {x: 1.7683911, y: 2.6283965, z: -0.2439292}
+      lightmapScaleOffset: {x: 0.20445214, y: 0.20360623, z: 0.7830648, w: 0.75196683}
+    - objectId: 1fe0609e-3e7e-4427-9646-05ac23942386
+      lightmapIndex: 0
+      rotation: {x: -0.4858511, y: 0.51375943, z: 0.5137586, w: 0.48585188}
+      position: {x: 1.7683911, y: 0.6683653, z: 0.43488055}
+      lightmapScaleOffset: {x: 0.20445214, y: 0.20360623, z: 0.89048666, w: 0.6611465}
+    - objectId: 194b2321-8e5c-44e6-a1c9-35a6e7c0b740
+      lightmapIndex: 0
+      rotation: {x: -0.4703491, y: 0.52798855, z: 0.5279878, w: 0.47034964}
+      position: {x: 1.7683911, y: 0.13964973, z: 0.43488055}
+      lightmapScaleOffset: {x: 0.20445214, y: 0.20360623, z: 0.33091632, w: 0.62696683}
+    - objectId: 8c92b340-0396-4c1c-940b-af2533ab7257
+      lightmapIndex: 0
+      rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+      position: {x: 2.3432517, y: -0.02333803, z: -0.00032442808}
+      lightmapScaleOffset: {x: 0.35381243, y: 0.35258058, z: 0.6921109, w: 0.60337216}
+    - objectId: 500546a1-d00f-4622-b3d9-2808073c1a57
+      lightmapIndex: 8
+      rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+      position: {x: -0.85859007, y: 5.0392485, z: -1.5318869}
+      lightmapScaleOffset: {x: 1.0210607, y: 1.020359, z: -0.030251551, w: -0.030230429}
+    - objectId: e30cf785-b4bd-47fe-9e12-055cfbee908b
+      lightmapIndex: 1
+      rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+      position: {x: -0.6510976, y: 4.066639, z: 3.6417556}
+      lightmapScaleOffset: {x: 0.18127806, y: 0.18165703, z: 0.818368, w: 0.15231666}
+    - objectId: 53daabd6-2a27-49a6-8f5c-723c199e34c9
+      lightmapIndex: 1
+      rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+      position: {x: -0.27928, y: -0.054283507, z: -2.483241}
+      lightmapScaleOffset: {x: 0.33283237, y: 0.3320766, z: 0.10775567, w: 0.1302591}
+    - objectId: 9782ae7d-bcca-4d71-a892-6be0f7d7cab8
+      lightmapIndex: 0
+      rotation: {x: -0.00000013767878, y: 0.7071069, z: 0.70710665, w: 0.0000001376788}
+      position: {x: -27.022577, y: 9.614552, z: 21.499123}
+      lightmapScaleOffset: {x: 0.080349304, y: 0.07945237, z: 0.66448617, w: 0.63241297}
+    - objectId: 0fad1d8e-b4ac-4770-9e53-de459f4554fd
+      lightmapIndex: 1
+      rotation: {x: -0.00000013767878, y: 0.7071069, z: 0.70710665, w: 0.0000001376788}
+      position: {x: -26.472336, y: 10.707724, z: 21.499125}
+      lightmapScaleOffset: {x: 0.49593967, y: 0.49470833, z: 0.614748, w: 0.6285993}
+    - objectId: d78ef97d-9907-4483-b42d-1eea1d0ec752
+      lightmapIndex: 0
+      rotation: {x: -0.00000013767877, y: 0.7071069, z: 0.70710665, w: 0.00000013767878}
+      position: {x: -27.432316, y: 9.522121, z: 21.499123}
+      lightmapScaleOffset: {x: 0.20011586, y: 0.20076199, z: 0.74753416, w: 0.817752}
+    - objectId: 703e0014-2237-444d-961f-5a753940b43d
+      lightmapIndex: 0
+      rotation: {x: -0.00000013767878, y: 0.7071069, z: 0.70710665, w: 0.0000001376788}
+      position: {x: -27.02258, y: 9.614553, z: 41.43327}
+      lightmapScaleOffset: {x: 0.080349304, y: 0.07945237, z: 0.6840174, w: 0.9156161}
+    - objectId: daecf702-12c5-4839-8869-8cc87c2b6354
+      lightmapIndex: 1
+      rotation: {x: -0.00000013767878, y: 0.7071069, z: 0.70710665, w: 0.0000001376788}
+      position: {x: -26.47234, y: 10.7077265, z: 41.43327}
+      lightmapScaleOffset: {x: 0.49593967, y: 0.49470833, z: 0.34912297, w: 0.171568}
+    - objectId: 33d7298a-9f72-413b-85b9-7eb2e3d7077c
+      lightmapIndex: 0
+      rotation: {x: -0.00000013767877, y: 0.7071069, z: 0.70710665, w: 0.00000013767878}
+      position: {x: -27.432318, y: 9.522124, z: 41.433273}
+      lightmapScaleOffset: {x: 0.20011586, y: 0.20076199, z: 0.346167, w: 0.61365044}
+    - objectId: 80193956-41ad-4b9b-bf94-db46a5899e55
+      lightmapIndex: 0
+      rotation: {x: -0.00000013767878, y: 0.7071069, z: 0.70710665, w: 0.0000001376788}
+      position: {x: -27.022581, y: 9.614559, z: 61.45271}
+      lightmapScaleOffset: {x: 0.080349304, y: 0.07945237, z: 0.69671273, w: 0.6685458}
+    - objectId: 50c8980b-9550-4abb-b0bb-ec01bd778135
+      lightmapIndex: 1
+      rotation: {x: -0.00000013767878, y: 0.7071069, z: 0.70710665, w: 0.0000001376788}
+      position: {x: -26.472338, y: 10.707732, z: 61.452717}
+      lightmapScaleOffset: {x: 0.49593967, y: 0.49470833, z: 0.49267766, w: 0.6461774}
+    - objectId: c163720b-ec92-43ce-9de4-dc8439d5c8b7
+      lightmapIndex: 0
+      rotation: {x: -0.00000013767877, y: 0.7071069, z: 0.70710665, w: 0.00000013767878}
+      position: {x: -27.432322, y: 9.522128, z: 61.452705}
+      lightmapScaleOffset: {x: 0.20011586, y: 0.20076199, z: 0.8012451, w: 0.80115044}
+    - objectId: 501d9b05-fb36-488e-87ff-44bb94d86a31
+      lightmapIndex: 0
+      rotation: {x: -0.7071069, y: -0, z: -0, w: 0.7071067}
+      position: {x: 25.289997, y: 9.614558, z: 61.440937}
+      lightmapScaleOffset: {x: 0.080349304, y: 0.07945237, z: 0.90179086, w: 0.6910067}
+    - objectId: cae88671-e564-4193-8026-119b0b34f5e6
+      lightmapIndex: 1
+      rotation: {x: -0.7071069, y: -0, z: -0, w: 0.7071067}
+      position: {x: 24.739756, y: 10.707731, z: 61.440933}
+      lightmapScaleOffset: {x: 0.49593967, y: 0.49470833, z: 0.6040058, w: 0.31414613}
+    - objectId: b2f4bdf1-1142-409f-9abc-605c59dcf86c
+      lightmapIndex: 0
+      rotation: {x: -0.7071069, y: -0, z: 0, w: 0.7071067}
+      position: {x: 25.699736, y: 9.522128, z: 61.440937}
+      lightmapScaleOffset: {x: 0.20011586, y: 0.20076199, z: 0.6996826, w: 0.6361114}
+    - objectId: 6a31d5a7-1dfe-4e17-8e0f-1fccb485c690
+      lightmapIndex: 0
+      rotation: {x: -0.7071069, y: -0, z: -0, w: 0.7071067}
+      position: {x: 25.289997, y: 9.6145525, z: 41.506783}
+      lightmapScaleOffset: {x: 0.080349304, y: 0.07945237, z: 0.69085336, w: 0.92733485}
+    - objectId: 0c9b3767-6324-44ae-bf34-52fdbf1f4c7a
+      lightmapIndex: 2
+      rotation: {x: -0.7071069, y: -0, z: -0, w: 0.7071067}
+      position: {x: 24.739756, y: 10.707726, z: 41.506783}
+      lightmapScaleOffset: {x: 0.49593967, y: 0.49470833, z: 0.5864277, w: 0.6491071}
+    - objectId: 7b386fb1-571f-4f4f-a456-af880f31b341
+      lightmapIndex: 0
+      rotation: {x: -0.7071069, y: -0, z: 0, w: 0.7071067}
+      position: {x: 25.699736, y: 9.522124, z: 41.50678}
+      lightmapScaleOffset: {x: 0.20011586, y: 0.20076199, z: 0.7963623, w: 0.6361114}
+    - objectId: afb63ec3-38fb-4867-8b38-2a9b6cd3d289
+      lightmapIndex: 0
+      rotation: {x: -0.7071069, y: -0, z: -0, w: 0.7071067}
+      position: {x: 25.289997, y: 9.61455, z: 21.487347}
+      lightmapScaleOffset: {x: 0.080349304, y: 0.07945237, z: 0.653744, w: 0.6265536}
+    - objectId: 0313653e-ab09-434a-9ad3-e9d64065695b
+      lightmapIndex: 1
+      rotation: {x: -0.7071069, y: -0, z: -0, w: 0.7071067}
+      position: {x: 24.739756, y: 10.707723, z: 21.487345}
+      lightmapScaleOffset: {x: 0.49593967, y: 0.49470833, z: 0.64502144, w: 0.5768415}
+    - objectId: 146e69df-36f8-447b-84f9-5b64c7fe7d93
+      lightmapIndex: 0
+      rotation: {x: -0.7071069, y: -0, z: 0, w: 0.7071067}
+      position: {x: 25.699736, y: 9.522121, z: 21.487345}
+      lightmapScaleOffset: {x: 0.20011586, y: 0.20076199, z: 0.7699951, w: 0.6517364}
+    - objectId: 0aa1b425-758c-4f44-bf39-fcc0261bf2b7
+      lightmapIndex: 0
+      rotation: {x: -0.5000007, y: 0.49999934, z: 0.49999934, w: 0.5000007}
+      position: {x: -0.312, y: 2.6222, z: -1.3627}
+      lightmapScaleOffset: {x: 0.046993155, y: 0.04670451, z: 0.35439563, w: 0.87301385}
+    - objectId: 1744178a-7829-46b2-b03c-19b7ee770a35
+      lightmapIndex: 0
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      position: {x: -0.67, y: -14.09, z: 45.04}
+      lightmapScaleOffset: {x: 1.0042953, y: 1.0037607, z: -0.003891068, w: -0.0021216779}
+    - objectId: b20e293d-27f4-4d82-aae5-0656d5e21da4
+      lightmapIndex: 14
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      position: {x: -0.49, y: -18.79286, z: 44.19}
+      lightmapScaleOffset: {x: 1.0064689, y: 1.0075184, z: -0.0035937214, w: -0.003597978}
+    terrainDatas: []
+    lightSourceDatas:
+    - name: Left-Main
+      instanceID: 95850
+      lightUID: 72bdded1-2954-485e-ad1b-409ef940228a
+      position: {x: -10.521, y: 4.542, z: 2.7129998}
+      rotation: {x: 0.9248957, y: -0.061854064, z: 0.22845486, w: 0.29757434}
+      intensity: 22.5
+      color: {r: 0.85882354, g: 0.74071413, b: 0.65882355, a: 1}
+      temperature: 6570
+      range: 10
+      spotAngle: 66.40323
+      shadowType: 1
+      shadowStrength: 0
+      areaSize: {x: 1, y: 1}
+      enableTime: 0
+      disableTime: 0
+    - name: Central-Orange-fill
+      instanceID: 95966
+      lightUID: f95a062e-4970-4d29-a5d5-0425cf16ab37
+      position: {x: -0.66400003, y: 3.6820002, z: 0.921}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      intensity: 6.09
+      color: {r: 0.7735849, g: 0.38953194, b: 0.21529014, a: 1}
+      temperature: 6570
+      range: 172.82
+      spotAngle: 30
+      shadowType: 1
+      shadowStrength: 0
+      areaSize: {x: 1, y: 1}
+      enableTime: 0
+      disableTime: 0
+    - name: Central-Light-Main
+      instanceID: 96210
+      lightUID: aa43c2be-9af5-4b0b-aeba-e0ae42102510
+      position: {x: -0.66400003, y: 3.6820002, z: 3.583}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      intensity: 6.17
+      color: {r: 0.8113208, g: 0.69677335, b: 0.4477572, a: 1}
+      temperature: 6570
+      range: 460.81
+      spotAngle: 30
+      shadowType: 0
+      shadowStrength: 0
+      areaSize: {x: 1, y: 1}
+      enableTime: 0
+      disableTime: 0
+    - name: GameFill-Light
+      instanceID: 96266
+      lightUID: d93aafb6-4fb7-4b22-869b-9fcfc5c70353
+      position: {x: 0.10571998, y: 3.454, z: 1.1659999}
+      rotation: {x: 0.80516297, y: -0, z: -0, w: 0.59305364}
+      intensity: 8.82
+      color: {r: 1, g: 1, b: 1, a: 1}
+      temperature: 6570
+      range: 18.05
+      spotAngle: 108.913994
+      shadowType: 1
+      shadowStrength: 0
+      areaSize: {x: 1, y: 1}
+      enableTime: 0
+      disableTime: 0
+    - name: Right-Main
+      instanceID: 96998
+      lightUID: 5d5f4b1a-c0fe-442d-89d4-cc28991bfaaf
+      position: {x: 9.919001, y: 4.542, z: 1.9629999}
+      rotation: {x: 0.91446114, y: 0.09603313, z: -0.26717868, w: 0.28836444}
+      intensity: 21.1
+      color: {r: 0.85882354, g: 0.74071413, b: 0.65882355, a: 1}
+      temperature: 6570
+      range: 10
+      spotAngle: 99.12366
+      shadowType: 1
+      shadowStrength: 0
+      areaSize: {x: 1, y: 1}
+      enableTime: 0
+      disableTime: 0
+    - name: Left-Orange-Fill
+      instanceID: 97222
+      lightUID: aef85c27-46e1-463f-b577-de6a8f1586ab
+      position: {x: -3.2710001, y: 1.6120001, z: -1.1399999}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      intensity: 1.29
+      color: {r: 0.8301887, g: 0.36073676, b: 0.20754717, a: 1}
+      temperature: 6570
+      range: 10
+      spotAngle: 30
+      shadowType: 1
+      shadowStrength: 0
+      areaSize: {x: 1, y: 1}
+      enableTime: 0
+      disableTime: 0
+    - name: Right-Orange-Fill
+      instanceID: 97852
+      lightUID: 133eeb47-a8de-4d74-85ca-5c21126a4814
+      position: {x: 4.189, y: 1.6120001, z: -1.1399999}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      intensity: 3.93
+      color: {r: 0.7735849, g: 0.5411793, b: 0.49991098, a: 1}
+      temperature: 6570
+      range: 10
+      spotAngle: 30
+      shadowType: 1
+      shadowStrength: 0
+      areaSize: {x: 1, y: 1}
+      enableTime: 0
+      disableTime: 0
+    - name: Spot Light
+      instanceID: 97870
+      lightUID: a02a93c8-7bbe-4bf2-8878-26d6a201543f
+      position: {x: -0.351, y: 4.542, z: 5.033}
+      rotation: {x: 0.93802804, y: -0.09511743, z: 0.037006322, w: 0.33118978}
+      intensity: 33.9
+      color: {r: 1, g: 1, b: 1, a: 1}
+      temperature: 6570
+      range: 10
+      spotAngle: 77.95161
+      shadowType: 1
+      shadowStrength: 0
+      areaSize: {x: 1, y: 1}
+      enableTime: 0
+      disableTime: 0
+    customBlendableDatas: []
+    lightmapsLight:
+    - {fileID: 2800000, guid: 49e239b3ecd44274e8d666db094ee44f, type: 3}
+    - {fileID: 2800000, guid: f32fe0462e87cfb4392882f370563e05, type: 3}
+    - {fileID: 2800000, guid: 20b441f640316a442b75780669516a8c, type: 3}
+    - {fileID: 2800000, guid: f16ea0c655c1dd54fb6562f61eeb6f0e, type: 3}
+    - {fileID: 2800000, guid: 5794763754991f4449b71e3963975b72, type: 3}
+    - {fileID: 2800000, guid: ed816399744c6964bbe8af24258275b0, type: 3}
+    - {fileID: 2800000, guid: d0d96e83a1ba5b64b9e8379a6f9b5ae1, type: 3}
+    - {fileID: 2800000, guid: 297ddf4f39f580e4fb10f9f7b4f06c67, type: 3}
+    - {fileID: 2800000, guid: 62bc0156c0297754f8a8012b689c96b6, type: 3}
+    - {fileID: 2800000, guid: 8268ec0ebe153fa488f2509e07b982e3, type: 3}
+    - {fileID: 2800000, guid: 0bb859d87cf13124eaa3627b5b7f14f8, type: 3}
+    - {fileID: 2800000, guid: 111d85edabd166f48ad78b1805ea698a, type: 3}
+    - {fileID: 2800000, guid: c393f1e8476a4ea4bb3112d5869ccb1a, type: 3}
+    - {fileID: 2800000, guid: 98c53d1853eaa8b44a32008475b09b29, type: 3}
+    - {fileID: 2800000, guid: 03f12f7a7a46e53438a5dbf248682aab, type: 3}
+    lightmapsDirectional:
+    - {fileID: 2800000, guid: a62eec06cca1b3c4d9d11008cc31d297, type: 3}
+    - {fileID: 2800000, guid: da6c77769b01c744cbf4c25276df0dfe, type: 3}
+    - {fileID: 2800000, guid: 430fbfdbc4f034c4e947464a3a5b7c20, type: 3}
+    - {fileID: 2800000, guid: e13392ba4faadee4d86edffb4c7cb2ab, type: 3}
+    - {fileID: 2800000, guid: 9a1a1796111713d44bc34e8f0b20f594, type: 3}
+    - {fileID: 2800000, guid: 2ce9eeeec2931994891a2bf7340d94f1, type: 3}
+    - {fileID: 2800000, guid: 0ffbcf1afbd852041b85757e4098d25e, type: 3}
+    - {fileID: 2800000, guid: c94516798968dd34ba2761866c28cc39, type: 3}
+    - {fileID: 2800000, guid: 7babc0c02b51cbd4892027525d13b3af, type: 3}
+    - {fileID: 2800000, guid: 438426363cac3b0419124de4ca45ef7c, type: 3}
+    - {fileID: 2800000, guid: 6b75610233906784fab1b25911dc351c, type: 3}
+    - {fileID: 2800000, guid: b58a841b03b8e50409c10f7a9cdfdcef, type: 3}
+    - {fileID: 2800000, guid: 24a14fae67634a542abcd953d2248c76, type: 3}
+    - {fileID: 2800000, guid: 4d9280cb3d0d46a46a6a58aadfff1db1, type: 3}
+    - {fileID: 2800000, guid: ca83ca8c471e6854dbbfd84c669fb2c4, type: 3}
+    lightmapsShadowmask:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    skyboxSettings:
+      enabled: 0
+      tintColor: {r: 0, g: 0, b: 0, a: 0}
+      skyboxTexture: {fileID: 0}
+      exposure: 0
+    reflectionProbes:
+      name:
+      - MLS_Reflection Probe::0
+      - MLS_Reflection Probe (2)::1
+      - MLS_Reflection Probe (3)::2
+      - MLS_Reflection Probe (1)::3
+      - MLS_Reflection Probe (4)::4
+      cubeReflectionTexture:
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+    skyboxReflectionTexture:
+    - {fileID: 8900000, guid: cda2db0f787ab26449b43737028da0a2, type: 3}
+    lightProbes: []
+    lightProbes1D: []
+    initialLightProbesArrayPosition: 0
+    fogSettings:
+      enabled: 0
+      fogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+      fogDensity: 0.01
+    environmentSettings:
+      source: 0
+      ambientColor: {r: 0, g: 0, b: 0, a: 1}
+      skyColor: {r: 0, g: 0, b: 0, a: 1}
+      equatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+      groundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+      intensityMultiplier: 0.61
+  workflow: 1
+  prevBlendIndex: 0
+  removed: 0
