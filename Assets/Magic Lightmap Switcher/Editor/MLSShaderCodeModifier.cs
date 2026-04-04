@@ -70,6 +70,8 @@ namespace MagicLightmapSwitcher
         private static string patch_URP_Button_Text = "Patch URP Shaders";
         private static string patch_HDRP_Button_Text = "Patch HDRP Shaders";
 
+        private static bool isAlreadyOK;
+
         #region Standard Render Pipeline
 
         private static string standard_RP_SourcesPath;
@@ -531,8 +533,9 @@ namespace MagicLightmapSwitcher
                     systemProperties.URP__LIGHTING__GLOSSY_ENVIRONMENT_REFLECTION__MODYFI_SOURCE_FILE = "Glossy_Environment_Reflection_Additions_12.txt";
                     systemProperties.URP__LIGHTING__GLOSSY_ENVIRONMENT_REFLECTION__SIGNATURE = "//<MLS_GLOBAL_ILLUMINATION_GLOSSY_ENVIRONMENT_REFLECTION_ADDITIONS>";
                 }
-                else
+                else if (!isAlreadyOK)
                 {
+                    isAlreadyOK = true;
                     EditorUtility.DisplayDialog("Magic Lightmap Switcher",
                         "The SRP version is not supported by the plugin. " +
                         "Contact the developer using any of the available " +

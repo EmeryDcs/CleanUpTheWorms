@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: SystemProperties
   m_EditorClassIdentifier: Assembly-CSharp::MagicLightmapSwitcher.SystemProperties
   standardRPActive: 0
-  universalRPActive: 1
+  universalRPActive: 0
   highDefinitionRPActive: 0
   standardRPPatched: 0
   universalRPPatched: 0
@@ -36,14 +36,13 @@ MonoBehaviour:
   VFXGraphDirTo: 
   HDRPConfigDirFrom: 
   HDRPConfigDirTo: 
-  srpVersion: 04ab0eefa0c3
+  srpVersion: 
   srpReady: 0
   storePath: /MLS_DATA
   deferredWarningConfirmed: 0
-  useSwitchingOnly: 1
+  useSwitchingOnly: 0
   srp_Core_SourcesPath: 
-  srp_Common_ModifySourcesPath: C:/Users/edescours/Documents/GitHub/CleanUpTheWorms/Assets\Magic
-    Lightmap Switcher/Editor/Dependent Resources/Shader Sources/SRP/Common/
+  srp_Common_ModifySourcesPath: 
   SRP__ENTITY_LIGHTING__DEFAULT_SOURCE_FILE: EntityLighting.hlsl
   SRP__COMMON__DEFAULT_SOURCE_FILE: Common.hlsl
   SRP__ENTITY_LIGHTING__SAMPLE_SINGLE_LIGHTMAP__SEARCH_STRING: 
@@ -62,8 +61,7 @@ MonoBehaviour:
   SRP__ENTITY_LIGHTING__SAMPLE_DIRECTIONAL_LIGHTMAP__SIGNATURE: //<MLS_ENTITY_LIGHTING_SAMLE_DIRECTIONAL_LIGHTMAP_ADDITIONS>
   SRP__LIT__COMMON_VARIABLES__SIGNATURE: //<MLS_VARIABLES_ADDITIONS>
   srp_URP_SourcesPath: 
-  srp_URP_ModifySourcesPath: C:/Users/edescours/Documents/GitHub/CleanUpTheWorms/Assets\Magic
-    Lightmap Switcher/Editor/Dependent Resources/Shader Sources/SRP/URP/
+  srp_URP_ModifySourcesPath: 
   URP__LIT__DEFAULT_SOURCE_FILE: Shaders/Lit.shader
   URP__TERRAIN_LIT__DEFAULT_SOURCE_FILE: Shaders/Terrain/TerrainLit.shader
   URP__LIGHTING__DEFAULT_SOURCE_FILE: Lighting.hlsl
