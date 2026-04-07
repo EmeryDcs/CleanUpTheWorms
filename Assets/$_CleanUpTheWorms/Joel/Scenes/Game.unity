@@ -5057,6 +5057,54 @@ MonoBehaviour:
       m_Data: []
   m_Knots:
     m_KnotsLink: []
+--- !u!1 &303431095
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 303431096}
+  - component: {fileID: 303431097}
+  m_Layer: 0
+  m_Name: Obsacle (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &303431096
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 303431095}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.07285491, y: 0.70334375, z: 0.70334345, w: 0.072854854}
+  m_LocalPosition: {x: -6.183, y: 0.754, z: 1.966}
+  m_LocalScale: {x: 340.83725, y: 136.02855, z: 128.09996}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1182475809}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 168.172}
+--- !u!208 &303431097
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 303431095}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.004, y: 0.008, z: 0.012}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.001, y: 0.002, z: 0.002}
+  m_TimeToStationary: 0.5
 --- !u!1 &320282475
 GameObject:
   m_ObjectHideFlags: 0
@@ -15997,8 +16045,8 @@ Transform:
   m_GameObject: {fileID: 844869225}
   serializedVersion: 2
   m_LocalRotation: {x: -0.07285491, y: 0.70334375, z: 0.70334345, w: 0.072854854}
-  m_LocalPosition: {x: -4.074, y: 0.75366, z: 2.426}
-  m_LocalScale: {x: 250.58987, y: 63.91117, z: 128.09996}
+  m_LocalPosition: {x: -4.499, y: 0.754, z: 3.037}
+  m_LocalScale: {x: 340.83725, y: 136.02855, z: 128.09996}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1182475809}
@@ -21753,6 +21801,7 @@ Transform:
   - {fileID: 1088677718}
   - {fileID: 764362212}
   - {fileID: 844869226}
+  - {fileID: 303431096}
   - {fileID: 751022302}
   - {fileID: 1362593482}
   m_Father: {fileID: 0}
@@ -30154,7 +30203,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.407, y: 0.798, z: 1.658}
-  m_LocalScale: {x: 1.120335, y: 1.7, z: 1}
+  m_LocalScale: {x: 1.6, y: 1.7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
