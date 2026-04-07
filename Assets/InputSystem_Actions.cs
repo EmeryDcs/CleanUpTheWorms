@@ -612,7 +612,7 @@ public partial class @PlayerInputSystem: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""020e7578-fbbf-4fa6-a3ec-df918b0a96e2"",
-                    ""path"": ""<OculusTouchController>/triggerPressed"",
+                    ""path"": ""<XRInputV1::Oculus::OculusTouchControllerRight>{RightHand}/triggerpressed"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
