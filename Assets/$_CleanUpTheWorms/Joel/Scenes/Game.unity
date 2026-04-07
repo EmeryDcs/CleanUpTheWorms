@@ -7090,7 +7090,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &396273365
 Transform:
   m_ObjectHideFlags: 0
@@ -16819,7 +16819,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &977520706
 Transform:
   m_ObjectHideFlags: 0
@@ -34200,7 +34200,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 1d7969981c3ac534fbb5fe4e9fbb980b, type: 2}
     - target: {fileID: 3793261706857575142, guid: 0cf1fad7eac8cdb4db2c83fbb0843233, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3793261706857575142, guid: 0cf1fad7eac8cdb4db2c83fbb0843233, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -34609,6 +34609,10 @@ PrefabInstance:
     - target: {fileID: 6597545185888952242, guid: 0cf1fad7eac8cdb4db2c83fbb0843233, type: 3}
       propertyPath: m_ReceiveGI
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6597545185888952242, guid: 0cf1fad7eac8cdb4db2c83fbb0843233, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6597545185888952242, guid: 0cf1fad7eac8cdb4db2c83fbb0843233, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
