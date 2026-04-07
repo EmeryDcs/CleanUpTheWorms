@@ -76,3 +76,380 @@ crashlytics-build.properties
 
 
 !Assets/Packages/
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game/Lightmap-1_comp_light.exr.meta
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game/Lightmap-0_comp_light.exr.meta
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game/Lightmap-1_comp_dir.png.meta
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game/Lightmap-0_comp_dir.png.meta
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game/ReflectionProbe-4.exr.meta
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game/ReflectionProbe-3.exr.meta
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game/ReflectionProbe-2.exr.meta
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game/ReflectionProbe-1.exr.meta
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game/ReflectionProbe-0.exr.meta
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game/Lightmap-1_comp_light.exr
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game/Lightmap-0_comp_light.exr
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game/Lightmap-1_comp_dir.png
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game/Lightmap-0_comp_dir.png
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game/LightingData.asset.meta
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game/ReflectionProbe-4.exr
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game/ReflectionProbe-3.exr
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game/ReflectionProbe-2.exr
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game/ReflectionProbe-1.exr
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game/ReflectionProbe-0.exr
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game/LightingData.asset
+Assets/$_CleanUpTheWorms/Joel/Scenes/GameLVC.unity.meta
+Assets/$_CleanUpTheWorms/Joel/Scenes/GameLVC.unity
+Assets/$_CleanUpTheWorms/Joel/LightSettings/Lighting Settings.lighting
+Assets/$_CleanUpTheWorms/Joel/Materials/M_DoorElevator.mat
+Assets/$_CleanUpTheWorms/Joel/Materials/M_Pencil.mat
+Assets/$_CleanUpTheWorms/Joel/Materials/M_Locker.mat
+Assets/Magic Lightmap Switcher/Examples/Scenes/Custom Blendable/Custom Blendable/Custom Blendable_MLS_DATA/Custom Blendable_New Lightmap Scenario_0.asset.meta
+Assets/Magic Lightmap Switcher/Examples/Scenes/Skybox Blending/Skybox Blending/Skybox Blending_MLS_DATA/Skybox Blending_New Lightmap Scenario_0.asset.meta
+Assets/Magic Lightmap Switcher/Examples/Scenes/Custom Blendable/Custom Blendable/Custom Blendable_MLS_DATA/Custom Blendable_New Lightmap Scenario_0.asset
+Assets/Magic Lightmap Switcher/Editor/Dependent Resources/Shader Sources/Standard/Unity_Shadow_Library_Unity_Get_Raw_Baked_Occlusions_Additions.txt.meta
+Assets/Magic Lightmap Switcher/Examples/Scenes/Custom Blendable/Custom Blendable/Custom Blendable_MLS_DATA/SkyboxReflectionProbe-New Preset_1.exr.meta
+Assets/Magic Lightmap Switcher/Examples/Scenes/Custom Blendable/Custom Blendable/Custom Blendable_MLS_DATA/SkyboxReflectionProbe-New Preset_0.exr.meta
+Assets/Magic Lightmap Switcher/Examples/Scenes/Custom Blendable/Custom Blendable/Custom Blendable_MLS_DATA/LightmapDirectional_New Preset_1_0.png.meta
+Assets/Magic Lightmap Switcher/Examples/Scenes/Custom Blendable/Custom Blendable/Custom Blendable_MLS_DATA/LightmapDirectional_New Preset_0_0.png.meta
+Assets/Magic Lightmap Switcher/Editor/Dependent Resources/Shader Sources/Standard/Unity_Shadow_Library_Unity_Sample_Baked_Occlusion_Additions.txt.meta
+Assets/Magic Lightmap Switcher/Examples/Scenes/Skybox Blending/Skybox Blending/Skybox Blending_MLS_DATA/Skybox Blending_New Lightmap Scenario_0.asset
+Assets/Magic Lightmap Switcher/Examples/Scenes/Custom Blendable/Custom Blendable/Custom Blendable_MLS_DATA/LightmapShadowmask_New Preset_1_0.png.meta
+Assets/Magic Lightmap Switcher/Examples/Scenes/Custom Blendable/Custom Blendable/Custom Blendable_MLS_DATA/LightmapShadowmask_New Preset_0_0.png.meta
+Assets/Magic Lightmap Switcher/Examples/Scenes/Skybox Blending/Skybox Blending/Skybox Blending_MLS_DATA/SkyboxReflectionProbe-New Preset_1.exr.meta
+Assets/Magic Lightmap Switcher/Examples/Scenes/Skybox Blending/Skybox Blending/Skybox Blending_MLS_DATA/SkyboxReflectionProbe-New Preset_0.exr.meta
+Assets/Magic Lightmap Switcher/Examples/Scenes/Skybox Blending/Skybox Blending/Skybox Blending_MLS_DATA/LightmapDirectional_New Preset_1_0.png.meta
+Assets/Magic Lightmap Switcher/Examples/Scenes/Skybox Blending/Skybox Blending/Skybox Blending_MLS_DATA/LightmapDirectional_New Preset_0_0.png.meta
+Assets/Magic Lightmap Switcher/Examples/Scenes/Custom Blendable/Custom Blendable/Custom Blendable_MLS_DATA/Custom Blendable_New Preset_1.asset.meta
+Assets/Magic Lightmap Switcher/Examples/Scenes/Custom Blendable/Custom Blendable/Custom Blendable_MLS_DATA/Custom Blendable_New Preset_0.asset.meta
+Assets/Magic Lightmap Switcher/Editor/Dependent Resources/Shader Sources/Standard/Unity_Shadow_Library_Unity_Get_Raw_Baked_Occlusions_Additions.txt
+Assets/Magic Lightmap Switcher/Examples/Scenes/Custom Blendable/Custom Blendable/Custom Blendable_MLS_DATA/ReflectionProbe-New Preset_1_0.exr.meta
+Assets/Magic Lightmap Switcher/Examples/Scenes/Custom Blendable/Custom Blendable/Custom Blendable_MLS_DATA/ReflectionProbe-New Preset_0_0.exr.meta
+Assets/Magic Lightmap Switcher/Examples/Scenes/Custom Blendable/Custom Blendable/Custom Blendable_MLS_DATA/SkyboxReflectionProbe-New Preset_1.exr
+Assets/Magic Lightmap Switcher/Examples/Scenes/Custom Blendable/Custom Blendable/Custom Blendable_MLS_DATA/SkyboxReflectionProbe-New Preset_0.exr
+Assets/Magic Lightmap Switcher/Examples/Scenes/Custom Blendable/Custom Blendable/Custom Blendable_MLS_DATA/LightmapDirectional_New Preset_1_0.png
+Assets/Magic Lightmap Switcher/Examples/Scenes/Custom Blendable/Custom Blendable/Custom Blendable_MLS_DATA/LightmapDirectional_New Preset_0_0.png
+Assets/Magic Lightmap Switcher/Editor/Dependent Resources/Shader Sources/Standard/Unity_Shadow_Library_Unity_Sample_Baked_Occlusion_Additions.txt
+Assets/Magic Lightmap Switcher/Editor/Dependent Resources/Shader Sources/Standard/Global_Illumination_UnityGI_IndirectSpecular_Additions.txt.meta
+Assets/Magic Lightmap Switcher/Examples/Scenes/Custom Blendable/Custom Blendable/Custom Blendable_MLS_DATA/LightmapShadowmask_New Preset_1_0.png
+Assets/Magic Lightmap Switcher/Examples/Scenes/Custom Blendable/Custom Blendable/Custom Blendable_MLS_DATA/LightmapShadowmask_New Preset_0_0.png
+Assets/Magic Lightmap Switcher/Examples/Scenes/Custom Blendable/Custom Blendable/Custom Blendable_MLS_DATA/LightmapLight_New Preset_1_0.exr.meta
+Assets/Magic Lightmap Switcher/Examples/Scenes/Custom Blendable/Custom Blendable/Custom Blendable_MLS_DATA/LightmapLight_New Preset_0_0.exr.meta
+Assets/Magic Lightmap Switcher/Examples/Scenes/Skybox Blending/Skybox Blending/Skybox Blending_MLS_DATA/Skybox Blending_New Preset_1.asset.meta
+Assets/Magic Lightmap Switcher/Examples/Scenes/Skybox Blending/Skybox Blending/Skybox Blending_MLS_DATA/Skybox Blending_New Preset_0.asset.meta
+Assets/Magic Lightmap Switcher/Examples/Scenes/Skybox Blending/Skybox Blending/Skybox Blending_MLS_DATA/ReflectionProbe-New Preset_1_0.exr.meta
+Assets/Magic Lightmap Switcher/Examples/Scenes/Skybox Blending/Skybox Blending/Skybox Blending_MLS_DATA/ReflectionProbe-New Preset_0_0.exr.meta
+Assets/Magic Lightmap Switcher/Examples/Scenes/Skybox Blending/Skybox Blending/Skybox Blending_MLS_DATA/SkyboxReflectionProbe-New Preset_1.exr
+Assets/Magic Lightmap Switcher/Examples/Scenes/Skybox Blending/Skybox Blending/Skybox Blending_MLS_DATA/SkyboxReflectionProbe-New Preset_0.exr
+Assets/Magic Lightmap Switcher/Examples/Scenes/Skybox Blending/Skybox Blending/Skybox Blending_MLS_DATA/LightmapDirectional_New Preset_1_0.png
+Assets/Magic Lightmap Switcher/Examples/Scenes/Skybox Blending/Skybox Blending/Skybox Blending_MLS_DATA/LightmapDirectional_New Preset_0_0.png
+Assets/Magic Lightmap Switcher/Examples/Scenes/Custom Blendable/Custom Blendable/Custom Blendable_MLS_DATA/Custom Blendable_New Preset_1.asset
+Assets/Magic Lightmap Switcher/Examples/Scenes/Custom Blendable/Custom Blendable/Custom Blendable_MLS_DATA/Custom Blendable_New Preset_0.asset
+Assets/Magic Lightmap Switcher/Examples/Scenes/Skybox Blending/Skybox Blending/Skybox Blending_MLS_DATA/LightmapLight_New Preset_1_0.exr.meta
+Assets/Magic Lightmap Switcher/Examples/Scenes/Skybox Blending/Skybox Blending/Skybox Blending_MLS_DATA/LightmapLight_New Preset_0_0.exr.meta
+Assets/Magic Lightmap Switcher/Examples/Scenes/Custom Blendable/Custom Blendable/Custom Blendable_MLS_DATA/ReflectionProbe-New Preset_1_0.exr
+Assets/Magic Lightmap Switcher/Examples/Scenes/Custom Blendable/Custom Blendable/Custom Blendable_MLS_DATA/ReflectionProbe-New Preset_0_0.exr
+Assets/Magic Lightmap Switcher/Editor/Dependent Resources/Shader Sources/Standard/Global_Illumination_UnityGI_IndirectSpecular_Additions.txt
+Assets/Magic Lightmap Switcher/Examples/Scenes/Custom Blendable/Custom Blendable/Custom Blendable_MLS_DATA/LightmapLight_New Preset_1_0.exr
+Assets/Magic Lightmap Switcher/Examples/Scenes/Custom Blendable/Custom Blendable/Custom Blendable_MLS_DATA/LightmapLight_New Preset_0_0.exr
+Assets/Magic Lightmap Switcher/Examples/Scenes/Skybox Blending/Skybox Blending/Skybox Blending_MLS_DATA/Skybox Blending_New Preset_1.asset
+Assets/Magic Lightmap Switcher/Examples/Scenes/Skybox Blending/Skybox Blending/Skybox Blending_MLS_DATA/Skybox Blending_New Preset_0.asset
+Assets/Magic Lightmap Switcher/Examples/Scenes/Skybox Blending/Skybox Blending/Skybox Blending_MLS_DATA/ReflectionProbe-New Preset_1_0.exr
+Assets/Magic Lightmap Switcher/Examples/Scenes/Skybox Blending/Skybox Blending/Skybox Blending_MLS_DATA/ReflectionProbe-New Preset_0_0.exr
+Assets/Magic Lightmap Switcher/Editor/Dependent Resources/Shader Sources/Standard/Unity_PBS_Lighting_Standard_Lighting_Additions.txt.meta
+Assets/Magic Lightmap Switcher/Examples/Scenes/Skybox Blending/Skybox Blending/Skybox Blending_MLS_DATA/LightmapLight_New Preset_1_0.exr
+Assets/Magic Lightmap Switcher/Examples/Scenes/Skybox Blending/Skybox Blending/Skybox Blending_MLS_DATA/LightmapLight_New Preset_0_0.exr
+Assets/Magic Lightmap Switcher/Editor/Dependent Resources/Shader Sources/Standard/Unity_Image_Based_Lighting_Glossy_Environment.txt.meta
+Assets/Magic Lightmap Switcher/Editor/Dependent Resources/Shader Sources/Standard/Global_Illumination_Include_Section_Additions.txt.meta
+Assets/Magic Lightmap Switcher/Editor/Dependent Resources/Shader Sources/Standard/Global_Illumination_Unity_GI_Base_Additions.txt.meta
+Assets/Magic Lightmap Switcher/Editor/Dependent Resources/Shader Sources/Standard/Unity_PBS_Lighting_Standard_Lighting_Additions.txt
+Assets/Magic Lightmap Switcher/Editor/Dependent Resources/Shader Sources/Standard/Unity_Image_Based_Lighting_Glossy_Environment.txt
+Assets/Magic Lightmap Switcher/Editor/Dependent Resources/Shader Sources/Standard/Global_Illumination_Include_Section_Additions.txt
+Assets/Magic Lightmap Switcher/Editor/Dependent Resources/Shader Sources/Standard/Global_Illumination_Unity_GI_Base_Additions.txt
+Assets/Magic Lightmap Switcher/Editor/Dependent Resources/Shader Sources/Standard/Fragment_GI_Blend_Reflection_Probes.txt.meta
+Assets/Magic Lightmap Switcher/Editor/Dependent Resources/Shader Sources/Standard/Fragment_GI_Blend_Reflection_Probes.txt
+Assets/Magic Lightmap Switcher/Examples/Scenes/Custom Blendable/Custom Blendable/Lightmap-0_comp_shadowmask.png.meta
+Assets/Magic Lightmap Switcher/Editor/Dependent Resources/Shader Sources/Standard/Include_Section_Additions.txt.meta
+Assets/Magic Lightmap Switcher/Editor/Dependent Resources/Shader Sources/Standard/Unity_GI_Input_Additions.txt.meta
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game_MLS/Game_MLS_MLS_DATA/LightmapDirectional_Bake_Scenario_01_1.png.meta
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game_MLS/Game_MLS_MLS_DATA/LightmapDirectional_Bake_Scenario_01_0.png.meta
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game_MLS/Game_MLS_MLS_DATA/LightmapShadowmask_Bake_Scenario_01_1.png.meta
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game_MLS/Game_MLS_MLS_DATA/LightmapShadowmask_Bake_Scenario_01_0.png.meta
+Assets/Magic Lightmap Switcher/Editor/Dependent Resources/Shader Sources/Standard/MLS_Standard_Common.cginc.meta
+Assets/Magic Lightmap Switcher/Examples/Scenes/Custom Blendable/Custom Blendable/Lightmap-0_comp_shadowmask.png
+Assets/Magic Lightmap Switcher/Examples/Scenes/Custom Blendable/Custom Blendable/Lightmap-0_comp_light.exr.meta
+Assets/Magic Lightmap Switcher/Examples/Scenes/Custom Blendable/Custom Blendable/Custom Blendable_MLS_DATA.meta
+Assets/Magic Lightmap Switcher/Editor/Dependent Resources/Shader Sources/Standard/Include_Section_Additions.txt
+Assets/Magic Lightmap Switcher/Examples/Scenes/Multi Scene Workflow/MasterScene/Lightmap-1_comp_light.exr.meta
+Assets/Magic Lightmap Switcher/Examples/Scenes/Multi Scene Workflow/MasterScene/Lightmap-0_comp_light.exr.meta
+Assets/Magic Lightmap Switcher/Editor/Dependent Resources/Shader Sources/Standard/Unity_GI_Input_Additions.txt
+Assets/Magic Lightmap Switcher/Editor/Dependent Resources/Shader Sources/Standard/CGIncludes_Original.rar.meta
+Assets/Magic Lightmap Switcher/Editor/Dependent Resources/Shader Sources/Standard/CGIncludes_Modified.rar.meta
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game_MLS/Game_MLS_MLS_DATA/Game_MLS_New Lightmap Scenario_0.asset.meta
+Assets/Magic Lightmap Switcher/Examples/Scenes/Skybox Blending/Skybox Blending/Lightmap-0_comp_light.exr.meta
+Assets/Magic Lightmap Switcher/Examples/Scenes/Custom Blendable/Custom Blendable/Lightmap-0_comp_dir.png.meta
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game_MLS/Game_MLS_MLS_DATA/LightmapDirectional_Bake_Scenario_01_1.png
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game_MLS/Game_MLS_MLS_DATA/LightmapDirectional_Bake_Scenario_01_0.png
+Assets/Magic Lightmap Switcher/Examples/Scenes/Skybox Blending/Skybox Blending/Skybox Blending_MLS_DATA.meta
+Assets/Magic Lightmap Switcher/Examples/Scenes/Multi Scene Workflow/MasterScene/Lightmap-1_comp_dir.png.meta
+Assets/Magic Lightmap Switcher/Examples/Scenes/Multi Scene Workflow/MasterScene/Lightmap-0_comp_dir.png.meta
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game_MLS/Game_MLS_MLS_DATA/LightmapLight_Bake_Scenario_01_1.exr.meta
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game_MLS/Game_MLS_MLS_DATA/LightmapLight_Bake_Scenario_01_0.exr.meta
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game_MLS/Game_MLS_MLS_DATA/LightmapShadowmask_Bake_Scenario_01_1.png
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game_MLS/Game_MLS_MLS_DATA/LightmapShadowmask_Bake_Scenario_01_0.png
+Assets/Magic Lightmap Switcher/Examples/Scenes/Skybox Blending/Skybox Blending/Lightmap-0_comp_dir.png.meta
+Assets/Magic Lightmap Switcher/Editor/Dependent Resources/Shader Sources/Standard/MLS_Standard_Common.cginc
+Assets/Magic Lightmap Switcher/Examples/Scenes/Custom Blendable/Custom Blendable/Lightmap-0_comp_light.exr
+Assets/Magic Lightmap Switcher/Examples/Scenes/Skybox Blending/Skybox Blending/ReflectionProbe-0.exr.meta
+Assets/Magic Lightmap Switcher/Examples/Scenes/Multi Scene Workflow/MasterScene/Lightmap-1_comp_light.exr
+Assets/Magic Lightmap Switcher/Examples/Scenes/Multi Scene Workflow/MasterScene/Lightmap-0_comp_light.exr
+Assets/Magic Lightmap Switcher/Editor/Dependent Resources/Shader Sources/Standard/CGIncludes_Original.rar
+Assets/Magic Lightmap Switcher/Editor/Dependent Resources/Shader Sources/Standard/CGIncludes_Modified.rar
+Assets/Magic Lightmap Switcher/Editor/Dependent Resources/Shader Sources/Standard/CGIncludes_iOS.zip.meta
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game_MLS/Game_MLS_MLS_DATA/Game_MLS_New Lightmap Scenario_0.asset
+Assets/Magic Lightmap Switcher/Examples/Scenes/Skybox Blending/Skybox Blending/Lightmap-0_comp_light.exr
+Assets/Magic Lightmap Switcher/Examples/Scenes/Custom Blendable/Custom Blendable/Lightmap-0_comp_dir.png
+Assets/Magic Lightmap Switcher/Examples/Scenes/Custom Blendable/Custom Blendable/LightingData.asset.meta
+Assets/Magic Lightmap Switcher/Examples/Scenes/Multi Scene Workflow/MasterScene/Lightmap-1_comp_dir.png
+Assets/Magic Lightmap Switcher/Examples/Scenes/Multi Scene Workflow/MasterScene/Lightmap-0_comp_dir.png
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game_MLS/Game_MLS_MLS_DATA/LightmapLight_Bake_Scenario_01_1.exr
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game_MLS/Game_MLS_MLS_DATA/LightmapLight_Bake_Scenario_01_0.exr
+Assets/Magic Lightmap Switcher/Examples/Scenes/Skybox Blending/Skybox Blending/Lightmap-0_comp_dir.png
+Assets/Magic Lightmap Switcher/Examples/Scenes/Skybox Blending/Skybox Blending/LightingData.asset.meta
+Assets/Magic Lightmap Switcher/Examples/Scenes/Skybox Blending/Skybox Blending/ReflectionProbe-0.exr
+Assets/Magic Lightmap Switcher/Editor/Dependent Resources/Shader Sources/Standard/CGIncludes_iOS.zip
+Assets/Magic Lightmap Switcher/Examples/Scenes/Custom Blendable/Custom Blendable/LightingData.asset
+Assets/Magic Lightmap Switcher/Examples/Scenes/Skybox Blending/Skybox Blending/LightingData.asset
+Assets/Magic Lightmap Switcher/Examples/Scenes/Skybox Blending/Skyboxes/Morning Sky.hdr.meta
+Assets/Magic Lightmap Switcher/Examples/Scenes/Skybox Blending/Skyboxes/MLS_Skybox.mat.meta
+Assets/Magic Lightmap Switcher/Examples/Scenes/Skybox Blending/Skyboxes/Midday Sky.hdr.meta
+Assets/Magic Lightmap Switcher/Examples/Scenes/Custom Blendable/Custom Blendable.unity.meta
+Assets/Magic Lightmap Switcher/Examples/Scenes/Multi Scene Workflow/MasterScene.unity.meta
+Assets/Magic Lightmap Switcher/Editor/Dependent Resources/LightprobesBlending.compute.meta
+Assets/Magic Lightmap Switcher/Shaders/Standard/Shaders/StandardSkyboxCubemap.shader.meta
+Assets/Magic Lightmap Switcher/Examples/Scenes/Skybox Blending/Skybox Blending.unity.meta
+Assets/Magic Lightmap Switcher/Examples/Scenes/Skybox Blending/Skyboxes/Morning Sky.hdr
+Assets/Magic Lightmap Switcher/Examples/Scenes/Skybox Blending/Skyboxes/MLS_Skybox.mat
+Assets/Magic Lightmap Switcher/Examples/Scenes/Skybox Blending/Skyboxes/Midday Sky.hdr
+Assets/Magic Lightmap Switcher/Examples/Scenes/Custom Blendable/Custom Blendable.unity
+Assets/Magic Lightmap Switcher/Editor/Dependent Resources/Shader Sources/Standard.meta
+Assets/Magic Lightmap Switcher/Shaders/Standard/Shaders/UnityStandard_5.0.shader.meta
+Assets/Magic Lightmap Switcher/Examples/Scenes/Multi Scene Workflow/MasterScene.unity
+Assets/Magic Lightmap Switcher/Examples/Scenes/Custom Blendable/Custom Blendable.meta
+Assets/Magic Lightmap Switcher/Editor/Dependent Resources/LightprobesBlending.compute
+Assets/Magic Lightmap Switcher/Shaders/Standard/Shaders/StandardSkyboxCubemap.shader
+Assets/Magic Lightmap Switcher/Examples/Scenes/Skybox Blending/Skybox Blending.unity
+Assets/Magic Lightmap Switcher/Examples/Scenes/Multi Scene Workflow/MasterScene.meta
+Assets/Magic Lightmap Switcher/Examples/Materials/Standard/White Smoothness.mat.meta
+Assets/Magic Lightmap Switcher/Examples/Materials/Standard/White Reflection.mat.meta
+Assets/Magic Lightmap Switcher/Editor/Store Stages/StoreReflectionProbesData.cs.meta
+Assets/Magic Lightmap Switcher/Editor/Store Stages/StoreCustomBlendablesData.cs.meta
+Assets/Magic Lightmap Switcher/Shaders/Standard/Materials/MLS Cubed Skybox.mat.meta
+Assets/Magic Lightmap Switcher/Examples/Scenes/Skybox Blending/Skybox Blending.meta
+Assets/Magic Lightmap Switcher/Shaders/Standard/Editor/StandardShader_5_0.cs.meta
+Assets/Magic Lightmap Switcher/Examples/Scenes/Included Scenes/Scene D.unity.meta
+Assets/Magic Lightmap Switcher/Examples/Scenes/Included Scenes/Scene C.unity.meta
+Assets/Magic Lightmap Switcher/Examples/Scenes/Included Scenes/Scene B.unity.meta
+Assets/Magic Lightmap Switcher/Examples/Scenes/Included Scenes/Scene A.unity.meta
+Assets/Magic Lightmap Switcher/Shaders/Standard/Shaders/UnityStandard_5.0.shader
+Assets/Magic Lightmap Switcher/Examples/Scripts/EnviroControlledBlending.cs.meta
+Assets/Magic Lightmap Switcher/Examples/Scripts/ChangeObjectStateOnEvent.cs.meta
+Assets/Magic Lightmap Switcher/Examples/Materials/Standard/CustomSkybox.mat.meta
+Assets/Magic Lightmap Switcher/Editor/Store Stages/StoreLightSourcesData.cs.meta
+Assets/Magic Lightmap Switcher/Editor/Store Stages/StoreLightmapTextures.cs.meta
+Assets/Magic Lightmap Switcher/Shaders/Standard/Materials/MLS Standard.mat.meta
+Assets/Magic Lightmap Switcher/Examples/Materials/Standard/White Smoothness.mat
+Assets/Magic Lightmap Switcher/Examples/Materials/Standard/White Reflection.mat
+Assets/Magic Lightmap Switcher/Editor/Store Stages/StoreReflectionProbesData.cs
+Assets/Magic Lightmap Switcher/Editor/Store Stages/StoreLightProbesData.cs.meta
+Assets/Magic Lightmap Switcher/Editor/Store Stages/StoreCustomBlendablesData.cs
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game_MLS/Game_MLS_MLS_DATA/SkyboxReflectionProbe-Bake_Scenario_01.exr.meta
+Assets/Magic Lightmap Switcher/Shaders/Standard/Materials/MLS Cubed Skybox.mat
+Assets/Magic Lightmap Switcher/Editor/Store Stages/StoreRenderersData.cs.meta
+Assets/Magic Lightmap Switcher/Editor/Dependent Resources/Shader Sources.meta
+Assets/Magic Lightmap Switcher/Editor/Dependent Resources/DefaultSky.exr.meta
+Assets/Magic Lightmap Switcher/Shaders/Standard/Editor/StandardShader_5_0.cs
+Assets/Magic Lightmap Switcher/Examples/Scenes/Skybox Blending/Skyboxes.meta
+Assets/Magic Lightmap Switcher/Examples/Scenes/Included Scenes/Scene D.unity
+Assets/Magic Lightmap Switcher/Examples/Scenes/Included Scenes/Scene C.unity
+Assets/Magic Lightmap Switcher/Examples/Scenes/Included Scenes/Scene B.unity
+Assets/Magic Lightmap Switcher/Examples/Scenes/Included Scenes/Scene A.unity
+Assets/Magic Lightmap Switcher/Examples/Materials/Standard/Emissive.mat.meta
+Assets/Magic Lightmap Switcher/Examples/API/CallAdditiveSceneLoading.cs.meta
+Assets/Magic Lightmap Switcher/Editor/Store Stages/StoreTerrainsData.cs.meta
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game_MLS/Game_MLS_MLS_DATA/ReflectionProbe-Bake_Scenario_01_4.exr.meta
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game_MLS/Game_MLS_MLS_DATA/ReflectionProbe-Bake_Scenario_01_3.exr.meta
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game_MLS/Game_MLS_MLS_DATA/ReflectionProbe-Bake_Scenario_01_2.exr.meta
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game_MLS/Game_MLS_MLS_DATA/ReflectionProbe-Bake_Scenario_01_1.exr.meta
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game_MLS/Game_MLS_MLS_DATA/ReflectionProbe-Bake_Scenario_01_0.exr.meta
+Assets/Magic Lightmap Switcher/Examples/Scripts/EnviroControlledBlending.cs
+Assets/Magic Lightmap Switcher/Examples/Scripts/ChangeObjectStateOnEvent.cs
+Assets/Magic Lightmap Switcher/Examples/Materials/Standard/White 1.mat.meta
+Assets/Magic Lightmap Switcher/Examples/Materials/Standard/CustomSkybox.mat
+Assets/Magic Lightmap Switcher/Examples/API/EmissiveCustomBlendable.cs.meta
+Assets/Magic Lightmap Switcher/Editor/Store Stages/StoreLightSourcesData.cs
+Assets/Magic Lightmap Switcher/Editor/Store Stages/StoreLightmapTextures.cs
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game_MLS/Game_MLS_MLS_DATA/SkyboxReflectionProbe-Bake_Scenario_01.exr
+Assets/Magic Lightmap Switcher/Shaders/Standard/Materials/MLS Standard.mat
+Assets/Magic Lightmap Switcher/Examples/API/CallLightmapsSwitching.cs.meta
+Assets/Magic Lightmap Switcher/Editor/Store Stages/StoreLightProbesData.cs
+Assets/Magic Lightmap Switcher/Examples/Materials/Standard/White.mat.meta
+Assets/Magic Lightmap Switcher/Examples/Materials/Standard/Green.mat.meta
+Assets/Magic Lightmap Switcher/Examples/Scripts/SetActiveOnLM_02.cs.meta
+Assets/Magic Lightmap Switcher/Examples/Scripts/SetActiveOnLM_01.cs.meta
+Assets/Magic Lightmap Switcher/Examples/Scenes/Multi Scene Workflow.meta
+Assets/Magic Lightmap Switcher/Examples/Materials/Standard/Blue.mat.meta
+Assets/Magic Lightmap Switcher/Examples/API/CallLightmapBlending.cs.meta
+Assets/Magic Lightmap Switcher/Editor/Store Stages/StoreRenderersData.cs
+Assets/Magic Lightmap Switcher/Editor/Dependent Resources/DefaultSky.exr
+Assets/Magic Lightmap Switcher/Examples/Materials/Standard/Red.mat.meta
+Assets/Magic Lightmap Switcher/Examples/Materials/Standard/Emissive.mat
+Assets/Magic Lightmap Switcher/Examples/API/CallAdditiveSceneLoading.cs
+Assets/Magic Lightmap Switcher/Editor/Store Stages/StoreTerrainsData.cs
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game_MLS/Game_MLS_MLS_DATA/ReflectionProbe-Bake_Scenario_01_4.exr
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game_MLS/Game_MLS_MLS_DATA/ReflectionProbe-Bake_Scenario_01_3.exr
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game_MLS/Game_MLS_MLS_DATA/ReflectionProbe-Bake_Scenario_01_2.exr
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game_MLS/Game_MLS_MLS_DATA/ReflectionProbe-Bake_Scenario_01_1.exr
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game_MLS/Game_MLS_MLS_DATA/ReflectionProbe-Bake_Scenario_01_0.exr
+Assets/Magic Lightmap Switcher/Examples/Materials/Standard/White 1.mat
+Assets/Magic Lightmap Switcher/Examples/API/EmissiveCustomBlendable.cs
+Assets/Magic Lightmap Switcher/Editor/MLSDynamicRendererEditor.cs.meta
+Assets/Magic Lightmap Switcher/Examples/Scenes/Quick Start.unity.meta
+Assets/Magic Lightmap Switcher/Examples/API/CallLightmapsSwitching.cs
+Assets/Magic Lightmap Switcher/Editor/MLSStaticRendererEditor.cs.meta
+Assets/Magic Lightmap Switcher/Editor/MLSBlendingConfigurator.cs.meta
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game_MLS/Game_MLS_MLS_DATA/Game_MLS_Bake_Scenario_01.asset.meta
+Assets/Magic Lightmap Switcher/Examples/Scenes/Custom Blendable.meta
+Assets/Magic Lightmap Switcher/Examples/Materials/Standard/White.mat
+Assets/Magic Lightmap Switcher/Examples/Materials/Standard/Green.mat
+Assets/Magic Lightmap Switcher/Editor/MLSLightmapDataStoring.cs.meta
+Assets/Magic Lightmap Switcher/Examples/Scripts/SetActiveOnLM_02.cs
+Assets/Magic Lightmap Switcher/Examples/Scripts/SetActiveOnLM_01.cs
+Assets/Magic Lightmap Switcher/Examples/Scripts/EnviroHours.cs.meta
+Assets/Magic Lightmap Switcher/Examples/Scenes/Skybox Blending.meta
+Assets/Magic Lightmap Switcher/Examples/Scenes/Included Scenes.meta
+Assets/Magic Lightmap Switcher/Examples/Materials/Standard/Blue.mat
+Assets/Magic Lightmap Switcher/Examples/API/CallUnloadScene.cs.meta
+Assets/Magic Lightmap Switcher/Examples/API/CallLightmapBlending.cs
+Assets/Magic Lightmap Switcher/Editor/MLSShaderCodeModifier.cs.meta
+Assets/Magic Lightmap Switcher/Examples/Materials/Standard/Red.mat
+Assets/Magic Lightmap Switcher/Editor/MLSProgressBarHelper.cs.meta
+Assets/Magic Lightmap Switcher/Editor/SystemProperties.asset.meta
+Assets/Magic Lightmap Switcher/Editor/MLSGlobalEditorData.cs.meta
+Assets/Magic Lightmap Switcher/Editor/MLSDynamicRendererEditor.cs
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game_MLS/Game_MLS_MLS_DATA/Game_MLS_Bake_Scenario_01.asset
+Assets/Magic Lightmap Switcher/Examples/Scripts/PingPong.cs.meta
+Assets/Magic Lightmap Switcher/Examples/Scenes/Quick Start.unity
+Assets/Magic Lightmap Switcher/Editor/MLSStaticRendererEditor.cs
+Assets/Magic Lightmap Switcher/Editor/MLSBlendingConfigurator.cs
+Assets/Magic Lightmap Switcher/Examples/Scripts/Rotator.cs.meta
+Assets/Magic Lightmap Switcher/Examples/Materials/Standard.meta
+Assets/Magic Lightmap Switcher/Editor/MLSTooltipManager.cs.meta
+Assets/Magic Lightmap Switcher/Editor/MLSLightmapDataStoring.cs
+Assets/Magic Lightmap Switcher/Editor/MLSGlobalSettings.cs.meta
+Assets/Magic Lightmap Switcher/Shaders/Standard/Materials.meta
+Assets/Magic Lightmap Switcher/Examples/Scripts/EnviroHours.cs
+Assets/Magic Lightmap Switcher/Examples/API/CallUnloadScene.cs
+Assets/Magic Lightmap Switcher/Editor/MLSShaderCodeModifier.cs
+Assets/Magic Lightmap Switcher/Editor/MLSPresetManager.cs.meta
+Assets/Magic Lightmap Switcher/Editor/Dependent Resources.meta
+Assets/Magic Lightmap Switcher/API/TransformExtensions.cs.meta
+Assets/Magic Lightmap Switcher/StoredLightingScenario.cs.meta
+Assets/Magic Lightmap Switcher/Editor/MLSProgressBarHelper.cs
+Assets/Magic Lightmap Switcher/Editor/Icons/MLS_Icon.png.meta
+Assets/Magic Lightmap Switcher/Shaders/Standard/Shaders.meta
+Assets/Magic Lightmap Switcher/MagicLightmapSwitcher.cs.meta
+Assets/Magic Lightmap Switcher/Editor/SystemProperties.asset
+Assets/Magic Lightmap Switcher/Editor/MLSLightEditor.cs.meta
+Assets/Magic Lightmap Switcher/Editor/MLSGlobalEditorData.cs
+Assets/Magic Lightmap Switcher/Editor/MLSEditorUtils.cs.meta
+Assets/Magic Lightmap Switcher/Editor/MLSAboutWindow.cs.meta
+Assets/Magic Lightmap Switcher/Docs/MLS Quick Start.pdf.meta
+Assets/Magic Lightmap Switcher/Shaders/Standard/Editor.meta
+Assets/Magic Lightmap Switcher/Examples/Scripts/PingPong.cs
+Assets/Magic Lightmap Switcher/Examples/Scripts/Rotator.cs
+Assets/Magic Lightmap Switcher/Editor/MLSUtilities.cs.meta
+Assets/Magic Lightmap Switcher/Editor/MLSTooltipManager.cs
+Assets/Magic Lightmap Switcher/Editor/MLSGlobalSettings.cs
+Assets/Magic Lightmap Switcher/StoredLightmapData.cs.meta
+Assets/Magic Lightmap Switcher/MLSDynamicRenderer.cs.meta
+Assets/Magic Lightmap Switcher/MLSCustomBlendable.cs.meta
+Assets/Magic Lightmap Switcher/Editor/MLSPresetManager.cs
+Assets/Magic Lightmap Switcher/DayNightController.cs.meta
+Assets/Magic Lightmap Switcher/API/TransformExtensions.cs
+Assets/Magic Lightmap Switcher/API/SceneManagment.cs.meta
+Assets/Magic Lightmap Switcher/StoredLightingScenario.cs
+Assets/Magic Lightmap Switcher/MLSStaticRenderer.cs.meta
+Assets/Magic Lightmap Switcher/Editor/MLSUpdater.cs.meta
+Assets/Magic Lightmap Switcher/Editor/MLSManager.cs.meta
+Assets/Magic Lightmap Switcher/Editor/Icons/MLS_Icon.png
+Assets/Magic Lightmap Switcher/Editor/EditorMenu.cs.meta
+Assets/Magic Lightmap Switcher/SystemProperties.cs.meta
+Assets/Magic Lightmap Switcher/MagicLightmapSwitcher.cs
+Assets/Magic Lightmap Switcher/Editor/Store Stages.meta
+Assets/Magic Lightmap Switcher/Editor/MLSLightEditor.cs
+Assets/Magic Lightmap Switcher/Editor/MLSEditorUtils.cs
+Assets/Magic Lightmap Switcher/Editor/MLSEditor.cs.meta
+Assets/Magic Lightmap Switcher/Editor/MLSAboutWindow.cs
+Assets/Magic Lightmap Switcher/Docs/MLS Quick Start.pdf
+Assets/Magic Lightmap Switcher/Examples/Materials.meta
+Assets/Magic Lightmap Switcher/Editor/MLSUtilities.cs
+Assets/Magic Lightmap Switcher/API/RuntimeAPI.cs.meta
+Assets/Magic Lightmap Switcher/Support Packages.meta
+Assets/Magic Lightmap Switcher/StoredLightmapData.cs
+Assets/Magic Lightmap Switcher/Shaders/Standard.meta
+Assets/Magic Lightmap Switcher/MLSDynamicRenderer.cs
+Assets/Magic Lightmap Switcher/MLSCustomBlendable.cs
+Assets/Magic Lightmap Switcher/Examples/Scripts.meta
+Assets/Magic Lightmap Switcher/DayNightController.cs
+Assets/Magic Lightmap Switcher/API/SceneManagment.cs
+Assets/Magic Lightmap Switcher/MLSStaticRenderer.cs
+Assets/Magic Lightmap Switcher/Examples/Scenes.meta
+Assets/Magic Lightmap Switcher/Editor/MLSUpdater.cs
+Assets/Magic Lightmap Switcher/Editor/MLSManager.cs
+Assets/Magic Lightmap Switcher/Editor/EditorMenu.cs
+Assets/Magic Lightmap Switcher/Docs/README.txt.meta
+Assets/Magic Lightmap Switcher/SystemProperties.cs
+Assets/Magic Lightmap Switcher/Editor/MLSEditor.cs
+Assets/Magic Lightmap Switcher/Switching.cs.meta
+Assets/Magic Lightmap Switcher/MLSPrefab.cs.meta
+Assets/Magic Lightmap Switcher/MLSObject.cs.meta
+Assets/Magic Lightmap Switcher/Examples/API.meta
+Assets/Magic Lightmap Switcher/Editor/Icons.meta
+Assets/Magic Lightmap Switcher/API/RuntimeAPI.cs
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game_MLS/Lightmap-1_comp_light.exr.meta
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game_MLS/Lightmap-0_comp_light.exr.meta
+Assets/Magic Lightmap Switcher/MLSLight.cs.meta
+Assets/Magic Lightmap Switcher/Blending.cs.meta
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game_MLS/Lightmap-1_comp_dir.png.meta
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game_MLS/Lightmap-0_comp_dir.png.meta
+Assets/Magic Lightmap Switcher/Docs/README.txt
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game_MLS/ReflectionProbe-4.exr.meta
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game_MLS/ReflectionProbe-3.exr.meta
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game_MLS/ReflectionProbe-2.exr.meta
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game_MLS/ReflectionProbe-1.exr.meta
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game_MLS/ReflectionProbe-0.exr.meta
+Assets/Magic Lightmap Switcher/Examples.meta
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game_MLS/Lightmap-1_comp_light.exr
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game_MLS/Lightmap-0_comp_light.exr
+Assets/Magic Lightmap Switcher/Switching.cs
+Assets/Magic Lightmap Switcher/Shaders.meta
+Assets/Magic Lightmap Switcher/MLSPrefab.cs
+Assets/Magic Lightmap Switcher/MLSObject.cs
+Assets/Magic Lightmap Switcher/MLSLight.cs
+Assets/Magic Lightmap Switcher/Editor.meta
+Assets/Magic Lightmap Switcher/Blending.cs
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game_MLS/Lightmap-1_comp_dir.png
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game_MLS/Lightmap-0_comp_dir.png
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game_MLS/LightingData.asset.meta
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game_MLS/Game_MLS_MLS_DATA.meta
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game_MLS/ReflectionProbe-4.exr
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game_MLS/ReflectionProbe-3.exr
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game_MLS/ReflectionProbe-2.exr
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game_MLS/ReflectionProbe-1.exr
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game_MLS/ReflectionProbe-0.exr
+Assets/Magic Lightmap Switcher/Docs.meta
+Assets/Magic Lightmap Switcher/API.meta
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game_MLS/LightingData.asset
+Assets/Magic Lightmap Switcher.meta
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game_MLS.unity.meta
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game_MLS.unity
+Assets/$_CleanUpTheWorms/Joel/Scenes/Game_MLS.meta
