@@ -2,12 +2,13 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.XR;
+using System; // NEW: Required for Environment
 
 public class S_AgrandirTige : MonoBehaviour
 {
     [Header("Taille de la tige min et max")]
     public float minTaille = 0.5f;
-    [Tooltip("maxTaille peut évoluer dans le temps pour agrandir la tige au fur et à mesure que le joueur progresse dans le jeu")]
+    [Tooltip("maxTaille peut evoluer dans le temps pour agrandir la tige au fur et a mesure que le joueur progresse dans le jeu")]
     public float maxTaille = 5f;
     [Header("GameObject tige")]
     public GameObject tige;
@@ -29,14 +30,30 @@ public class S_AgrandirTige : MonoBehaviour
     public bool isInTestingScene = false;
 
     private float lastTaille = -1f;
+    
+    private bool isFastVersion = false; // NEW: Fast version flag
+
+    // NEW: Check for the argument when the script starts
+    void Start()
+    {
+        string[] args = Environment.GetCommandLineArgs();
+        for (int i = 0; i < args.Length; i++)
+        {
+            if (args[i] == "-fastversion")
+            {
+                isFastVersion = true;
+                break;
+            }
+        }
+    }
 
     void Update()
     {
-        if (StateMachineGame.Instance.state == GameState.LEVEL2 || StateMachineGame.Instance.state == GameState.END || StateMachineGame.Instance.state == GameState.ENDING)
+        // NEW: Added "isFastVersion ||" to bypass state checks if true
+        if (isFastVersion || StateMachineGame.Instance.state == GameState.LEVEL2 || StateMachineGame.Instance.state == GameState.END || StateMachineGame.Instance.state == GameState.ENDING)
         {
             ResizedStick();
         }
-
     }
 
     private float DistanceBetweenControllers()

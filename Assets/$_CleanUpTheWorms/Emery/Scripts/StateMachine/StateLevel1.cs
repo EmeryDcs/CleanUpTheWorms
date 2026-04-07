@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public enum StateLevel1TextRobot
 {
@@ -32,6 +33,8 @@ public class StateLevel1 : MonoBehaviour
 
 	bool isCatchingAvailable = false;
 	float timerText = 0f;
+	
+	private bool isFastVersion = false;
 
 	private void Awake()
 	{
@@ -45,6 +48,16 @@ public class StateLevel1 : MonoBehaviour
 			currentTextToDisplay = StateLevel1TextRobot.APPARITION_LARVE;
 			RobotAIAgent.Instance.SetMinDistanceToPlayer(1f);
 			RobotAIAgent.Instance.OnEventGoToLocation(anchorNearLarva.position);
+			
+			string[] args = Environment.GetCommandLineArgs();
+			for (int i = 0; i < args.Length; i++)
+			{
+				if (args[i] == "-fastversion")
+				{
+					isFastVersion = true;
+					break;
+				}
+			}
 		}
 	}
 
@@ -75,12 +88,21 @@ public class StateLevel1 : MonoBehaviour
 	{
 		isCatchingAvailable = false;
 
-		if (timerText < 10f)
+		if (timerText < 6f)
 		{
 			timerText += Time.deltaTime;
 		}
 		else
 		{
+			if (isFastVersion)
+			{
+				currentTextToDisplay = StateLevel1TextRobot.AMELIORATION_PINCE;
+				ingerationLarveText.SetActive(false);
+				timerText = 0f;
+				AmeliorationPince();
+				return;
+			}
+			
 			currentTextToDisplay = StateLevel1TextRobot.AMELIORATION_PINCE;
 			ingerationLarveText.SetActive(false);
 			ameliorationPinceText.SetActive(true);
@@ -90,7 +112,7 @@ public class StateLevel1 : MonoBehaviour
 
 	public void AmeliorationPince()
 	{
-		if(RobotAudio.Instance!= null) RobotAudio.Instance.PlayUpgrade();
+		if(RobotAudio.Instance!= null && !isFastVersion) RobotAudio.Instance.PlayUpgrade();
 		currentTextToDisplay = StateLevel1TextRobot.TEST_ALLONGE;
 		ameliorationPinceText.SetActive(false);
 		testAllongeText.SetActive(true);
@@ -115,7 +137,7 @@ public class StateLevel1 : MonoBehaviour
 		}
 	}
 
-	//Fonction appelée par l'aspirateur lorsqu'il aspire quelque chose
+	//Fonction appelï¿½e par l'aspirateur lorsqu'il aspire quelque chose
 	public void DeleteCollectableFromList(GameObject go)
 	{
 		Debug.Log("StateLevel1: DeleteCollectableFromList");
