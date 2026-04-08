@@ -113,13 +113,14 @@ public class S_TriggerEventButtonLift : MonoBehaviour
     public void Ending(bool value)
     {
         StateMachineGame.Instance.state = GameState.ENDING;
-
+        m_WaitToEnd = 8;
+        
         if (value)
         {
             winBubble.Invoke();
             StateMachineGame.Instance.hasWin = true;
             S_BlendLight.instance.SetScenario("3.3", 20);
-            m_WaitToEnd = 8;
+
             fadeDuration = 1;
 
             foreach (var manager in FindObjectsByType<SplineCharacterManager>(FindObjectsSortMode.None))
