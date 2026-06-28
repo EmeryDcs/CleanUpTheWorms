@@ -28069,7 +28069,7 @@ MonoBehaviour:
         m_CallState: 2
   targetLight: {fileID: 1114560617}
   minIntensity: 0
-  maxIntensity: 6.25
+  maxIntensity: 10
   pulseSpeed: 2
 --- !u!135 &1408388552
 SphereCollider:
