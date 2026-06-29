@@ -25826,7 +25826,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a471e510590c47d43ab7ac4052ceb547, type: 2}
+  - {fileID: 2100000, guid: 02e3bf60306ffcc449b7449fb7d607b4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -29259,7 +29259,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 403717860676664800, guid: f74cde0bcb063d44f909a5e4ba5f551f, type: 3}
       propertyPath: m_text
-      value: Paolo Fregi
+      value: PFRG
       objectReference: {fileID: 0}
     - target: {fileID: 5040870406349462843, guid: f74cde0bcb063d44f909a5e4ba5f551f, type: 3}
       propertyPath: m_Name
