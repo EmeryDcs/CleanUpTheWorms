@@ -30,6 +30,8 @@ public class StateMachineGame : MonoBehaviour
 
 
 	bool ending = false;
+	private bool isTuto = false;
+	private bool isFirstLevel = false;
 
 	[SerializeField] S_TriggerEventButtonLift triggerEventButtonLift;
 
@@ -63,6 +65,16 @@ public class StateMachineGame : MonoBehaviour
 			ending = true;
 			StartCoroutine(ShowEnding());
         }
+		else if (state == GameState.TUTORIAL && !isTuto)
+		{
+			isTuto = true;
+			RobotAIAgent.Instance.ResumeFollowing(true);
+		}
+		else if (state == GameState.LEVEL1 && !isFirstLevel)
+		{
+			isFirstLevel = true;
+			RobotAIAgent.Instance.ResumeFollowing(false);
+		}
     }
 
 	public void AfficherFinDuJeu()

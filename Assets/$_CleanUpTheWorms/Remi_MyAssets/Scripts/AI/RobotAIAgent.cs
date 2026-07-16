@@ -9,6 +9,8 @@ public class RobotAIAgent : MonoBehaviour
 
 	[SerializeField] float updateInterval = 0.5f;
     [SerializeField] float minDistanceToPlayer = 2f;
+    [SerializeField] private Transform firstPosRobot;
+    [SerializeField] private Transform secondPosRobot;
 
     public Transform metaCameraRig;
 	public NavMeshAgent agent;
@@ -42,7 +44,6 @@ public class RobotAIAgent : MonoBehaviour
     private void Start()
     {
         agent.stoppingDistance = minDistanceToPlayer;
-        ResumeFollowing();
     }
 
 	private void Update()
@@ -83,15 +84,15 @@ public class RobotAIAgent : MonoBehaviour
         agent.SetDestination(specificLocation);
     }
 
-    public void ResumeFollowing()
+    public void ResumeFollowing(bool _isTuto = false)
     {
         if (followCoroutine == null)
         {
-            followCoroutine = StartCoroutine(FollowRoutine());
+            followCoroutine = StartCoroutine(FollowRoutine(_isTuto));
         }
     }
 
-    private IEnumerator FollowRoutine()
+    private IEnumerator FollowRoutine(bool _isTuto)
     {
         WaitForSeconds wait = new WaitForSeconds(updateInterval);
 
@@ -99,7 +100,7 @@ public class RobotAIAgent : MonoBehaviour
         {
             if (metaCameraRig != null)
             {
-                agent.SetDestination(metaCameraRig.position);
+                agent.SetDestination(_isTuto ? firstPosRobot.position : secondPosRobot.position);
             }
             yield return wait;
         }

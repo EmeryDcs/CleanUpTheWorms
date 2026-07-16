@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.Events;
 using System.Collections;
+using TMPro;
+using Unity.VisualScripting;
 using UnityEngine.UI;
 
 public class S_TriggerEventButtonLift : MonoBehaviour
@@ -13,8 +15,13 @@ public class S_TriggerEventButtonLift : MonoBehaviour
     [SerializeField] private float maxSpeed = 5f;
     [SerializeField] private Animator animatorLift;
 
+    [SerializeField] private GameObject canvas;
     [SerializeField] private Image fadeImage;
     [SerializeField] private Image logo;
+    [SerializeField] private Image logoXR;
+    [SerializeField] private Image logoAM;
+    [SerializeField] private Image logoHolo;
+    [SerializeField] private TextMeshProUGUI textCredits;
     [SerializeField] private float fadeDuration = 1f;
 
     bool canBePushed = true;
@@ -44,6 +51,28 @@ public class S_TriggerEventButtonLift : MonoBehaviour
     private void Awake()
     {
         initialLocalPosition = transform.localPosition;
+        if (isElevator)
+            StartCoroutine(FadeBeginGame());
+    }
+    
+    private IEnumerator FadeBeginGame()
+    {
+        Color color = fadeImage.color;
+        color.a = 1f;
+        fadeImage.color = color;
+        canvas.SetActive(true);
+        
+        
+        float elapsedTime = 0f;
+
+        while (elapsedTime < fadeDuration)
+        {
+            elapsedTime += Time.deltaTime;
+            color.a = 1f - Mathf.Clamp01(elapsedTime / fadeDuration);
+            fadeImage.color = color;
+            yield return null;
+        }
+        canvas.SetActive(false);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -124,7 +153,10 @@ public class S_TriggerEventButtonLift : MonoBehaviour
             fadeDuration = 1;
 
             foreach (var manager in FindObjectsByType<SplineCharacterManager>(FindObjectsSortMode.None))
+            {
                 manager.BeginDrainMode();
+                manager.gameObject.SetActive(false);
+            }
         }
         else 
         {
@@ -169,6 +201,7 @@ public class S_TriggerEventButtonLift : MonoBehaviour
 
     private IEnumerator FadeTeleportFadeRoutine()
     {
+        canvas.SetActive(true);
         float elapsedTime = 0f;
         Color color = fadeImage.color;
 
@@ -191,6 +224,7 @@ public class S_TriggerEventButtonLift : MonoBehaviour
             fadeImage.color = color;
             yield return null;
         }
+        canvas.SetActive(false);
 
         elevatorFade = null;
     }
@@ -202,17 +236,30 @@ public class S_TriggerEventButtonLift : MonoBehaviour
     private IEnumerator FadeEnding()
     {
         yield return new WaitForSeconds(m_WaitToEnd);
+        canvas.SetActive(true);
         float elapsedTime = 0f;
         Color color = fadeImage.color;
         Color colorLogo = logo.color;
+        Color colorLogoXR = logoXR.color;
+        Color colorLogoAM = logoAM.color;
+        Color colorLogoHolo = logoHolo.color;
+        Color colorText = textCredits.color;
 
         while (elapsedTime < fadeDuration)
         {
             elapsedTime += Time.deltaTime;
             color.a = Mathf.Clamp01(elapsedTime / fadeDuration);
             colorLogo.a = Mathf.Clamp01(elapsedTime / fadeDuration);
+            colorLogoXR.a = Mathf.Clamp01(elapsedTime / fadeDuration);
+            colorLogoAM.a = Mathf.Clamp01(elapsedTime / fadeDuration);
+            colorLogoHolo.a = Mathf.Clamp01(elapsedTime / fadeDuration);
+            colorText.a = Mathf.Clamp01(elapsedTime / fadeDuration);
             fadeImage.color = color;
             logo.color = colorLogo;
+            logoXR.color = colorLogoXR;
+            logoAM.color = colorLogoAM;
+            logoHolo.color = colorLogoHolo;
+            textCredits.color = colorText;
             yield return null;
         }
     }
