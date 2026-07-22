@@ -475,6 +475,79 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1986043626}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &62140072
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1377243932}
+    m_Modifications:
+    - target: {fileID: 403717860676664800, guid: f74cde0bcb063d44f909a5e4ba5f551f, type: 3}
+      propertyPath: m_text
+      value: "J\xE9r\xE9my Provost"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4775328706925852285, guid: f74cde0bcb063d44f909a5e4ba5f551f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.031309947
+      objectReference: {fileID: 0}
+    - target: {fileID: 5040870406349462843, guid: f74cde0bcb063d44f909a5e4ba5f551f, type: 3}
+      propertyPath: m_Name
+      value: Etiquette (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9161101186268477758, guid: f74cde0bcb063d44f909a5e4ba5f551f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 9161101186268477758, guid: f74cde0bcb063d44f909a5e4ba5f551f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 9161101186268477758, guid: f74cde0bcb063d44f909a5e4ba5f551f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.436
+      objectReference: {fileID: 0}
+    - target: {fileID: 9161101186268477758, guid: f74cde0bcb063d44f909a5e4ba5f551f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9161101186268477758, guid: f74cde0bcb063d44f909a5e4ba5f551f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9161101186268477758, guid: f74cde0bcb063d44f909a5e4ba5f551f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9161101186268477758, guid: f74cde0bcb063d44f909a5e4ba5f551f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9161101186268477758, guid: f74cde0bcb063d44f909a5e4ba5f551f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9161101186268477758, guid: f74cde0bcb063d44f909a5e4ba5f551f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9161101186268477758, guid: f74cde0bcb063d44f909a5e4ba5f551f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2684530898542812151, guid: f74cde0bcb063d44f909a5e4ba5f551f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+  m_SourcePrefab: {fileID: 100100000, guid: f74cde0bcb063d44f909a5e4ba5f551f, type: 3}
+--- !u!4 &62140073 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9161101186268477758, guid: f74cde0bcb063d44f909a5e4ba5f551f, type: 3}
+  m_PrefabInstance: {fileID: 62140072}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &62159639
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11773,7 +11846,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9161101186268477758, guid: f74cde0bcb063d44f909a5e4ba5f551f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.002
+      value: -0.154
       objectReference: {fileID: 0}
     - target: {fileID: 9161101186268477758, guid: f74cde0bcb063d44f909a5e4ba5f551f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -27729,6 +27802,9 @@ PrefabInstance:
       addedObject: {fileID: 1590944304}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: dd33c9e759a1e2a47993885c1ad23f4b, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 62140073}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: dd33c9e759a1e2a47993885c1ad23f4b, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 1011909888}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: dd33c9e759a1e2a47993885c1ad23f4b, type: 3}
       insertIndex: -1
@@ -29563,7 +29639,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9161101186268477758, guid: f74cde0bcb063d44f909a5e4ba5f551f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.309
+      value: 0.146
       objectReference: {fileID: 0}
     - target: {fileID: 9161101186268477758, guid: f74cde0bcb063d44f909a5e4ba5f551f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -30372,7 +30448,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9161101186268477758, guid: f74cde0bcb063d44f909a5e4ba5f551f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.641
+      value: 0.468
       objectReference: {fileID: 0}
     - target: {fileID: 9161101186268477758, guid: f74cde0bcb063d44f909a5e4ba5f551f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -34705,7 +34781,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9161101186268477758, guid: f74cde0bcb063d44f909a5e4ba5f551f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.352
+      value: -0.491
       objectReference: {fileID: 0}
     - target: {fileID: 9161101186268477758, guid: f74cde0bcb063d44f909a5e4ba5f551f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -44003,11 +44079,12 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Thanks to Eric Charlet, PFRG, Jean Philippe Nicolay, Anouck Astoul, Andr\xE9
     Astoul, Th\xE9ophile Penz, Noam Le Garsmeur, Cl\xE9ment Mona, Antoine Ansel,
-    Valentine Derue, Lucile Astoul, Antonin Aubert, Fay\xE7al Mebarek, Joffrey Guilmet,
-    Emma Probert, Anita Bidel and Alexandra Lemarchand for helping us with this project! "
+    Valentine Derue, J\xE9r\xE9my Provost, Lucile Astoul, Antonin Aubert, Fay\xE7al
+    Mebarek, Joffrey Guilmet, Emma Probert, Anita Bidel and Alexandra Lemarchand
+    for helping us with this project! "
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6dff35033bc55dc40ba9f46023d0cb01, type: 2}
-  m_sharedMaterial: {fileID: -3444364577669743248, guid: 6dff35033bc55dc40ba9f46023d0cb01, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 76154ebc4a79542448b49668eabac2b6, type: 2}
+  m_sharedMaterial: {fileID: -2171584860189114607, guid: 76154ebc4a79542448b49668eabac2b6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -44038,7 +44115,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 16
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -45555,7 +45632,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9161101186268477758, guid: f74cde0bcb063d44f909a5e4ba5f551f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.714
+      value: -0.832
       objectReference: {fileID: 0}
     - target: {fileID: 9161101186268477758, guid: f74cde0bcb063d44f909a5e4ba5f551f, type: 3}
       propertyPath: m_LocalPosition.z
