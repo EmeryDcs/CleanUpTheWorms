@@ -4,6 +4,15 @@ public class S_GrabbableState : MonoBehaviour
 {
     [SerializeField] bool canBeTrashed = false;
     [SerializeField] bool isGrabbed = false;
+    
+    Outline outline;
+
+    void Start()
+    {
+        outline = GetComponent<Outline>();
+        if (outline != null)
+            outline.enabled = false;
+    }
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Robot")) return;
@@ -32,5 +41,16 @@ public class S_GrabbableState : MonoBehaviour
     public void SetIsGrabbed(bool value)
     {
         isGrabbed = value;
+        if (value)
+            SetOutline(false);
+    }
+
+    public void SetOutline(bool _value)
+    {
+        if (outline != null)
+        {
+            outline.enabled = _value;
+            Debug.Log("Ouline for : "+ gameObject.name + " : " + _value);
+        }
     }
 }

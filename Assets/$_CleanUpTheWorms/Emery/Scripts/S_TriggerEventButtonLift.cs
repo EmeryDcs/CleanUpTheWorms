@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.Events;
 using System.Collections;
@@ -41,6 +42,7 @@ public class S_TriggerEventButtonLift : MonoBehaviour
     [SerializeField] private float minIntensity = 0f;
     [SerializeField] private float maxIntensity = 5f;
     [SerializeField] private float pulseSpeed = 2f;
+    
     
     private bool canTriggerEnd = false;
 
@@ -113,29 +115,30 @@ public class S_TriggerEventButtonLift : MonoBehaviour
                 elevatorFade = StartCoroutine(FadeTeleportFadeRoutine());
 
             }
+        }
+    }
 
-            
+    private void OnTriggerStay(Collider other)
+    {
+        if (StateMachineGame.Instance.state == GameState.END && !isElevator && canActivateHasNotLose && canTriggerEnd)
+        {
+            Debug.Log("Button Lift Triggered");
 
-            if (StateMachineGame.Instance.state == GameState.END && !isElevator && canActivateHasNotLose && canTriggerEnd)
+            canTriggerEnd = false;
+
+            if (pushCoroutine != null)
             {
-                Debug.Log("Button Lift Triggered");
-
-                canTriggerEnd = false;
-
-                if (pushCoroutine != null)
-                {
-                    StopCoroutine(pushCoroutine);
-                }
-                pushCoroutine = StartCoroutine(PushAndReturnCoroutine());
-
-                TriggerBlinking(false);
-                Ending(true);
+                StopCoroutine(pushCoroutine);
             }
+            pushCoroutine = StartCoroutine(PushAndReturnCoroutine());
 
-            else
-            {
-               Debug.Log("Button Lift Triggered but conditions not met : " + StateMachineGame.Instance.state + ", " + isElevator + ", " + canActivateHasNotLose);
-            }
+            TriggerBlinking(false);
+            Ending(true);
+        }
+
+        else
+        {
+            Debug.Log("Button Lift Triggered but conditions not met : " + StateMachineGame.Instance.state + ", " + isElevator + ", " + canActivateHasNotLose);
         }
     }
 

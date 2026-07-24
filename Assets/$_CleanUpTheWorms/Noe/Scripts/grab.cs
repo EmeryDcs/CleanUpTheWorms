@@ -1,3 +1,4 @@
+using System;
 using Meta.XR.InputActions;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -10,7 +11,7 @@ public class grab : MonoBehaviour
 
     public Transform snapPoint;
     private GameObject grabbedElm;
-    public bool canGrab;
+    public bool m_CanGrab;
 
     public GameObject bras;
 
@@ -31,6 +32,8 @@ public class grab : MonoBehaviour
     {
         inputActions = new PlayerInputSystem();
         sphereCollider = GetComponent<SphereCollider>();
+
+        sphereCollider.enabled = true;
 
         if (Instance != null && Instance != this)
         {
@@ -64,9 +67,7 @@ public class grab : MonoBehaviour
             if (rightHandle != null) rightHandle.localRotation = Quaternion.Euler(0, grabbedRightAngle, 0);
         }
 
-        canGrab = (triggerValue <= 0.6f && triggerValue != 0f);
-
-        sphereCollider.enabled = canGrab;
+        m_CanGrab = (triggerValue <= 0.6f && triggerValue != 0f);
 
         if (triggerValue > 0.05f && grabbedElm == null)
         {
@@ -78,20 +79,26 @@ public class grab : MonoBehaviour
             DetachElm(grabbedElm);
         }
 
-        if (grabbedElm != null && !canGrab)
+        if (grabbedElm != null && !m_CanGrab)
         {
             grabbedElm.transform.position = snapPoint.position;
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
-        if (!canGrab) return;
-
         if (other.gameObject.tag == "GrabbableElm" && grabbedElm == null)
         {
+            other.gameObject.GetComponent<S_GrabbableState>().SetOutline(true);
+            if (!m_CanGrab) return;
             GrabElm(other.gameObject);
         }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "GrabbableElm" && grabbedElm == null)
+            other.gameObject.GetComponent<S_GrabbableState>().SetOutline(false);
     }
 
     private void GrabElm(GameObject elm)
