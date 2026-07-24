@@ -53,6 +53,7 @@ public class StateLevel2 : MonoBehaviour
 
 		if (listCollectables.Contains(go))
 		{
+			RobotAudio.Instance.PlayValidation();
 			listCollectables.Remove(go);
 			Destroy(go);
 			clueDisplayed = false;

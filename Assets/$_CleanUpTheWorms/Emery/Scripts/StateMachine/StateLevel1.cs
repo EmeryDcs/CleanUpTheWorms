@@ -147,6 +147,7 @@ public class StateLevel1 : MonoBehaviour
 
 		if (listCollectables.Contains(go))
 		{
+			RobotAudio.Instance.PlayValidation();
 			listCollectables.Remove(go);
 			Destroy(go);
 		}

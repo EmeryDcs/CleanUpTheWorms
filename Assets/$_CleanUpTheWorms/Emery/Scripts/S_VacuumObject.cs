@@ -18,8 +18,6 @@ public class S_VacuumObject : MonoBehaviour
 
 		if (other.CompareTag("GrabbableElm") && other.GetComponent<S_GrabbableState>().CanBeTrashed())
         {
-            RobotAudio.Instance.PlayValidation();
-
             Debug.Log("Delete " + other.gameObject.name);
             switch (StateMachineGame.Instance.state)
 			{
@@ -28,7 +26,6 @@ public class S_VacuumObject : MonoBehaviour
 					break;
 				case GameState.TUTORIAL:
 					StateTutorial.Instance.DeleteCollectableFromList(other.gameObject);
-
                     break;
 				case GameState.LEVEL1:
 					StateLevel1.Instance.DeleteCollectableFromList(other.gameObject);
@@ -37,6 +34,13 @@ public class S_VacuumObject : MonoBehaviour
 					StateLevel2.Instance.DeleteCollectableFromList(other.gameObject);
 					break;
 			}
+
+			if (other != null)
+			{
+				Destroy(other.gameObject);
+			}
+            
+            
 		}
 	}
 	
@@ -57,7 +61,6 @@ public class S_VacuumObject : MonoBehaviour
 
 		if (other.gameObject.CompareTag("GrabbableElm") && other.gameObject.GetComponent<S_GrabbableState>().CanBeTrashed())
         {
-            RobotAudio.Instance.PlayValidation();
 
             Debug.Log("Delete " + other.gameObject.name);
             switch (StateMachineGame.Instance.state)
@@ -75,6 +78,11 @@ public class S_VacuumObject : MonoBehaviour
 				case GameState.LEVEL2:
 					StateLevel2.Instance.DeleteCollectableFromList(other.gameObject);
 					break;
+			}
+            
+			if (other.gameObject != null)
+			{
+				Destroy(other.gameObject);
 			}
 		}
 	}

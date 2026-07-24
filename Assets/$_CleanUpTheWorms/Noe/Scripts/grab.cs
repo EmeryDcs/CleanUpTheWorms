@@ -140,8 +140,11 @@ public class grab : MonoBehaviour
 
         Rigidbody rb = grabbedElm.GetComponent<Rigidbody>();
 
-        elm.GetComponent<Collider>().isTrigger = false;
-        elm.GetComponent<S_GrabbableState>().SetIsGrabbed(false);
+        if (elm != null && elm.GetComponent<Collider>())
+        {
+            elm.GetComponent<Collider>().isTrigger = false;
+            elm.GetComponent<S_GrabbableState>().SetIsGrabbed(false);
+        }
 
         rb.useGravity = true;
         rb.isKinematic = false;
