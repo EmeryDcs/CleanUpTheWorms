@@ -32,11 +32,16 @@ public class StateMachineGame : MonoBehaviour
 	bool ending = false;
 	private bool isTuto = false;
 	private bool isFirstLevel = false;
+	private bool isTips = true;
+
 
 	[SerializeField] S_TriggerEventButtonLift triggerEventButtonLift;
 
 	[SerializeField] UnityEvent endBubble;
 
+	[SerializeField] private UnityEvent tipsBubble;
+	
+	[SerializeField] private GameObject larvaUp;
 
     private void Start()
 	{
@@ -75,6 +80,11 @@ public class StateMachineGame : MonoBehaviour
 			isFirstLevel = true;
 			RobotAIAgent.Instance.ResumeFollowing(false);
 		}
+		else if (state  == GameState.LEVEL2 && isTips)
+		{
+			isTips = false;
+			StartCoroutine(ShowTips());
+		}
     }
 
 	public void AfficherFinDuJeu()
@@ -82,7 +92,14 @@ public class StateMachineGame : MonoBehaviour
 		ui.SetActive(true);
 	}
 
-
+	IEnumerator ShowTips()
+	{
+		yield return new WaitForSeconds(45f);
+		if (larvaUp != null)
+		{
+			tipsBubble.Invoke();
+		}
+	}
 
 
 	IEnumerator ShowEnding()

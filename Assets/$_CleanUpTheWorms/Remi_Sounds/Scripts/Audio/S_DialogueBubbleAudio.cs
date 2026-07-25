@@ -10,6 +10,7 @@ public class S_DialogueBubbleAudio : MonoBehaviour
 
     [SerializeField] bool isPlayingAnim;
     [SerializeField] bool isOpening;
+    [SerializeField] private bool allowAudioSpeech = true;
 
     [SerializeField] int voiceOverIndex;
 
@@ -58,7 +59,7 @@ public class S_DialogueBubbleAudio : MonoBehaviour
             textComponent.text = textFrench;
         }
 
-        if (isFirstBubble && RobotAudio.Instance != null)
+        if (isFirstBubble && RobotAudio.Instance != null && allowAudioSpeech)
         {
             RobotAudio.Instance.PlayRandomSpeech();
         }
@@ -73,7 +74,7 @@ public class S_DialogueBubbleAudio : MonoBehaviour
 
     private void OnEnable()
     {
-        if (RobotAudio.Instance != null)
+        if (RobotAudio.Instance != null && allowAudioSpeech)
         {
             RobotAudio.Instance.PlayRandomSpeech();
         }

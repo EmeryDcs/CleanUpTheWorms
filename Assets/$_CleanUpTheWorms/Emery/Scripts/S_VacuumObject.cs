@@ -37,6 +37,8 @@ public class S_VacuumObject : MonoBehaviour
 
 			if (other != null)
 			{
+				if (!other.GetComponent<Outline>())
+					RobotAudio.Instance.PlayValidationLittle();
 				Destroy(other.gameObject);
 			}
             

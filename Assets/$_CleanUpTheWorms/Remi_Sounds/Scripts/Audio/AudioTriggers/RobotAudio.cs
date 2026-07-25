@@ -16,6 +16,8 @@ public class RobotAudio : MonoBehaviour
     public float duration = 2.0f;
     private bool hasPlayed = false;
 
+    private bool isSurprisedTips = false;
+
 
     [Header("Speech Settings")]
     [SerializeField] private Sound[] speechAudios;
@@ -26,7 +28,10 @@ public class RobotAudio : MonoBehaviour
     [SerializeField] private Sound surprisedAudio;
 
     [Header("Validation Settings")]
-    [SerializeField] private Sound validationAudio;
+    [SerializeField] private Sound validationAudio;    
+    
+    [Header("ValidationLittle Settings")]
+    [SerializeField] private Sound validationLittle;
 
     [Header("Wheel Loop Settings")]
     [SerializeField] private Sound wheelAudio;
@@ -65,6 +70,7 @@ public class RobotAudio : MonoBehaviour
 
         InitializeSound(surprisedAudio, "SurprisedAudioSource");
         InitializeSound(validationAudio, "ValidationAudioSource");
+        InitializeSound(validationLittle, "ValidatioLittlenAudioSource");
         InitializeSound(wheelAudio, "WheelAudioSource");
     }
 
@@ -134,7 +140,10 @@ public class RobotAudio : MonoBehaviour
 
                 if (currentState == RobotState.CLUE)
                 {
-                    PlaySurprised();
+                    for (int i = 0; i < 6; i++)
+                    {
+                        PlaySurprised();
+                    }
                 }
 
                 lastState = currentState;
@@ -150,7 +159,8 @@ public class RobotAudio : MonoBehaviour
         {
             float waitTime = Random.Range(minSpeechInterval, maxSpeechInterval);
             yield return new WaitForSeconds(waitTime);
-            PlayRandomSpeech();
+            if (!isSurprisedTips)
+                PlayRandomSpeech();
         }
     }
 
@@ -237,6 +247,29 @@ public class RobotAudio : MonoBehaviour
         }
     }
 
+    public void PlaySurprisedForTips()
+    {
+        StartCoroutine(SurprisedTips());
+    }
+
+    IEnumerator SurprisedTips()
+    {
+        isSurprisedTips = true;
+
+        yield return new WaitForSeconds(0.5f);
+        for (int i = 0; i < 5 ; i++)
+        {
+            for (int j = 0; j < 6; j++)
+            {
+                PlaySurprised();
+            }
+
+            yield return new WaitForSeconds(0.5f);
+        }
+
+        isSurprisedTips = false;
+    }
+
     [ContextMenu("Play Surprised Event")]
     public void PlaySurprised()
     {
@@ -265,6 +298,25 @@ public class RobotAudio : MonoBehaviour
             else
             {
                 validationAudio.source.PlayOneShot(validationAudio.clip);
+            }
+        }
+    }
+    
+    [ContextMenu("Play Validation Event")]
+    public void PlayValidationLittle()
+    {
+        if (validationLittle != null && validationLittle.source != null)
+        {
+            if (validationLittle.preventOverlay || validationLittle.loop)
+            {
+                for (int i = 0; i < 5; i++)
+                {
+                    validationLittle.source.Play();
+                }
+            }
+            else
+            {
+                validationLittle.source.PlayOneShot(validationLittle.clip);
             }
         }
     }

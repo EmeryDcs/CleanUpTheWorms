@@ -139,11 +139,6 @@ public class S_TriggerEventButtonLift : MonoBehaviour
             TriggerBlinking(false);
             Ending(true);
         }
-
-        else
-        {
-            Debug.Log("Button Lift Triggered but conditions not met : " + StateMachineGame.Instance.state + ", " + isElevator + ", " + canActivateHasNotLose);
-        }
     }
 
     public void Ending(bool value)
