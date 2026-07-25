@@ -24,6 +24,7 @@ public class S_TriggerEventButtonLift : MonoBehaviour
     [SerializeField] private Image logoHolo;
     [SerializeField] private TextMeshProUGUI textCredits;
     [SerializeField] private float fadeDuration = 1f;
+    [SerializeField] private OVROverlayCanvas overlayCanvas;
 
     bool canBePushed = true;
     bool canTPElevator = false;
@@ -44,17 +45,20 @@ public class S_TriggerEventButtonLift : MonoBehaviour
     [SerializeField] private float pulseSpeed = 2f;
     
     
-    private bool canTriggerEnd = false;
+    [SerializeField] private bool canTriggerEnd = false;
 
 
 
-    bool canActivateHasNotLose = true;
+    [SerializeField] bool canActivateHasNotLose = true;
 
     private void Awake()
     {
         initialLocalPosition = transform.localPosition;
         if (isElevator)
             StartCoroutine(FadeBeginGame());
+
+        // if (overlayCanvas != null)
+        //     overlayCanvas.maxTextureSize = 512;
     }
     
     private IEnumerator FadeBeginGame()
@@ -240,6 +244,7 @@ public class S_TriggerEventButtonLift : MonoBehaviour
     {
         yield return new WaitForSeconds(m_WaitToEnd);
         canvas.SetActive(true);
+        overlayCanvas.maxTextureSize = 4096;
         float elapsedTime = 0f;
         Color color = fadeImage.color;
         Color colorLogo = logo.color;
@@ -265,6 +270,9 @@ public class S_TriggerEventButtonLift : MonoBehaviour
             textCredits.color = colorText;
             yield return null;
         }
+
+        overlayCanvas.manualRedraw = true;
+        overlayCanvas.SetFrameDirty();
     }
 
 
