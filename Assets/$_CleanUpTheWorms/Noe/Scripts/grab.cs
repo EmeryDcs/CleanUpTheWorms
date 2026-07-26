@@ -1,6 +1,3 @@
-using System;
-using Meta.XR.InputActions;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.XR;
@@ -27,6 +24,8 @@ public class grab : MonoBehaviour
     private PlayerInputSystem inputActions;
     [SerializeField] private float triggerValue;
     private SphereCollider sphereCollider;
+    
+    private Vector3 controllerVelocity;
 
     private void Awake()
     {
@@ -52,6 +51,9 @@ public class grab : MonoBehaviour
 
     void Update()
     {
+        
+        InputDevices.GetDeviceAtXRNode(controllerNode).TryGetFeatureValue(UnityEngine.XR.CommonUsages.deviceVelocity, out controllerVelocity);
+        Debug.Log(controllerVelocity);
         triggerValue = inputActions.Player.Grab.ReadValue<float>();
 
         bras.transform.localRotation = new Quaternion(0, 0, triggerValue, 1f);
@@ -141,6 +143,12 @@ public class grab : MonoBehaviour
 
             elm.GetComponent<AILarva>().RestartBehaviorAndMakeDynamic();
             elm.GetComponent<S_GrabbableState>().SetIsGrabbed(false);
+            
+            Rigidbody larvaRb = elm.GetComponent<Rigidbody>();
+            if (larvaRb != null)
+            {
+                larvaRb.linearVelocity = controllerVelocity * 2;
+            }
 
             return;
         }
@@ -155,6 +163,7 @@ public class grab : MonoBehaviour
 
         rb.useGravity = true;
         rb.isKinematic = false;
+        rb.linearVelocity = controllerVelocity * 2;
         elm.transform.SetParent(null);
         grabbedElm = null;
     }
