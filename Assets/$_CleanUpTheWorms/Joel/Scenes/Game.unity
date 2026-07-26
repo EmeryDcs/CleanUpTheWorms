@@ -49298,11 +49298,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Thanks to Eric Charlet, PFRG, Jean Philippe Nicolay, Anouck Astoul, Andr\xE9
-    Astoul, Th\xE9ophile Penz, Noam Le Garsmeur, Cl\xE9ment Mona, Antoine Ansel,
-    Valentine Derue, J\xE9r\xE9my Provost, Lucile Astoul, Antonin Aubert, Fay\xE7al
-    Mebarek, Joffrey Guilmet, Emma Probert, Anita Bidel and Alexandra Lemarchand
-    for helping us with this project! "
+  m_text: "Thanks to Noam Le Garsmeur, Th\xE9ophile Penz, Cl\xE9ment Mona, Tom Picaud,
+    Antoine Ansel, Eric Charlet, Alexandra Lemarchand, Valentine Derue,  PFRG, Lucile
+    Astoul, Antonin Aubert, Fay\xE7al Mebarek, Joffrey Guilmet, Emma Probert, Jean
+    Philippe Nicolay, Anouck Astoul, Andr\xE9 Astoul, Anita Bidel, J\xE9r\xE9my Provost
+    and CESI Lineact for helping us with this project! "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 76154ebc4a79542448b49668eabac2b6, type: 2}
   m_sharedMaterial: {fileID: -2171584860189114607, guid: 76154ebc4a79542448b49668eabac2b6, type: 2}
