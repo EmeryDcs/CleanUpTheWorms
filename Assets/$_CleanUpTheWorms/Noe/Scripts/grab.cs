@@ -25,7 +25,10 @@ public class grab : MonoBehaviour
     [SerializeField] private float triggerValue;
     private SphereCollider sphereCollider;
     
-    private Vector3 controllerVelocity;
+    Vector3 controllerVelocity;
+    
+    private Vector3[] velocityHistory = new Vector3[5];
+    private int velocityHistoryIndex = 0;
 
     private void Awake()
     {
@@ -52,8 +55,23 @@ public class grab : MonoBehaviour
     void Update()
     {
         
-        InputDevices.GetDeviceAtXRNode(controllerNode).TryGetFeatureValue(UnityEngine.XR.CommonUsages.deviceVelocity, out controllerVelocity);
-        Debug.Log(controllerVelocity);
+        Vector3 currentVelocity;
+        InputDevices.GetDeviceAtXRNode(controllerNode).TryGetFeatureValue(UnityEngine.XR.CommonUsages.deviceVelocity, out currentVelocity);
+
+        if (currentVelocity.sqrMagnitude > 0.01f)
+        {
+            velocityHistory[velocityHistoryIndex] = currentVelocity;
+            velocityHistoryIndex = (velocityHistoryIndex + 1) % velocityHistory.Length;
+        }
+
+        controllerVelocity = Vector3.zero;
+        foreach (Vector3 v in velocityHistory)
+        {
+            controllerVelocity += v;
+        }
+        controllerVelocity /= velocityHistory.Length;
+        
+        
         triggerValue = inputActions.Player.Grab.ReadValue<float>();
 
         bras.transform.localRotation = new Quaternion(0, 0, triggerValue, 1f);
