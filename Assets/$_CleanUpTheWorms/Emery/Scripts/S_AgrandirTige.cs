@@ -46,12 +46,14 @@ public class S_AgrandirTige : MonoBehaviour
             }
             else if (args[i] == "-mintaille" && i + 1 < args.Length)
             {
-                float.TryParse(args[i + 1], NumberStyles.Float, CultureInfo.InvariantCulture, out minTaille);
+                float.TryParse(args[i + 1], NumberStyles.Float, CultureInfo.InvariantCulture, out distanceMinGun);
             }
             else if (args[i] == "-maxtaille" && i + 1 < args.Length)
             {
-                float.TryParse(args[i + 1], NumberStyles.Float, CultureInfo.InvariantCulture, out maxTaille);
+                float.TryParse(args[i + 1], NumberStyles.Float, CultureInfo.InvariantCulture, out distanceMaxGun);
             }
+            
+            
         }
     }
 

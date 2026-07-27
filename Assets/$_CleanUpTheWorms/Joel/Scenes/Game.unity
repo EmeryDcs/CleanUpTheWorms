@@ -33448,6 +33448,10 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5942181168483870209, guid: 2f5907475b0810049a2f0b26e223da44, type: 3}
+      propertyPath: tigeText
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5942181168483870209, guid: 2f5907475b0810049a2f0b26e223da44, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
