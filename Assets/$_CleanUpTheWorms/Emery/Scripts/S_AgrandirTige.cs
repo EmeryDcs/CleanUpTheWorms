@@ -2,7 +2,8 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.XR;
-using System; // NEW: Required for Environment
+using System; 
+using System.Globalization;
 
 public class S_AgrandirTige : MonoBehaviour
 {
@@ -42,7 +43,14 @@ public class S_AgrandirTige : MonoBehaviour
             if (args[i] == "-fastversion")
             {
                 isFastVersion = true;
-                break;
+            }
+            else if (args[i] == "-mintaille" && i + 1 < args.Length)
+            {
+                float.TryParse(args[i + 1], NumberStyles.Float, CultureInfo.InvariantCulture, out minTaille);
+            }
+            else if (args[i] == "-maxtaille" && i + 1 < args.Length)
+            {
+                float.TryParse(args[i + 1], NumberStyles.Float, CultureInfo.InvariantCulture, out maxTaille);
             }
         }
     }
