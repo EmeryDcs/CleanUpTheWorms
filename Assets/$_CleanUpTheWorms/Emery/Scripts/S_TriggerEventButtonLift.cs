@@ -22,7 +22,9 @@ public class S_TriggerEventButtonLift : MonoBehaviour
     [SerializeField] private Image logoXR;
     [SerializeField] private Image logoAM;
     [SerializeField] private Image logoHolo;
+    [SerializeField] private Image logoVirtual;
     [SerializeField] private Image logoAgglo;
+    [SerializeField] private Image logoCESI;
     [SerializeField] private TextMeshProUGUI textCredits;
     [SerializeField] private float fadeDuration = 1f;
     [SerializeField] private OVROverlayCanvas overlayCanvas;
@@ -248,6 +250,8 @@ public class S_TriggerEventButtonLift : MonoBehaviour
         Color colorLogoAM = logoAM.color;
         Color colorLogoHolo = logoHolo.color;
         Color colorLogoAgglo = logoAgglo.color;
+        Color colorLogoVirtual = logoVirtual.color;
+        Color colorLogoCESI = logoCESI.color;
         Color colorText = textCredits.color;
 
         while (elapsedTime < fadeDuration)
@@ -258,6 +262,8 @@ public class S_TriggerEventButtonLift : MonoBehaviour
             colorLogoXR.a = Mathf.Clamp01(elapsedTime / fadeDuration);
             colorLogoAM.a = Mathf.Clamp01(elapsedTime / fadeDuration);
             colorLogoHolo.a = Mathf.Clamp01(elapsedTime / fadeDuration);
+            colorLogoCESI.a = Mathf.Clamp01(elapsedTime / fadeDuration);
+            colorLogoVirtual.a = Mathf.Clamp01(elapsedTime / fadeDuration);
             colorLogoAgglo.a = Mathf.Clamp01(elapsedTime / fadeDuration);
             colorText.a = Mathf.Clamp01(elapsedTime / fadeDuration);
             fadeImage.color = color;
@@ -265,7 +271,9 @@ public class S_TriggerEventButtonLift : MonoBehaviour
             logoXR.color = colorLogoXR;
             logoAM.color = colorLogoAM;
             logoHolo.color = colorLogoHolo;
+            logoVirtual.color = colorLogoVirtual;
             logoAgglo.color = colorLogoAgglo;
+            logoCESI.color = colorLogoCESI;
             textCredits.color = colorText;
             yield return null;
         }
