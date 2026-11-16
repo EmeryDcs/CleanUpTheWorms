@@ -14,7 +14,7 @@ public class S_AgrandirTige : MonoBehaviour
     [Header("GameObject tige")]
     public GameObject tige;
 
-    [Header("Distance entre les deux manettes min et max")]
+    [Header("Distance entre les deux manettes min et max (mode -withdevice)")]
     [SerializeField]
     float distanceMaxGun = 0.3f;
     [SerializeField]
@@ -24,38 +24,22 @@ public class S_AgrandirTige : MonoBehaviour
     public GameObject controllerLeft;
     public GameObject controllerRight;
 
-    [Header("Sans device (manettes seules) : anti-tremblements")]
-    [Tooltip("Transform qui définit l'axe de la tige. Si vide, on utilise la tige elle-même.")]
-    [SerializeField] Transform axisReference;
-    [Tooltip("Axe LOCAL de la référence le long duquel on mesure l'écartement (Z = avant par défaut).")]
-    [SerializeField] Vector3 localAxis = Vector3.forward;
-    [Tooltip("Zone morte en mètres : les variations plus petites que cette valeur sont ignorées (tremblements).")]
-    [SerializeField] float deadZone = 0.003f;
-    [Tooltip("Plus la valeur est haute, plus la tige réagit vite. Plus elle est basse, plus c'est lissé.")]
-    [SerializeField] float smoothing = 12f;
+    [Header("Claw Lever (mode sans device)")]
+    public S_ClawLever clawLever;
 
     [Header("Unity Event Size Changed")]
     public UnityEvent onSizeChanged;
 
     [Header("Debug")]
     public bool isInTestingScene = false;
-    [Tooltip("Pour tester le mode 'avec device' directement dans l'éditeur, sans argument de lancement.")]
-    [SerializeField] bool forceWithDevice = false;
 
     private float lastTaille = -1f;
 
-    private bool isFastVersion = false; // Fast version flag
-    private bool isWithDevice = false;  // Argument -withdevice
-
-    // Filtrage (mode sans device uniquement)
-    private bool filterInitialized = false;
-    private float filteredDistance;
-    private float smoothedDistance;
+    private bool isFastVersion = true;
+    private bool withDevice = false; // true si l'argument -withdevice est present
 
     void Start()
     {
-        isWithDevice = forceWithDevice;
-
         string[] args = Environment.GetCommandLineArgs();
         for (int i = 0; i < args.Length; i++)
         {
@@ -63,9 +47,13 @@ public class S_AgrandirTige : MonoBehaviour
             {
                 isFastVersion = true;
             }
+            else if (args[i] == "-nofastversion")
+            {
+                isFastVersion = false;
+            }
             else if (args[i] == "-withdevice")
             {
-                isWithDevice = true;
+                withDevice = true;
             }
             else if (args[i] == "-mintaille" && i + 1 < args.Length)
             {
@@ -76,17 +64,25 @@ public class S_AgrandirTige : MonoBehaviour
                 float.TryParse(args[i + 1], NumberStyles.Float, CultureInfo.InvariantCulture, out distanceMaxGun);
             }
         }
+
+        if (!withDevice && clawLever == null)
+        {
+            clawLever = FindAnyObjectByType<S_ClawLever>();
+            if (clawLever == null)
+            {
+                Debug.LogWarning("S_AgrandirTige : mode sans device mais aucun S_ClawLever trouve.");
+            }
+        }
     }
 
-    void Update()
+    // LateUpdate : le claw lever a deja mis a jour sa position dans son Update
+    void LateUpdate()
     {
         if (isFastVersion || StateMachineGame.Instance.state == GameState.LEVEL2 || StateMachineGame.Instance.state == GameState.END || StateMachineGame.Instance.state == GameState.ENDING)
         {
             ResizedStick();
         }
     }
-
-    // ---------- AVEC DEVICE : système d'origine, inchangé ----------
 
     private float DistanceBetweenControllers()
     {
@@ -99,48 +95,26 @@ public class S_AgrandirTige : MonoBehaviour
         return Mathf.InverseLerp(distanceMinGun, distanceMaxGun, distance);
     }
 
-    // ---------- SANS DEVICE : mesure sur un seul axe + filtrage ----------
-
-    // Écartement des manettes projeté sur l'axe de la tige uniquement.
-    // Tout mouvement perpendiculaire à cet axe (tremblements latéraux, haut/bas) est ignoré.
-    private float AxisDistanceBetweenControllers()
+    private float ComputeNewTaille()
     {
-        Transform reference = axisReference != null ? axisReference : tige.transform;
-        Vector3 axis = reference.TransformDirection(localAxis).normalized; // ignore l'échelle de la tige
-        Vector3 offset = controllerRight.transform.position - controllerLeft.transform.position;
-        return Mathf.Abs(Vector3.Dot(offset, axis));
-    }
-
-    private float NormalizedDistanceNoDevice()
-    {
-        float raw = AxisDistanceBetweenControllers();
-
-        if (!filterInitialized)
+        if (withDevice)
         {
-            filteredDistance = raw;
-            smoothedDistance = raw;
-            filterInitialized = true;
+            // Systeme d'origine : distance entre les manettes (inchange)
+            float opening = NormalizedDistanceBetweenControllers();
+            return Mathf.Lerp(minTaille, maxTaille, 1 - opening);
         }
 
-        // 1) Zone morte : la valeur ne bouge que si le changement dépasse deadZone
-        float delta = raw - filteredDistance;
-        if (Mathf.Abs(delta) > deadZone)
-        {
-            filteredDistance = raw - Mathf.Sign(delta) * deadZone;
-        }
+        // Sans device : position du claw lever entre son min local et son max local
+        // min local -> minTaille, max local -> maxTaille
+        if (clawLever == null) return tige.transform.localScale.z;
 
-        // 2) Lissage indépendant du framerate
-        smoothedDistance = Mathf.Lerp(smoothedDistance, filteredDistance, 1f - Mathf.Exp(-smoothing * Time.deltaTime));
-
-        return Mathf.InverseLerp(distanceMinGun, distanceMaxGun, smoothedDistance);
+        float t = clawLever.NormalizedPosition;
+        return Mathf.Lerp(minTaille, maxTaille, t);
     }
-
-    // ---------- Commun ----------
 
     private void ResizedStick()
     {
-        float opening = isWithDevice ? NormalizedDistanceBetweenControllers() : NormalizedDistanceNoDevice();
-        float newTaille = Mathf.Lerp(minTaille, maxTaille, 1 - opening);
+        float newTaille = ComputeNewTaille();
 
         if (lastTaille != -1f && Mathf.Abs(newTaille - lastTaille) > 0.01f)
         {

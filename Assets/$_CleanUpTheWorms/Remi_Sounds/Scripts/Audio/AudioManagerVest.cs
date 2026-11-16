@@ -47,9 +47,9 @@ public class AudioManagerVest : MonoBehaviour
             return;
         }
 
-        if (System.Environment.GetCommandLineArgs().Contains("-nohaptics"))
+        if (System.Environment.GetCommandLineArgs().Contains("-haptics"))
         {
-            isHapticActive = false;
+            isHapticActive = true;
         }
 
         AudioManagerVest.Instance.isAllowedSound = isHapticActive;

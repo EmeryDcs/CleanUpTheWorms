@@ -34,7 +34,7 @@ public class StateLevel1 : MonoBehaviour
 	bool isCatchingAvailable = false;
 	float timerText = 0f;
 	
-	private bool isFastVersion = false;
+	private bool isFastVersion = true;
 
 	private void Awake()
 	{
@@ -55,7 +55,10 @@ public class StateLevel1 : MonoBehaviour
 				if (args[i] == "-fastversion")
 				{
 					isFastVersion = true;
-					break;
+				}
+				else if (args[i] == "-nofastversion")
+				{
+					isFastVersion = false;
 				}
 			}
 		}

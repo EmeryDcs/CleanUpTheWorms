@@ -15,6 +15,16 @@ public class S_ClawLever : MonoBehaviour
 
     private Transform leftController;
 
+    // 0 = min local atteint, 1 = max local atteint
+    public float NormalizedPosition
+    {
+        get
+        {
+            Transform t = leverTarget != null ? leverTarget : transform;
+            return Mathf.InverseLerp(minLocalX, maxLocalX, t.localPosition.x);
+        }
+    }
+
     void Start()
     {
         OVRCameraRig rig = FindAnyObjectByType<OVRCameraRig>();
