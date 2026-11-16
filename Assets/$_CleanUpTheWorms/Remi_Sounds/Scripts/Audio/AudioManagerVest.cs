@@ -47,7 +47,7 @@ public class AudioManagerVest : MonoBehaviour
             return;
         }
 
-        if (System.Environment.GetCommandLineArgs().Contains("-haptics"))
+        if (S_LaunchSettings.Haptics)
         {
             isHapticActive = true;
         }

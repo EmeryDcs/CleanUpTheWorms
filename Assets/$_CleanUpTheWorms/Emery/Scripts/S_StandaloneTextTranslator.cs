@@ -27,11 +27,11 @@ public class S_StandaloneTextTranslator : MonoBehaviour
             textComponent = GetComponent<TextMeshProUGUI>();
         }
 
-        if (System.Environment.GetCommandLineArgs().Contains("-isjapanese"))
+        if (S_LaunchSettings.IsJapanese)
         {
             isJapanese = true;
         }
-        else if (System.Environment.GetCommandLineArgs().Contains("-isinenglish"))
+        else if (S_LaunchSettings.IsEnglish)
         {
             isEnglish = true;
         }

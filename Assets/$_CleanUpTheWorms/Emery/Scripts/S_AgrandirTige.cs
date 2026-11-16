@@ -40,30 +40,11 @@ public class S_AgrandirTige : MonoBehaviour
 
     void Start()
     {
-        string[] args = Environment.GetCommandLineArgs();
-        for (int i = 0; i < args.Length; i++)
-        {
-            if (args[i] == "-fastversion")
-            {
-                isFastVersion = true;
-            }
-            else if (args[i] == "-nofastversion")
-            {
-                isFastVersion = false;
-            }
-            else if (args[i] == "-withdevice")
-            {
-                withDevice = true;
-            }
-            else if (args[i] == "-mintaille" && i + 1 < args.Length)
-            {
-                float.TryParse(args[i + 1], NumberStyles.Float, CultureInfo.InvariantCulture, out distanceMinGun);
-            }
-            else if (args[i] == "-maxtaille" && i + 1 < args.Length)
-            {
-                float.TryParse(args[i + 1], NumberStyles.Float, CultureInfo.InvariantCulture, out distanceMaxGun);
-            }
-        }
+        isFastVersion = S_LaunchSettings.FastVersion;
+        withDevice = S_LaunchSettings.WithDevice;
+
+        if (S_LaunchSettings.HasMinTaille) distanceMinGun = S_LaunchSettings.MinTaille;
+        if (S_LaunchSettings.HasMaxTaille) distanceMaxGun = S_LaunchSettings.MaxTaille;
 
         if (!withDevice && clawLever == null)
         {

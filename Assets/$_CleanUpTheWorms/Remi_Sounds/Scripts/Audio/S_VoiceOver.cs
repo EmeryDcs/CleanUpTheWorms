@@ -26,11 +26,11 @@ public class S_VoiceOver : MonoBehaviour
             return;
         }
 
-        if (System.Environment.GetCommandLineArgs().Contains("-isjapanese"))
+        if (S_LaunchSettings.IsJapanese)
         {
             isJapanese = true;
         }
-        else if (System.Environment.GetCommandLineArgs().Contains("-isinenglish"))
+        else if (S_LaunchSettings.IsEnglish)
         {
             isEnglish = true;
         }

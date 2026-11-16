@@ -48,19 +48,8 @@ public class StateLevel1 : MonoBehaviour
 			currentTextToDisplay = StateLevel1TextRobot.APPARITION_LARVE;
 			RobotAIAgent.Instance.SetMinDistanceToPlayer(1f);
 			RobotAIAgent.Instance.OnEventGoToLocation(anchorNearLarva.position);
-			
-			string[] args = Environment.GetCommandLineArgs();
-			for (int i = 0; i < args.Length; i++)
-			{
-				if (args[i] == "-fastversion")
-				{
-					isFastVersion = true;
-				}
-				else if (args[i] == "-nofastversion")
-				{
-					isFastVersion = false;
-				}
-			}
+
+			isFastVersion = S_LaunchSettings.FastVersion;
 		}
 	}
 
